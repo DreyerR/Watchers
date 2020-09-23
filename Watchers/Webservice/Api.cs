@@ -23,7 +23,7 @@ namespace Watchers.Webservice
             return client;
         }
 
-        public async static Task<bool> AuthUser(string email, string password)
+        public async static Task<bool> AuthUser(string email, string password) // Use this method to sign the user in.
         {
             client = GetHttpClient();
 
