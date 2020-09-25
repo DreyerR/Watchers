@@ -25,7 +25,25 @@ namespace Watchers
             welcome.ShowDialog();
         }
 
-        private async void lblLogin_Click(object sender, EventArgs e)
+        private bool IsValid()
+        {
+            bool valid = true;
+
+            if (txtUsername.Text == "")
+            {
+                errorProvider1.SetError(txtUsername, "Username cannot be empty");
+                valid = false;
+            }
+            else if (txtPassword.Text == "")
+            {
+                errorProvider1.SetError(txtPassword, "Password cannot be empty");
+                valid = false;
+            }
+
+            return valid;
+        }
+
+        private async void btnLogin_Click(object sender, EventArgs e)
         {
             if (IsValid())
             {
@@ -49,30 +67,7 @@ namespace Watchers
                     Cursor = Cursors.Default;
                     MessageBox.Show("Username or password is incorrect", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-            }          
-        }
-
-        private bool IsValid()
-        {
-            bool valid = true;
-
-            if (txtUsername.Text == "")
-            {
-                errorProvider1.SetError(txtUsername, "Username cannot be empty");
-                valid = false;
             }
-            else if (txtPassword.Text == "")
-            {
-                errorProvider1.SetError(txtPassword, "Password cannot be empty");
-                valid = false;
-            }
-
-            return valid;
-        }
-
-        private void txtPassword_OnValueChanged(object sender, EventArgs e)
-        {
-            
         }
     }
 }

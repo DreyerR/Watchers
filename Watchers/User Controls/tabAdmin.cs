@@ -31,5 +31,10 @@ namespace Watchers
         {
             InitializeComponent();
         }
+
+        private void cbbDataType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

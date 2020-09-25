@@ -64,10 +64,15 @@
             // cbbDataType
             // 
             this.cbbDataType.FormattingEnabled = true;
+            this.cbbDataType.Items.AddRange(new object[] {
+            "Bookings",
+            "Orders",
+            "Users"});
             this.cbbDataType.Location = new System.Drawing.Point(678, 32);
             this.cbbDataType.Name = "cbbDataType";
             this.cbbDataType.Size = new System.Drawing.Size(203, 24);
             this.cbbDataType.TabIndex = 2;
+            this.cbbDataType.SelectedIndexChanged += new System.EventHandler(this.cbbDataType_SelectedIndexChanged);
             // 
             // label2
             // 
