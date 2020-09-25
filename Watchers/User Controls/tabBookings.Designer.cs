@@ -28,18 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tabBookings));
             this.label2 = new System.Windows.Forms.Label();
             this.lblSelected = new System.Windows.Forms.Label();
-            this.imgSelected = new System.Windows.Forms.PictureBox();
             this.lblAvail = new System.Windows.Forms.Label();
-            this.imgAvail = new System.Windows.Forms.PictureBox();
-            this.pnlBookNow = new ns1.BunifuGradientPanel();
             this.lblBookNow = new System.Windows.Forms.Label();
             this.lblSeats = new System.Windows.Forms.Label();
-            this.imgMovie = new System.Windows.Forms.PictureBox();
             this.lblSeatNum = new System.Windows.Forms.Label();
             this.pnlCinema = new System.Windows.Forms.Panel();
+            this.lblE = new System.Windows.Forms.Label();
+            this.lblD = new System.Windows.Forms.Label();
+            this.lblC = new System.Windows.Forms.Label();
+            this.lblB = new System.Windows.Forms.Label();
+            this.lblA = new System.Windows.Forms.Label();
+            this.pnlScrren = new System.Windows.Forms.Panel();
+            this.lblScreen = new System.Windows.Forms.Label();
+            this.lblCNum = new System.Windows.Forms.Label();
+            this.lblCinNum = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.rtbDescription = new System.Windows.Forms.RichTextBox();
+            this.lblMovie = new System.Windows.Forms.Label();
+            this.lblBooking = new System.Windows.Forms.Label();
+            this.dtpDate = new System.Windows.Forms.DateTimePicker();
+            this.lblUnavailable = new System.Windows.Forms.Label();
+            this.btnDeleteBook = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnBook = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.imgSelected = new System.Windows.Forms.PictureBox();
+            this.imgAvail = new System.Windows.Forms.PictureBox();
+            this.imgMovie = new System.Windows.Forms.PictureBox();
             this.btnE10 = new System.Windows.Forms.Button();
             this.btnE9 = new System.Windows.Forms.Button();
             this.btnE8 = new System.Windows.Forms.Button();
@@ -90,92 +107,42 @@
             this.btnA3 = new System.Windows.Forms.Button();
             this.btnA2 = new System.Windows.Forms.Button();
             this.btnA1 = new System.Windows.Forms.Button();
-            this.lblE = new System.Windows.Forms.Label();
-            this.lblD = new System.Windows.Forms.Label();
-            this.lblC = new System.Windows.Forms.Label();
-            this.lblB = new System.Windows.Forms.Label();
-            this.lblA = new System.Windows.Forms.Label();
-            this.pnlScrren = new System.Windows.Forms.Panel();
-            this.lblScreen = new System.Windows.Forms.Label();
-            this.lblCNum = new System.Windows.Forms.Label();
-            this.lblCinNum = new System.Windows.Forms.Label();
-            this.lblDate = new System.Windows.Forms.Label();
-            this.calDate = new ns1.BunifuDatepicker();
-            this.rtbDescription = new System.Windows.Forms.RichTextBox();
-            this.ddMovie = new ns1.BunifuDropdown();
-            this.lblMovie = new System.Windows.Forms.Label();
-            this.lblBooking = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.imgSelected)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgAvail)).BeginInit();
-            this.pnlBookNow.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgMovie)).BeginInit();
             this.pnlCinema.SuspendLayout();
             this.pnlScrren.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgSelected)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgAvail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgMovie)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(72, 707);
+            this.label2.Font = new System.Drawing.Font("Poppins", 10F);
+            this.label2.Location = new System.Drawing.Point(67, 702);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(134, 25);
+            this.label2.Size = new System.Drawing.Size(175, 25);
             this.label2.TabIndex = 80;
-            this.label2.Text = "Movie Description";
+            this.label2.Text = "Movie Description:";
             // 
             // lblSelected
             // 
             this.lblSelected.BackColor = System.Drawing.Color.Transparent;
-            this.lblSelected.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSelected.Location = new System.Drawing.Point(726, 650);
+            this.lblSelected.Font = new System.Drawing.Font("Poppins", 12F);
+            this.lblSelected.Location = new System.Drawing.Point(721, 645);
             this.lblSelected.Name = "lblSelected";
-            this.lblSelected.Size = new System.Drawing.Size(92, 35);
+            this.lblSelected.Size = new System.Drawing.Size(100, 35);
             this.lblSelected.TabIndex = 79;
             this.lblSelected.Text = "Selected";
-            // 
-            // imgSelected
-            // 
-            this.imgSelected.Image = global::Watchers.Properties.Resources.Booked;
-            this.imgSelected.Location = new System.Drawing.Point(675, 639);
-            this.imgSelected.Name = "imgSelected";
-            this.imgSelected.Size = new System.Drawing.Size(45, 46);
-            this.imgSelected.TabIndex = 78;
-            this.imgSelected.TabStop = false;
             // 
             // lblAvail
             // 
             this.lblAvail.BackColor = System.Drawing.Color.Transparent;
-            this.lblAvail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAvail.Location = new System.Drawing.Point(553, 650);
+            this.lblAvail.Font = new System.Drawing.Font("Poppins", 12F);
+            this.lblAvail.Location = new System.Drawing.Point(548, 645);
             this.lblAvail.Name = "lblAvail";
-            this.lblAvail.Size = new System.Drawing.Size(92, 35);
+            this.lblAvail.Size = new System.Drawing.Size(108, 35);
             this.lblAvail.TabIndex = 77;
             this.lblAvail.Text = "Available";
-            // 
-            // imgAvail
-            // 
-            this.imgAvail.Image = global::Watchers.Properties.Resources.Available;
-            this.imgAvail.Location = new System.Drawing.Point(502, 639);
-            this.imgAvail.Name = "imgAvail";
-            this.imgAvail.Size = new System.Drawing.Size(45, 46);
-            this.imgAvail.TabIndex = 76;
-            this.imgAvail.TabStop = false;
-            // 
-            // pnlBookNow
-            // 
-            this.pnlBookNow.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlBookNow.BackgroundImage")));
-            this.pnlBookNow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlBookNow.Controls.Add(this.lblBookNow);
-            this.pnlBookNow.ForeColor = System.Drawing.Color.White;
-            this.pnlBookNow.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
-            this.pnlBookNow.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.pnlBookNow.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
-            this.pnlBookNow.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.pnlBookNow.Location = new System.Drawing.Point(590, 779);
-            this.pnlBookNow.Name = "pnlBookNow";
-            this.pnlBookNow.Quality = 10;
-            this.pnlBookNow.Size = new System.Drawing.Size(333, 67);
-            this.pnlBookNow.TabIndex = 73;
             // 
             // lblBookNow
             // 
@@ -192,30 +159,18 @@
             // lblSeats
             // 
             this.lblSeats.BackColor = System.Drawing.Color.Transparent;
-            this.lblSeats.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSeats.Location = new System.Drawing.Point(721, 136);
+            this.lblSeats.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSeats.Location = new System.Drawing.Point(742, 140);
             this.lblSeats.Name = "lblSeats";
-            this.lblSeats.Size = new System.Drawing.Size(169, 37);
+            this.lblSeats.Size = new System.Drawing.Size(192, 23);
             this.lblSeats.TabIndex = 74;
             this.lblSeats.Text = "Number of seats:";
-            // 
-            // imgMovie
-            // 
-            this.imgMovie.BackgroundImage = global::Watchers.Properties.Resources.Greyhound;
-            this.imgMovie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.imgMovie.Location = new System.Drawing.Point(72, 284);
-            this.imgMovie.Margin = new System.Windows.Forms.Padding(4);
-            this.imgMovie.Name = "imgMovie";
-            this.imgMovie.Size = new System.Drawing.Size(281, 415);
-            this.imgMovie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.imgMovie.TabIndex = 63;
-            this.imgMovie.TabStop = false;
             // 
             // lblSeatNum
             // 
             this.lblSeatNum.BackColor = System.Drawing.Color.Transparent;
-            this.lblSeatNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSeatNum.Location = new System.Drawing.Point(891, 136);
+            this.lblSeatNum.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSeatNum.Location = new System.Drawing.Point(933, 140);
             this.lblSeatNum.Name = "lblSeatNum";
             this.lblSeatNum.Size = new System.Drawing.Size(100, 23);
             this.lblSeatNum.TabIndex = 75;
@@ -283,6 +238,262 @@
             this.pnlCinema.Name = "pnlCinema";
             this.pnlCinema.Size = new System.Drawing.Size(529, 455);
             this.pnlCinema.TabIndex = 72;
+            // 
+            // lblE
+            // 
+            this.lblE.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblE.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblE.Location = new System.Drawing.Point(469, 103);
+            this.lblE.Name = "lblE";
+            this.lblE.Size = new System.Drawing.Size(47, 57);
+            this.lblE.TabIndex = 5;
+            this.lblE.Text = "E";
+            this.lblE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblD
+            // 
+            this.lblD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblD.Location = new System.Drawing.Point(469, 171);
+            this.lblD.Name = "lblD";
+            this.lblD.Size = new System.Drawing.Size(47, 57);
+            this.lblD.TabIndex = 4;
+            this.lblD.Text = "D";
+            this.lblD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblC
+            // 
+            this.lblC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblC.Location = new System.Drawing.Point(469, 242);
+            this.lblC.Name = "lblC";
+            this.lblC.Size = new System.Drawing.Size(47, 57);
+            this.lblC.TabIndex = 3;
+            this.lblC.Text = "C";
+            this.lblC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblB
+            // 
+            this.lblB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblB.Location = new System.Drawing.Point(469, 311);
+            this.lblB.Name = "lblB";
+            this.lblB.Size = new System.Drawing.Size(47, 57);
+            this.lblB.TabIndex = 2;
+            this.lblB.Text = "B";
+            this.lblB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblA
+            // 
+            this.lblA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblA.Location = new System.Drawing.Point(469, 382);
+            this.lblA.Name = "lblA";
+            this.lblA.Size = new System.Drawing.Size(47, 57);
+            this.lblA.TabIndex = 1;
+            this.lblA.Text = "A";
+            this.lblA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pnlScrren
+            // 
+            this.pnlScrren.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlScrren.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pnlScrren.Controls.Add(this.lblScreen);
+            this.pnlScrren.Location = new System.Drawing.Point(16, 16);
+            this.pnlScrren.Name = "pnlScrren";
+            this.pnlScrren.Size = new System.Drawing.Size(500, 49);
+            this.pnlScrren.TabIndex = 0;
+            // 
+            // lblScreen
+            // 
+            this.lblScreen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblScreen.BackColor = System.Drawing.Color.Transparent;
+            this.lblScreen.Font = new System.Drawing.Font("Poppins", 20F);
+            this.lblScreen.ForeColor = System.Drawing.Color.White;
+            this.lblScreen.Location = new System.Drawing.Point(186, 0);
+            this.lblScreen.Name = "lblScreen";
+            this.lblScreen.Size = new System.Drawing.Size(158, 49);
+            this.lblScreen.TabIndex = 41;
+            this.lblScreen.Text = "SCREEN";
+            this.lblScreen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblCNum
+            // 
+            this.lblCNum.BackColor = System.Drawing.Color.Transparent;
+            this.lblCNum.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCNum.Location = new System.Drawing.Point(669, 140);
+            this.lblCNum.Name = "lblCNum";
+            this.lblCNum.Size = new System.Drawing.Size(100, 23);
+            this.lblCNum.TabIndex = 71;
+            this.lblCNum.Text = "Nr";
+            // 
+            // lblCinNum
+            // 
+            this.lblCinNum.BackColor = System.Drawing.Color.Transparent;
+            this.lblCinNum.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCinNum.Location = new System.Drawing.Point(484, 140);
+            this.lblCinNum.Name = "lblCinNum";
+            this.lblCinNum.Size = new System.Drawing.Size(188, 37);
+            this.lblCinNum.TabIndex = 70;
+            this.lblCinNum.Text = "Cinema Number: ";
+            // 
+            // lblDate
+            // 
+            this.lblDate.BackColor = System.Drawing.Color.Transparent;
+            this.lblDate.Font = new System.Drawing.Font("Poppins", 16F);
+            this.lblDate.Location = new System.Drawing.Point(64, 88);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(100, 35);
+            this.lblDate.TabIndex = 69;
+            this.lblDate.Text = "Date:";
+            // 
+            // rtbDescription
+            // 
+            this.rtbDescription.BackColor = System.Drawing.Color.LightGray;
+            this.rtbDescription.Location = new System.Drawing.Point(72, 735);
+            this.rtbDescription.Name = "rtbDescription";
+            this.rtbDescription.Size = new System.Drawing.Size(289, 140);
+            this.rtbDescription.TabIndex = 67;
+            this.rtbDescription.Text = "";
+            // 
+            // lblMovie
+            // 
+            this.lblMovie.BackColor = System.Drawing.Color.Transparent;
+            this.lblMovie.Font = new System.Drawing.Font("Poppins", 16F);
+            this.lblMovie.Location = new System.Drawing.Point(64, 206);
+            this.lblMovie.Name = "lblMovie";
+            this.lblMovie.Size = new System.Drawing.Size(110, 40);
+            this.lblMovie.TabIndex = 65;
+            this.lblMovie.Text = "Movie:";
+            // 
+            // lblBooking
+            // 
+            this.lblBooking.AutoSize = true;
+            this.lblBooking.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblBooking.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBooking.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(51)))));
+            this.lblBooking.Location = new System.Drawing.Point(0, 0);
+            this.lblBooking.Name = "lblBooking";
+            this.lblBooking.Size = new System.Drawing.Size(206, 58);
+            this.lblBooking.TabIndex = 64;
+            this.lblBooking.Text = "Booking";
+            // 
+            // dtpDate
+            // 
+            this.dtpDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtpDate.CalendarFont = new System.Drawing.Font("Poppins", 10F);
+            this.dtpDate.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(51)))));
+            this.dtpDate.Font = new System.Drawing.Font("Poppins", 12F);
+            this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpDate.Location = new System.Drawing.Point(72, 126);
+            this.dtpDate.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
+            this.dtpDate.MinDate = new System.DateTime(2020, 9, 25, 0, 0, 0, 0);
+            this.dtpDate.Name = "dtpDate";
+            this.dtpDate.Size = new System.Drawing.Size(289, 37);
+            this.dtpDate.TabIndex = 81;
+            this.dtpDate.Value = new System.DateTime(2020, 9, 25, 10, 57, 48, 0);
+            // 
+            // lblUnavailable
+            // 
+            this.lblUnavailable.BackColor = System.Drawing.Color.Transparent;
+            this.lblUnavailable.Font = new System.Drawing.Font("Poppins", 12F);
+            this.lblUnavailable.Location = new System.Drawing.Point(890, 645);
+            this.lblUnavailable.Name = "lblUnavailable";
+            this.lblUnavailable.Size = new System.Drawing.Size(134, 35);
+            this.lblUnavailable.TabIndex = 83;
+            this.lblUnavailable.Text = "Unavailable";
+            // 
+            // btnDeleteBook
+            // 
+            this.btnDeleteBook.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDeleteBook.BackColor = System.Drawing.Color.Transparent;
+            this.btnDeleteBook.BackgroundImage = global::Watchers.Properties.Resources.ButtonLight;
+            this.btnDeleteBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteBook.Font = new System.Drawing.Font("Poppins", 14F);
+            this.btnDeleteBook.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteBook.Location = new System.Drawing.Point(378, 875);
+            this.btnDeleteBook.Name = "btnDeleteBook";
+            this.btnDeleteBook.Size = new System.Drawing.Size(270, 54);
+            this.btnDeleteBook.TabIndex = 86;
+            this.btnDeleteBook.Text = "Delete My Booking";
+            this.btnDeleteBook.UseVisualStyleBackColor = false;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCancel.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancel.BackgroundImage = global::Watchers.Properties.Resources.ButtonDark;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Poppins", 14F);
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.Location = new System.Drawing.Point(930, 875);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(270, 54);
+            this.btnCancel.TabIndex = 85;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            // 
+            // btnBook
+            // 
+            this.btnBook.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBook.BackColor = System.Drawing.Color.Transparent;
+            this.btnBook.BackgroundImage = global::Watchers.Properties.Resources.ButtonGrad;
+            this.btnBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBook.Font = new System.Drawing.Font("Poppins", 14F);
+            this.btnBook.ForeColor = System.Drawing.Color.White;
+            this.btnBook.Location = new System.Drawing.Point(654, 875);
+            this.btnBook.Name = "btnBook";
+            this.btnBook.Size = new System.Drawing.Size(270, 54);
+            this.btnBook.TabIndex = 84;
+            this.btnBook.Text = "Book Now";
+            this.btnBook.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Watchers.Properties.Resources.Unavailable;
+            this.pictureBox1.Location = new System.Drawing.Point(845, 639);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 82;
+            this.pictureBox1.TabStop = false;
+            // 
+            // imgSelected
+            // 
+            this.imgSelected.Image = global::Watchers.Properties.Resources.Booked;
+            this.imgSelected.Location = new System.Drawing.Point(675, 639);
+            this.imgSelected.Name = "imgSelected";
+            this.imgSelected.Size = new System.Drawing.Size(45, 46);
+            this.imgSelected.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgSelected.TabIndex = 78;
+            this.imgSelected.TabStop = false;
+            // 
+            // imgAvail
+            // 
+            this.imgAvail.Image = global::Watchers.Properties.Resources.Available;
+            this.imgAvail.Location = new System.Drawing.Point(502, 639);
+            this.imgAvail.Name = "imgAvail";
+            this.imgAvail.Size = new System.Drawing.Size(45, 46);
+            this.imgAvail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgAvail.TabIndex = 76;
+            this.imgAvail.TabStop = false;
+            // 
+            // imgMovie
+            // 
+            this.imgMovie.BackgroundImage = global::Watchers.Properties.Resources.Greyhound;
+            this.imgMovie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.imgMovie.Location = new System.Drawing.Point(72, 250);
+            this.imgMovie.Margin = new System.Windows.Forms.Padding(4);
+            this.imgMovie.Name = "imgMovie";
+            this.imgMovie.Size = new System.Drawing.Size(281, 415);
+            this.imgMovie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgMovie.TabIndex = 63;
+            this.imgMovie.TabStop = false;
             // 
             // btnE10
             // 
@@ -984,188 +1195,21 @@
             this.btnA1.TabIndex = 58;
             this.btnA1.UseVisualStyleBackColor = false;
             // 
-            // lblE
-            // 
-            this.lblE.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblE.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblE.Location = new System.Drawing.Point(469, 103);
-            this.lblE.Name = "lblE";
-            this.lblE.Size = new System.Drawing.Size(47, 57);
-            this.lblE.TabIndex = 5;
-            this.lblE.Text = "E";
-            this.lblE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblD
-            // 
-            this.lblD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblD.Location = new System.Drawing.Point(469, 171);
-            this.lblD.Name = "lblD";
-            this.lblD.Size = new System.Drawing.Size(47, 57);
-            this.lblD.TabIndex = 4;
-            this.lblD.Text = "D";
-            this.lblD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblC
-            // 
-            this.lblC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblC.Location = new System.Drawing.Point(469, 242);
-            this.lblC.Name = "lblC";
-            this.lblC.Size = new System.Drawing.Size(47, 57);
-            this.lblC.TabIndex = 3;
-            this.lblC.Text = "C";
-            this.lblC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblB
-            // 
-            this.lblB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblB.Location = new System.Drawing.Point(469, 311);
-            this.lblB.Name = "lblB";
-            this.lblB.Size = new System.Drawing.Size(47, 57);
-            this.lblB.TabIndex = 2;
-            this.lblB.Text = "B";
-            this.lblB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblA
-            // 
-            this.lblA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblA.Location = new System.Drawing.Point(469, 382);
-            this.lblA.Name = "lblA";
-            this.lblA.Size = new System.Drawing.Size(47, 57);
-            this.lblA.TabIndex = 1;
-            this.lblA.Text = "A";
-            this.lblA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pnlScrren
-            // 
-            this.pnlScrren.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlScrren.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pnlScrren.Controls.Add(this.lblScreen);
-            this.pnlScrren.Location = new System.Drawing.Point(16, 16);
-            this.pnlScrren.Name = "pnlScrren";
-            this.pnlScrren.Size = new System.Drawing.Size(500, 49);
-            this.pnlScrren.TabIndex = 0;
-            // 
-            // lblScreen
-            // 
-            this.lblScreen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblScreen.BackColor = System.Drawing.Color.Transparent;
-            this.lblScreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScreen.ForeColor = System.Drawing.Color.White;
-            this.lblScreen.Location = new System.Drawing.Point(199, 11);
-            this.lblScreen.Name = "lblScreen";
-            this.lblScreen.Size = new System.Drawing.Size(113, 29);
-            this.lblScreen.TabIndex = 41;
-            this.lblScreen.Text = "SCREEN";
-            // 
-            // lblCNum
-            // 
-            this.lblCNum.BackColor = System.Drawing.Color.Transparent;
-            this.lblCNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCNum.Location = new System.Drawing.Point(612, 136);
-            this.lblCNum.Name = "lblCNum";
-            this.lblCNum.Size = new System.Drawing.Size(100, 23);
-            this.lblCNum.TabIndex = 71;
-            this.lblCNum.Text = "Nr";
-            // 
-            // lblCinNum
-            // 
-            this.lblCinNum.BackColor = System.Drawing.Color.Transparent;
-            this.lblCinNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCinNum.Location = new System.Drawing.Point(442, 136);
-            this.lblCinNum.Name = "lblCinNum";
-            this.lblCinNum.Size = new System.Drawing.Size(160, 37);
-            this.lblCinNum.TabIndex = 70;
-            this.lblCinNum.Text = "Cinema Number: ";
-            // 
-            // lblDate
-            // 
-            this.lblDate.BackColor = System.Drawing.Color.Transparent;
-            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(58, 88);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(100, 23);
-            this.lblDate.TabIndex = 69;
-            this.lblDate.Text = "Date";
-            // 
-            // calDate
-            // 
-            this.calDate.BackColor = System.Drawing.Color.DimGray;
-            this.calDate.BorderRadius = 0;
-            this.calDate.ForeColor = System.Drawing.Color.White;
-            this.calDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.calDate.FormatCustom = null;
-            this.calDate.Location = new System.Drawing.Point(64, 115);
-            this.calDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.calDate.Name = "calDate";
-            this.calDate.Size = new System.Drawing.Size(289, 44);
-            this.calDate.TabIndex = 68;
-            this.calDate.Value = new System.DateTime(2020, 5, 2, 14, 15, 38, 997);
-            // 
-            // rtbDescription
-            // 
-            this.rtbDescription.BackColor = System.Drawing.Color.LightGray;
-            this.rtbDescription.Location = new System.Drawing.Point(72, 735);
-            this.rtbDescription.Name = "rtbDescription";
-            this.rtbDescription.Size = new System.Drawing.Size(289, 140);
-            this.rtbDescription.TabIndex = 67;
-            this.rtbDescription.Text = "";
-            // 
-            // ddMovie
-            // 
-            this.ddMovie.BackColor = System.Drawing.Color.DimGray;
-            this.ddMovie.BorderRadius = 3;
-            this.ddMovie.ForeColor = System.Drawing.Color.White;
-            this.ddMovie.Items = new string[] {
-        "Greyhound"};
-            this.ddMovie.Location = new System.Drawing.Point(63, 231);
-            this.ddMovie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.ddMovie.Name = "ddMovie";
-            this.ddMovie.NomalColor = System.Drawing.Color.DimGray;
-            this.ddMovie.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.ddMovie.selectedIndex = -1;
-            this.ddMovie.Size = new System.Drawing.Size(289, 43);
-            this.ddMovie.TabIndex = 66;
-            // 
-            // lblMovie
-            // 
-            this.lblMovie.BackColor = System.Drawing.Color.Transparent;
-            this.lblMovie.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMovie.Location = new System.Drawing.Point(58, 195);
-            this.lblMovie.Name = "lblMovie";
-            this.lblMovie.Size = new System.Drawing.Size(100, 23);
-            this.lblMovie.TabIndex = 65;
-            this.lblMovie.Text = "Movie";
-            // 
-            // lblBooking
-            // 
-            this.lblBooking.AutoSize = true;
-            this.lblBooking.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblBooking.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBooking.Location = new System.Drawing.Point(0, 0);
-            this.lblBooking.Name = "lblBooking";
-            this.lblBooking.Size = new System.Drawing.Size(206, 58);
-            this.lblBooking.TabIndex = 64;
-            this.lblBooking.Text = "Booking";
-            // 
             // tabBookings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnDeleteBook);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnBook);
+            this.Controls.Add(this.lblUnavailable);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.dtpDate);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblSelected);
             this.Controls.Add(this.imgSelected);
             this.Controls.Add(this.lblAvail);
             this.Controls.Add(this.imgAvail);
-            this.Controls.Add(this.pnlBookNow);
             this.Controls.Add(this.lblSeats);
             this.Controls.Add(this.imgMovie);
             this.Controls.Add(this.lblSeatNum);
@@ -1173,19 +1217,18 @@
             this.Controls.Add(this.lblCNum);
             this.Controls.Add(this.lblCinNum);
             this.Controls.Add(this.lblDate);
-            this.Controls.Add(this.calDate);
             this.Controls.Add(this.rtbDescription);
-            this.Controls.Add(this.ddMovie);
             this.Controls.Add(this.lblMovie);
             this.Controls.Add(this.lblBooking);
             this.Name = "tabBookings";
             this.Size = new System.Drawing.Size(1203, 941);
-            ((System.ComponentModel.ISupportInitialize)(this.imgSelected)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgAvail)).EndInit();
-            this.pnlBookNow.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imgMovie)).EndInit();
+            this.Load += new System.EventHandler(this.tabBookings_Load);
             this.pnlCinema.ResumeLayout(false);
             this.pnlScrren.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgSelected)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgAvail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgMovie)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1198,7 +1241,6 @@
         private System.Windows.Forms.PictureBox imgSelected;
         private System.Windows.Forms.Label lblAvail;
         private System.Windows.Forms.PictureBox imgAvail;
-        private ns1.BunifuGradientPanel pnlBookNow;
         private System.Windows.Forms.Label lblBookNow;
         private System.Windows.Forms.Label lblSeats;
         private System.Windows.Forms.PictureBox imgMovie;
@@ -1264,10 +1306,14 @@
         private System.Windows.Forms.Label lblCNum;
         private System.Windows.Forms.Label lblCinNum;
         private System.Windows.Forms.Label lblDate;
-        private ns1.BunifuDatepicker calDate;
         private System.Windows.Forms.RichTextBox rtbDescription;
-        private ns1.BunifuDropdown ddMovie;
         private System.Windows.Forms.Label lblMovie;
         private System.Windows.Forms.Label lblBooking;
+        private System.Windows.Forms.DateTimePicker dtpDate;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblUnavailable;
+        private System.Windows.Forms.Button btnBook;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnDeleteBook;
     }
 }

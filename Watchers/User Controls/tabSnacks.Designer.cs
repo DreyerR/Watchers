@@ -28,15 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tabSnacks));
             this.lblOrder = new System.Windows.Forms.Label();
-            this.lsbOrder = new System.Windows.Forms.ListBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.lblDrink = new System.Windows.Forms.Label();
             this.lblSweet = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlSweets = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -50,7 +48,7 @@
             this.btnWhispers = new System.Windows.Forms.Button();
             this.btnAstro = new System.Windows.Forms.Button();
             this.lblPopcorn = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlPopcorn = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblSmlPopPrice = new System.Windows.Forms.Label();
@@ -58,10 +56,8 @@
             this.btnSmlPopcorn = new System.Windows.Forms.Button();
             this.btnMedPopcorn = new System.Windows.Forms.Button();
             this.lblSnackOrder = new System.Windows.Forms.Label();
-            this.pnlLogin = new System.Windows.Forms.Panel();
-            this.lblClearOrder = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.pnlDrinks = new System.Windows.Forms.Panel();
             this.btnITLemon = new System.Windows.Forms.Button();
             this.btnSmlDrink = new System.Windows.Forms.Button();
             this.btnWater = new System.Windows.Forms.Button();
@@ -75,19 +71,20 @@
             this.btnFanta = new System.Windows.Forms.Button();
             this.btnSprite = new System.Windows.Forms.Button();
             this.btnCoke = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pnlExit = new System.Windows.Forms.Panel();
-            this.lblSkipOrder = new System.Windows.Forms.Label();
-            this.pnlRegister = new ns1.BunifuGradientPanel();
+            this.pnlButtons = new System.Windows.Forms.Panel();
+            this.btnSkipOrder = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.btnPlaceOrder = new System.Windows.Forms.Button();
+            this.pnlOrder = new System.Windows.Forms.Panel();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.lsbOrder = new System.Windows.Forms.ListBox();
             this.lblPlaceOrder = new System.Windows.Forms.Label();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.pnlLogin.SuspendLayout();
+            this.pnlSweets.SuspendLayout();
+            this.pnlPopcorn.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.pnlExit.SuspendLayout();
-            this.pnlRegister.SuspendLayout();
+            this.pnlDrinks.SuspendLayout();
+            this.pnlButtons.SuspendLayout();
+            this.pnlOrder.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblOrder
@@ -101,16 +98,6 @@
             this.lblOrder.TabIndex = 61;
             this.lblOrder.Text = "ORDER";
             this.lblOrder.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lsbOrder
-            // 
-            this.lsbOrder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.lsbOrder.FormattingEnabled = true;
-            this.lsbOrder.ItemHeight = 16;
-            this.lsbOrder.Location = new System.Drawing.Point(687, 490);
-            this.lsbOrder.Name = "lsbOrder";
-            this.lsbOrder.Size = new System.Drawing.Size(447, 244);
-            this.lsbOrder.TabIndex = 0;
             // 
             // label11
             // 
@@ -152,19 +139,19 @@
             // 
             this.lblDrink.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblDrink.Font = new System.Drawing.Font("Poppins", 20F);
-            this.lblDrink.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
+            this.lblDrink.ForeColor = System.Drawing.Color.Black;
             this.lblDrink.Location = new System.Drawing.Point(610, 0);
             this.lblDrink.Name = "lblDrink";
             this.lblDrink.Size = new System.Drawing.Size(601, 50);
             this.lblDrink.TabIndex = 59;
-            this.lblDrink.Text = "DRINK";
+            this.lblDrink.Text = "DRINKS";
             this.lblDrink.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblSweet
             // 
             this.lblSweet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblSweet.Font = new System.Drawing.Font("Poppins", 20F);
-            this.lblSweet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
+            this.lblSweet.ForeColor = System.Drawing.Color.Black;
             this.lblSweet.Location = new System.Drawing.Point(3, 0);
             this.lblSweet.Name = "lblSweet";
             this.lblSweet.Size = new System.Drawing.Size(601, 50);
@@ -172,26 +159,26 @@
             this.lblSweet.Text = "SWEETS";
             this.lblSweet.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel2
+            // pnlSweets
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.btnWineGums);
-            this.panel2.Controls.Add(this.btnJellyBabies);
-            this.panel2.Controls.Add(this.btnNuts);
-            this.panel2.Controls.Add(this.btnChocolate);
-            this.panel2.Controls.Add(this.btnWhispers);
-            this.panel2.Controls.Add(this.btnAstro);
-            this.panel2.Location = new System.Drawing.Point(88, 53);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(430, 381);
-            this.panel2.TabIndex = 57;
+            this.pnlSweets.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.pnlSweets.BackColor = System.Drawing.Color.White;
+            this.pnlSweets.Controls.Add(this.label8);
+            this.pnlSweets.Controls.Add(this.label7);
+            this.pnlSweets.Controls.Add(this.label6);
+            this.pnlSweets.Controls.Add(this.label5);
+            this.pnlSweets.Controls.Add(this.label4);
+            this.pnlSweets.Controls.Add(this.label3);
+            this.pnlSweets.Controls.Add(this.btnWineGums);
+            this.pnlSweets.Controls.Add(this.btnJellyBabies);
+            this.pnlSweets.Controls.Add(this.btnNuts);
+            this.pnlSweets.Controls.Add(this.btnChocolate);
+            this.pnlSweets.Controls.Add(this.btnWhispers);
+            this.pnlSweets.Controls.Add(this.btnAstro);
+            this.pnlSweets.Location = new System.Drawing.Point(88, 53);
+            this.pnlSweets.Name = "pnlSweets";
+            this.pnlSweets.Size = new System.Drawing.Size(430, 381);
+            this.pnlSweets.TabIndex = 57;
             // 
             // label8
             // 
@@ -341,7 +328,7 @@
             // 
             this.lblPopcorn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblPopcorn.Font = new System.Drawing.Font("Poppins", 20F);
-            this.lblPopcorn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
+            this.lblPopcorn.ForeColor = System.Drawing.Color.Black;
             this.lblPopcorn.Location = new System.Drawing.Point(3, 437);
             this.lblPopcorn.Name = "lblPopcorn";
             this.lblPopcorn.Size = new System.Drawing.Size(601, 50);
@@ -349,20 +336,20 @@
             this.lblPopcorn.Text = "POPCORN";
             this.lblPopcorn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel1
+            // pnlPopcorn
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.lblSmlPopPrice);
-            this.panel1.Controls.Add(this.btnLrgPopcorn);
-            this.panel1.Controls.Add(this.btnSmlPopcorn);
-            this.panel1.Controls.Add(this.btnMedPopcorn);
-            this.panel1.Location = new System.Drawing.Point(88, 490);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(430, 256);
-            this.panel1.TabIndex = 54;
+            this.pnlPopcorn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.pnlPopcorn.BackColor = System.Drawing.Color.White;
+            this.pnlPopcorn.Controls.Add(this.label2);
+            this.pnlPopcorn.Controls.Add(this.label1);
+            this.pnlPopcorn.Controls.Add(this.lblSmlPopPrice);
+            this.pnlPopcorn.Controls.Add(this.btnLrgPopcorn);
+            this.pnlPopcorn.Controls.Add(this.btnSmlPopcorn);
+            this.pnlPopcorn.Controls.Add(this.btnMedPopcorn);
+            this.pnlPopcorn.Location = new System.Drawing.Point(88, 490);
+            this.pnlPopcorn.Name = "pnlPopcorn";
+            this.pnlPopcorn.Size = new System.Drawing.Size(430, 256);
+            this.pnlPopcorn.TabIndex = 54;
             // 
             // label2
             // 
@@ -441,49 +428,27 @@
             this.lblSnackOrder.AutoSize = true;
             this.lblSnackOrder.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblSnackOrder.Font = new System.Drawing.Font("Poppins", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSnackOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(51)))));
             this.lblSnackOrder.Location = new System.Drawing.Point(0, 0);
             this.lblSnackOrder.Name = "lblSnackOrder";
             this.lblSnackOrder.Size = new System.Drawing.Size(369, 88);
             this.lblSnackOrder.TabIndex = 53;
             this.lblSnackOrder.Text = "Snack Orders";
             // 
-            // pnlLogin
-            // 
-            this.pnlLogin.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.pnlLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
-            this.pnlLogin.Controls.Add(this.lblClearOrder);
-            this.pnlLogin.ForeColor = System.Drawing.Color.White;
-            this.pnlLogin.Location = new System.Drawing.Point(787, 24);
-            this.pnlLogin.Name = "pnlLogin";
-            this.pnlLogin.Size = new System.Drawing.Size(353, 69);
-            this.pnlLogin.TabIndex = 62;
-            // 
-            // lblClearOrder
-            // 
-            this.lblClearOrder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.lblClearOrder.BackColor = System.Drawing.Color.Transparent;
-            this.lblClearOrder.Font = new System.Drawing.Font("Poppins", 20F);
-            this.lblClearOrder.Location = new System.Drawing.Point(3, 0);
-            this.lblClearOrder.Name = "lblClearOrder";
-            this.lblClearOrder.Size = new System.Drawing.Size(353, 72);
-            this.lblClearOrder.TabIndex = 3;
-            this.lblClearOrder.Text = "Clear Order";
-            this.lblClearOrder.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.panel4, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.pnlDrinks, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.lblPopcorn, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.lsbOrder, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(this.panel1, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.panel2, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.pnlPopcorn, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.pnlSweets, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.lblSweet, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.lblDrink, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.lblOrder, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.panel3, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.pnlButtons, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.pnlOrder, 1, 3);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 88);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -496,30 +461,30 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1214, 849);
             this.tableLayoutPanel2.TabIndex = 67;
             // 
-            // panel4
+            // pnlDrinks
             // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.btnITLemon);
-            this.panel4.Controls.Add(this.btnSmlDrink);
-            this.panel4.Controls.Add(this.btnWater);
-            this.panel4.Controls.Add(this.btnFantaZero);
-            this.panel4.Controls.Add(this.btnMedDrink);
-            this.panel4.Controls.Add(this.btnLrgDrink);
-            this.panel4.Controls.Add(this.btnSpriteZero);
-            this.panel4.Controls.Add(this.label11);
-            this.panel4.Controls.Add(this.btnITPeach);
-            this.panel4.Controls.Add(this.btnCokeZero);
-            this.panel4.Controls.Add(this.btnCreamSoda);
-            this.panel4.Controls.Add(this.btnFanta);
-            this.panel4.Controls.Add(this.label9);
-            this.panel4.Controls.Add(this.label10);
-            this.panel4.Controls.Add(this.btnSprite);
-            this.panel4.Controls.Add(this.btnCoke);
-            this.panel4.Location = new System.Drawing.Point(685, 53);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(450, 381);
-            this.panel4.TabIndex = 56;
+            this.pnlDrinks.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.pnlDrinks.BackColor = System.Drawing.Color.White;
+            this.pnlDrinks.Controls.Add(this.btnITLemon);
+            this.pnlDrinks.Controls.Add(this.btnSmlDrink);
+            this.pnlDrinks.Controls.Add(this.btnWater);
+            this.pnlDrinks.Controls.Add(this.btnFantaZero);
+            this.pnlDrinks.Controls.Add(this.btnMedDrink);
+            this.pnlDrinks.Controls.Add(this.btnLrgDrink);
+            this.pnlDrinks.Controls.Add(this.btnSpriteZero);
+            this.pnlDrinks.Controls.Add(this.label11);
+            this.pnlDrinks.Controls.Add(this.btnITPeach);
+            this.pnlDrinks.Controls.Add(this.btnCokeZero);
+            this.pnlDrinks.Controls.Add(this.btnCreamSoda);
+            this.pnlDrinks.Controls.Add(this.btnFanta);
+            this.pnlDrinks.Controls.Add(this.label9);
+            this.pnlDrinks.Controls.Add(this.label10);
+            this.pnlDrinks.Controls.Add(this.btnSprite);
+            this.pnlDrinks.Controls.Add(this.btnCoke);
+            this.pnlDrinks.Location = new System.Drawing.Point(685, 53);
+            this.pnlDrinks.Name = "pnlDrinks";
+            this.pnlDrinks.Size = new System.Drawing.Size(450, 381);
+            this.pnlDrinks.TabIndex = 56;
             // 
             // btnITLemon
             // 
@@ -677,72 +642,106 @@
             this.btnCoke.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnCoke.UseVisualStyleBackColor = true;
             // 
-            // panel3
+            // pnlButtons
             // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel2.SetColumnSpan(this.panel3, 2);
-            this.panel3.Controls.Add(this.pnlLogin);
-            this.panel3.Controls.Add(this.pnlExit);
-            this.panel3.Controls.Add(this.pnlRegister);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(3, 752);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1208, 97);
-            this.panel3.TabIndex = 62;
+            this.pnlButtons.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel2.SetColumnSpan(this.pnlButtons, 2);
+            this.pnlButtons.Controls.Add(this.btnSkipOrder);
+            this.pnlButtons.Controls.Add(this.btnBack);
+            this.pnlButtons.Controls.Add(this.btnPlaceOrder);
+            this.pnlButtons.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlButtons.Location = new System.Drawing.Point(3, 752);
+            this.pnlButtons.Name = "pnlButtons";
+            this.pnlButtons.Size = new System.Drawing.Size(1208, 97);
+            this.pnlButtons.TabIndex = 62;
             // 
-            // pnlExit
+            // btnSkipOrder
             // 
-            this.pnlExit.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.pnlExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.pnlExit.Controls.Add(this.lblSkipOrder);
-            this.pnlExit.ForeColor = System.Drawing.Color.White;
-            this.pnlExit.Location = new System.Drawing.Point(73, 25);
-            this.pnlExit.Name = "pnlExit";
-            this.pnlExit.Size = new System.Drawing.Size(349, 69);
-            this.pnlExit.TabIndex = 63;
+            this.btnSkipOrder.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnSkipOrder.BackColor = System.Drawing.Color.Transparent;
+            this.btnSkipOrder.BackgroundImage = global::Watchers.Properties.Resources.ButtonLight;
+            this.btnSkipOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSkipOrder.Font = new System.Drawing.Font("Poppins", 16F);
+            this.btnSkipOrder.ForeColor = System.Drawing.Color.White;
+            this.btnSkipOrder.Location = new System.Drawing.Point(148, 21);
+            this.btnSkipOrder.Name = "btnSkipOrder";
+            this.btnSkipOrder.Size = new System.Drawing.Size(270, 54);
+            this.btnSkipOrder.TabIndex = 97;
+            this.btnSkipOrder.Text = "Skip Order";
+            this.btnSkipOrder.UseVisualStyleBackColor = false;
             // 
-            // lblSkipOrder
+            // btnBack
             // 
-            this.lblSkipOrder.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.lblSkipOrder.BackColor = System.Drawing.Color.Transparent;
-            this.lblSkipOrder.Font = new System.Drawing.Font("Poppins", 20F);
-            this.lblSkipOrder.Location = new System.Drawing.Point(0, -1);
-            this.lblSkipOrder.Name = "lblSkipOrder";
-            this.lblSkipOrder.Size = new System.Drawing.Size(349, 69);
-            this.lblSkipOrder.TabIndex = 2;
-            this.lblSkipOrder.Text = "Skip Order";
-            this.lblSkipOrder.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSkipOrder.Click += new System.EventHandler(this.lblSkipOrder_Click);
+            this.btnBack.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.BackgroundImage = global::Watchers.Properties.Resources.ButtonDark;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Poppins", 16F);
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Location = new System.Drawing.Point(783, 21);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(270, 54);
+            this.btnBack.TabIndex = 96;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
             // 
-            // pnlRegister
+            // btnPlaceOrder
             // 
-            this.pnlRegister.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.pnlRegister.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlRegister.BackgroundImage")));
-            this.pnlRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlRegister.Controls.Add(this.lblPlaceOrder);
-            this.pnlRegister.ForeColor = System.Drawing.Color.White;
-            this.pnlRegister.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
-            this.pnlRegister.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.pnlRegister.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
-            this.pnlRegister.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.pnlRegister.Location = new System.Drawing.Point(428, 25);
-            this.pnlRegister.Name = "pnlRegister";
-            this.pnlRegister.Quality = 10;
-            this.pnlRegister.Size = new System.Drawing.Size(353, 69);
-            this.pnlRegister.TabIndex = 64;
+            this.btnPlaceOrder.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnPlaceOrder.BackColor = System.Drawing.Color.Transparent;
+            this.btnPlaceOrder.BackgroundImage = global::Watchers.Properties.Resources.ButtonGrad;
+            this.btnPlaceOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPlaceOrder.Font = new System.Drawing.Font("Poppins", 16F);
+            this.btnPlaceOrder.ForeColor = System.Drawing.Color.White;
+            this.btnPlaceOrder.Location = new System.Drawing.Point(464, 21);
+            this.btnPlaceOrder.Name = "btnPlaceOrder";
+            this.btnPlaceOrder.Size = new System.Drawing.Size(270, 54);
+            this.btnPlaceOrder.TabIndex = 95;
+            this.btnPlaceOrder.Text = "Place Order";
+            this.btnPlaceOrder.UseVisualStyleBackColor = false;
+            // 
+            // pnlOrder
+            // 
+            this.pnlOrder.Controls.Add(this.btnClear);
+            this.pnlOrder.Controls.Add(this.lsbOrder);
+            this.pnlOrder.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlOrder.Location = new System.Drawing.Point(610, 490);
+            this.pnlOrder.Name = "pnlOrder";
+            this.pnlOrder.Size = new System.Drawing.Size(601, 256);
+            this.pnlOrder.TabIndex = 63;
+            // 
+            // btnClear
+            // 
+            this.btnClear.BackColor = System.Drawing.Color.Transparent;
+            this.btnClear.BackgroundImage = global::Watchers.Properties.Resources.ButtonLight;
+            this.btnClear.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear.Font = new System.Drawing.Font("Poppins", 16F);
+            this.btnClear.ForeColor = System.Drawing.Color.White;
+            this.btnClear.Location = new System.Drawing.Point(0, 202);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(601, 54);
+            this.btnClear.TabIndex = 98;
+            this.btnClear.Text = "Clear Order";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // lsbOrder
+            // 
+            this.lsbOrder.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lsbOrder.FormattingEnabled = true;
+            this.lsbOrder.ItemHeight = 16;
+            this.lsbOrder.Location = new System.Drawing.Point(0, 0);
+            this.lsbOrder.Name = "lsbOrder";
+            this.lsbOrder.Size = new System.Drawing.Size(601, 196);
+            this.lsbOrder.TabIndex = 1;
             // 
             // lblPlaceOrder
             // 
-            this.lblPlaceOrder.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.lblPlaceOrder.BackColor = System.Drawing.Color.Transparent;
-            this.lblPlaceOrder.Font = new System.Drawing.Font("Poppins", 20F);
             this.lblPlaceOrder.Location = new System.Drawing.Point(0, 0);
             this.lblPlaceOrder.Name = "lblPlaceOrder";
-            this.lblPlaceOrder.Size = new System.Drawing.Size(353, 72);
-            this.lblPlaceOrder.TabIndex = 6;
-            this.lblPlaceOrder.Text = "Place Order";
-            this.lblPlaceOrder.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblPlaceOrder.Click += new System.EventHandler(this.lblPlaceOrder_Click);
+            this.lblPlaceOrder.Size = new System.Drawing.Size(100, 23);
+            this.lblPlaceOrder.TabIndex = 0;
             // 
             // tabSnacks
             // 
@@ -752,14 +751,12 @@
             this.Controls.Add(this.lblSnackOrder);
             this.Name = "tabSnacks";
             this.Size = new System.Drawing.Size(1214, 937);
-            this.panel2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.pnlLogin.ResumeLayout(false);
+            this.pnlSweets.ResumeLayout(false);
+            this.pnlPopcorn.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.pnlExit.ResumeLayout(false);
-            this.pnlRegister.ResumeLayout(false);
+            this.pnlDrinks.ResumeLayout(false);
+            this.pnlButtons.ResumeLayout(false);
+            this.pnlOrder.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -768,7 +765,6 @@
         #endregion
 
         private System.Windows.Forms.Label lblOrder;
-        private System.Windows.Forms.ListBox lsbOrder;
         private System.Windows.Forms.Button btnITLemon;
         private System.Windows.Forms.Button btnFantaZero;
         private System.Windows.Forms.Button btnWater;
@@ -787,7 +783,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label lblDrink;
         private System.Windows.Forms.Label lblSweet;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnlSweets;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -801,7 +797,7 @@
         private System.Windows.Forms.Button btnWhispers;
         private System.Windows.Forms.Button btnAstro;
         private System.Windows.Forms.Label lblPopcorn;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlPopcorn;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblSmlPopPrice;
@@ -809,14 +805,15 @@
         private System.Windows.Forms.Button btnSmlPopcorn;
         private System.Windows.Forms.Button btnMedPopcorn;
         private System.Windows.Forms.Label lblSnackOrder;
-        private System.Windows.Forms.Panel pnlLogin;
-        private ns1.BunifuGradientPanel pnlRegister;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label lblClearOrder;
+        private System.Windows.Forms.Panel pnlDrinks;
         private System.Windows.Forms.Label lblPlaceOrder;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel pnlExit;
-        private System.Windows.Forms.Label lblSkipOrder;
+        private System.Windows.Forms.Panel pnlButtons;
+        private System.Windows.Forms.Button btnSkipOrder;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnPlaceOrder;
+        private System.Windows.Forms.Panel pnlOrder;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.ListBox lsbOrder;
     }
 }

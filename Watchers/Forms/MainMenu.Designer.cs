@@ -30,175 +30,155 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
             this.pnlBack = new System.Windows.Forms.Panel();
-            this.pnlMainMenu = new ns1.BunifuGradientPanel();
-            this.btnCheckOut = new System.Windows.Forms.Button();
-            this.btnAccountMM = new System.Windows.Forms.Button();
-            this.btnLogOutMM = new System.Windows.Forms.Button();
-            this.btnBookingsMM = new System.Windows.Forms.Button();
-            this.btnSnacksMM = new System.Windows.Forms.Button();
-            this.btnMoviesMM = new System.Windows.Forms.Button();
-            this.imgLogoMM = new System.Windows.Forms.PictureBox();
+            this.pnlMenuBar = new System.Windows.Forms.Panel();
             this.btnAdmin = new System.Windows.Forms.Button();
-            this.pnlMainMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgLogoMM)).BeginInit();
+            this.btnAccount = new System.Windows.Forms.Button();
+            this.btnLogOut = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnMovies = new System.Windows.Forms.Button();
+            this.btnBookings = new System.Windows.Forms.Button();
+            this.btnSnacks = new System.Windows.Forms.Button();
+            this.btnCheckOut = new System.Windows.Forms.Button();
+            this.pnlBack.SuspendLayout();
+            this.pnlMenuBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlBack
             // 
             this.pnlBack.AutoScroll = true;
             this.pnlBack.BackColor = System.Drawing.Color.Transparent;
+            this.pnlBack.Controls.Add(this.pnlMenuBar);
             this.pnlBack.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlBack.Location = new System.Drawing.Point(254, 0);
+            this.pnlBack.Location = new System.Drawing.Point(0, 0);
             this.pnlBack.Name = "pnlBack";
-            this.pnlBack.Size = new System.Drawing.Size(1428, 903);
+            this.pnlBack.Size = new System.Drawing.Size(1682, 903);
             this.pnlBack.TabIndex = 35;
             // 
-            // pnlMainMenu
+            // pnlMenuBar
             // 
-            this.pnlMainMenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlMainMenu.BackgroundImage")));
-            this.pnlMainMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlMainMenu.Controls.Add(this.btnAdmin);
-            this.pnlMainMenu.Controls.Add(this.btnCheckOut);
-            this.pnlMainMenu.Controls.Add(this.btnAccountMM);
-            this.pnlMainMenu.Controls.Add(this.btnLogOutMM);
-            this.pnlMainMenu.Controls.Add(this.btnBookingsMM);
-            this.pnlMainMenu.Controls.Add(this.btnSnacksMM);
-            this.pnlMainMenu.Controls.Add(this.btnMoviesMM);
-            this.pnlMainMenu.Controls.Add(this.imgLogoMM);
-            this.pnlMainMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlMainMenu.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
-            this.pnlMainMenu.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.pnlMainMenu.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.pnlMainMenu.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
-            this.pnlMainMenu.Location = new System.Drawing.Point(0, 0);
-            this.pnlMainMenu.Name = "pnlMainMenu";
-            this.pnlMainMenu.Quality = 10;
-            this.pnlMainMenu.Size = new System.Drawing.Size(254, 903);
-            this.pnlMainMenu.TabIndex = 34;
-            // 
-            // btnCheckOut
-            // 
-            this.btnCheckOut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCheckOut.BackColor = System.Drawing.Color.Transparent;
-            this.btnCheckOut.FlatAppearance.BorderSize = 0;
-            this.btnCheckOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCheckOut.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheckOut.ForeColor = System.Drawing.Color.White;
-            this.btnCheckOut.Location = new System.Drawing.Point(1, 421);
-            this.btnCheckOut.Name = "btnCheckOut";
-            this.btnCheckOut.Size = new System.Drawing.Size(251, 49);
-            this.btnCheckOut.TabIndex = 22;
-            this.btnCheckOut.Text = "Check Out";
-            this.btnCheckOut.UseVisualStyleBackColor = false;
-            this.btnCheckOut.Click += new System.EventHandler(this.btnCheckOut_Click);
-            // 
-            // btnAccountMM
-            // 
-            this.btnAccountMM.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAccountMM.BackColor = System.Drawing.Color.Transparent;
-            this.btnAccountMM.FlatAppearance.BorderSize = 0;
-            this.btnAccountMM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAccountMM.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAccountMM.ForeColor = System.Drawing.Color.White;
-            this.btnAccountMM.Location = new System.Drawing.Point(3, 775);
-            this.btnAccountMM.Name = "btnAccountMM";
-            this.btnAccountMM.Size = new System.Drawing.Size(251, 49);
-            this.btnAccountMM.TabIndex = 21;
-            this.btnAccountMM.Text = "Account";
-            this.btnAccountMM.UseVisualStyleBackColor = false;
-            this.btnAccountMM.Click += new System.EventHandler(this.btnAccountMM_Click);
-            // 
-            // btnLogOutMM
-            // 
-            this.btnLogOutMM.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLogOutMM.BackColor = System.Drawing.Color.Transparent;
-            this.btnLogOutMM.FlatAppearance.BorderSize = 0;
-            this.btnLogOutMM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogOutMM.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogOutMM.ForeColor = System.Drawing.Color.White;
-            this.btnLogOutMM.Location = new System.Drawing.Point(3, 830);
-            this.btnLogOutMM.Name = "btnLogOutMM";
-            this.btnLogOutMM.Size = new System.Drawing.Size(251, 49);
-            this.btnLogOutMM.TabIndex = 20;
-            this.btnLogOutMM.Text = "Log out";
-            this.btnLogOutMM.UseVisualStyleBackColor = false;
-            this.btnLogOutMM.Click += new System.EventHandler(this.btnLogOutMM_Click);
-            // 
-            // btnBookingsMM
-            // 
-            this.btnBookingsMM.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBookingsMM.BackColor = System.Drawing.Color.Transparent;
-            this.btnBookingsMM.FlatAppearance.BorderSize = 0;
-            this.btnBookingsMM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBookingsMM.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBookingsMM.ForeColor = System.Drawing.Color.White;
-            this.btnBookingsMM.Location = new System.Drawing.Point(3, 176);
-            this.btnBookingsMM.Name = "btnBookingsMM";
-            this.btnBookingsMM.Size = new System.Drawing.Size(251, 49);
-            this.btnBookingsMM.TabIndex = 19;
-            this.btnBookingsMM.Text = "Bookings";
-            this.btnBookingsMM.UseVisualStyleBackColor = false;
-            this.btnBookingsMM.Click += new System.EventHandler(this.btnBookingsMM_Click);
-            // 
-            // btnSnacksMM
-            // 
-            this.btnSnacksMM.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSnacksMM.BackColor = System.Drawing.Color.Transparent;
-            this.btnSnacksMM.FlatAppearance.BorderSize = 0;
-            this.btnSnacksMM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSnacksMM.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSnacksMM.ForeColor = System.Drawing.Color.White;
-            this.btnSnacksMM.Location = new System.Drawing.Point(3, 231);
-            this.btnSnacksMM.Name = "btnSnacksMM";
-            this.btnSnacksMM.Size = new System.Drawing.Size(251, 49);
-            this.btnSnacksMM.TabIndex = 18;
-            this.btnSnacksMM.Text = "Snacks";
-            this.btnSnacksMM.UseVisualStyleBackColor = false;
-            this.btnSnacksMM.Click += new System.EventHandler(this.btnSnacksMM_Click);
-            // 
-            // btnMoviesMM
-            // 
-            this.btnMoviesMM.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMoviesMM.BackColor = System.Drawing.Color.Transparent;
-            this.btnMoviesMM.FlatAppearance.BorderSize = 0;
-            this.btnMoviesMM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMoviesMM.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMoviesMM.ForeColor = System.Drawing.Color.White;
-            this.btnMoviesMM.Location = new System.Drawing.Point(3, 130);
-            this.btnMoviesMM.Name = "btnMoviesMM";
-            this.btnMoviesMM.Size = new System.Drawing.Size(251, 49);
-            this.btnMoviesMM.TabIndex = 17;
-            this.btnMoviesMM.Text = "Movies";
-            this.btnMoviesMM.UseVisualStyleBackColor = false;
-            this.btnMoviesMM.Click += new System.EventHandler(this.btnMoviesMM_Click);
-            // 
-            // imgLogoMM
-            // 
-            this.imgLogoMM.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.imgLogoMM.BackColor = System.Drawing.Color.Transparent;
-            this.imgLogoMM.Image = global::Watchers.Properties.Resources.Watchers2;
-            this.imgLogoMM.Location = new System.Drawing.Point(1, 3);
-            this.imgLogoMM.Name = "imgLogoMM";
-            this.imgLogoMM.Size = new System.Drawing.Size(251, 123);
-            this.imgLogoMM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgLogoMM.TabIndex = 16;
-            this.imgLogoMM.TabStop = false;
+            this.pnlMenuBar.BackgroundImage = global::Watchers.Properties.Resources.PanelGrad;
+            this.pnlMenuBar.Controls.Add(this.btnCheckOut);
+            this.pnlMenuBar.Controls.Add(this.btnSnacks);
+            this.pnlMenuBar.Controls.Add(this.btnBookings);
+            this.pnlMenuBar.Controls.Add(this.btnMovies);
+            this.pnlMenuBar.Controls.Add(this.pictureBox1);
+            this.pnlMenuBar.Controls.Add(this.btnLogOut);
+            this.pnlMenuBar.Controls.Add(this.btnAccount);
+            this.pnlMenuBar.Controls.Add(this.btnAdmin);
+            this.pnlMenuBar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlMenuBar.Location = new System.Drawing.Point(0, 0);
+            this.pnlMenuBar.Name = "pnlMenuBar";
+            this.pnlMenuBar.Size = new System.Drawing.Size(254, 903);
+            this.pnlMenuBar.TabIndex = 0;
             // 
             // btnAdmin
             // 
-            this.btnAdmin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAdmin.BackColor = System.Drawing.Color.Transparent;
             this.btnAdmin.FlatAppearance.BorderSize = 0;
             this.btnAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdmin.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdmin.Font = new System.Drawing.Font("Poppins", 12F);
             this.btnAdmin.ForeColor = System.Drawing.Color.White;
-            this.btnAdmin.Location = new System.Drawing.Point(3, 626);
+            this.btnAdmin.Location = new System.Drawing.Point(3, 782);
             this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Size = new System.Drawing.Size(251, 49);
-            this.btnAdmin.TabIndex = 23;
-            this.btnAdmin.Text = "Admin";
-            this.btnAdmin.UseVisualStyleBackColor = false;
+            this.btnAdmin.Size = new System.Drawing.Size(251, 42);
+            this.btnAdmin.TabIndex = 0;
+            this.btnAdmin.Text = "ADMIN";
+            this.btnAdmin.UseVisualStyleBackColor = true;
             this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
+            // 
+            // btnAccount
+            // 
+            this.btnAccount.FlatAppearance.BorderSize = 0;
+            this.btnAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAccount.Font = new System.Drawing.Font("Poppins", 12F);
+            this.btnAccount.ForeColor = System.Drawing.Color.White;
+            this.btnAccount.Location = new System.Drawing.Point(3, 821);
+            this.btnAccount.Name = "btnAccount";
+            this.btnAccount.Size = new System.Drawing.Size(251, 42);
+            this.btnAccount.TabIndex = 1;
+            this.btnAccount.Text = "ACCOUNT";
+            this.btnAccount.UseVisualStyleBackColor = true;
+            this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
+            // 
+            // btnLogOut
+            // 
+            this.btnLogOut.FlatAppearance.BorderSize = 0;
+            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogOut.Font = new System.Drawing.Font("Poppins", 12F);
+            this.btnLogOut.ForeColor = System.Drawing.Color.White;
+            this.btnLogOut.Location = new System.Drawing.Point(0, 861);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(251, 42);
+            this.btnLogOut.TabIndex = 2;
+            this.btnLogOut.Text = "LOG OUT";
+            this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Watchers.Properties.Resources.Watchers2;
+            this.pictureBox1.Location = new System.Drawing.Point(1, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(251, 132);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnMovies
+            // 
+            this.btnMovies.FlatAppearance.BorderSize = 0;
+            this.btnMovies.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMovies.Font = new System.Drawing.Font("Poppins", 12F);
+            this.btnMovies.ForeColor = System.Drawing.Color.White;
+            this.btnMovies.Location = new System.Drawing.Point(2, 153);
+            this.btnMovies.Name = "btnMovies";
+            this.btnMovies.Size = new System.Drawing.Size(251, 42);
+            this.btnMovies.TabIndex = 3;
+            this.btnMovies.Text = "MOVIES";
+            this.btnMovies.UseVisualStyleBackColor = true;
+            this.btnMovies.Click += new System.EventHandler(this.btnMovies_Click);
+            // 
+            // btnBookings
+            // 
+            this.btnBookings.FlatAppearance.BorderSize = 0;
+            this.btnBookings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBookings.Font = new System.Drawing.Font("Poppins", 12F);
+            this.btnBookings.ForeColor = System.Drawing.Color.White;
+            this.btnBookings.Location = new System.Drawing.Point(1, 201);
+            this.btnBookings.Name = "btnBookings";
+            this.btnBookings.Size = new System.Drawing.Size(251, 42);
+            this.btnBookings.TabIndex = 4;
+            this.btnBookings.Text = "BOOKINGS";
+            this.btnBookings.UseVisualStyleBackColor = true;
+            this.btnBookings.Click += new System.EventHandler(this.btnBookings_Click);
+            // 
+            // btnSnacks
+            // 
+            this.btnSnacks.FlatAppearance.BorderSize = 0;
+            this.btnSnacks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSnacks.Font = new System.Drawing.Font("Poppins", 12F);
+            this.btnSnacks.ForeColor = System.Drawing.Color.White;
+            this.btnSnacks.Location = new System.Drawing.Point(1, 248);
+            this.btnSnacks.Name = "btnSnacks";
+            this.btnSnacks.Size = new System.Drawing.Size(251, 42);
+            this.btnSnacks.TabIndex = 5;
+            this.btnSnacks.Text = "SNACKS";
+            this.btnSnacks.UseVisualStyleBackColor = true;
+            this.btnSnacks.Click += new System.EventHandler(this.btnSnacks_Click);
+            // 
+            // btnCheckOut
+            // 
+            this.btnCheckOut.FlatAppearance.BorderSize = 0;
+            this.btnCheckOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCheckOut.Font = new System.Drawing.Font("Poppins", 12F);
+            this.btnCheckOut.ForeColor = System.Drawing.Color.White;
+            this.btnCheckOut.Location = new System.Drawing.Point(1, 296);
+            this.btnCheckOut.Name = "btnCheckOut";
+            this.btnCheckOut.Size = new System.Drawing.Size(251, 42);
+            this.btnCheckOut.TabIndex = 6;
+            this.btnCheckOut.Text = "CHECK OUT";
+            this.btnCheckOut.UseVisualStyleBackColor = true;
+            this.btnCheckOut.Click += new System.EventHandler(this.btnCheckOut_Click);
             // 
             // MainMenu
             // 
@@ -208,28 +188,29 @@
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(1682, 903);
             this.Controls.Add(this.pnlBack);
-            this.Controls.Add(this.pnlMainMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1700, 950);
             this.Name = "MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainMenu";
-            this.pnlMainMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imgLogoMM)).EndInit();
+            this.Load += new System.EventHandler(this.MainMenu_Load);
+            this.pnlBack.ResumeLayout(false);
+            this.pnlMenuBar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private ns1.BunifuGradientPanel pnlMainMenu;
-        private System.Windows.Forms.Button btnAccountMM;
-        private System.Windows.Forms.Button btnLogOutMM;
-        private System.Windows.Forms.Button btnBookingsMM;
-        private System.Windows.Forms.Button btnSnacksMM;
-        private System.Windows.Forms.Button btnMoviesMM;
-        private System.Windows.Forms.PictureBox imgLogoMM;
         private System.Windows.Forms.Panel pnlBack;
-        private System.Windows.Forms.Button btnCheckOut;
+        private System.Windows.Forms.Panel pnlMenuBar;
         private System.Windows.Forms.Button btnAdmin;
+        private System.Windows.Forms.Button btnAccount;
+        private System.Windows.Forms.Button btnLogOut;
+        private System.Windows.Forms.Button btnMovies;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnCheckOut;
+        private System.Windows.Forms.Button btnSnacks;
+        private System.Windows.Forms.Button btnBookings;
     }
 }

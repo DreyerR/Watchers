@@ -17,44 +17,14 @@ namespace Watchers
             InitializeComponent();
         }
 
-        private void pnlExit_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lblExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void pnlLogin_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lblLogin_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
             frmLogin login = new frmLogin();
             //this.Close();
             login.ShowDialog();
         }
 
-        private void imgLogoWel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void imgGradientWel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pnlRegister_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lblRegisterNow_Click(object sender, EventArgs e)
+        private void btnRegister_Click(object sender, EventArgs e)
         {
             Register register = new Register();
             //this.Close();

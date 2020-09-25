@@ -31,19 +31,9 @@ namespace Watchers
             InitializeComponent();
         }
 
-        private void lblClearOrder_Click(object sender, EventArgs e)
+        private void btnClear_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void lblSkipOrder_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblPlaceOrder_Click(object sender, EventArgs e)
-        {
-
+            lsbOrder.Items.Clear();
         }
     }
 }

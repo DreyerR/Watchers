@@ -123,9 +123,29 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ButtonDark {
+            get {
+                object obj = ResourceManager.GetObject("ButtonDark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ButtonGrad {
             get {
                 object obj = ResourceManager.GetObject("ButtonGrad", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ButtonLight {
+            get {
+                object obj = ResourceManager.GetObject("ButtonLight", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -383,6 +403,16 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap PanelGrad {
+            get {
+                object obj = ResourceManager.GetObject("PanelGrad", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap PopcornLrg {
             get {
                 object obj = ResourceManager.GetObject("PopcornLrg", resourceCulture);
@@ -446,6 +476,16 @@ namespace Watchers.Properties {
         internal static System.Drawing.Bitmap SpriteZero {
             get {
                 object obj = ResourceManager.GetObject("SpriteZero", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Unavailable {
+            get {
+                object obj = ResourceManager.GetObject("Unavailable", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

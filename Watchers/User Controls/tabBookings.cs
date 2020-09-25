@@ -27,9 +27,20 @@ namespace Watchers
             }
         }
 
+        //public void SetMyCustomFormat()
+        //{
+        //    dtpDate.Format = DateTimePickerFormat.Custom;
+        //    dtpDate.CustomFormat = "MMMM dd, yyyy";
+        //}
+
         public tabBookings()
         {
             InitializeComponent();
+        }
+
+        private void tabBookings_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

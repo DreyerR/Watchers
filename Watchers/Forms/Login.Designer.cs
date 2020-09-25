@@ -75,6 +75,7 @@
             // 
             // txtUsername
             // 
+            this.txtUsername.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtUsername.Font = new System.Drawing.Font("Poppins", 16F);
             this.txtUsername.Location = new System.Drawing.Point(322, 362);
             this.txtUsername.Name = "txtUsername";
@@ -83,17 +84,19 @@
             // 
             // txtPassword
             // 
+            this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPassword.Font = new System.Drawing.Font("Poppins", 16F);
             this.txtPassword.Location = new System.Drawing.Point(322, 469);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(422, 47);
             this.txtPassword.TabIndex = 28;
             // 
             // btnLogin
             // 
+            this.btnLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLogin.BackColor = System.Drawing.Color.Transparent;
             this.btnLogin.BackgroundImage = global::Watchers.Properties.Resources.ButtonGrad;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Poppins", 16F);
             this.btnLogin.ForeColor = System.Drawing.Color.White;
             this.btnLogin.Location = new System.Drawing.Point(397, 611);
@@ -129,6 +132,7 @@
             // 
             // lblPassword
             // 
+            this.lblPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPassword.Font = new System.Drawing.Font("Poppins", 16F);
             this.lblPassword.Location = new System.Drawing.Point(317, 428);
             this.lblPassword.Name = "lblPassword";
@@ -138,6 +142,7 @@
             // 
             // lblEmail
             // 
+            this.lblEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblEmail.Font = new System.Drawing.Font("Poppins", 16F);
             this.lblEmail.Location = new System.Drawing.Point(317, 324);
             this.lblEmail.Name = "lblEmail";

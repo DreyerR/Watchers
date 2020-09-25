@@ -118,14 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pnlRegister.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAB6SURBVChTfc6hEoJQFEVR/ulli4VikSBBAxYLhWKxWCRI
-        oVj42uM+zDwCAzfstuaeW2hK0o9G+tKH3vSiJ3XUJhULGmgH6WGYUU87SHfDYG5GDV0NI8QlI10MI3Qj
-        kM6GEaoJpJNhhCoCqTTceDzPZaSj4cbja6RD0h/maATxwbLSAwAAAABJRU5ErkJggg==
-</value>
-  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAAG0AAAEAIADIwQEAFgAAACgAAAAAAQAA2gAAAAEAIAAAAAAAALQBACMuAAAjLgAAAAAAAAAA

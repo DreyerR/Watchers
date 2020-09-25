@@ -53,24 +53,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppConstants.cs" />
-    <Compile Include="Forms\Accounts.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Accounts.Designer.cs">
-      <DependentUpon>Accounts.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Bookings.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Bookings.Designer.cs">
-      <DependentUpon>Bookings.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Checkout.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Checkout.Designer.cs">
-      <DependentUpon>Checkout.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,15 +117,6 @@
       <DependentUpon>tabSnacks.cs</DependentUpon>
     </Compile>
     <Compile Include="Webservice\Api.cs" />
-    <EmbeddedResource Include="Forms\Accounts.resx">
-      <DependentUpon>Accounts.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Bookings.resx">
-      <DependentUpon>Bookings.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Checkout.resx">
-      <DependentUpon>Checkout.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -329,6 +302,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ButtonGrad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PanelGrad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonLight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Unavailable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonDark.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

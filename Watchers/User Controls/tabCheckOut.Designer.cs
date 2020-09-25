@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tabCheckOut));
-            this.pnlCheckoutBTN = new ns1.BunifuGradientPanel();
             this.lblCheckoutBTN = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.gbPayment = new System.Windows.Forms.GroupBox();
@@ -43,26 +41,10 @@
             this.lblBookSum = new System.Windows.Forms.Label();
             this.lbBookSum = new System.Windows.Forms.ListBox();
             this.lblCheckout = new System.Windows.Forms.Label();
-            this.pnlCheckoutBTN.SuspendLayout();
+            this.btnPayNow = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.gbPayment.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pnlCheckoutBTN
-            // 
-            this.pnlCheckoutBTN.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pnlCheckoutBTN.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlCheckoutBTN.BackgroundImage")));
-            this.pnlCheckoutBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlCheckoutBTN.Controls.Add(this.lblCheckoutBTN);
-            this.pnlCheckoutBTN.ForeColor = System.Drawing.Color.White;
-            this.pnlCheckoutBTN.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
-            this.pnlCheckoutBTN.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.pnlCheckoutBTN.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
-            this.pnlCheckoutBTN.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.pnlCheckoutBTN.Location = new System.Drawing.Point(682, 691);
-            this.pnlCheckoutBTN.Name = "pnlCheckoutBTN";
-            this.pnlCheckoutBTN.Quality = 10;
-            this.pnlCheckoutBTN.Size = new System.Drawing.Size(333, 67);
-            this.pnlCheckoutBTN.TabIndex = 62;
             // 
             // lblCheckoutBTN
             // 
@@ -80,12 +62,11 @@
             // lblTotal
             // 
             this.lblTotal.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Poppins", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
-            this.lblTotal.Location = new System.Drawing.Point(38, 451);
+            this.lblTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(51)))));
+            this.lblTotal.Location = new System.Drawing.Point(36, 476);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(212, 88);
+            this.lblTotal.Size = new System.Drawing.Size(223, 63);
             this.lblTotal.TabIndex = 60;
             this.lblTotal.Text = "Total: R";
             // 
@@ -213,18 +194,51 @@
             // lblCheckout
             // 
             this.lblCheckout.AutoSize = true;
+            this.lblCheckout.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblCheckout.Font = new System.Drawing.Font("Poppins", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCheckout.Location = new System.Drawing.Point(64, 19);
+            this.lblCheckout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(51)))));
+            this.lblCheckout.Location = new System.Drawing.Point(0, 0);
             this.lblCheckout.Name = "lblCheckout";
             this.lblCheckout.Size = new System.Drawing.Size(278, 88);
             this.lblCheckout.TabIndex = 54;
             this.lblCheckout.Text = "Checkout";
             // 
+            // btnPayNow
+            // 
+            this.btnPayNow.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPayNow.BackColor = System.Drawing.Color.Transparent;
+            this.btnPayNow.BackgroundImage = global::Watchers.Properties.Resources.ButtonGrad;
+            this.btnPayNow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPayNow.Font = new System.Drawing.Font("Poppins", 16F);
+            this.btnPayNow.ForeColor = System.Drawing.Color.White;
+            this.btnPayNow.Location = new System.Drawing.Point(490, 764);
+            this.btnPayNow.Name = "btnPayNow";
+            this.btnPayNow.Size = new System.Drawing.Size(270, 54);
+            this.btnPayNow.TabIndex = 61;
+            this.btnPayNow.Text = "Pay Now";
+            this.btnPayNow.UseVisualStyleBackColor = false;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.BackgroundImage = global::Watchers.Properties.Resources.ButtonDark;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Poppins", 16F);
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Location = new System.Drawing.Point(766, 764);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(270, 54);
+            this.btnBack.TabIndex = 62;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            // 
             // tabCheckOut
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.pnlCheckoutBTN);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.btnPayNow);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.gbPayment);
             this.Controls.Add(this.lblOrderSummary);
@@ -234,7 +248,6 @@
             this.Controls.Add(this.lblCheckout);
             this.Name = "tabCheckOut";
             this.Size = new System.Drawing.Size(1066, 835);
-            this.pnlCheckoutBTN.ResumeLayout(false);
             this.gbPayment.ResumeLayout(false);
             this.gbPayment.PerformLayout();
             this.ResumeLayout(false);
@@ -243,8 +256,6 @@
         }
 
         #endregion
-
-        private ns1.BunifuGradientPanel pnlCheckoutBTN;
         private System.Windows.Forms.Label lblCheckoutBTN;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.GroupBox gbPayment;
@@ -258,5 +269,7 @@
         private System.Windows.Forms.Label lblBookSum;
         private System.Windows.Forms.ListBox lbBookSum;
         private System.Windows.Forms.Label lblCheckout;
+        private System.Windows.Forms.Button btnPayNow;
+        private System.Windows.Forms.Button btnBack;
     }
 }

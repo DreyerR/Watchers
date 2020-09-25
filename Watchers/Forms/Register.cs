@@ -45,5 +45,10 @@ namespace Watchers
         {
 
         }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
