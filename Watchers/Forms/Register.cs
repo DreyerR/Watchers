@@ -17,38 +17,46 @@ namespace Watchers
             InitializeComponent();
         }
 
-        private void btnReturn_Click(object sender, EventArgs e)
-        {
-            frmWelcome welcome = new frmWelcome();
-            this.Close();
-            welcome.ShowDialog();
-        }
-
-        private void lblRegister_Click(object sender, EventArgs e)
-        {
-            frmLogin login = new frmLogin();
-            this.Close();
-            login.ShowDialog();
-        }
-
-        private void txtUsername_OnValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Register_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblNewUser_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnRegister_Click(object sender, EventArgs e)
         {
+            if (IsValid())
+            {
+                MessageBox.Show("Everything looks good!");
+            }
+        }
 
+        private bool IsValid()
+        {
+            bool valid = true;
+
+            if (txtName.Text == "")
+            {
+                errorProvider.SetError(txtName, "Name cannot be empty");
+                valid = false;
+            }
+            else if (txtSurname.Text == "")
+            {
+                errorProvider.SetError(txtSurname, "Surname cannot be empty");
+                valid = false;
+            }
+            else if (txtEmail.Text == "")
+            {
+                errorProvider.SetError(txtEmail, "Email cannot be empty");
+                valid = false;
+            }
+            else if (txtPassword.Text == "")
+            {
+                errorProvider.SetError(txtPassword, "Password cannot be empty");
+                valid = false;
+            }
+            else if (txtConfirmPassword.Text == "" || txtConfirmPassword.Text != txtPassword.Text)
+            {
+                errorProvider.Clear();
+                errorProvider.SetError(txtConfirmPassword, "Passwords do not match");
+                valid = false;
+            }
+
+            return valid;
         }
     }
 }

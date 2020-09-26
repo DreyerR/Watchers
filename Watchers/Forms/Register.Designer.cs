@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
-            this.lblRegister = new System.Windows.Forms.Label();
             this.lblNewUser = new System.Windows.Forms.Label();
             this.imgGradientWel = new System.Windows.Forms.PictureBox();
-            this.imgLogoWel = new System.Windows.Forms.PictureBox();
+            this.imgLogo = new System.Windows.Forms.PictureBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtSurname = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -44,175 +44,170 @@
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblConfirmPW = new System.Windows.Forms.Label();
             this.btnRegister = new System.Windows.Forms.Button();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.imgGradientWel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgLogoWel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblRegister
-            // 
-            this.lblRegister.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblRegister.BackColor = System.Drawing.Color.Transparent;
-            this.lblRegister.Font = new System.Drawing.Font("Poppins", 20F);
-            this.lblRegister.Location = new System.Drawing.Point(29, -3);
-            this.lblRegister.Name = "lblRegister";
-            this.lblRegister.Size = new System.Drawing.Size(194, 55);
-            this.lblRegister.TabIndex = 27;
-            this.lblRegister.Text = "Register";
-            this.lblRegister.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblRegister.Click += new System.EventHandler(this.lblRegister_Click);
             // 
             // lblNewUser
             // 
-            this.lblNewUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNewUser.BackColor = System.Drawing.Color.Transparent;
-            this.lblNewUser.Font = new System.Drawing.Font("Poppins", 20F);
-            this.lblNewUser.Location = new System.Drawing.Point(411, 222);
+            this.lblNewUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.lblNewUser.Location = new System.Drawing.Point(408, 219);
+            this.lblNewUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNewUser.Name = "lblNewUser";
-            this.lblNewUser.Size = new System.Drawing.Size(215, 49);
+            this.lblNewUser.Size = new System.Drawing.Size(161, 40);
             this.lblNewUser.TabIndex = 36;
             this.lblNewUser.Text = "New User";
             this.lblNewUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblNewUser.Click += new System.EventHandler(this.lblNewUser_Click);
             // 
             // imgGradientWel
             // 
             this.imgGradientWel.Dock = System.Windows.Forms.DockStyle.Top;
             this.imgGradientWel.Image = global::Watchers.Properties.Resources.GradientNew1;
             this.imgGradientWel.Location = new System.Drawing.Point(0, 0);
+            this.imgGradientWel.Margin = new System.Windows.Forms.Padding(2);
             this.imgGradientWel.Name = "imgGradientWel";
-            this.imgGradientWel.Size = new System.Drawing.Size(1012, 165);
+            this.imgGradientWel.Size = new System.Drawing.Size(1007, 134);
             this.imgGradientWel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgGradientWel.TabIndex = 39;
             this.imgGradientWel.TabStop = false;
             // 
-            // imgLogoWel
+            // imgLogo
             // 
-            this.imgLogoWel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.imgLogoWel.BackColor = System.Drawing.Color.White;
-            this.imgLogoWel.Image = global::Watchers.Properties.Resources.Watchers2;
-            this.imgLogoWel.Location = new System.Drawing.Point(334, 68);
-            this.imgLogoWel.Name = "imgLogoWel";
-            this.imgLogoWel.Size = new System.Drawing.Size(372, 151);
-            this.imgLogoWel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgLogoWel.TabIndex = 40;
-            this.imgLogoWel.TabStop = false;
+            this.imgLogo.BackColor = System.Drawing.Color.White;
+            this.imgLogo.Image = global::Watchers.Properties.Resources.Watchers2;
+            this.imgLogo.Location = new System.Drawing.Point(357, 83);
+            this.imgLogo.Margin = new System.Windows.Forms.Padding(2);
+            this.imgLogo.Name = "imgLogo";
+            this.imgLogo.Size = new System.Drawing.Size(279, 123);
+            this.imgLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgLogo.TabIndex = 40;
+            this.imgLogo.TabStop = false;
             // 
             // txtName
             // 
-            this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtName.Font = new System.Drawing.Font("Poppins", 12F);
-            this.txtName.Location = new System.Drawing.Point(307, 292);
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtName.Location = new System.Drawing.Point(334, 279);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(422, 37);
+            this.txtName.Size = new System.Drawing.Size(318, 26);
             this.txtName.TabIndex = 41;
             // 
             // txtSurname
             // 
-            this.txtSurname.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSurname.Font = new System.Drawing.Font("Poppins", 12F);
-            this.txtSurname.Location = new System.Drawing.Point(307, 367);
+            this.txtSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtSurname.Location = new System.Drawing.Point(334, 340);
+            this.txtSurname.Margin = new System.Windows.Forms.Padding(2);
             this.txtSurname.Name = "txtSurname";
-            this.txtSurname.Size = new System.Drawing.Size(422, 37);
+            this.txtSurname.Size = new System.Drawing.Size(318, 26);
             this.txtSurname.TabIndex = 42;
             // 
             // txtEmail
             // 
-            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEmail.Font = new System.Drawing.Font("Poppins", 12F);
-            this.txtEmail.Location = new System.Drawing.Point(307, 439);
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtEmail.Location = new System.Drawing.Point(334, 399);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(422, 37);
+            this.txtEmail.Size = new System.Drawing.Size(318, 26);
             this.txtEmail.TabIndex = 43;
             // 
             // txtPassword
             // 
-            this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPassword.Font = new System.Drawing.Font("Poppins", 12F);
-            this.txtPassword.Location = new System.Drawing.Point(307, 510);
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtPassword.Location = new System.Drawing.Point(334, 456);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(422, 37);
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(318, 26);
             this.txtPassword.TabIndex = 44;
             // 
             // txtConfirmPassword
             // 
-            this.txtConfirmPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtConfirmPassword.Font = new System.Drawing.Font("Poppins", 12F);
-            this.txtConfirmPassword.Location = new System.Drawing.Point(307, 586);
+            this.txtConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtConfirmPassword.Location = new System.Drawing.Point(334, 518);
+            this.txtConfirmPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtConfirmPassword.Name = "txtConfirmPassword";
-            this.txtConfirmPassword.Size = new System.Drawing.Size(422, 37);
+            this.txtConfirmPassword.PasswordChar = '*';
+            this.txtConfirmPassword.Size = new System.Drawing.Size(318, 26);
             this.txtConfirmPassword.TabIndex = 45;
             // 
             // lblName
             // 
-            this.lblName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblName.Font = new System.Drawing.Font("Poppins", 12F);
-            this.lblName.Location = new System.Drawing.Point(301, 259);
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblName.Location = new System.Drawing.Point(330, 252);
+            this.lblName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(100, 30);
+            this.lblName.Size = new System.Drawing.Size(75, 24);
             this.lblName.TabIndex = 46;
             this.lblName.Text = "Name:";
             // 
             // lblSurname
             // 
-            this.lblSurname.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblSurname.Font = new System.Drawing.Font("Poppins", 12F);
-            this.lblSurname.Location = new System.Drawing.Point(301, 334);
+            this.lblSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblSurname.Location = new System.Drawing.Point(330, 313);
+            this.lblSurname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSurname.Name = "lblSurname";
-            this.lblSurname.Size = new System.Drawing.Size(119, 30);
+            this.lblSurname.Size = new System.Drawing.Size(89, 24);
             this.lblSurname.TabIndex = 47;
             this.lblSurname.Text = "Surname:";
             // 
             // lblEmail
             // 
-            this.lblEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblEmail.Font = new System.Drawing.Font("Poppins", 12F);
-            this.lblEmail.Location = new System.Drawing.Point(301, 406);
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblEmail.Location = new System.Drawing.Point(330, 372);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(162, 30);
+            this.lblEmail.Size = new System.Drawing.Size(122, 24);
             this.lblEmail.TabIndex = 48;
             this.lblEmail.Text = "Email Address:";
             // 
             // lblPassword
             // 
-            this.lblPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPassword.Font = new System.Drawing.Font("Poppins", 12F);
-            this.lblPassword.Location = new System.Drawing.Point(301, 477);
+            this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblPassword.Location = new System.Drawing.Point(330, 430);
+            this.lblPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(119, 30);
+            this.lblPassword.Size = new System.Drawing.Size(89, 24);
             this.lblPassword.TabIndex = 49;
             this.lblPassword.Text = "Password:";
             // 
             // lblConfirmPW
             // 
-            this.lblConfirmPW.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblConfirmPW.Font = new System.Drawing.Font("Poppins", 12F);
-            this.lblConfirmPW.Location = new System.Drawing.Point(301, 553);
+            this.lblConfirmPW.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblConfirmPW.Location = new System.Drawing.Point(330, 491);
+            this.lblConfirmPW.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblConfirmPW.Name = "lblConfirmPW";
-            this.lblConfirmPW.Size = new System.Drawing.Size(204, 30);
+            this.lblConfirmPW.Size = new System.Drawing.Size(153, 24);
             this.lblConfirmPW.TabIndex = 50;
             this.lblConfirmPW.Text = "Confirm Password:";
             // 
             // btnRegister
             // 
-            this.btnRegister.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRegister.BackColor = System.Drawing.Color.Transparent;
             this.btnRegister.BackgroundImage = global::Watchers.Properties.Resources.ButtonGrad;
-            this.btnRegister.Font = new System.Drawing.Font("Poppins", 16F);
+            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.btnRegister.ForeColor = System.Drawing.Color.White;
-            this.btnRegister.Location = new System.Drawing.Point(387, 647);
+            this.btnRegister.Location = new System.Drawing.Point(387, 570);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(270, 54);
+            this.btnRegister.Size = new System.Drawing.Size(202, 44);
             this.btnRegister.TabIndex = 51;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = false;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
+            // 
             // Register
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(1012, 699);
+            this.ClientSize = new System.Drawing.Size(1007, 645);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.lblConfirmPW);
             this.Controls.Add(this.lblPassword);
@@ -224,17 +219,20 @@
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtSurname);
             this.Controls.Add(this.txtName);
-            this.Controls.Add(this.imgLogoWel);
+            this.Controls.Add(this.imgLogo);
             this.Controls.Add(this.lblNewUser);
             this.Controls.Add(this.imgGradientWel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1023, 684);
+            this.MinimumSize = new System.Drawing.Size(1023, 684);
             this.Name = "Register";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
-            this.Load += new System.EventHandler(this.Register_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imgGradientWel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgLogoWel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,10 +240,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblRegister;
         private System.Windows.Forms.Label lblNewUser;
         private System.Windows.Forms.PictureBox imgGradientWel;
-        private System.Windows.Forms.PictureBox imgLogoWel;
+        private System.Windows.Forms.PictureBox imgLogo;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtSurname;
         private System.Windows.Forms.TextBox txtEmail;
@@ -257,5 +254,6 @@
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblConfirmPW;
         private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }

@@ -13,6 +13,6 @@ namespace Watchers.Models.Post_Models
         public string surname { get; set; }
         public string email { get; set; }
         public string password { get; set; }
-        public bool isAdmin { get; set; }
+        public int isAdmin { get; set; }
     }
 }

@@ -54,7 +54,7 @@ namespace Watchers
                     string username = txtUsername.Text;
                     string password = txtPassword.Text;
 
-                    bool success = await Api.AuthUser(username, password);
+                    bool success = await Api.AuthUserAsync(username, password);
 
                     if (success)
                     {
