@@ -47,25 +47,33 @@ namespace Watchers
         {
             if (IsValid())
             {
-                Cursor = Cursors.WaitCursor;
-
-                string username = txtUsername.Text;
-                string password = txtPassword.Text;
-
-                bool success = await Api.AuthUser(username, password);
-
-                if (success)
+                try
                 {
-                    Cursor = Cursors.Default;
+                    Cursor = Cursors.WaitCursor;
 
-                    MainMenu main = new MainMenu();
-                    this.Close();
-                    main.ShowDialog();
+                    string username = txtUsername.Text;
+                    string password = txtPassword.Text;
+
+                    bool success = await Api.AuthUser(username, password);
+
+                    if (success)
+                    {
+                        Cursor = Cursors.Default;
+
+                        MainMenu main = new MainMenu();
+                        this.Close();
+                        main.ShowDialog();
+                    }
+                    else
+                    {
+                        Cursor = Cursors.Default;
+                        MessageBox.Show("Username or password is incorrect", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                 }
-                else
+                catch (Exception ex)
                 {
                     Cursor = Cursors.Default;
-                    MessageBox.Show("Username or password is incorrect", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }

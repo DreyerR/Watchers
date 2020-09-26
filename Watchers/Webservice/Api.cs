@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
+using Watchers.Models;
 using Watchers.Models.Post_Models;
 
 namespace Watchers.Webservice
@@ -27,25 +28,39 @@ namespace Watchers.Webservice
         {
             client = GetHttpClient();
 
-            AuthUserModel authUser = new AuthUserModel
+            AuthUserPost authUser = new AuthUserPost
             {
+                mode = 0,
                 email = email,
-                pass = password
+                password = password
             };
 
             HttpResponseMessage response = await client.PostAsync(new Uri(AppConstants.AuthURL), ConvertToStringContent(authUser));
 
-            if (response.IsSuccessStatusCode)
+            if (response.IsSuccessStatusCode) // Status code = 200 (OK)
             {
                 string content = await response.Content.ReadAsStringAsync();
 
-                dynamic json = JsonConvert.DeserializeObject<dynamic>(content);
+                AuthUserResponse responseModel = JsonConvert.DeserializeObject<AuthUserResponse>(content);
 
-                return (json["isSuccessful"] == true) ? true : false;
+                if (responseModel.IsSuccessful)  // Login was successfull
+                {
+                    Properties.Settings.Default.UserID = responseModel.UserID;
+                    Properties.Settings.Default.Name = responseModel.Name;
+                    Properties.Settings.Default.Surname = responseModel.Surname;
+                    Properties.Settings.Default.Email = responseModel.Email;
+                    Properties.Settings.Default.Save();
+
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }              
             }
             else
             {
-                throw new Exception("Connection not successful");
+                throw new Exception("Error: Could not connect to remote server.\n Status code: " + response.StatusCode);
             }
            
         }
