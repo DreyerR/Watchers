@@ -19,7 +19,7 @@ namespace Watchers
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            if (IsValid()) // To-do: Complete the login method. Use the Api.RegisterUserAsync method.
+            if (IsValid()) // To-do: Complete the register method. Use the Api.RegisterUserAsync method.
             {
                 MessageBox.Show("Everything looks good!");
             }
