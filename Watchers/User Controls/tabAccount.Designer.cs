@@ -134,7 +134,6 @@
             this.Controls.Add(this.lblAccount);
             this.Name = "tabAccount";
             this.Size = new System.Drawing.Size(1140, 805);
-            this.Load += new System.EventHandler(this.tabAccount_Load);
             this.tblLayoutAccount.ResumeLayout(false);
             this.tblLayoutAccount.PerformLayout();
             this.ResumeLayout(false);

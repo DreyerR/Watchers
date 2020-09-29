@@ -29,10 +29,5 @@ namespace Watchers
         {
             InitializeComponent();
         }
-
-        private void tabAccount_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
