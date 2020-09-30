@@ -43,42 +43,42 @@ namespace Watchers
             return valid;
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private async void btnLogin_Click(object sender, EventArgs e)
         {
-            MainMenu main = new MainMenu();
-            this.Close();
-            main.ShowDialog();
-            //if (IsValid())   Commented this out for faster development.
-            //{
-            //    try
-            //    {
-            //        Cursor = Cursors.WaitCursor;
+            //MainMenu main = new MainMenu();
+            //this.Close();
+            //main.ShowDialog();
+            if (IsValid())
+            {
+                try
+                {
+                    Cursor = Cursors.WaitCursor;
 
-            //        string username = txtUsername.Text;
-            //        string password = txtPassword.Text;
+                    string username = txtUsername.Text;
+                    string password = txtPassword.Text;
 
-            //        bool success = await Api.AuthUserAsync(username, password);   !! Remember to put async next to the private keyword in the method heading.
+                    bool success = await Api.AuthUserAsync(username, password);
 
-            //        if (success)
-            //        {
-            //            Cursor = Cursors.Default;
+                    if (success)
+                    {
+                        Cursor = Cursors.Default;
 
-            //            MainMenu main = new MainMenu();
-            //            this.Close();
-            //            main.ShowDialog();
-            //        }
-            //        else
-            //        {
-            //            Cursor = Cursors.Default;
-            //            MessageBox.Show("Username or password is incorrect", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //        }
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        Cursor = Cursors.Default;
-            //        MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    }
-            //}
+                        MainMenu main = new MainMenu();
+                        this.Close();
+                        main.ShowDialog();
+                    }
+                    else
+                    {
+                        Cursor = Cursors.Default;
+                        MessageBox.Show("Username or password is incorrect", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Cursor = Cursors.Default;
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }

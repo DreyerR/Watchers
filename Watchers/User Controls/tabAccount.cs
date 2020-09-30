@@ -32,7 +32,10 @@ namespace Watchers
 
         private void tabAccount_Load(object sender, EventArgs e)
         {
+            string name = Properties.Settings.Default.Name;
+            string surname = Properties.Settings.Default.Surname;
 
+            lblName.Text = name + " " + surname;
         }
     }
 }

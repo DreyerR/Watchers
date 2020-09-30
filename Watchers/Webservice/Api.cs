@@ -69,7 +69,7 @@ namespace Watchers.Webservice
            
         }
 
-        public async Task<bool> RegisterUserAsync(string name, string surname, string email, string password)
+        public static async Task<bool> RegisterUserAsync(string name, string surname, string email, string password)
         {
             client = GetHttpClient();
 

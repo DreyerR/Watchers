@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Watchers.Webservice;
 
 namespace Watchers
 {
@@ -17,11 +18,34 @@ namespace Watchers
             InitializeComponent();
         }
 
-        private void btnRegister_Click(object sender, EventArgs e)
+        private async void btnRegister_Click(object sender, EventArgs e)
         {
-            if (IsValid()) // To-do: Complete the register method. Use the Api.RegisterUserAsync method.
+            try
             {
-                MessageBox.Show("Everything looks good!");
+                if (IsValid())
+                {
+                    string name = txtName.Text;
+                    string surname = txtSurname.Text;
+                    string email = txtEmail.Text;
+                    string password = txtPassword.Text;
+
+                    bool isSuccessful = await Api.RegisterUserAsync(name, surname, email, password);
+                    if (isSuccessful)
+                    {
+                        MessageBox.Show("Registration Successful");
+                        MainMenu main = new MainMenu();
+                        this.Close();
+                        main.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Registration Unsuccessful");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 
