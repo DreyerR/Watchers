@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
+using Watchers.Common;
 using Watchers.Models;
 using Watchers.Models.Post_Models;
 
@@ -33,8 +34,10 @@ namespace Watchers.Webservice
             {
                 mode = 0,
                 email = email,
-                password = password
+                password = SHA.ToSHA256(password)
             };
+
+            //MessageBox.Show(authUser.password);
 
             HttpResponseMessage response = await client.PostAsync(new Uri(AppConstants.AuthURL), ConvertToStringContent(authUser));
 
@@ -66,7 +69,7 @@ namespace Watchers.Webservice
            
         }
 
-        public async Task<bool> RegisterUserAsync(string name, string surname, string email, string password)
+        public static async Task<bool> RegisterUserAsync(string name, string surname, string email, string password)
         {
             client = GetHttpClient();
 
@@ -76,7 +79,7 @@ namespace Watchers.Webservice
                 name = name,
                 surname = surname,
                 email = email,
-                password = password,
+                password = SHA.ToSHA256(password),
                 isAdmin = 0
             };
 

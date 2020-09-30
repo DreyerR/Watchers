@@ -45,6 +45,9 @@ namespace Watchers
 
         private async void btnLogin_Click(object sender, EventArgs e)
         {
+            //MainMenu main = new MainMenu();
+            //this.Close();
+            //main.ShowDialog();
             if (IsValid())
             {
                 try

@@ -19,7 +19,7 @@ namespace Watchers
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
-
+            btnMovies_Click(sender, e);
         }
 
         private void btnAdmin_Click(object sender, EventArgs e)
