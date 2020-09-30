@@ -32,20 +32,20 @@ namespace Watchers
                     bool isSuccessful = await Api.RegisterUserAsync(name, surname, email, password);
                     if (isSuccessful)
                     {
-                        MessageBox.Show("Registration Successful");
+                        MessageBox.Show("Registration Successful", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         MainMenu main = new MainMenu();
                         this.Close();
                         main.ShowDialog();
                     }
                     else
                     {
-                        MessageBox.Show("Registration Unsuccessful");
+                        MessageBox.Show("Registration Unsuccessful", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -66,6 +66,11 @@ namespace Watchers
             else if (txtEmail.Text == "")
             {
                 errorProvider.SetError(txtEmail, "Email cannot be empty");
+                valid = false;
+            }
+            else if (!(txtEmail.Text.Contains("@")))
+            {
+                errorProvider.SetError(txtEmail, "Invalid email address");
                 valid = false;
             }
             else if (txtPassword.Text == "")
