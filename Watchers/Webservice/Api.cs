@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -37,8 +38,6 @@ namespace Watchers.Webservice
                 password = SHA.ToSHA256(password)
             };
 
-            //MessageBox.Show(authUser.password);
-
             HttpResponseMessage response = await client.PostAsync(new Uri(AppConstants.AuthURL), ConvertToStringContent(authUser));
 
             if (response.IsSuccessStatusCode) // Status code = 200 (OK)
@@ -64,7 +63,7 @@ namespace Watchers.Webservice
             }
             else
             {
-                throw new Exception("Error: Could not connect to remote server.\n Status code: " + response.StatusCode);
+                throw new Exception("Error: Could not connect to remote server.\nStatus code: " + (int)response.StatusCode);
             }
            
         }
@@ -106,8 +105,60 @@ namespace Watchers.Webservice
             }
             else
             {
-                throw new Exception("Error: Could not connect to remote server.\n Status code: " + response.StatusCode);
+                throw new Exception("Error: Could not connect to remote server.\nStatus code: " + (int)response.StatusCode);
             }
+        }
+
+        public async static Task<DataTable> GetAllUsersAsync()
+        {
+            client = GetHttpClient();
+
+            string url = string.Format(AppConstants.UsersURL, 0); // Sets the mode to 0.
+
+            HttpResponseMessage response = await client.GetAsync(url);
+
+            if (response.IsSuccessStatusCode)
+            {
+                string content = await response.Content.ReadAsStringAsync();
+                GetUserResponse model = JsonConvert.DeserializeObject<GetUserResponse>(content);
+
+                if (model.IsSuccessful)
+                {
+                    return BuildUserDataTable(model.Users);
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            else
+            {
+                throw new Exception("Error: Could not connect to remote server.\nStatus code: " + (int)response.StatusCode);
+            }
+        }
+
+        private static DataTable BuildUserDataTable(List<User> users)
+        {
+            DataTable dt = new DataTable();
+            dt.Clear();
+            dt.Columns.Add(new DataColumn("User ID", typeof(int)));
+            dt.Columns.Add("Name");
+            dt.Columns.Add("Surname");
+            dt.Columns.Add("Email Address");
+            dt.Columns.Add(new DataColumn("Admin", typeof(bool)));
+
+            for (int i = 0; i < users.Count; i++)
+            {
+                DataRow dr = dt.NewRow();
+                dr[0] = users[i].UserID;
+                dr[1] = users[i].Name;
+                dr[2] = users[i].Surname;
+                dr[3] = users[i].Email;
+                dr[4] = users[i].IsAdmin;
+                dt.Rows.Add(dr);
+            }
+
+            return dt;
         }
 
         private static StringContent ConvertToStringContent<T>(T model)

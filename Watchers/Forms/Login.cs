@@ -70,13 +70,13 @@ namespace Watchers
                     else
                     {
                         Cursor = Cursors.Default;
-                        MessageBox.Show("Username or password is incorrect", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        Message.ShowMessage("Email or password is incorrect", Message.MessageType.Warning);
                     }
                 }
                 catch (Exception ex)
                 {
                     Cursor = Cursors.Default;
-                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Message.ShowMessage(ex.Message, Message.MessageType.Error);
                 }
             }
         }

@@ -43,7 +43,7 @@
             // 
             this.lblManageAccount.AutoSize = true;
             this.lblManageAccount.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblManageAccount.Font = new System.Drawing.Font("Poppins", 20F);
+            this.lblManageAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.lblManageAccount.Location = new System.Drawing.Point(3, 0);
             this.lblManageAccount.Name = "lblManageAccount";
             this.lblManageAccount.Size = new System.Drawing.Size(597, 123);
@@ -54,7 +54,7 @@
             // lblName
             // 
             this.lblName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblName.Font = new System.Drawing.Font("Poppins", 20F);
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(51)))));
             this.lblName.Location = new System.Drawing.Point(4, 155);
             this.lblName.Name = "lblName";
@@ -67,11 +67,11 @@
             // 
             this.lblAccount.AutoSize = true;
             this.lblAccount.BackColor = System.Drawing.Color.Transparent;
-            this.lblAccount.Font = new System.Drawing.Font("Poppins", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAccount.ForeColor = System.Drawing.Color.White;
-            this.lblAccount.Location = new System.Drawing.Point(17, 5);
+            this.lblAccount.Location = new System.Drawing.Point(5, 17);
             this.lblAccount.Name = "lblAccount";
-            this.lblAccount.Size = new System.Drawing.Size(248, 88);
+            this.lblAccount.Size = new System.Drawing.Size(206, 58);
             this.lblAccount.TabIndex = 62;
             this.lblAccount.Text = "Account";
             // 
@@ -105,7 +105,7 @@
             this.btnPersonalInfo.BackColor = System.Drawing.Color.Transparent;
             this.btnPersonalInfo.BackgroundImage = global::Watchers.Properties.Resources.ButtonLight;
             this.btnPersonalInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPersonalInfo.Font = new System.Drawing.Font("Poppins", 16F);
+            this.btnPersonalInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.btnPersonalInfo.ForeColor = System.Drawing.Color.White;
             this.btnPersonalInfo.Location = new System.Drawing.Point(147, 252);
             this.btnPersonalInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -121,7 +121,7 @@
             this.btnDeleteAcc.BackColor = System.Drawing.Color.Transparent;
             this.btnDeleteAcc.BackgroundImage = global::Watchers.Properties.Resources.ButtonLight;
             this.btnDeleteAcc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeleteAcc.Font = new System.Drawing.Font("Poppins", 16F);
+            this.btnDeleteAcc.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.btnDeleteAcc.ForeColor = System.Drawing.Color.White;
             this.btnDeleteAcc.Location = new System.Drawing.Point(148, 310);
             this.btnDeleteAcc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -133,11 +133,11 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(135)))), ((int)(((byte)(51)))));
             this.panel1.Controls.Add(this.lblAccount);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1364, 94);
             this.panel1.TabIndex = 70;

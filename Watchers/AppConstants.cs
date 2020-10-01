@@ -8,6 +8,8 @@ namespace Watchers
 {
     class AppConstants
     {
-        public static string AuthURL = "https://www.technetic.co.za/php/auth.php";
+        private static string BASE = "https://www.technetic.co.za/php";
+        public static string AuthURL = BASE + "/auth.php";
+        public static string UsersURL = BASE + "/user.php?mode={0}";
     }
 }

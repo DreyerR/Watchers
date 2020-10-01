@@ -53,7 +53,7 @@
             this.pnlBack.Location = new System.Drawing.Point(0, 0);
             this.pnlBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlBack.Name = "pnlBack";
-            this.pnlBack.Size = new System.Drawing.Size(1975, 1001);
+            this.pnlBack.Size = new System.Drawing.Size(1924, 1001);
             this.pnlBack.TabIndex = 35;
             // 
             // pnlMenuBar
@@ -206,13 +206,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(1975, 1001);
+            this.ClientSize = new System.Drawing.Size(1924, 1001);
             this.Controls.Add(this.pnlBack);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Watchers";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainMenu_Load);
             this.pnlBack.ResumeLayout(false);
             this.pnlMenuBar.ResumeLayout(false);

@@ -69,7 +69,9 @@
     <Compile Include="Forms\Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="Message.cs" />
     <Compile Include="Models\AuthUserResponse.cs" />
+    <Compile Include="Models\GetUserResponse.cs" />
     <Compile Include="Models\Post Models\AuthUserPost.cs" />
     <Compile Include="User Controls\tabAccount.cs">
       <SubType>UserControl</SubType>

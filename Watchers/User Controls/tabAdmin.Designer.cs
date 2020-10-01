@@ -41,12 +41,11 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitle.Font = new System.Drawing.Font("Poppins", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(4, 4);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTitle.Location = new System.Drawing.Point(5, 17);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(403, 70);
+            this.lblTitle.Size = new System.Drawing.Size(434, 58);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Stastistical reports";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -60,28 +59,29 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvReport.BackgroundColor = System.Drawing.Color.LightGray;
             this.dgvReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvReport.Location = new System.Drawing.Point(11, 81);
-            this.dgvReport.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvReport.Location = new System.Drawing.Point(15, 100);
+            this.dgvReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvReport.Name = "dgvReport";
             this.dgvReport.ReadOnly = true;
             this.dgvReport.RowHeadersWidth = 51;
             this.dgvReport.RowTemplate.Height = 24;
-            this.dgvReport.Size = new System.Drawing.Size(1092, 615);
+            this.dgvReport.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvReport.Size = new System.Drawing.Size(1456, 757);
             this.dgvReport.TabIndex = 1;
             // 
             // cbbCategory
             // 
             this.cbbCategory.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbbCategory.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbCategory.FormattingEnabled = true;
             this.cbbCategory.Items.AddRange(new object[] {
             "Bookings",
             "Orders",
             "Users"});
-            this.cbbCategory.Location = new System.Drawing.Point(918, 23);
-            this.cbbCategory.Margin = new System.Windows.Forms.Padding(2);
+            this.cbbCategory.Location = new System.Drawing.Point(1184, 36);
+            this.cbbCategory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbCategory.Name = "cbbCategory";
-            this.cbbCategory.Size = new System.Drawing.Size(153, 31);
+            this.cbbCategory.Size = new System.Drawing.Size(203, 28);
             this.cbbCategory.TabIndex = 2;
             this.cbbCategory.SelectedIndexChanged += new System.EventHandler(this.cbbDataType_SelectedIndexChanged);
             // 
@@ -89,12 +89,11 @@
             // 
             this.lblCategory.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCategory.AutoSize = true;
-            this.lblCategory.Font = new System.Drawing.Font("Poppins", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategory.ForeColor = System.Drawing.Color.White;
-            this.lblCategory.Location = new System.Drawing.Point(726, 22);
-            this.lblCategory.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCategory.Location = new System.Drawing.Point(968, 34);
             this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(179, 36);
+            this.lblCategory.Size = new System.Drawing.Size(200, 29);
             this.lblCategory.TabIndex = 3;
             this.lblCategory.Text = "Choose a report:";
             // 
@@ -106,19 +105,20 @@
             this.panelTop.Controls.Add(this.cbbCategory);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
+            this.panelTop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(1115, 76);
+            this.panelTop.Size = new System.Drawing.Size(1487, 94);
             this.panelTop.TabIndex = 4;
             // 
             // tabAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panelTop);
             this.Controls.Add(this.dgvReport);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "tabAdmin";
-            this.Size = new System.Drawing.Size(1115, 708);
+            this.Size = new System.Drawing.Size(1487, 871);
             ((System.ComponentModel.ISupportInitialize)(this.dgvReport)).EndInit();
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
@@ -129,9 +129,9 @@
         #endregion
 
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.DataGridView dgvReport;
         private System.Windows.Forms.ComboBox cbbCategory;
         private System.Windows.Forms.Label lblCategory;
         private System.Windows.Forms.Panel panelTop;
+        public System.Windows.Forms.DataGridView dgvReport;
     }
 }
