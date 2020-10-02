@@ -62,7 +62,7 @@
             this.dgvReport.BackgroundColor = System.Drawing.Color.LightGray;
             this.dgvReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvReport.Location = new System.Drawing.Point(11, 81);
-            this.dgvReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvReport.Margin = new System.Windows.Forms.Padding(2);
             this.dgvReport.Name = "dgvReport";
             this.dgvReport.ReadOnly = true;
             this.dgvReport.RowHeadersWidth = 51;
@@ -81,7 +81,7 @@
             "Orders",
             "Users"});
             this.cbbCategory.Location = new System.Drawing.Point(732, 25);
-            this.cbbCategory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbbCategory.Margin = new System.Windows.Forms.Padding(2);
             this.cbbCategory.Name = "cbbCategory";
             this.cbbCategory.Size = new System.Drawing.Size(153, 24);
             this.cbbCategory.TabIndex = 2;
@@ -116,14 +116,17 @@
             // btnPDF
             // 
             this.btnPDF.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPDF.BackColor = System.Drawing.Color.White;
+            this.btnPDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPDF.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPDF.Location = new System.Drawing.Point(932, 20);
             this.btnPDF.Name = "btnPDF";
             this.btnPDF.Size = new System.Drawing.Size(134, 35);
             this.btnPDF.TabIndex = 4;
             this.btnPDF.Text = "Generate Report";
-            this.btnPDF.UseVisualStyleBackColor = true;
-            this.btnPDF.Click += new System.EventHandler(this.btnPDF_Click_1);
+            this.btnPDF.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnPDF.UseVisualStyleBackColor = false;
+            this.btnPDF.Click += new System.EventHandler(this.btnPDF_Click);
             // 
             // tabAdmin
             // 
@@ -131,7 +134,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panelTop);
             this.Controls.Add(this.dgvReport);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "tabAdmin";
             this.Size = new System.Drawing.Size(1115, 708);
             ((System.ComponentModel.ISupportInitialize)(this.dgvReport)).EndInit();
