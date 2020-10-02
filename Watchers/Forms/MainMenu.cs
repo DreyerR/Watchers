@@ -48,9 +48,9 @@ namespace Watchers
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            frmLogin login = new frmLogin();
+            //frmLogin login = new frmLogin();
             this.Close();
-            login.ShowDialog();
+            //login.ShowDialog();
         }
 
         private void btnMovies_Click(object sender, EventArgs e)
