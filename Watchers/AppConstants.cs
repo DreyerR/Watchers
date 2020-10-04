@@ -11,5 +11,6 @@ namespace Watchers
         private static string BASE = "https://www.technetic.co.za/php";
         public static string AuthURL = BASE + "/auth.php";
         public static string UsersURL = BASE + "/user.php?mode={0}";
+        public static string BookingURL = BASE + "/booking.php?mode={0}";
     }
 }

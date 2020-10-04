@@ -41,6 +41,7 @@ namespace Watchers
             switch (cbbCategory.SelectedIndex)
             {
                 case 0:
+                    PopulateBookings();
                     break;
                 case 1:
                     break;
@@ -77,6 +78,44 @@ namespace Watchers
                     Message.ShowMessage("Error on server side\nUsers: null", Message.MessageType.Error);
                 }
   
+            }
+            catch (Exception ex)
+            {
+                Message.ShowMessage(ex.Message, Message.MessageType.Error);
+            }
+        }
+
+        private async void PopulateBookings()
+        {
+            try
+            {
+                cbbCategory.Enabled = false;
+                lblCategory.Text = "Please wait...";
+
+                DataTable bookings = await Api.GetAllBookingsAsync();
+
+                if (bookings != null)
+                {
+                    dgvReport.DataSource = bookings;
+
+                    dgvReport.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                    dgvReport.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                    dgvReport.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                    dgvReport.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                    dgvReport.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                    dgvReport.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                    dgvReport.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                    dgvReport.Columns[7].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                    dgvReport.Columns[8].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+                    lblCategory.Text = "Choose a report:";
+                    cbbCategory.Enabled = true;
+                }
+                else
+                {
+                    Message.ShowMessage("Error on server side\nUsers: null", Message.MessageType.Error);
+                }
+
             }
             catch (Exception ex)
             {

@@ -161,6 +161,65 @@ namespace Watchers.Webservice
             return dt;
         }
 
+        public async static Task<DataTable> GetAllBookingsAsync()
+        {
+            string url = string.Format(AppConstants.BookingURL, 0);
+
+            client = GetHttpClient();
+            HttpResponseMessage response = await client.GetAsync(url);
+
+            if (response.IsSuccessStatusCode)
+            {
+                string content = await response.Content.ReadAsStringAsync();
+                GetBookingsResponse model = JsonConvert.DeserializeObject<GetBookingsResponse>(content);
+
+                if (model.IsSuccessful)
+                {
+                    return BuildBookingDataTable(model.Bookings);
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            else
+            {
+                throw new Exception("Error: Could not connect to remote server.\nStatus code: " + (int)response.StatusCode);
+            }
+        }
+
+        private static DataTable BuildBookingDataTable(List<Booking> bookings)
+        {
+            DataTable dt = new DataTable();
+            dt.Clear();
+            dt.Columns.Add("Ticket ID");
+            dt.Columns.Add("Movie name");
+            dt.Columns.Add("First name");
+            dt.Columns.Add("Last name");
+            dt.Columns.Add("Email");
+            dt.Columns.Add(new DataColumn("Booking time", typeof(DateTime)));
+            dt.Columns.Add("Seat number");
+            dt.Columns.Add(new DataColumn("Seat quantity", typeof(int)));
+            dt.Columns.Add(new DataColumn("Total price", typeof(decimal)));
+
+            for (int i = 0; i < bookings.Count; i++)
+            {
+                DataRow dr = dt.NewRow();
+                dr[0] = bookings[i].TicketID;
+                dr[1] = bookings[i].MovieName;
+                dr[2] = bookings[i].FirstName;
+                dr[3] = bookings[i].LastName;
+                dr[4] = bookings[i].Email;
+                dr[5] = bookings[i].BookingTime;
+                dr[6] = bookings[i].SeatNumber;
+                dr[7] = bookings[i].SeatQuantity;
+                dr[8] = bookings[i].TotalPrice;
+                dt.Rows.Add(dr);
+            }
+
+            return dt;
+        }
+
         private static StringContent ConvertToStringContent<T>(T model)
         {
             string json = JsonConvert.SerializeObject(model);
