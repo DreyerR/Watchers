@@ -34,9 +34,10 @@
             // 
             // pieChartMovies
             // 
-            this.pieChartMovies.Location = new System.Drawing.Point(12, 67);
+            this.pieChartMovies.Location = new System.Drawing.Point(72, 53);
+            this.pieChartMovies.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pieChartMovies.Name = "pieChartMovies";
-            this.pieChartMovies.Size = new System.Drawing.Size(878, 600);
+            this.pieChartMovies.Size = new System.Drawing.Size(788, 488);
             this.pieChartMovies.TabIndex = 0;
             this.pieChartMovies.Text = "Booking chart";
             // 
@@ -44,20 +45,22 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(328, 9);
+            this.lblTitle.Location = new System.Drawing.Point(3, 9);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(464, 44);
+            this.lblTitle.Size = new System.Drawing.Size(361, 36);
             this.lblTitle.TabIndex = 1;
             this.lblTitle.Text = "Number of movies booked";
             // 
             // frmChart
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1149, 679);
+            this.ClientSize = new System.Drawing.Size(862, 552);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.pieChartMovies);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmChart";
