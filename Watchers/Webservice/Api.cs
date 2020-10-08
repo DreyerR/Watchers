@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
+using LiveCharts;
+using LiveCharts.Wpf;
 using Newtonsoft.Json;
 using Watchers.Common;
 using Watchers.Models;
@@ -109,11 +108,41 @@ namespace Watchers.Webservice
             }
         }
 
+        public async static Task<SeriesCollection> GetMovieCount()
+        {
+            client = GetHttpClient();
+
+            string url = AppConstants.MovieURl + "?mode=2";
+
+            HttpResponseMessage response = await client.GetAsync(url);
+
+            if (response.IsSuccessStatusCode)
+            {
+                string content = await response.Content.ReadAsStringAsync();
+                List<MovieCountResponse> model = JsonConvert.DeserializeObject<List<MovieCountResponse>>(content);
+
+                SeriesCollection series = new SeriesCollection();
+
+                Func<ChartPoint, string> labelPoint = chartpoint => string.Format("{0} ({1:P})", chartpoint.Y, chartpoint.Participation);
+
+                for (int i = 0; i < model.Count; i++)
+                {
+                    series.Add(new PieSeries() { Title = model[i].MovieName, Values = new ChartValues<int> { model[i].BookingCount }, DataLabels = true, LabelPoint = labelPoint });
+                }
+
+                return series;
+            }
+            else
+            {
+                throw new Exception("Error: Could not connect to remote server.\nStatus code: " + (int)response.StatusCode);
+            }
+        }
+
         public async static Task<DataTable> GetAllUsersAsync()
         {
             client = GetHttpClient();
 
-            string url = string.Format(AppConstants.UsersURL, 0); // Sets the mode to 0.
+            string url = AppConstants.UsersURL + "?mode=0"; // Sets the mode to 0.
 
             HttpResponseMessage response = await client.GetAsync(url);
 
@@ -200,7 +229,7 @@ namespace Watchers.Webservice
             dt.Columns.Add(new DataColumn("Booking time", typeof(DateTime)));
             dt.Columns.Add("Seat number");
             dt.Columns.Add(new DataColumn("Seat quantity", typeof(int)));
-            dt.Columns.Add(new DataColumn("Total price", typeof(decimal)));
+            dt.Columns.Add("Total Price");
 
             for (int i = 0; i < bookings.Count; i++)
             {
@@ -213,7 +242,7 @@ namespace Watchers.Webservice
                 dr[5] = bookings[i].BookingTime;
                 dr[6] = bookings[i].SeatNumber;
                 dr[7] = bookings[i].SeatQuantity;
-                dr[8] = bookings[i].TotalPrice;
+                dr[8] = bookings[i].TotalPrice.ToString("C");
                 dt.Rows.Add(dr);
             }
 

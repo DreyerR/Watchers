@@ -1,16 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Watchers.Webservice;
 using iTextSharp.text.pdf;
 using iTextSharp.text;
 using System.IO;
+using LiveCharts;
+using Watchers.Forms;
 
 namespace Watchers
 {
@@ -188,6 +185,29 @@ namespace Watchers
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private async void btnChart_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                btnChart.Enabled = false;
+                btnChart.Text = "Please wait...";
+                Cursor = Cursors.WaitCursor;
+
+                SeriesCollection series = await Api.GetMovieCount();
+
+                btnChart.Enabled = true;
+                btnChart.Text = "Show Movie Statistics";
+                Cursor = Cursors.Default;
+
+                frmChart form = new frmChart(series);
+                form.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                Message.ShowMessage(ex.Message, Message.MessageType.Error);
             }
         }
     }
