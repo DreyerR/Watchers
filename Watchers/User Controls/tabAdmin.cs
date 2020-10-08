@@ -11,6 +11,7 @@ using Watchers.Webservice;
 using iTextSharp.text.pdf;
 using iTextSharp.text;
 using System.IO;
+using Watchers.Properties;
 
 namespace Watchers
 {
@@ -176,8 +177,20 @@ namespace Watchers
                     {
                         Document pdfdoc = new Document(PageSize.A4, 40f, 40f, 40f, 0f);
                         PdfWriter.GetInstance(pdfdoc, stream);
+                        Paragraph heading = new Paragraph("Summary Report");
+                        //font size of heading
+                        //get name from list
+                        heading.Alignment = Element.ALIGN_CENTER;
+                        string imageURL = ""; // image path
+                        iTextSharp.text.Image jpg = iTextSharp.text.Image.GetInstance(imageURL);
+                        jpg.ScaleToFit(140f, 120f);
+                        jpg.SpacingBefore = 10f;
+                        jpg.SpacingAfter = 1f;
+                        jpg.Alignment = Element.ALIGN_CENTER;
+                        
                         pdfdoc.Open();
                         pdfdoc.Add(pdfTable);
+                        pdfdoc.Add(jpg);
                         pdfdoc.Close();
                         stream.Close();
 
