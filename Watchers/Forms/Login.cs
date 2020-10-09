@@ -45,40 +45,40 @@ namespace Watchers
 
         private async void btnLogin_Click(object sender, EventArgs e)
         {
-            //MainMenu main = new MainMenu();
-            //this.Close();
-            //main.ShowDialog();
-            if (IsValid())
-            {
-                try
-                {
-                    Cursor = Cursors.WaitCursor;
+            MainMenu main = new MainMenu();
+            this.Hide();
+            main.ShowDialog();
+            //if (IsValid())
+            //{
+            //    try
+            //    {
+            //        Cursor = Cursors.WaitCursor;
 
-                    string username = txtUsername.Text;
-                    string password = txtPassword.Text;
+            //        string username = txtUsername.Text;
+            //        string password = txtPassword.Text;
 
-                    bool success = await Api.AuthUserAsync(username, password);
+            //        bool success = await Api.AuthUserAsync(username, password);
 
-                    if (success)
-                    {
-                        Cursor = Cursors.Default;
+            //        if (success)
+            //        {
+            //            Cursor = Cursors.Default;
 
-                        MainMenu main = new MainMenu();
-                        this.Close();
-                        main.ShowDialog();
-                    }
-                    else
-                    {
-                        Cursor = Cursors.Default;
-                        Message.ShowMessage("Email or password is incorrect", Message.MessageType.Warning);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Cursor = Cursors.Default;
-                    Message.ShowMessage(ex.Message, Message.MessageType.Error);
-                }
-            }
+            //            MainMenu main = new MainMenu();
+            //            this.Close();
+            //            main.ShowDialog();
+            //        }
+            //        else
+            //        {
+            //            Cursor = Cursors.Default;
+            //            Message.ShowMessage("Email or password is incorrect", Message.MessageType.Warning);
+            //        }
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        Cursor = Cursors.Default;
+            //        Message.ShowMessage(ex.Message, Message.MessageType.Error);
+            //    }
+            //}
         }
     }
 }
