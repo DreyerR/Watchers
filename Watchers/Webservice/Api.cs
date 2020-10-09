@@ -249,6 +249,58 @@ namespace Watchers.Webservice
             return dt;
         }
 
+        public static async Task<bool> UpdateUser(int userID, string name, string surname, string email)
+        {
+            AuthUserPost model = new AuthUserPost
+            {
+                mode = 0,
+                userID = userID,
+                name = name,
+                surname = surname,
+                email = email,
+                isAdmin = 0
+            };
+
+            client = GetHttpClient();
+
+            HttpResponseMessage response = await client.PostAsync(AppConstants.UsersURL, ConvertToStringContent(model));
+
+            if (response.IsSuccessStatusCode)
+            {
+                string content = await response.Content.ReadAsStringAsync();
+                dynamic json = JsonConvert.DeserializeObject<dynamic>(content);
+
+                return json["isSuccessful"];
+            }
+            else
+            {
+                throw new Exception("Error: Could not connect to remote server.\nStatus code: " + (int)response.StatusCode);
+            }
+        }
+
+        public static async Task<bool> DeleteUser(int userID)
+        {
+            Dictionary<string, int> keyValues = new Dictionary<string, int>();
+            keyValues.Add("mode", 1);
+            keyValues.Add("userID", userID);
+
+            client = GetHttpClient();
+
+            HttpResponseMessage response = await client.PostAsync(AppConstants.UsersURL, ConvertToStringContent(keyValues));
+
+            if (response.IsSuccessStatusCode)
+            {
+                string content = await response.Content.ReadAsStringAsync();
+                dynamic json = JsonConvert.DeserializeObject<dynamic>(content);
+
+                return json["isSuccessful"];
+            }
+            else
+            {
+                throw new Exception("Error: Could not connect to remote server.\nStatus code: " + (int)response.StatusCode);
+            }
+        }
+
         private static StringContent ConvertToStringContent<T>(T model)
         {
             string json = JsonConvert.SerializeObject(model);

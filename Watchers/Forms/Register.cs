@@ -13,12 +13,48 @@ namespace Watchers
 {
     public partial class Register : Form
     {
-        public Register()
+        private Mode mode;
+        public Register(Mode mode)
         {
             InitializeComponent();
+            this.mode = mode;
+        }
+        public enum Mode
+        {
+            Register,
+            Update
         }
 
-        private async void btnRegister_Click(object sender, EventArgs e)
+        private async void UpdateMethod()
+        {
+            try
+            {
+                if (IsValid())
+                {
+                    int userID = Properties.Settings.Default.UserID;
+                    string name = txtName.Text;
+                    string surname = txtSurname.Text;
+                    string email = txtEmail.Text;
+
+                    bool isSuccessful = await Api.UpdateUser(userID, name, surname, email);
+                    if (isSuccessful)
+                    {
+                        Message.ShowMessage("Account updated Successfully", Message.MessageType.Information);
+                        this.Close();
+                    }
+                    else
+                    {
+                        Message.ShowMessage("Could not update account", Message.MessageType.Error);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private async void RegisterMethod()
         {
             try
             {
@@ -49,6 +85,21 @@ namespace Watchers
             }
         }
 
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            if(mode == Mode.Register)
+            {
+                RegisterMethod();
+            }
+            else
+            {
+                UpdateMethod();
+                Properties.Settings.Default.Surname = txtSurname.Text;
+                Properties.Settings.Default.Name = txtName.Text;
+                Properties.Settings.Default.Email = txtEmail.Text;
+            }
+        }
+
         private bool IsValid()
         {
             bool valid = true;
@@ -73,12 +124,12 @@ namespace Watchers
                 errorProvider.SetError(txtEmail, "Invalid email address");
                 valid = false;
             }
-            else if (txtPassword.Text == "")
+            else if (txtPassword.Text == "" && mode == Mode.Register)
             {
                 errorProvider.SetError(txtPassword, "Password cannot be empty");
                 valid = false;
             }
-            else if (txtConfirmPassword.Text == "" || txtConfirmPassword.Text != txtPassword.Text)
+            else if ((txtConfirmPassword.Text == "" || txtConfirmPassword.Text != txtPassword.Text) && mode == Mode.Register)
             {
                 errorProvider.Clear();
                 errorProvider.SetError(txtConfirmPassword, "Passwords do not match");
@@ -86,6 +137,28 @@ namespace Watchers
             }
 
             return valid;
+        }
+
+        private void Register_Load(object sender, EventArgs e)
+        {
+            if (mode == Mode.Register)
+            {
+                this.Text = "Register";
+                btnRegister.Text = "Register";
+                lblNewUser.Text = "New user";
+            }
+            else
+            {
+                this.Text = "Update Account";
+                lblNewUser.Text = "Update your account";
+                btnRegister.Text = "Update Account";
+                txtPassword.Enabled = false;
+                txtConfirmPassword.Enabled = false;
+                txtName.Text = Properties.Settings.Default.Name;
+                txtSurname.Text = Properties.Settings.Default.Surname;
+                txtEmail.Text = Properties.Settings.Default.Email;
+                txtName.Text = Properties.Settings.Default.Name;
+            }
         }
     }
 }

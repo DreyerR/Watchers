@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Watchers.Webservice;
 
 namespace Watchers
 {
@@ -36,6 +37,37 @@ namespace Watchers
             string surname = Properties.Settings.Default.Surname;
 
             lblName.Text = name + " " + surname;
+        }
+
+        private void btnPersonalInfo_Click(object sender, EventArgs e)
+        {
+            Register updateUser = new Register(Register.Mode.Update);
+            updateUser.ShowDialog();
+            tabAccount_Load(sender, e); //refresh the information of the user
+        }
+
+        private async void btnDeleteAcc_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if(MessageBox.Show("Are you sure you want to delete " + lblName.Text + "?", "Confirm Delete ", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    bool isDeleted = await Api.DeleteUser(Properties.Settings.Default.UserID);
+                    if(isDeleted)
+                    {
+                        Message.ShowMessage("Account has been deleted", Message.MessageType.Information);
+                        Application.Exit();
+                    }
+                    else
+                    {
+                        Message.ShowMessage("There is a error on the server's side: could not delete the account", Message.MessageType.Error);
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                Message.ShowMessage(ex.Message, Message.MessageType.Error);
+            }
         }
     }
 }

@@ -26,8 +26,7 @@ namespace Watchers
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            Register register = new Register();
-            //this.Close();
+            Register register = new Register(Register.Mode.Register);
             register.ShowDialog();
         }
     }
