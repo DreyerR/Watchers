@@ -249,7 +249,7 @@ namespace Watchers.Webservice
             return dt;
         }
 
-        public async Task<bool> UpdateUser(int userID, string name, string surname, string email, string password)
+        public static async Task<bool> UpdateUser(int userID, string name, string surname, string email)
         {
             AuthUserPost model = new AuthUserPost
             {
@@ -258,7 +258,6 @@ namespace Watchers.Webservice
                 name = name,
                 surname = surname,
                 email = email,
-                password = SHA.ToSHA256(password),
                 isAdmin = 0
             };
 
@@ -279,9 +278,10 @@ namespace Watchers.Webservice
             }
         }
 
-        public async Task<bool> DeleteUser(int userID)
+        public static async Task<bool> DeleteUser(int userID)
         {
             Dictionary<string, int> keyValues = new Dictionary<string, int>();
+            keyValues.Add("mode", 1);
             keyValues.Add("userID", userID);
 
             client = GetHttpClient();

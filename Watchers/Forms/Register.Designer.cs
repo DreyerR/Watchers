@@ -230,6 +230,7 @@
             this.Name = "Register";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
+            this.Load += new System.EventHandler(this.Register_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imgGradientWel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
@@ -253,7 +254,7 @@
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblConfirmPW;
-        private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.ErrorProvider errorProvider;
+        public System.Windows.Forms.Button btnRegister;
     }
 }

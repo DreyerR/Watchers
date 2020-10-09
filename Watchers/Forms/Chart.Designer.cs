@@ -35,7 +35,7 @@
             // pieChartMovies
             // 
             this.pieChartMovies.Location = new System.Drawing.Point(72, 53);
-            this.pieChartMovies.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pieChartMovies.Margin = new System.Windows.Forms.Padding(2);
             this.pieChartMovies.Name = "pieChartMovies";
             this.pieChartMovies.Size = new System.Drawing.Size(788, 488);
             this.pieChartMovies.TabIndex = 0;
@@ -60,7 +60,7 @@
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.pieChartMovies);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmChart";
