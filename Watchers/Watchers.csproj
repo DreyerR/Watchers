@@ -71,7 +71,6 @@
   <ItemGroup>
     <Compile Include="AppConstants.cs" />
     <Compile Include="Common\SHA.cs" />
-    <Compile Include="Common\WinAPI.cs" />
     <Compile Include="Forms\Chart.cs">
       <SubType>Form</SubType>
     </Compile>

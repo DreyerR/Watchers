@@ -6,6 +6,8 @@ using Watchers.Webservice;
 using iTextSharp.text.pdf;
 using iTextSharp.text;
 using System.IO;
+using LiveCharts;
+using Watchers.Forms;
 
 namespace Watchers
 {
@@ -122,18 +124,18 @@ namespace Watchers
         {
             if (dgvReport.Rows.Count > 0)
             {
-                CreatePDF(dgvReport);
+                CreatePDF(dgvReport, cbbCategory.SelectedItem.ToString());
             }
             else
             {
                 if (MessageBox.Show("There are no current records to export.\nDo you want to continue?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    CreatePDF(dgvReport);
+                    CreatePDF(dgvReport, cbbCategory.SelectedItem.ToString());
                 }
             }
         }
 
-        private void CreatePDF(DataGridView dgv)
+        private void CreatePDF(DataGridView dgv, string title)
         {
             try
             {
@@ -144,7 +146,7 @@ namespace Watchers
                 pdfTable.HorizontalAlignment = Element.ALIGN_LEFT;
                 pdfTable.DefaultCell.BorderWidth = 1;
 
-                iTextSharp.text.Font txt = new iTextSharp.text.Font(baseF, 12, iTextSharp.text.Font.NORMAL);
+                iTextSharp.text.Font txt = new iTextSharp.text.Font(baseF, 10, iTextSharp.text.Font.NORMAL);
 
                 foreach (DataGridViewColumn col in dgv.Columns)
                 {
@@ -169,28 +171,44 @@ namespace Watchers
                 {
                     FileStream stream = new FileStream(dialog.FileName, FileMode.Create);
                     {
+                        string workingDirectory = Environment.CurrentDirectory;
+                        string projectDirectory = Directory.GetParent(workingDirectory).Parent.Parent.FullName;
+
+                        iTextSharp.text.Image jpg = iTextSharp.text.Image.GetInstance(projectDirectory);
                         Document pdfdoc = new Document(PageSize.A4, 40f, 40f, 40f, 0f);
-                        PdfWriter.GetInstance(pdfdoc, stream);
-                        Paragraph heading = new Paragraph("Summary Report");
-                        //font size of heading
-                        //get name from list
+
+                        Paragraph heading = new Paragraph(title + " Report", FontFactory.GetFont("Courier", 25, 1, new BaseColor(255, 140, 51)));
                         heading.Alignment = Element.ALIGN_CENTER;
-                        string imageURL = ""; // image path
-                        iTextSharp.text.Image jpg = iTextSharp.text.Image.GetInstance(imageURL);
+                        heading.SpacingBefore = 10f;
+                        heading.SpacingAfter = 1f;
+
+                        PdfWriter.GetInstance(pdfdoc, stream);
+
                         jpg.ScaleToFit(140f, 120f);
                         jpg.SpacingBefore = 10f;
-                        jpg.SpacingAfter = 1f;
+                        jpg.SpacingAfter = 2f;
                         jpg.Alignment = Element.ALIGN_CENTER;
-                        
+
+                        string dateNow = DateTime.Now.ToString("dddd, dd MMMM yyyy");
+                        Paragraph date = new Paragraph(dateNow, FontFactory.GetFont("Courier", 10, 1));
+                        date.Alignment = Element.ALIGN_RIGHT;
+                        date.SpacingBefore = 10f;
+                        date.SpacingAfter = 2f;
+
                         pdfdoc.Open();
-                        pdfdoc.Add(pdfTable);
                         pdfdoc.Add(jpg);
+                        pdfdoc.Add(Chunk.NEWLINE);
+                        pdfdoc.Add(heading);
+                        pdfdoc.Add(date);
+                        pdfdoc.Add(pdfTable);
                         pdfdoc.Close();
                         stream.Close();
 
                     }
                     MessageBox.Show("Report successfully saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    stream.Dispose();
                 }
+                dialog.Dispose();
             }
             catch (Exception ex)
             {
