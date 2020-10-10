@@ -171,10 +171,6 @@ namespace Watchers
                 {
                     FileStream stream = new FileStream(dialog.FileName, FileMode.Create);
                     {
-                        string workingDirectory = Environment.CurrentDirectory;
-                        string projectDirectory = Directory.GetParent(workingDirectory).Parent.Parent.FullName;
-
-                        iTextSharp.text.Image jpg = iTextSharp.text.Image.GetInstance(projectDirectory);
                         Document pdfdoc = new Document(PageSize.A4, 40f, 40f, 40f, 0f);
 
                         Paragraph heading = new Paragraph(title + " Report", FontFactory.GetFont("Courier", 25, 1, new BaseColor(255, 140, 51)));
@@ -183,6 +179,11 @@ namespace Watchers
                         heading.SpacingAfter = 1f;
 
                         PdfWriter.GetInstance(pdfdoc, stream);
+
+                        string workingDirectory = Environment.CurrentDirectory;
+                        string projectDirectory = Directory.GetParent(workingDirectory).Parent.Parent.FullName + "\\Watchers\\Resources\\Watchers2.png";
+
+                        iTextSharp.text.Image jpg = iTextSharp.text.Image.GetInstance(projectDirectory);
 
                         jpg.ScaleToFit(140f, 120f);
                         jpg.SpacingBefore = 10f;
