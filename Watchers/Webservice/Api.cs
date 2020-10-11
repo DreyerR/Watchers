@@ -249,7 +249,62 @@ namespace Watchers.Webservice
             return dt;
         }
 
-        public static async Task<bool> UpdateUser(int userID, string name, string surname, string email)
+        public static async Task<DataTable> GetOrdersAsync()
+        {
+            string url = AppConstants.OrderURL + "?mode=0";
+
+            client = GetHttpClient();
+            HttpResponseMessage response = await client.GetAsync(url);
+
+            if (response.IsSuccessStatusCode)
+            {
+                string content = await response.Content.ReadAsStringAsync();
+                GetOrderResponse model = JsonConvert.DeserializeObject<GetOrderResponse>(content);
+
+                if (model.IsSuccessful)
+                    return BuildOrdersDataTable(model.Orders);
+                else
+                    return null;
+            }
+            else
+            {
+                throw new Exception("Error: Could not connect to remote server.\nStatus code: " + (int)response.StatusCode);
+            }
+        }
+
+        private static DataTable BuildOrdersDataTable(List<Order> orders)
+        {
+            DataTable dt = new DataTable();
+            dt.Clear();
+            dt.Columns.Add("Order ID");
+            dt.Columns.Add("Ticket ID");
+            dt.Columns.Add("Snack barcode");
+            dt.Columns.Add("Snack name");
+            dt.Columns.Add("Snack quantity");
+            dt.Columns.Add("Snack price");
+            dt.Columns.Add("First name");
+            dt.Columns.Add("Last name");
+            dt.Columns.Add("Email");
+
+            foreach (Order order in orders)
+            {
+                DataRow dr = dt.NewRow();
+                dr[0] = order.OrderID;
+                dr[1] = order.TicketID;
+                dr[2] = order.SnackBarcode;
+                dr[3] = order.ProductName;
+                dr[4] = order.SnackQuantity;
+                dr[5] = order.ProductPrice.ToString("C");
+                dr[6] = order.FirstName;
+                dr[7] = order.LastName;
+                dr[8] = order.Email;
+                dt.Rows.Add(dr);
+            }
+
+            return dt;
+        }
+
+        public static async Task<bool> UpdateUserAsync(int userID, string name, string surname, string email)
         {
             AuthUserPost model = new AuthUserPost
             {
@@ -278,7 +333,7 @@ namespace Watchers.Webservice
             }
         }
 
-        public static async Task<bool> DeleteUser(int userID)
+        public static async Task<bool> DeleteUserAsync(int userID)
         {
             Dictionary<string, int> keyValues = new Dictionary<string, int>();
             keyValues.Add("mode", 1);

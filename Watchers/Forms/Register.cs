@@ -36,21 +36,21 @@ namespace Watchers
                     string surname = txtSurname.Text;
                     string email = txtEmail.Text;
 
-                    bool isSuccessful = await Api.UpdateUser(userID, name, surname, email);
+                    bool isSuccessful = await Api.UpdateUserAsync(userID, name, surname, email);
                     if (isSuccessful)
                     {
-                        Message.ShowMessage("Account updated Successfully", Message.MessageType.Information);
+                        Message.ShowMessage("Account was updated successfully", Message.MessageType.Information);
                         this.Close();
                     }
                     else
                     {
-                        Message.ShowMessage("Could not update account", Message.MessageType.Error);
+                        Message.ShowMessage("Could not update your account", Message.MessageType.Error);
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Message.ShowMessage(ex.Message, Message.MessageType.Error);
             }
         }
 

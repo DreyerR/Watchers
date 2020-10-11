@@ -98,6 +98,7 @@
     <Compile Include="Message.cs" />
     <Compile Include="Models\AuthUserResponse.cs" />
     <Compile Include="Models\GetBookingsResponse.cs" />
+    <Compile Include="Models\GetOrderResponse.cs" />
     <Compile Include="Models\GetUserResponse.cs" />
     <Compile Include="Models\MovieCountResponse.cs" />
     <Compile Include="Models\Post Models\AuthUserPost.cs" />

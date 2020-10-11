@@ -52,7 +52,7 @@ namespace Watchers
             {
                 if(MessageBox.Show("Are you sure you want to delete " + lblName.Text + "?", "Confirm Delete ", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    bool isDeleted = await Api.DeleteUser(Properties.Settings.Default.UserID);
+                    bool isDeleted = await Api.DeleteUserAsync(Properties.Settings.Default.UserID);
                     if(isDeleted)
                     {
                         Message.ShowMessage("Account has been deleted", Message.MessageType.Information);

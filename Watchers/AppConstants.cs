@@ -13,5 +13,6 @@ namespace Watchers
         public static string UsersURL = BASE + "/user.php";
         public static string BookingURL = BASE + "/booking.php?mode={0}";
         public static string MovieURl = BASE + "/movie.php";
+        public static string OrderURL = BASE + "/order.php";
     }
 }
