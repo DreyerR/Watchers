@@ -83,48 +83,6 @@ namespace Watchers
             }
         }
 
-        private async void PopulateOrders()
-        {
-            try
-            {
-                cbbCategory.Enabled = false;
-                lblCategory.Text = "Please wait...";
-
-                DataTable orders = await Api.GetOrdersAsync();
-
-                if (orders != null)
-                {
-                    dgvReport.DataSource = orders;
-
-                    dgvReport.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
-                    dgvReport.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-                    dgvReport.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-                    dgvReport.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-                    dgvReport.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-                    dgvReport.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-                    dgvReport.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-
-                    lblCategory.Text = "Choose a report:";
-                    cbbCategory.Enabled = true;
-                }
-                else
-                {
-                    Message.ShowMessage("Error on server side\nOrdes: null", Message.MessageType.Error);
-                    lblCategory.Text = "Choose a report:";
-                    cbbCategory.Enabled = true; 
-                    cbbCategory.Focus();
-                }
-
-            }
-            catch (Exception ex)
-            {
-                Message.ShowMessage(ex.Message, Message.MessageType.Error);
-                lblCategory.Text = "Choose a report:";
-                cbbCategory.Enabled = true; 
-                cbbCategory.Focus();
-            }
-        }
-
         private async void PopulateBookings()
         {
             try
@@ -155,12 +113,8 @@ namespace Watchers
                 {
                     Message.ShowMessage("Error on server side\nBookings: null", Message.MessageType.Error);
                     lblCategory.Text = "Choose a report:";
-<<<<<<< HEAD
                     cbbCategory.Enabled = true; 
-=======
-                    cbbCategory.Enabled = true;
-                    cbbCategory.SelectedIndex = -1;
->>>>>>> origin/Reports_Columns
+                    //cbbCategory.SelectedIndex = -1;
                     cbbCategory.Focus();
                 }
 
@@ -169,12 +123,9 @@ namespace Watchers
             {
                 Message.ShowMessage(ex.Message, Message.MessageType.Error);
                 lblCategory.Text = "Choose a report:";
-<<<<<<< HEAD
                 cbbCategory.Enabled = true; 
-=======
                 cbbCategory.Enabled = true;
                 cbbCategory.SelectedIndex = -1;
->>>>>>> origin/Reports_Columns
                 cbbCategory.Focus();
             }
         }
@@ -195,12 +146,11 @@ namespace Watchers
                     dgvReport.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
                     dgvReport.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
                     dgvReport.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-                    dgvReport.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                    dgvReport.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
                     dgvReport.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
                     dgvReport.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-                    dgvReport.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
-                    dgvReport.Columns[7].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
-                    dgvReport.Columns[8].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                    dgvReport.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                    dgvReport.Columns[7].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
                     lblCategory.Text = "Choose a report:";
                     cbbCategory.Enabled = true;
