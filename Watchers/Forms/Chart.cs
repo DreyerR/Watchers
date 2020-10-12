@@ -19,6 +19,8 @@ namespace Watchers.Forms
             InitializeComponent();
             pieChartMovies.LegendLocation = LegendLocation.Left;
             pieChartMovies.Series = series;
+            string chartDate = DateTime.Now.ToString("dddd, dd MMMM yyyy");
+            lblDate.Text = "Date: " + chartDate;
         }
     }
 }
