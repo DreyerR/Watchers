@@ -41,6 +41,7 @@ namespace Watchers
                     PopulateBookings();
                     break;
                 case 1:
+                    PopulateOrders();
                     break;
                 case 2:
                     PopulateUsers();
@@ -82,6 +83,50 @@ namespace Watchers
             }
         }
 
+        private async void PopulateOrders()
+        {
+            try
+            {
+                cbbCategory.Enabled = false;
+                lblCategory.Text = "Please wait...";
+
+                DataTable orders = await Api.GetOrdersAsync();
+
+                if (orders != null)
+                {
+                    dgvReport.DataSource = orders;
+
+                    dgvReport.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                    dgvReport.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                    dgvReport.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                    dgvReport.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                    dgvReport.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                    dgvReport.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                    dgvReport.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                    //dgvReport.Columns[7].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                    //dgvReport.Columns[8].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+                    lblCategory.Text = "Choose a report:";
+                    cbbCategory.Enabled = true;
+                }
+                else
+                {
+                    Message.ShowMessage("Error on server side\nOrdes: null", Message.MessageType.Error);
+                    lblCategory.Text = "Choose a report:";
+                    cbbCategory.Enabled = true; 
+                    cbbCategory.Focus();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Message.ShowMessage(ex.Message, Message.MessageType.Error);
+                lblCategory.Text = "Choose a report:";
+                cbbCategory.Enabled = true; 
+                cbbCategory.Focus();
+            }
+        }
+
         private async void PopulateBookings()
         {
             try
@@ -110,13 +155,19 @@ namespace Watchers
                 }
                 else
                 {
-                    Message.ShowMessage("Error on server side\nUsers: null", Message.MessageType.Error);
+                    Message.ShowMessage("Error on server side\nBookings: null", Message.MessageType.Error);
+                    lblCategory.Text = "Choose a report:";
+                    cbbCategory.Enabled = true; 
+                    cbbCategory.Focus();
                 }
 
             }
             catch (Exception ex)
             {
                 Message.ShowMessage(ex.Message, Message.MessageType.Error);
+                lblCategory.Text = "Choose a report:";
+                cbbCategory.Enabled = true; 
+                cbbCategory.Focus();
             }
         }
 
@@ -139,6 +190,7 @@ namespace Watchers
         {
             try
             {
+
                 BaseFont baseF = BaseFont.CreateFont(BaseFont.TIMES_ROMAN, BaseFont.CP1250, BaseFont.EMBEDDED);
                 PdfPTable pdfTable = new PdfPTable(dgv.Columns.Count);
                 pdfTable.DefaultCell.Padding = 5;
@@ -152,6 +204,7 @@ namespace Watchers
                 {
                     PdfPCell cell = new PdfPCell(new Phrase(col.HeaderText, txt));
                     cell.BackgroundColor = new BaseColor(Color.White);
+                    pdfTable.DefaultCell.Border = iTextSharp.text.Rectangle.BOTTOM_BORDER; //formatting cells to be more readible
                     pdfTable.AddCell(cell);
                 }
 

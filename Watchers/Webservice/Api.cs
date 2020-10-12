@@ -277,8 +277,8 @@ namespace Watchers.Webservice
             DataTable dt = new DataTable();
             dt.Clear();
             dt.Columns.Add("Order ID");
-            dt.Columns.Add("Ticket ID");
-            dt.Columns.Add("Snack barcode");
+            //dt.Columns.Add("Ticket ID");
+            //dt.Columns.Add("Snack barcode");
             dt.Columns.Add("Snack name");
             dt.Columns.Add("Snack quantity");
             dt.Columns.Add("Snack price");
@@ -290,14 +290,14 @@ namespace Watchers.Webservice
             {
                 DataRow dr = dt.NewRow();
                 dr[0] = order.OrderID;
-                dr[1] = order.TicketID;
-                dr[2] = order.SnackBarcode;
-                dr[3] = order.ProductName;
-                dr[4] = order.SnackQuantity;
-                dr[5] = order.ProductPrice.ToString("C");
-                dr[6] = order.FirstName;
-                dr[7] = order.LastName;
-                dr[8] = order.Email;
+                //dr[1] = order.TicketID;
+                //dr[2] = order.SnackBarcode;
+                dr[1] = order.ProductName;
+                dr[2] = order.SnackQuantity;
+                dr[3] = order.ProductPrice.ToString("C");
+                dr[4] = order.FirstName;
+                dr[5] = order.LastName;
+                dr[6] = order.Email;
                 dt.Rows.Add(dr);
             }
 
