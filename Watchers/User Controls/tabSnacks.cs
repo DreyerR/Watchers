@@ -35,5 +35,10 @@ namespace Watchers
         {
             lsbOrder.Items.Clear();
         }
+
+        private void lblSmall_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

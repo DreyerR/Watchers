@@ -28,27 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblPlaceOrder = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblAccount = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.pnlDrinks = new System.Windows.Forms.Panel();
             this.btnITLemon = new System.Windows.Forms.Button();
-            this.btnSmlDrink = new System.Windows.Forms.Button();
             this.btnWater = new System.Windows.Forms.Button();
-            this.btnFantaZero = new System.Windows.Forms.Button();
-            this.btnMedDrink = new System.Windows.Forms.Button();
-            this.btnLrgDrink = new System.Windows.Forms.Button();
-            this.btnSpriteZero = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
+            this.btnFantaZeroSml = new System.Windows.Forms.Button();
+            this.btnSpriteZeroSml = new System.Windows.Forms.Button();
             this.btnITPeach = new System.Windows.Forms.Button();
-            this.btnCokeZero = new System.Windows.Forms.Button();
-            this.btnCreamSoda = new System.Windows.Forms.Button();
-            this.btnFanta = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.btnSprite = new System.Windows.Forms.Button();
-            this.btnCoke = new System.Windows.Forms.Button();
+            this.btnCokeZeroSml = new System.Windows.Forms.Button();
+            this.btnFantaSml = new System.Windows.Forms.Button();
+            this.btnSpriteSml = new System.Windows.Forms.Button();
+            this.btnCokeSml = new System.Windows.Forms.Button();
             this.lblPopcorn = new System.Windows.Forms.Label();
             this.pnlPopcorn = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -80,6 +74,33 @@
             this.pnlOrder = new System.Windows.Forms.Panel();
             this.btnClear = new System.Windows.Forms.Button();
             this.lsbOrder = new System.Windows.Forms.ListBox();
+            this.lblSmall = new System.Windows.Forms.Label();
+            this.lblMed = new System.Windows.Forms.Label();
+            this.btnFantaZeroMed = new System.Windows.Forms.Button();
+            this.btnSpriteZeroMed = new System.Windows.Forms.Button();
+            this.btnCokeZeroMed = new System.Windows.Forms.Button();
+            this.btnFantaMed = new System.Windows.Forms.Button();
+            this.btnSpriteMed = new System.Windows.Forms.Button();
+            this.btnCokeMed = new System.Windows.Forms.Button();
+            this.lblLarge = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.lblWater = new System.Windows.Forms.Label();
+            this.lblWaterPrice = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.lblPeach = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.pnlDrinks.SuspendLayout();
@@ -127,12 +148,12 @@
             this.tableLayoutPanel2.Controls.Add(this.pnlDrinks, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.lblPopcorn, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.pnlPopcorn, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.pnlSweets, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.lblSweet, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.lblDrink, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.lblOrder, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.pnlButtons, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.pnlOrder, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.pnlSweets, 0, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 94);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -149,218 +170,151 @@
             // 
             this.pnlDrinks.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.pnlDrinks.BackColor = System.Drawing.Color.White;
-            this.pnlDrinks.Controls.Add(this.btnITLemon);
-            this.pnlDrinks.Controls.Add(this.btnSmlDrink);
-            this.pnlDrinks.Controls.Add(this.btnWater);
-            this.pnlDrinks.Controls.Add(this.btnFantaZero);
-            this.pnlDrinks.Controls.Add(this.btnMedDrink);
-            this.pnlDrinks.Controls.Add(this.btnLrgDrink);
-            this.pnlDrinks.Controls.Add(this.btnSpriteZero);
             this.pnlDrinks.Controls.Add(this.label11);
-            this.pnlDrinks.Controls.Add(this.btnITPeach);
-            this.pnlDrinks.Controls.Add(this.btnCokeZero);
-            this.pnlDrinks.Controls.Add(this.btnCreamSoda);
-            this.pnlDrinks.Controls.Add(this.btnFanta);
-            this.pnlDrinks.Controls.Add(this.label9);
+            this.pnlDrinks.Controls.Add(this.label12);
+            this.pnlDrinks.Controls.Add(this.label13);
             this.pnlDrinks.Controls.Add(this.label10);
-            this.pnlDrinks.Controls.Add(this.btnSprite);
-            this.pnlDrinks.Controls.Add(this.btnCoke);
-            this.pnlDrinks.Location = new System.Drawing.Point(685, 53);
+            this.pnlDrinks.Controls.Add(this.label9);
+            this.pnlDrinks.Controls.Add(this.lblPeach);
+            this.pnlDrinks.Controls.Add(this.lblWaterPrice);
+            this.pnlDrinks.Controls.Add(this.lblWater);
+            this.pnlDrinks.Controls.Add(this.lblLarge);
+            this.pnlDrinks.Controls.Add(this.button1);
+            this.pnlDrinks.Controls.Add(this.button2);
+            this.pnlDrinks.Controls.Add(this.button3);
+            this.pnlDrinks.Controls.Add(this.button4);
+            this.pnlDrinks.Controls.Add(this.button5);
+            this.pnlDrinks.Controls.Add(this.button6);
+            this.pnlDrinks.Controls.Add(this.lblMed);
+            this.pnlDrinks.Controls.Add(this.btnFantaZeroMed);
+            this.pnlDrinks.Controls.Add(this.btnSpriteZeroMed);
+            this.pnlDrinks.Controls.Add(this.btnCokeZeroMed);
+            this.pnlDrinks.Controls.Add(this.btnFantaMed);
+            this.pnlDrinks.Controls.Add(this.btnSpriteMed);
+            this.pnlDrinks.Controls.Add(this.btnCokeMed);
+            this.pnlDrinks.Controls.Add(this.lblSmall);
+            this.pnlDrinks.Controls.Add(this.btnITLemon);
+            this.pnlDrinks.Controls.Add(this.btnWater);
+            this.pnlDrinks.Controls.Add(this.btnFantaZeroSml);
+            this.pnlDrinks.Controls.Add(this.btnSpriteZeroSml);
+            this.pnlDrinks.Controls.Add(this.btnITPeach);
+            this.pnlDrinks.Controls.Add(this.btnCokeZeroSml);
+            this.pnlDrinks.Controls.Add(this.btnFantaSml);
+            this.pnlDrinks.Controls.Add(this.btnSpriteSml);
+            this.pnlDrinks.Controls.Add(this.btnCokeSml);
+            this.pnlDrinks.Location = new System.Drawing.Point(653, 53);
             this.pnlDrinks.Name = "pnlDrinks";
-            this.pnlDrinks.Size = new System.Drawing.Size(450, 381);
+            this.pnlDrinks.Size = new System.Drawing.Size(514, 381);
             this.pnlDrinks.TabIndex = 56;
+            this.toolTip1.SetToolTip(this.pnlDrinks, "Click on the picture of the drink to add to order");
             // 
             // btnITLemon
             // 
             this.btnITLemon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnITLemon.BackgroundImage = global::Watchers.Properties.Resources.IceTeaLemon_;
             this.btnITLemon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnITLemon.Location = new System.Drawing.Point(357, 279);
+            this.btnITLemon.Location = new System.Drawing.Point(336, 307);
             this.btnITLemon.Name = "btnITLemon";
-            this.btnITLemon.Size = new System.Drawing.Size(78, 80);
+            this.btnITLemon.Size = new System.Drawing.Size(67, 64);
             this.btnITLemon.TabIndex = 71;
             this.btnITLemon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnITLemon.UseVisualStyleBackColor = true;
-            // 
-            // btnSmlDrink
-            // 
-            this.btnSmlDrink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnSmlDrink.BackgroundImage = global::Watchers.Properties.Resources.CokeSmall;
-            this.btnSmlDrink.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSmlDrink.Location = new System.Drawing.Point(17, 14);
-            this.btnSmlDrink.Name = "btnSmlDrink";
-            this.btnSmlDrink.Size = new System.Drawing.Size(128, 129);
-            this.btnSmlDrink.TabIndex = 59;
-            this.btnSmlDrink.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnSmlDrink.UseVisualStyleBackColor = true;
             // 
             // btnWater
             // 
             this.btnWater.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnWater.BackgroundImage = global::Watchers.Properties.Resources.Water;
             this.btnWater.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnWater.Location = new System.Drawing.Point(269, 279);
+            this.btnWater.Location = new System.Drawing.Point(17, 309);
             this.btnWater.Name = "btnWater";
-            this.btnWater.Size = new System.Drawing.Size(78, 80);
+            this.btnWater.Size = new System.Drawing.Size(68, 64);
             this.btnWater.TabIndex = 69;
             this.btnWater.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnWater.UseVisualStyleBackColor = true;
             // 
-            // btnFantaZero
+            // btnFantaZeroSml
             // 
-            this.btnFantaZero.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnFantaZero.BackgroundImage = global::Watchers.Properties.Resources.fanta_Zero;
-            this.btnFantaZero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFantaZero.Location = new System.Drawing.Point(185, 279);
-            this.btnFantaZero.Name = "btnFantaZero";
-            this.btnFantaZero.Size = new System.Drawing.Size(78, 80);
-            this.btnFantaZero.TabIndex = 70;
-            this.btnFantaZero.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnFantaZero.UseVisualStyleBackColor = true;
+            this.btnFantaZeroSml.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnFantaZeroSml.BackgroundImage = global::Watchers.Properties.Resources.fanta_Zero;
+            this.btnFantaZeroSml.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFantaZeroSml.Location = new System.Drawing.Point(181, 112);
+            this.btnFantaZeroSml.Name = "btnFantaZeroSml";
+            this.btnFantaZeroSml.Size = new System.Drawing.Size(48, 50);
+            this.btnFantaZeroSml.TabIndex = 70;
+            this.btnFantaZeroSml.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnFantaZeroSml.UseVisualStyleBackColor = true;
             // 
-            // btnMedDrink
+            // btnSpriteZeroSml
             // 
-            this.btnMedDrink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnMedDrink.BackgroundImage = global::Watchers.Properties.Resources.CokeMedium;
-            this.btnMedDrink.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMedDrink.Location = new System.Drawing.Point(164, 14);
-            this.btnMedDrink.Name = "btnMedDrink";
-            this.btnMedDrink.Size = new System.Drawing.Size(128, 129);
-            this.btnMedDrink.TabIndex = 60;
-            this.btnMedDrink.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnMedDrink.UseVisualStyleBackColor = true;
-            // 
-            // btnLrgDrink
-            // 
-            this.btnLrgDrink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnLrgDrink.BackgroundImage = global::Watchers.Properties.Resources.CokeLarge_;
-            this.btnLrgDrink.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLrgDrink.Location = new System.Drawing.Point(307, 14);
-            this.btnLrgDrink.Name = "btnLrgDrink";
-            this.btnLrgDrink.Size = new System.Drawing.Size(128, 129);
-            this.btnLrgDrink.TabIndex = 61;
-            this.btnLrgDrink.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnLrgDrink.UseVisualStyleBackColor = true;
-            // 
-            // btnSpriteZero
-            // 
-            this.btnSpriteZero.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnSpriteZero.BackgroundImage = global::Watchers.Properties.Resources.SpriteZero;
-            this.btnSpriteZero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSpriteZero.Location = new System.Drawing.Point(101, 279);
-            this.btnSpriteZero.Name = "btnSpriteZero";
-            this.btnSpriteZero.Size = new System.Drawing.Size(78, 80);
-            this.btnSpriteZero.TabIndex = 68;
-            this.btnSpriteZero.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnSpriteZero.UseVisualStyleBackColor = true;
-            // 
-            // label11
-            // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
-            this.label11.Location = new System.Drawing.Point(17, 146);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(128, 44);
-            this.label11.TabIndex = 59;
-            this.label11.Text = "R";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSpriteZeroSml.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnSpriteZeroSml.BackgroundImage = global::Watchers.Properties.Resources.SpriteZero;
+            this.btnSpriteZeroSml.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSpriteZeroSml.Location = new System.Drawing.Point(127, 112);
+            this.btnSpriteZeroSml.Name = "btnSpriteZeroSml";
+            this.btnSpriteZeroSml.Size = new System.Drawing.Size(48, 50);
+            this.btnSpriteZeroSml.TabIndex = 68;
+            this.btnSpriteZeroSml.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnSpriteZeroSml.UseVisualStyleBackColor = true;
             // 
             // btnITPeach
             // 
             this.btnITPeach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnITPeach.BackgroundImage = global::Watchers.Properties.Resources.IceTeacPeach_;
             this.btnITPeach.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnITPeach.Location = new System.Drawing.Point(357, 193);
+            this.btnITPeach.Location = new System.Drawing.Point(171, 307);
             this.btnITPeach.Name = "btnITPeach";
-            this.btnITPeach.Size = new System.Drawing.Size(78, 80);
+            this.btnITPeach.Size = new System.Drawing.Size(67, 64);
             this.btnITPeach.TabIndex = 66;
             this.btnITPeach.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnITPeach.UseVisualStyleBackColor = true;
             // 
-            // btnCokeZero
+            // btnCokeZeroSml
             // 
-            this.btnCokeZero.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnCokeZero.BackgroundImage = global::Watchers.Properties.Resources.CokeZero;
-            this.btnCokeZero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCokeZero.Location = new System.Drawing.Point(17, 279);
-            this.btnCokeZero.Name = "btnCokeZero";
-            this.btnCokeZero.Size = new System.Drawing.Size(78, 80);
-            this.btnCokeZero.TabIndex = 67;
-            this.btnCokeZero.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnCokeZero.UseVisualStyleBackColor = true;
+            this.btnCokeZeroSml.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnCokeZeroSml.BackgroundImage = global::Watchers.Properties.Resources.CokeZero;
+            this.btnCokeZeroSml.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCokeZeroSml.Location = new System.Drawing.Point(73, 112);
+            this.btnCokeZeroSml.Name = "btnCokeZeroSml";
+            this.btnCokeZeroSml.Size = new System.Drawing.Size(48, 50);
+            this.btnCokeZeroSml.TabIndex = 67;
+            this.btnCokeZeroSml.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnCokeZeroSml.UseVisualStyleBackColor = true;
             // 
-            // btnCreamSoda
+            // btnFantaSml
             // 
-            this.btnCreamSoda.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnCreamSoda.BackgroundImage = global::Watchers.Properties.Resources.CreamSoda;
-            this.btnCreamSoda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCreamSoda.Location = new System.Drawing.Point(269, 193);
-            this.btnCreamSoda.Name = "btnCreamSoda";
-            this.btnCreamSoda.Size = new System.Drawing.Size(78, 80);
-            this.btnCreamSoda.TabIndex = 64;
-            this.btnCreamSoda.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnCreamSoda.UseVisualStyleBackColor = true;
+            this.btnFantaSml.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnFantaSml.BackgroundImage = global::Watchers.Properties.Resources.fantaOrange;
+            this.btnFantaSml.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFantaSml.Location = new System.Drawing.Point(181, 56);
+            this.btnFantaSml.Name = "btnFantaSml";
+            this.btnFantaSml.Size = new System.Drawing.Size(48, 50);
+            this.btnFantaSml.TabIndex = 65;
+            this.btnFantaSml.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnFantaSml.UseVisualStyleBackColor = true;
             // 
-            // btnFanta
+            // btnSpriteSml
             // 
-            this.btnFanta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnFanta.BackgroundImage = global::Watchers.Properties.Resources.fantaOrange;
-            this.btnFanta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFanta.Location = new System.Drawing.Point(185, 193);
-            this.btnFanta.Name = "btnFanta";
-            this.btnFanta.Size = new System.Drawing.Size(78, 80);
-            this.btnFanta.TabIndex = 65;
-            this.btnFanta.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnFanta.UseVisualStyleBackColor = true;
+            this.btnSpriteSml.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnSpriteSml.BackgroundImage = global::Watchers.Properties.Resources.Sprite;
+            this.btnSpriteSml.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSpriteSml.Location = new System.Drawing.Point(127, 56);
+            this.btnSpriteSml.Name = "btnSpriteSml";
+            this.btnSpriteSml.Size = new System.Drawing.Size(48, 50);
+            this.btnSpriteSml.TabIndex = 63;
+            this.btnSpriteSml.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnSpriteSml.UseVisualStyleBackColor = true;
             // 
-            // label9
+            // btnCokeSml
             // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
-            this.label9.Location = new System.Drawing.Point(164, 146);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(128, 44);
-            this.label9.TabIndex = 57;
-            this.label9.Text = "R";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label10
-            // 
-            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
-            this.label10.Location = new System.Drawing.Point(307, 146);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(128, 44);
-            this.label10.TabIndex = 58;
-            this.label10.Text = "R";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnSprite
-            // 
-            this.btnSprite.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnSprite.BackgroundImage = global::Watchers.Properties.Resources.Sprite;
-            this.btnSprite.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSprite.Location = new System.Drawing.Point(101, 193);
-            this.btnSprite.Name = "btnSprite";
-            this.btnSprite.Size = new System.Drawing.Size(78, 80);
-            this.btnSprite.TabIndex = 63;
-            this.btnSprite.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnSprite.UseVisualStyleBackColor = true;
-            // 
-            // btnCoke
-            // 
-            this.btnCoke.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnCoke.BackgroundImage = global::Watchers.Properties.Resources.Coke;
-            this.btnCoke.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCoke.Location = new System.Drawing.Point(17, 193);
-            this.btnCoke.Name = "btnCoke";
-            this.btnCoke.Size = new System.Drawing.Size(78, 80);
-            this.btnCoke.TabIndex = 62;
-            this.btnCoke.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnCoke.UseVisualStyleBackColor = true;
+            this.btnCokeSml.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnCokeSml.BackgroundImage = global::Watchers.Properties.Resources.Coke;
+            this.btnCokeSml.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCokeSml.Location = new System.Drawing.Point(73, 56);
+            this.btnCokeSml.Name = "btnCokeSml";
+            this.btnCokeSml.Size = new System.Drawing.Size(48, 50);
+            this.btnCokeSml.TabIndex = 62;
+            this.btnCokeSml.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnCokeSml.UseVisualStyleBackColor = true;
             // 
             // lblPopcorn
             // 
@@ -378,6 +332,9 @@
             // 
             this.pnlPopcorn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.pnlPopcorn.BackColor = System.Drawing.Color.White;
+            this.pnlPopcorn.Controls.Add(this.label16);
+            this.pnlPopcorn.Controls.Add(this.label15);
+            this.pnlPopcorn.Controls.Add(this.label14);
             this.pnlPopcorn.Controls.Add(this.label2);
             this.pnlPopcorn.Controls.Add(this.label1);
             this.pnlPopcorn.Controls.Add(this.lblSmlPopPrice);
@@ -388,6 +345,7 @@
             this.pnlPopcorn.Name = "pnlPopcorn";
             this.pnlPopcorn.Size = new System.Drawing.Size(430, 256);
             this.pnlPopcorn.TabIndex = 54;
+            this.toolTip1.SetToolTip(this.pnlPopcorn, "Click on the picture of the popcorn to add to order");
             // 
             // label2
             // 
@@ -398,7 +356,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(128, 44);
             this.label2.TabIndex = 58;
-            this.label2.Text = "R";
+            this.label2.Text = "R 39.99";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
@@ -410,7 +368,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(128, 44);
             this.label1.TabIndex = 57;
-            this.label1.Text = "R";
+            this.label1.Text = "R 29.99";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblSmlPopPrice
@@ -422,7 +380,7 @@
             this.lblSmlPopPrice.Name = "lblSmlPopPrice";
             this.lblSmlPopPrice.Size = new System.Drawing.Size(128, 44);
             this.lblSmlPopPrice.TabIndex = 56;
-            this.lblSmlPopPrice.Text = "R";
+            this.lblSmlPopPrice.Text = "R 19.99";
             this.lblSmlPopPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnLrgPopcorn
@@ -481,6 +439,7 @@
             this.pnlSweets.Name = "pnlSweets";
             this.pnlSweets.Size = new System.Drawing.Size(430, 381);
             this.pnlSweets.TabIndex = 57;
+            this.toolTip1.SetToolTip(this.pnlSweets, "Click on the picture of the snack to add to order");
             // 
             // label8
             // 
@@ -491,7 +450,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(128, 44);
             this.label8.TabIndex = 62;
-            this.label8.Text = "R";
+            this.label8.Text = "R 49.99";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
@@ -503,7 +462,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(128, 44);
             this.label7.TabIndex = 61;
-            this.label7.Text = "R";
+            this.label7.Text = "R 21.99";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
@@ -515,7 +474,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(128, 44);
             this.label6.TabIndex = 60;
-            this.label6.Text = "R";
+            this.label6.Text = "R 21.99";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
@@ -527,7 +486,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(128, 44);
             this.label5.TabIndex = 59;
-            this.label5.Text = "R";
+            this.label5.Text = "R 15.99";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
@@ -539,7 +498,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(128, 44);
             this.label4.TabIndex = 58;
-            this.label4.Text = "R";
+            this.label4.Text = "R 18.99";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
@@ -551,7 +510,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(128, 44);
             this.label3.TabIndex = 57;
-            this.label3.Text = "R";
+            this.label3.Text = "R 11.99";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnWineGums
@@ -688,6 +647,7 @@
             this.btnSkipOrder.Size = new System.Drawing.Size(270, 54);
             this.btnSkipOrder.TabIndex = 97;
             this.btnSkipOrder.Text = "Skip Order";
+            this.toolTip1.SetToolTip(this.btnSkipOrder, "Click here to continue without ordering snacks");
             this.btnSkipOrder.UseVisualStyleBackColor = false;
             // 
             // btnBack
@@ -703,6 +663,7 @@
             this.btnBack.Size = new System.Drawing.Size(270, 54);
             this.btnBack.TabIndex = 96;
             this.btnBack.Text = "Back";
+            this.toolTip1.SetToolTip(this.btnBack, "Click here to return to previous screen");
             this.btnBack.UseVisualStyleBackColor = false;
             // 
             // btnPlaceOrder
@@ -718,6 +679,7 @@
             this.btnPlaceOrder.Size = new System.Drawing.Size(270, 54);
             this.btnPlaceOrder.TabIndex = 95;
             this.btnPlaceOrder.Text = "Place Order";
+            this.toolTip1.SetToolTip(this.btnPlaceOrder, "Click here to place order");
             this.btnPlaceOrder.UseVisualStyleBackColor = false;
             // 
             // pnlOrder
@@ -754,6 +716,320 @@
             this.lsbOrder.Size = new System.Drawing.Size(601, 196);
             this.lsbOrder.TabIndex = 1;
             // 
+            // lblSmall
+            // 
+            this.lblSmall.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSmall.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
+            this.lblSmall.Location = new System.Drawing.Point(50, 11);
+            this.lblSmall.Name = "lblSmall";
+            this.lblSmall.Size = new System.Drawing.Size(190, 44);
+            this.lblSmall.TabIndex = 72;
+            this.lblSmall.Text = "SMALL: R 14.99";
+            this.lblSmall.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSmall.Click += new System.EventHandler(this.lblSmall_Click);
+            // 
+            // lblMed
+            // 
+            this.lblMed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblMed.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
+            this.lblMed.Location = new System.Drawing.Point(266, 11);
+            this.lblMed.Name = "lblMed";
+            this.lblMed.Size = new System.Drawing.Size(200, 44);
+            this.lblMed.TabIndex = 79;
+            this.lblMed.Text = "MEDIUM: R 19.99";
+            this.lblMed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnFantaZeroMed
+            // 
+            this.btnFantaZeroMed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnFantaZeroMed.BackgroundImage = global::Watchers.Properties.Resources.fanta_Zero;
+            this.btnFantaZeroMed.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFantaZeroMed.Location = new System.Drawing.Point(396, 112);
+            this.btnFantaZeroMed.Name = "btnFantaZeroMed";
+            this.btnFantaZeroMed.Size = new System.Drawing.Size(48, 50);
+            this.btnFantaZeroMed.TabIndex = 78;
+            this.btnFantaZeroMed.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnFantaZeroMed.UseVisualStyleBackColor = true;
+            // 
+            // btnSpriteZeroMed
+            // 
+            this.btnSpriteZeroMed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnSpriteZeroMed.BackgroundImage = global::Watchers.Properties.Resources.SpriteZero;
+            this.btnSpriteZeroMed.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSpriteZeroMed.Location = new System.Drawing.Point(342, 112);
+            this.btnSpriteZeroMed.Name = "btnSpriteZeroMed";
+            this.btnSpriteZeroMed.Size = new System.Drawing.Size(48, 50);
+            this.btnSpriteZeroMed.TabIndex = 77;
+            this.btnSpriteZeroMed.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnSpriteZeroMed.UseVisualStyleBackColor = true;
+            // 
+            // btnCokeZeroMed
+            // 
+            this.btnCokeZeroMed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnCokeZeroMed.BackgroundImage = global::Watchers.Properties.Resources.CokeZero;
+            this.btnCokeZeroMed.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCokeZeroMed.Location = new System.Drawing.Point(288, 112);
+            this.btnCokeZeroMed.Name = "btnCokeZeroMed";
+            this.btnCokeZeroMed.Size = new System.Drawing.Size(48, 50);
+            this.btnCokeZeroMed.TabIndex = 76;
+            this.btnCokeZeroMed.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnCokeZeroMed.UseVisualStyleBackColor = true;
+            // 
+            // btnFantaMed
+            // 
+            this.btnFantaMed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnFantaMed.BackgroundImage = global::Watchers.Properties.Resources.fantaOrange;
+            this.btnFantaMed.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFantaMed.Location = new System.Drawing.Point(396, 56);
+            this.btnFantaMed.Name = "btnFantaMed";
+            this.btnFantaMed.Size = new System.Drawing.Size(48, 50);
+            this.btnFantaMed.TabIndex = 75;
+            this.btnFantaMed.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnFantaMed.UseVisualStyleBackColor = true;
+            // 
+            // btnSpriteMed
+            // 
+            this.btnSpriteMed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnSpriteMed.BackgroundImage = global::Watchers.Properties.Resources.Sprite;
+            this.btnSpriteMed.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSpriteMed.Location = new System.Drawing.Point(342, 56);
+            this.btnSpriteMed.Name = "btnSpriteMed";
+            this.btnSpriteMed.Size = new System.Drawing.Size(48, 50);
+            this.btnSpriteMed.TabIndex = 74;
+            this.btnSpriteMed.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnSpriteMed.UseVisualStyleBackColor = true;
+            // 
+            // btnCokeMed
+            // 
+            this.btnCokeMed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnCokeMed.BackgroundImage = global::Watchers.Properties.Resources.Coke;
+            this.btnCokeMed.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCokeMed.Location = new System.Drawing.Point(288, 56);
+            this.btnCokeMed.Name = "btnCokeMed";
+            this.btnCokeMed.Size = new System.Drawing.Size(48, 50);
+            this.btnCokeMed.TabIndex = 73;
+            this.btnCokeMed.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnCokeMed.UseVisualStyleBackColor = true;
+            // 
+            // lblLarge
+            // 
+            this.lblLarge.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblLarge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLarge.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
+            this.lblLarge.Location = new System.Drawing.Point(186, 174);
+            this.lblLarge.Name = "lblLarge";
+            this.lblLarge.Size = new System.Drawing.Size(161, 44);
+            this.lblLarge.TabIndex = 88;
+            this.lblLarge.Text = "LARGE: R 24.99";
+            this.lblLarge.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button1.BackgroundImage = global::Watchers.Properties.Resources.fanta_Zero;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(379, 219);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(48, 50);
+            this.button1.TabIndex = 87;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button2.BackgroundImage = global::Watchers.Properties.Resources.SpriteZero;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Location = new System.Drawing.Point(271, 219);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(48, 50);
+            this.button2.TabIndex = 86;
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button3.BackgroundImage = global::Watchers.Properties.Resources.CokeZero;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Location = new System.Drawing.Point(163, 219);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(48, 50);
+            this.button3.TabIndex = 85;
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button4.BackgroundImage = global::Watchers.Properties.Resources.fantaOrange;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.Location = new System.Drawing.Point(325, 219);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(48, 50);
+            this.button4.TabIndex = 84;
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button5.BackgroundImage = global::Watchers.Properties.Resources.Sprite;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button5.Location = new System.Drawing.Point(217, 219);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(48, 50);
+            this.button5.TabIndex = 83;
+            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button6.BackgroundImage = global::Watchers.Properties.Resources.Coke;
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button6.Location = new System.Drawing.Point(109, 219);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(48, 50);
+            this.button6.TabIndex = 82;
+            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // lblWater
+            // 
+            this.lblWater.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblWater.BackColor = System.Drawing.Color.Transparent;
+            this.lblWater.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblWater.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
+            this.lblWater.Location = new System.Drawing.Point(87, 307);
+            this.lblWater.Name = "lblWater";
+            this.lblWater.Size = new System.Drawing.Size(71, 26);
+            this.lblWater.TabIndex = 89;
+            this.lblWater.Text = "WATER";
+            this.lblWater.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblWaterPrice
+            // 
+            this.lblWaterPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblWaterPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblWaterPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
+            this.lblWaterPrice.Location = new System.Drawing.Point(87, 346);
+            this.lblWaterPrice.Name = "lblWaterPrice";
+            this.lblWaterPrice.Size = new System.Drawing.Size(62, 26);
+            this.lblWaterPrice.TabIndex = 90;
+            this.lblWaterPrice.Text = "R 9.99";
+            this.lblWaterPrice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label9
+            // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
+            this.label9.Location = new System.Drawing.Point(244, 347);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(70, 26);
+            this.label9.TabIndex = 92;
+            this.label9.Text = "R 17.99";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblPeach
+            // 
+            this.lblPeach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblPeach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblPeach.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
+            this.lblPeach.Location = new System.Drawing.Point(244, 304);
+            this.lblPeach.Name = "lblPeach";
+            this.lblPeach.Size = new System.Drawing.Size(70, 26);
+            this.lblPeach.TabIndex = 91;
+            this.lblPeach.Text = "PEACH";
+            this.lblPeach.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label10
+            // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
+            this.label10.Location = new System.Drawing.Point(244, 326);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(82, 26);
+            this.label10.TabIndex = 93;
+            this.label10.Text = "ICE TEA";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
+            this.label11.Location = new System.Drawing.Point(409, 325);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(82, 26);
+            this.label11.TabIndex = 96;
+            this.label11.Text = "ICE TEA";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label12
+            // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
+            this.label12.Location = new System.Drawing.Point(409, 346);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(70, 26);
+            this.label12.TabIndex = 95;
+            this.label12.Text = "R 17.99";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label13
+            // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
+            this.label13.Location = new System.Drawing.Point(409, 303);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(70, 26);
+            this.label13.TabIndex = 94;
+            this.label13.Text = "LEMON";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label14
+            // 
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
+            this.label14.Location = new System.Drawing.Point(10, 22);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(128, 44);
+            this.label14.TabIndex = 59;
+            this.label14.Text = "SMALL";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label15
+            // 
+            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
+            this.label15.Location = new System.Drawing.Point(150, 22);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(128, 44);
+            this.label15.TabIndex = 60;
+            this.label15.Text = "MEDIUM";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label16
+            // 
+            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
+            this.label16.Location = new System.Drawing.Point(290, 22);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(128, 44);
+            this.label16.TabIndex = 61;
+            this.label16.Text = "LARGE";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // tabSnacks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -781,21 +1057,14 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Panel pnlDrinks;
         private System.Windows.Forms.Button btnITLemon;
-        private System.Windows.Forms.Button btnSmlDrink;
         private System.Windows.Forms.Button btnWater;
-        private System.Windows.Forms.Button btnFantaZero;
-        private System.Windows.Forms.Button btnMedDrink;
-        private System.Windows.Forms.Button btnLrgDrink;
-        private System.Windows.Forms.Button btnSpriteZero;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button btnFantaZeroSml;
+        private System.Windows.Forms.Button btnSpriteZeroSml;
         private System.Windows.Forms.Button btnITPeach;
-        private System.Windows.Forms.Button btnCokeZero;
-        private System.Windows.Forms.Button btnCreamSoda;
-        private System.Windows.Forms.Button btnFanta;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button btnSprite;
-        private System.Windows.Forms.Button btnCoke;
+        private System.Windows.Forms.Button btnCokeZeroSml;
+        private System.Windows.Forms.Button btnFantaSml;
+        private System.Windows.Forms.Button btnSpriteSml;
+        private System.Windows.Forms.Button btnCokeSml;
         private System.Windows.Forms.Label lblPopcorn;
         private System.Windows.Forms.Panel pnlPopcorn;
         private System.Windows.Forms.Label label2;
@@ -827,5 +1096,32 @@
         private System.Windows.Forms.Panel pnlOrder;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.ListBox lsbOrder;
+        private System.Windows.Forms.Label lblSmall;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblPeach;
+        private System.Windows.Forms.Label lblWaterPrice;
+        private System.Windows.Forms.Label lblWater;
+        private System.Windows.Forms.Label lblLarge;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label lblMed;
+        private System.Windows.Forms.Button btnFantaZeroMed;
+        private System.Windows.Forms.Button btnSpriteZeroMed;
+        private System.Windows.Forms.Button btnCokeZeroMed;
+        private System.Windows.Forms.Button btnFantaMed;
+        private System.Windows.Forms.Button btnSpriteMed;
+        private System.Windows.Forms.Button btnCokeMed;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
     }
 }
