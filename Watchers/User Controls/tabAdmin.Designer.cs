@@ -34,8 +34,8 @@
             this.cbbCategory = new System.Windows.Forms.ComboBox();
             this.lblCategory = new System.Windows.Forms.Label();
             this.panelTop = new System.Windows.Forms.Panel();
-            this.btnPDF = new System.Windows.Forms.Button();
             this.btnChart = new System.Windows.Forms.Button();
+            this.btnPDF = new System.Windows.Forms.Button();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvReport)).BeginInit();
             this.panelTop.SuspendLayout();
@@ -87,6 +87,7 @@
             this.cbbCategory.Name = "cbbCategory";
             this.cbbCategory.Size = new System.Drawing.Size(203, 28);
             this.cbbCategory.TabIndex = 2;
+            this.toolTip.SetToolTip(this.cbbCategory, "Click here to choose category of report");
             this.cbbCategory.SelectedIndexChanged += new System.EventHandler(this.cbbDataType_SelectedIndexChanged);
             // 
             // lblCategory
@@ -116,22 +117,6 @@
             this.panelTop.Size = new System.Drawing.Size(1487, 94);
             this.panelTop.TabIndex = 4;
             // 
-            // btnPDF
-            // 
-            this.btnPDF.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPDF.BackColor = System.Drawing.Color.OldLace;
-            this.btnPDF.FlatAppearance.BorderSize = 0;
-            this.btnPDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPDF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPDF.Location = new System.Drawing.Point(978, 36);
-            this.btnPDF.Margin = new System.Windows.Forms.Padding(4);
-            this.btnPDF.Name = "btnPDF";
-            this.btnPDF.Size = new System.Drawing.Size(160, 33);
-            this.btnPDF.TabIndex = 4;
-            this.btnPDF.Text = "Generate Report";
-            this.btnPDF.UseVisualStyleBackColor = false;
-            this.btnPDF.Click += new System.EventHandler(this.btnPDF_Click);
-            // 
             // btnChart
             // 
             this.btnChart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -148,6 +133,24 @@
             this.toolTip.SetToolTip(this.btnChart, "Generate a chart showing all the movies that was booked.");
             this.btnChart.UseVisualStyleBackColor = false;
             this.btnChart.Click += new System.EventHandler(this.btnChart_Click);
+            // 
+            // btnPDF
+            // 
+            this.btnPDF.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPDF.BackColor = System.Drawing.Color.OldLace;
+            this.btnPDF.Enabled = false;
+            this.btnPDF.FlatAppearance.BorderSize = 0;
+            this.btnPDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPDF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPDF.Location = new System.Drawing.Point(978, 36);
+            this.btnPDF.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPDF.Name = "btnPDF";
+            this.btnPDF.Size = new System.Drawing.Size(160, 33);
+            this.btnPDF.TabIndex = 4;
+            this.btnPDF.Text = "Generate Report";
+            this.toolTip.SetToolTip(this.btnPDF, "Once category has been changed click here to generate PDF report");
+            this.btnPDF.UseVisualStyleBackColor = false;
+            this.btnPDF.Click += new System.EventHandler(this.btnPDF_Click);
             // 
             // tabAdmin
             // 

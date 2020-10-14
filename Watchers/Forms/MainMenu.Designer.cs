@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
             this.pnlBack = new System.Windows.Forms.Panel();
             this.pnlMenuBar = new System.Windows.Forms.Panel();
@@ -39,6 +40,7 @@
             this.btnLogOut = new System.Windows.Forms.Button();
             this.btnAccount = new System.Windows.Forms.Button();
             this.btnAdmin = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.pnlBack.SuspendLayout();
             this.pnlMenuBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -88,6 +90,7 @@
             this.btnCheckOut.TabIndex = 6;
             this.btnCheckOut.Tag = "3";
             this.btnCheckOut.Text = "Check Out";
+            this.toolTip1.SetToolTip(this.btnCheckOut, "Click here to checkout and pay");
             this.btnCheckOut.UseVisualStyleBackColor = true;
             this.btnCheckOut.Click += new System.EventHandler(this.btnCheckOut_Click);
             // 
@@ -104,6 +107,7 @@
             this.btnSnacks.TabIndex = 5;
             this.btnSnacks.Tag = "2";
             this.btnSnacks.Text = "Snacks";
+            this.toolTip1.SetToolTip(this.btnSnacks, "Click here to go to the snacks page");
             this.btnSnacks.UseVisualStyleBackColor = true;
             this.btnSnacks.Click += new System.EventHandler(this.btnSnacks_Click);
             // 
@@ -120,6 +124,7 @@
             this.btnBookings.TabIndex = 4;
             this.btnBookings.Tag = "1";
             this.btnBookings.Text = "Bookings";
+            this.toolTip1.SetToolTip(this.btnBookings, "Click here to go to the Bookings page");
             this.btnBookings.UseVisualStyleBackColor = true;
             this.btnBookings.Click += new System.EventHandler(this.btnBookings_Click);
             // 
@@ -136,6 +141,7 @@
             this.btnMovies.TabIndex = 3;
             this.btnMovies.Tag = "0";
             this.btnMovies.Text = "Movies";
+            this.toolTip1.SetToolTip(this.btnMovies, "Click here to go to the Movies page");
             this.btnMovies.UseVisualStyleBackColor = true;
             this.btnMovies.Click += new System.EventHandler(this.btnMovies_Click);
             // 
@@ -163,6 +169,7 @@
             this.btnLogOut.Size = new System.Drawing.Size(251, 42);
             this.btnLogOut.TabIndex = 2;
             this.btnLogOut.Text = "Log Out";
+            this.toolTip1.SetToolTip(this.btnLogOut, "Click here to logout of the watchers system");
             this.btnLogOut.UseVisualStyleBackColor = true;
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
@@ -180,6 +187,7 @@
             this.btnAccount.TabIndex = 1;
             this.btnAccount.Tag = "4";
             this.btnAccount.Text = "Account";
+            this.toolTip1.SetToolTip(this.btnAccount, "Click here for your account options");
             this.btnAccount.UseVisualStyleBackColor = true;
             this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
             // 
@@ -197,6 +205,7 @@
             this.btnAdmin.TabIndex = 0;
             this.btnAdmin.Tag = "5";
             this.btnAdmin.Text = "Admin";
+            this.toolTip1.SetToolTip(this.btnAdmin, "Click here to go to the Admin page where reports can be created");
             this.btnAdmin.UseVisualStyleBackColor = true;
             this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
@@ -233,5 +242,6 @@
         private System.Windows.Forms.Button btnCheckOut;
         private System.Windows.Forms.Button btnSnacks;
         private System.Windows.Forms.Button btnBookings;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

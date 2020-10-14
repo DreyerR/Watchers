@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblCheckoutBTN = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.gbPayment = new System.Windows.Forms.GroupBox();
@@ -44,6 +45,7 @@
             this.btnBack = new System.Windows.Forms.Button();
             this.pnlTitle = new System.Windows.Forms.Panel();
             this.lblAccount = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.gbPayment.SuspendLayout();
             this.pnlTitle.SuspendLayout();
             this.SuspendLayout();
@@ -90,6 +92,7 @@
             this.gbPayment.TabIndex = 59;
             this.gbPayment.TabStop = false;
             this.gbPayment.Text = "Payment Options";
+            this.toolTip1.SetToolTip(this.gbPayment, "Choose your payment option here");
             // 
             // txtCVV
             // 
@@ -169,6 +172,7 @@
             this.lsOrderSummary.Name = "lsOrderSummary";
             this.lsOrderSummary.Size = new System.Drawing.Size(445, 254);
             this.lsOrderSummary.TabIndex = 57;
+            this.toolTip1.SetToolTip(this.lsOrderSummary, "Summary of snacks ordered");
             // 
             // lblBookSum
             // 
@@ -192,6 +196,7 @@
             this.lbBookSum.Name = "lbBookSum";
             this.lbBookSum.Size = new System.Drawing.Size(445, 254);
             this.lbBookSum.TabIndex = 55;
+            this.toolTip1.SetToolTip(this.lbBookSum, "Summary of booking made");
             // 
             // btnPayNow
             // 
@@ -205,7 +210,8 @@
             this.btnPayNow.Name = "btnPayNow";
             this.btnPayNow.Size = new System.Drawing.Size(270, 54);
             this.btnPayNow.TabIndex = 61;
-            this.btnPayNow.Text = "Pay Now";
+            this.btnPayNow.Text = "Check out";
+            this.toolTip1.SetToolTip(this.btnPayNow, "Click here to check out");
             this.btnPayNow.UseVisualStyleBackColor = false;
             // 
             // btnBack
@@ -221,6 +227,7 @@
             this.btnBack.Size = new System.Drawing.Size(270, 54);
             this.btnBack.TabIndex = 62;
             this.btnBack.Text = "Back";
+            this.toolTip1.SetToolTip(this.btnBack, "Click here to go to previous page");
             this.btnBack.UseVisualStyleBackColor = false;
             // 
             // pnlTitle
@@ -287,5 +294,6 @@
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Panel pnlTitle;
         private System.Windows.Forms.Label lblAccount;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

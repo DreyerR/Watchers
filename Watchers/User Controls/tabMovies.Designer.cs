@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pnlTitle = new System.Windows.Forms.Panel();
             this.lblAccount = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -55,6 +56,7 @@
             this.btnBookM2 = new System.Windows.Forms.Button();
             this.btnBookM3 = new System.Windows.Forms.Button();
             this.btnBookM4 = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.pnlTitle.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgMovie1)).BeginInit();
@@ -150,6 +152,7 @@
             this.btnBookM6.Size = new System.Drawing.Size(270, 54);
             this.btnBookM6.TabIndex = 100;
             this.btnBookM6.Text = "Book Now";
+            this.toolTip1.SetToolTip(this.btnBookM6, "Click here to book this movie");
             this.btnBookM6.UseVisualStyleBackColor = false;
             // 
             // btnBookM5
@@ -165,6 +168,7 @@
             this.btnBookM5.Size = new System.Drawing.Size(270, 54);
             this.btnBookM5.TabIndex = 99;
             this.btnBookM5.Text = "Book Now";
+            this.toolTip1.SetToolTip(this.btnBookM5, "Click here to book this movie");
             this.btnBookM5.UseVisualStyleBackColor = false;
             // 
             // btnBookM8
@@ -180,6 +184,7 @@
             this.btnBookM8.Size = new System.Drawing.Size(270, 54);
             this.btnBookM8.TabIndex = 98;
             this.btnBookM8.Text = "Book Now";
+            this.toolTip1.SetToolTip(this.btnBookM8, "Click here to book this movie");
             this.btnBookM8.UseVisualStyleBackColor = false;
             // 
             // btnBookM7
@@ -195,6 +200,7 @@
             this.btnBookM7.Size = new System.Drawing.Size(270, 54);
             this.btnBookM7.TabIndex = 97;
             this.btnBookM7.Text = "Book Now";
+            this.toolTip1.SetToolTip(this.btnBookM7, "Click here to book this movie");
             this.btnBookM7.UseVisualStyleBackColor = false;
             // 
             // lblMovie1
@@ -402,6 +408,7 @@
             this.btnBookM1.Size = new System.Drawing.Size(270, 54);
             this.btnBookM1.TabIndex = 93;
             this.btnBookM1.Text = "Book Now";
+            this.toolTip1.SetToolTip(this.btnBookM1, "Click here to book this movie");
             this.btnBookM1.UseVisualStyleBackColor = false;
             // 
             // btnBookM2
@@ -417,6 +424,7 @@
             this.btnBookM2.Size = new System.Drawing.Size(270, 54);
             this.btnBookM2.TabIndex = 94;
             this.btnBookM2.Text = "Book Now";
+            this.toolTip1.SetToolTip(this.btnBookM2, "Click here to book the above movie");
             this.btnBookM2.UseVisualStyleBackColor = false;
             // 
             // btnBookM3
@@ -432,6 +440,7 @@
             this.btnBookM3.Size = new System.Drawing.Size(270, 54);
             this.btnBookM3.TabIndex = 95;
             this.btnBookM3.Text = "Book Now";
+            this.toolTip1.SetToolTip(this.btnBookM3, "Click here to book this movie");
             this.btnBookM3.UseVisualStyleBackColor = false;
             // 
             // btnBookM4
@@ -447,6 +456,7 @@
             this.btnBookM4.Size = new System.Drawing.Size(270, 54);
             this.btnBookM4.TabIndex = 96;
             this.btnBookM4.Text = "Book Now";
+            this.toolTip1.SetToolTip(this.btnBookM4, "Click here to book this movie");
             this.btnBookM4.UseVisualStyleBackColor = false;
             // 
             // tabMovies
@@ -502,5 +512,6 @@
         private System.Windows.Forms.Button btnBookM2;
         private System.Windows.Forms.Button btnBookM3;
         private System.Windows.Forms.Button btnBookM4;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
