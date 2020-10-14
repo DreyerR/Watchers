@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label2 = new System.Windows.Forms.Label();
             this.lblSelected = new System.Windows.Forms.Label();
             this.lblAvail = new System.Windows.Forms.Label();
@@ -108,6 +109,7 @@
             this.imgAvail = new System.Windows.Forms.PictureBox();
             this.imgMovie = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.pnlCinema.SuspendLayout();
             this.pnlScrren.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -180,9 +182,9 @@
             // 
             // pnlCinema
             // 
+            this.pnlCinema.Controls.Add(this.btnE8);
             this.pnlCinema.Controls.Add(this.btnE10);
             this.pnlCinema.Controls.Add(this.btnE9);
-            this.pnlCinema.Controls.Add(this.btnE8);
             this.pnlCinema.Controls.Add(this.btnE7);
             this.pnlCinema.Controls.Add(this.btnE6);
             this.pnlCinema.Controls.Add(this.btnE5);
@@ -241,6 +243,7 @@
             this.pnlCinema.Name = "pnlCinema";
             this.pnlCinema.Size = new System.Drawing.Size(529, 455);
             this.pnlCinema.TabIndex = 72;
+            this.toolTip1.SetToolTip(this.pnlCinema, "Choose the number of seats you would like by clickking on the seat");
             // 
             // btnE10
             // 
@@ -1151,6 +1154,7 @@
             this.dtpDate.Name = "dtpDate";
             this.dtpDate.Size = new System.Drawing.Size(289, 30);
             this.dtpDate.TabIndex = 81;
+            this.toolTip1.SetToolTip(this.dtpDate, "Choose the date you would like to watch the movie here");
             this.dtpDate.Value = new System.DateTime(2020, 9, 25, 10, 57, 48, 0);
             // 
             // lblUnavailable
@@ -1177,6 +1181,7 @@
             this.btnDeleteBook.Size = new System.Drawing.Size(269, 54);
             this.btnDeleteBook.TabIndex = 86;
             this.btnDeleteBook.Text = "Delete My Booking";
+            this.toolTip1.SetToolTip(this.btnDeleteBook, "Click here to delete a booking you have already made");
             this.btnDeleteBook.UseVisualStyleBackColor = false;
             // 
             // btnCancel
@@ -1192,7 +1197,8 @@
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(269, 54);
             this.btnCancel.TabIndex = 85;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "Back";
+            this.toolTip1.SetToolTip(this.btnCancel, "Click here to return to the previous page");
             this.btnCancel.UseVisualStyleBackColor = false;
             // 
             // btnBook
@@ -1209,6 +1215,7 @@
             this.btnBook.Size = new System.Drawing.Size(269, 54);
             this.btnBook.TabIndex = 84;
             this.btnBook.Text = "Book Now";
+            this.toolTip1.SetToolTip(this.btnBook, "Click here to make the booking you have just made");
             this.btnBook.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
@@ -1249,7 +1256,7 @@
             this.imgMovie.BackgroundImage = global::Watchers.Properties.Resources.Greyhound;
             this.imgMovie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.imgMovie.Location = new System.Drawing.Point(72, 250);
-            this.imgMovie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.imgMovie.Margin = new System.Windows.Forms.Padding(4);
             this.imgMovie.Name = "imgMovie";
             this.imgMovie.Size = new System.Drawing.Size(266, 349);
             this.imgMovie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -1262,7 +1269,7 @@
             this.panel1.Controls.Add(this.lblBooking);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1575, 94);
             this.panel1.TabIndex = 87;
@@ -1391,5 +1398,6 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnDeleteBook;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

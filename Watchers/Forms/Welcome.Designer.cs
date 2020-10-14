@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmWelcome));
             this.btnRegister = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.imgLogoWel = new System.Windows.Forms.PictureBox();
             this.imgGradientWel = new System.Windows.Forms.PictureBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.imgLogoWel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgGradientWel)).BeginInit();
             this.SuspendLayout();
@@ -50,6 +52,7 @@
             this.btnRegister.Size = new System.Drawing.Size(270, 54);
             this.btnRegister.TabIndex = 31;
             this.btnRegister.Text = "Register Now";
+            this.toolTip1.SetToolTip(this.btnRegister, "Click here to go to the register page to register as a new user");
             this.btnRegister.UseVisualStyleBackColor = false;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
@@ -66,6 +69,7 @@
             this.btnLogin.Size = new System.Drawing.Size(270, 54);
             this.btnLogin.TabIndex = 30;
             this.btnLogin.Text = "Login";
+            this.toolTip1.SetToolTip(this.btnLogin, "Click here to go to the log in page");
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
@@ -118,6 +122,7 @@
         private System.Windows.Forms.PictureBox imgGradientWel;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 

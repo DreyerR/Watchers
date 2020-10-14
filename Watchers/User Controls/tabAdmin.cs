@@ -47,6 +47,7 @@ namespace Watchers
                     PopulateUsers();
                     break;
             }
+            btnPDF.Enabled = true;
         }
 
         private async void PopulateUsers()
