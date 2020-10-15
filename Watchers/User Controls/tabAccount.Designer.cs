@@ -33,11 +33,11 @@
             this.lblName = new System.Windows.Forms.Label();
             this.lblAccount = new System.Windows.Forms.Label();
             this.tblLayoutAccount = new System.Windows.Forms.TableLayoutPanel();
+            this.btnDeleteBook = new System.Windows.Forms.Button();
             this.btnPersonalInfo = new System.Windows.Forms.Button();
             this.btnDeleteAcc = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.btnDeleteBook = new System.Windows.Forms.Button();
             this.tblLayoutAccount.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -93,8 +93,8 @@
             this.tblLayoutAccount.Controls.Add(this.lblName, 0, 1);
             this.tblLayoutAccount.Controls.Add(this.btnPersonalInfo, 0, 2);
             this.tblLayoutAccount.Controls.Add(this.btnDeleteAcc, 0, 3);
-            this.tblLayoutAccount.Location = new System.Drawing.Point(230, 112);
-            this.tblLayoutAccount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tblLayoutAccount.Location = new System.Drawing.Point(381, 169);
+            this.tblLayoutAccount.Margin = new System.Windows.Forms.Padding(2);
             this.tblLayoutAccount.Name = "tblLayoutAccount";
             this.tblLayoutAccount.RowCount = 5;
             this.tblLayoutAccount.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.35065F));
@@ -106,52 +106,6 @@
             this.tblLayoutAccount.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41F));
             this.tblLayoutAccount.Size = new System.Drawing.Size(311, 255);
             this.tblLayoutAccount.TabIndex = 69;
-            // 
-            // btnPersonalInfo
-            // 
-            this.btnPersonalInfo.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnPersonalInfo.BackColor = System.Drawing.Color.Transparent;
-            this.btnPersonalInfo.BackgroundImage = global::Watchers.Properties.Resources.ButtonLight;
-            this.btnPersonalInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPersonalInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.btnPersonalInfo.ForeColor = System.Drawing.Color.White;
-            this.btnPersonalInfo.Location = new System.Drawing.Point(39, 106);
-            this.btnPersonalInfo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnPersonalInfo.Name = "btnPersonalInfo";
-            this.btnPersonalInfo.Size = new System.Drawing.Size(232, 42);
-            this.btnPersonalInfo.TabIndex = 70;
-            this.btnPersonalInfo.Text = "Personal Information";
-            this.toolTip1.SetToolTip(this.btnPersonalInfo, "Click here to change your personal information");
-            this.btnPersonalInfo.UseVisualStyleBackColor = false;
-            this.btnPersonalInfo.Click += new System.EventHandler(this.btnPersonalInfo_Click);
-            // 
-            // btnDeleteAcc
-            // 
-            this.btnDeleteAcc.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnDeleteAcc.BackColor = System.Drawing.Color.Transparent;
-            this.btnDeleteAcc.BackgroundImage = global::Watchers.Properties.Resources.ButtonLight;
-            this.btnDeleteAcc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeleteAcc.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.btnDeleteAcc.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteAcc.Location = new System.Drawing.Point(40, 158);
-            this.btnDeleteAcc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnDeleteAcc.Name = "btnDeleteAcc";
-            this.btnDeleteAcc.Size = new System.Drawing.Size(230, 44);
-            this.btnDeleteAcc.TabIndex = 71;
-            this.btnDeleteAcc.Text = "Delete Account";
-            this.toolTip1.SetToolTip(this.btnDeleteAcc, "Click here to permanently delete your account ");
-            this.btnDeleteAcc.UseVisualStyleBackColor = false;
-            this.btnDeleteAcc.Click += new System.EventHandler(this.btnDeleteAcc_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(135)))), ((int)(((byte)(51)))));
-            this.panel1.Controls.Add(this.lblAccount);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1023, 61);
-            this.panel1.TabIndex = 70;
             // 
             // btnDeleteBook
             // 
@@ -170,13 +124,59 @@
             this.toolTip1.SetToolTip(this.btnDeleteBook, "Click here to delete a booking you have already made");
             this.btnDeleteBook.UseVisualStyleBackColor = false;
             // 
+            // btnPersonalInfo
+            // 
+            this.btnPersonalInfo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnPersonalInfo.BackColor = System.Drawing.Color.Transparent;
+            this.btnPersonalInfo.BackgroundImage = global::Watchers.Properties.Resources.ButtonLight;
+            this.btnPersonalInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPersonalInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.btnPersonalInfo.ForeColor = System.Drawing.Color.White;
+            this.btnPersonalInfo.Location = new System.Drawing.Point(39, 106);
+            this.btnPersonalInfo.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPersonalInfo.Name = "btnPersonalInfo";
+            this.btnPersonalInfo.Size = new System.Drawing.Size(232, 42);
+            this.btnPersonalInfo.TabIndex = 70;
+            this.btnPersonalInfo.Text = "Personal Information";
+            this.toolTip1.SetToolTip(this.btnPersonalInfo, "Click here to change your personal information");
+            this.btnPersonalInfo.UseVisualStyleBackColor = false;
+            this.btnPersonalInfo.Click += new System.EventHandler(this.btnPersonalInfo_Click);
+            // 
+            // btnDeleteAcc
+            // 
+            this.btnDeleteAcc.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnDeleteAcc.BackColor = System.Drawing.Color.Transparent;
+            this.btnDeleteAcc.BackgroundImage = global::Watchers.Properties.Resources.ButtonLight;
+            this.btnDeleteAcc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteAcc.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.btnDeleteAcc.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteAcc.Location = new System.Drawing.Point(40, 158);
+            this.btnDeleteAcc.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDeleteAcc.Name = "btnDeleteAcc";
+            this.btnDeleteAcc.Size = new System.Drawing.Size(230, 44);
+            this.btnDeleteAcc.TabIndex = 71;
+            this.btnDeleteAcc.Text = "Delete Account";
+            this.toolTip1.SetToolTip(this.btnDeleteAcc, "Click here to permanently delete your account ");
+            this.btnDeleteAcc.UseVisualStyleBackColor = false;
+            this.btnDeleteAcc.Click += new System.EventHandler(this.btnDeleteAcc_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(135)))), ((int)(((byte)(51)))));
+            this.panel1.Controls.Add(this.lblAccount);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1023, 61);
+            this.panel1.TabIndex = 70;
+            // 
             // tabAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tblLayoutAccount);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "tabAccount";
             this.Size = new System.Drawing.Size(1023, 659);
             this.Load += new System.EventHandler(this.tabAccount_Load);
