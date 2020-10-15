@@ -48,6 +48,7 @@ namespace Watchers
             if (movie != null)
             {
                 lblMovie.Text = movie.Name;
+                this.BackgroundImage = movie.MovieImage;
                 imgMovie.Image = movie.MovieImage;
                 rtbDescription.Text = movie.Description;
                 lblCinemaNumber.Text = movie.CinemaNumber.ToString();

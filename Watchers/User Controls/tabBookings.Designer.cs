@@ -181,13 +181,15 @@
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.BackColor = System.Drawing.Color.LightSlateGray;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(47, 590);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(171, 20);
+            this.label2.Size = new System.Drawing.Size(202, 30);
             this.label2.TabIndex = 80;
             this.label2.Text = "Movie Description:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblSelected
             // 
@@ -227,30 +229,31 @@
             // 
             // lblSeats
             // 
-            this.lblSeats.BackColor = System.Drawing.Color.Transparent;
-            this.lblSeats.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSeats.Location = new System.Drawing.Point(787, 174);
+            this.lblSeats.BackColor = System.Drawing.Color.LightSlateGray;
+            this.lblSeats.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSeats.Location = new System.Drawing.Point(806, 167);
             this.lblSeats.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSeats.Name = "lblSeats";
-            this.lblSeats.Size = new System.Drawing.Size(144, 19);
+            this.lblSeats.Size = new System.Drawing.Size(144, 27);
             this.lblSeats.TabIndex = 74;
             this.lblSeats.Text = "Number of seats:";
             this.lblSeats.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblSeatNum
             // 
-            this.lblSeatNum.BackColor = System.Drawing.Color.Transparent;
+            this.lblSeatNum.BackColor = System.Drawing.Color.LightSlateGray;
             this.lblSeatNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSeatNum.Location = new System.Drawing.Point(931, 174);
+            this.lblSeatNum.Location = new System.Drawing.Point(950, 167);
             this.lblSeatNum.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSeatNum.Name = "lblSeatNum";
-            this.lblSeatNum.Size = new System.Drawing.Size(75, 19);
+            this.lblSeatNum.Size = new System.Drawing.Size(47, 27);
             this.lblSeatNum.TabIndex = 75;
             this.lblSeatNum.Text = "Nr";
             this.lblSeatNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlCinema
             // 
+            this.pnlCinema.BackColor = System.Drawing.Color.LightSlateGray;
             this.pnlCinema.Controls.Add(this.lblE);
             this.pnlCinema.Controls.Add(this.lblD);
             this.pnlCinema.Controls.Add(this.lblC);
@@ -1007,21 +1010,21 @@
             // 
             // lblCinemaNumber
             // 
-            this.lblCinemaNumber.BackColor = System.Drawing.Color.Transparent;
+            this.lblCinemaNumber.BackColor = System.Drawing.Color.LightSlateGray;
             this.lblCinemaNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCinemaNumber.Location = new System.Drawing.Point(693, 174);
+            this.lblCinemaNumber.Location = new System.Drawing.Point(712, 167);
             this.lblCinemaNumber.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCinemaNumber.Name = "lblCinemaNumber";
-            this.lblCinemaNumber.Size = new System.Drawing.Size(40, 19);
+            this.lblCinemaNumber.Size = new System.Drawing.Size(40, 27);
             this.lblCinemaNumber.TabIndex = 71;
             this.lblCinemaNumber.Text = "Nr";
             this.lblCinemaNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblCinNum
             // 
-            this.lblCinNum.BackColor = System.Drawing.Color.Transparent;
-            this.lblCinNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCinNum.Location = new System.Drawing.Point(554, 171);
+            this.lblCinNum.BackColor = System.Drawing.Color.LightSlateGray;
+            this.lblCinNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCinNum.Location = new System.Drawing.Point(573, 167);
             this.lblCinNum.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCinNum.Name = "lblCinNum";
             this.lblCinNum.Size = new System.Drawing.Size(141, 27);
@@ -1031,9 +1034,9 @@
             // 
             // lblDate
             // 
-            this.lblDate.BackColor = System.Drawing.Color.Transparent;
-            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.lblDate.Location = new System.Drawing.Point(501, 123);
+            this.lblDate.BackColor = System.Drawing.Color.LightSlateGray;
+            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.Location = new System.Drawing.Point(500, 129);
             this.lblDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(75, 28);
@@ -1054,8 +1057,8 @@
             // 
             // lblMovie
             // 
-            this.lblMovie.BackColor = System.Drawing.Color.Transparent;
-            this.lblMovie.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.lblMovie.BackColor = System.Drawing.Color.LightSlateGray;
+            this.lblMovie.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMovie.Location = new System.Drawing.Point(95, 96);
             this.lblMovie.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMovie.Name = "lblMovie";
@@ -1070,7 +1073,7 @@
             this.lblBooking.BackColor = System.Drawing.Color.Transparent;
             this.lblBooking.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBooking.ForeColor = System.Drawing.Color.White;
-            this.lblBooking.Location = new System.Drawing.Point(4, 14);
+            this.lblBooking.Location = new System.Drawing.Point(2, 10);
             this.lblBooking.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBooking.Name = "lblBooking";
             this.lblBooking.Size = new System.Drawing.Size(166, 46);
@@ -1083,7 +1086,7 @@
             this.dtpDate.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(51)))));
             this.dtpDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDate.Location = new System.Drawing.Point(630, 123);
+            this.dtpDate.Location = new System.Drawing.Point(629, 129);
             this.dtpDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpDate.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
             this.dtpDate.MinDate = new System.DateTime(2020, 9, 25, 0, 0, 0, 0);
@@ -1112,7 +1115,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1181, 76);
+            this.panel1.Size = new System.Drawing.Size(1181, 66);
             this.panel1.TabIndex = 87;
             // 
             // btnBook
@@ -1185,7 +1188,7 @@
             "12:30",
             "15:00",
             "19:00"});
-            this.cbbTime.Location = new System.Drawing.Point(955, 123);
+            this.cbbTime.Location = new System.Drawing.Point(954, 129);
             this.cbbTime.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbbTime.Name = "cbbTime";
             this.cbbTime.Size = new System.Drawing.Size(92, 25);
@@ -1193,9 +1196,9 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label1.Location = new System.Drawing.Point(830, 123);
+            this.label1.BackColor = System.Drawing.Color.LightSlateGray;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(829, 129);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 28);
@@ -1386,6 +1389,7 @@
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.rtbDescription);
             this.Controls.Add(this.lblMovie);
+            this.ForeColor = System.Drawing.Color.White;
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "tabBookings";
             this.Size = new System.Drawing.Size(1181, 804);
