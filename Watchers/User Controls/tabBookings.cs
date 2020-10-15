@@ -41,6 +41,7 @@ namespace Watchers
             {
                 lblMovie.Text = movie.Name;
                 imgMovie.Image = movie.MovieImage;
+                rtbDescription.Text = movie.Description;
             }
         }
     }

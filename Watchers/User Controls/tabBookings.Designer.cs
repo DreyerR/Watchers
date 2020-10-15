@@ -103,8 +103,6 @@
             this.lblUnavailable = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.btnDeleteBook = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
             this.btnBook = new System.Windows.Forms.Button();
             this.imgUnavail = new System.Windows.Forms.PictureBox();
             this.imgSelected = new System.Windows.Forms.PictureBox();
@@ -122,9 +120,10 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.Location = new System.Drawing.Point(63, 726);
+            this.label2.Location = new System.Drawing.Point(47, 590);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(209, 25);
+            this.label2.Size = new System.Drawing.Size(157, 20);
             this.label2.TabIndex = 80;
             this.label2.Text = "Movie Description:";
             // 
@@ -132,9 +131,10 @@
             // 
             this.lblSelected.BackColor = System.Drawing.Color.Transparent;
             this.lblSelected.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblSelected.Location = new System.Drawing.Point(712, 645);
+            this.lblSelected.Location = new System.Drawing.Point(534, 524);
+            this.lblSelected.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSelected.Name = "lblSelected";
-            this.lblSelected.Size = new System.Drawing.Size(109, 34);
+            this.lblSelected.Size = new System.Drawing.Size(82, 28);
             this.lblSelected.TabIndex = 79;
             this.lblSelected.Text = "Selected";
             // 
@@ -142,9 +142,10 @@
             // 
             this.lblAvail.BackColor = System.Drawing.Color.Transparent;
             this.lblAvail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblAvail.Location = new System.Drawing.Point(536, 645);
+            this.lblAvail.Location = new System.Drawing.Point(402, 524);
+            this.lblAvail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAvail.Name = "lblAvail";
-            this.lblAvail.Size = new System.Drawing.Size(120, 34);
+            this.lblAvail.Size = new System.Drawing.Size(90, 28);
             this.lblAvail.TabIndex = 77;
             this.lblAvail.Text = "Available";
             // 
@@ -164,9 +165,10 @@
             // 
             this.lblSeats.BackColor = System.Drawing.Color.Transparent;
             this.lblSeats.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSeats.Location = new System.Drawing.Point(741, 140);
+            this.lblSeats.Location = new System.Drawing.Point(556, 114);
+            this.lblSeats.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSeats.Name = "lblSeats";
-            this.lblSeats.Size = new System.Drawing.Size(192, 23);
+            this.lblSeats.Size = new System.Drawing.Size(144, 19);
             this.lblSeats.TabIndex = 74;
             this.lblSeats.Text = "Number of seats:";
             // 
@@ -174,9 +176,10 @@
             // 
             this.lblSeatNum.BackColor = System.Drawing.Color.Transparent;
             this.lblSeatNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSeatNum.Location = new System.Drawing.Point(933, 140);
+            this.lblSeatNum.Location = new System.Drawing.Point(700, 114);
+            this.lblSeatNum.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSeatNum.Name = "lblSeatNum";
-            this.lblSeatNum.Size = new System.Drawing.Size(100, 23);
+            this.lblSeatNum.Size = new System.Drawing.Size(75, 19);
             this.lblSeatNum.TabIndex = 75;
             this.lblSeatNum.Text = "Nr";
             // 
@@ -238,10 +241,10 @@
             this.pnlCinema.Controls.Add(this.lblB);
             this.pnlCinema.Controls.Add(this.lblA);
             this.pnlCinema.Controls.Add(this.pnlScrren);
-            this.pnlCinema.Location = new System.Drawing.Point(485, 176);
-            this.pnlCinema.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlCinema.Location = new System.Drawing.Point(364, 143);
+            this.pnlCinema.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlCinema.Name = "pnlCinema";
-            this.pnlCinema.Size = new System.Drawing.Size(529, 455);
+            this.pnlCinema.Size = new System.Drawing.Size(397, 370);
             this.pnlCinema.TabIndex = 72;
             this.toolTip1.SetToolTip(this.pnlCinema, "Choose the number of seats you would like by clickking on the seat");
             // 
@@ -253,10 +256,10 @@
             this.btnE8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnE8.FlatAppearance.BorderSize = 0;
             this.btnE8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnE8.Location = new System.Drawing.Point(104, 106);
-            this.btnE8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnE8.Location = new System.Drawing.Point(78, 86);
+            this.btnE8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnE8.Name = "btnE8";
-            this.btnE8.Size = new System.Drawing.Size(45, 57);
+            this.btnE8.Size = new System.Drawing.Size(34, 46);
             this.btnE8.TabIndex = 105;
             this.btnE8.UseVisualStyleBackColor = false;
             // 
@@ -268,10 +271,10 @@
             this.btnE10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnE10.FlatAppearance.BorderSize = 0;
             this.btnE10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnE10.Location = new System.Drawing.Point(16, 106);
-            this.btnE10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnE10.Location = new System.Drawing.Point(12, 86);
+            this.btnE10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnE10.Name = "btnE10";
-            this.btnE10.Size = new System.Drawing.Size(57, 57);
+            this.btnE10.Size = new System.Drawing.Size(43, 46);
             this.btnE10.TabIndex = 107;
             this.btnE10.UseVisualStyleBackColor = false;
             // 
@@ -283,10 +286,10 @@
             this.btnE9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnE9.FlatAppearance.BorderSize = 0;
             this.btnE9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnE9.Location = new System.Drawing.Point(60, 106);
-            this.btnE9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnE9.Location = new System.Drawing.Point(45, 86);
+            this.btnE9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnE9.Name = "btnE9";
-            this.btnE9.Size = new System.Drawing.Size(60, 57);
+            this.btnE9.Size = new System.Drawing.Size(45, 46);
             this.btnE9.TabIndex = 106;
             this.btnE9.UseVisualStyleBackColor = false;
             // 
@@ -298,10 +301,10 @@
             this.btnE7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnE7.FlatAppearance.BorderSize = 0;
             this.btnE7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnE7.Location = new System.Drawing.Point(148, 106);
-            this.btnE7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnE7.Location = new System.Drawing.Point(111, 86);
+            this.btnE7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnE7.Name = "btnE7";
-            this.btnE7.Size = new System.Drawing.Size(45, 57);
+            this.btnE7.Size = new System.Drawing.Size(34, 46);
             this.btnE7.TabIndex = 104;
             this.btnE7.UseVisualStyleBackColor = false;
             // 
@@ -313,10 +316,10 @@
             this.btnE6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnE6.FlatAppearance.BorderSize = 0;
             this.btnE6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnE6.Location = new System.Drawing.Point(189, 106);
-            this.btnE6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnE6.Location = new System.Drawing.Point(142, 86);
+            this.btnE6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnE6.Name = "btnE6";
-            this.btnE6.Size = new System.Drawing.Size(45, 57);
+            this.btnE6.Size = new System.Drawing.Size(34, 46);
             this.btnE6.TabIndex = 103;
             this.btnE6.UseVisualStyleBackColor = false;
             // 
@@ -328,10 +331,10 @@
             this.btnE5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnE5.FlatAppearance.BorderSize = 0;
             this.btnE5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnE5.Location = new System.Drawing.Point(233, 106);
-            this.btnE5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnE5.Location = new System.Drawing.Point(175, 86);
+            this.btnE5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnE5.Name = "btnE5";
-            this.btnE5.Size = new System.Drawing.Size(45, 57);
+            this.btnE5.Size = new System.Drawing.Size(34, 46);
             this.btnE5.TabIndex = 102;
             this.btnE5.UseVisualStyleBackColor = false;
             // 
@@ -343,10 +346,10 @@
             this.btnE4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnE4.FlatAppearance.BorderSize = 0;
             this.btnE4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnE4.Location = new System.Drawing.Point(277, 106);
-            this.btnE4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnE4.Location = new System.Drawing.Point(208, 86);
+            this.btnE4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnE4.Name = "btnE4";
-            this.btnE4.Size = new System.Drawing.Size(45, 57);
+            this.btnE4.Size = new System.Drawing.Size(34, 46);
             this.btnE4.TabIndex = 101;
             this.btnE4.UseVisualStyleBackColor = false;
             // 
@@ -358,10 +361,10 @@
             this.btnE3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnE3.FlatAppearance.BorderSize = 0;
             this.btnE3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnE3.Location = new System.Drawing.Point(323, 106);
-            this.btnE3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnE3.Location = new System.Drawing.Point(242, 86);
+            this.btnE3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnE3.Name = "btnE3";
-            this.btnE3.Size = new System.Drawing.Size(45, 57);
+            this.btnE3.Size = new System.Drawing.Size(34, 46);
             this.btnE3.TabIndex = 100;
             this.btnE3.UseVisualStyleBackColor = false;
             // 
@@ -373,10 +376,10 @@
             this.btnE2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnE2.FlatAppearance.BorderSize = 0;
             this.btnE2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnE2.Location = new System.Drawing.Point(365, 106);
-            this.btnE2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnE2.Location = new System.Drawing.Point(274, 86);
+            this.btnE2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnE2.Name = "btnE2";
-            this.btnE2.Size = new System.Drawing.Size(45, 57);
+            this.btnE2.Size = new System.Drawing.Size(34, 46);
             this.btnE2.TabIndex = 99;
             this.btnE2.UseVisualStyleBackColor = false;
             // 
@@ -388,10 +391,10 @@
             this.btnE1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnE1.FlatAppearance.BorderSize = 0;
             this.btnE1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnE1.Location = new System.Drawing.Point(411, 106);
-            this.btnE1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnE1.Location = new System.Drawing.Point(308, 86);
+            this.btnE1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnE1.Name = "btnE1";
-            this.btnE1.Size = new System.Drawing.Size(53, 57);
+            this.btnE1.Size = new System.Drawing.Size(40, 46);
             this.btnE1.TabIndex = 98;
             this.btnE1.UseVisualStyleBackColor = false;
             // 
@@ -403,10 +406,10 @@
             this.btnD10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnD10.FlatAppearance.BorderSize = 0;
             this.btnD10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnD10.Location = new System.Drawing.Point(16, 174);
-            this.btnD10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnD10.Location = new System.Drawing.Point(12, 141);
+            this.btnD10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnD10.Name = "btnD10";
-            this.btnD10.Size = new System.Drawing.Size(45, 57);
+            this.btnD10.Size = new System.Drawing.Size(34, 46);
             this.btnD10.TabIndex = 97;
             this.btnD10.UseVisualStyleBackColor = false;
             // 
@@ -418,10 +421,10 @@
             this.btnD9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnD9.FlatAppearance.BorderSize = 0;
             this.btnD9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnD9.Location = new System.Drawing.Point(60, 174);
-            this.btnD9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnD9.Location = new System.Drawing.Point(45, 141);
+            this.btnD9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnD9.Name = "btnD9";
-            this.btnD9.Size = new System.Drawing.Size(45, 57);
+            this.btnD9.Size = new System.Drawing.Size(34, 46);
             this.btnD9.TabIndex = 96;
             this.btnD9.UseVisualStyleBackColor = false;
             // 
@@ -433,10 +436,10 @@
             this.btnD8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnD8.FlatAppearance.BorderSize = 0;
             this.btnD8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnD8.Location = new System.Drawing.Point(104, 174);
-            this.btnD8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnD8.Location = new System.Drawing.Point(78, 141);
+            this.btnD8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnD8.Name = "btnD8";
-            this.btnD8.Size = new System.Drawing.Size(45, 57);
+            this.btnD8.Size = new System.Drawing.Size(34, 46);
             this.btnD8.TabIndex = 95;
             this.btnD8.UseVisualStyleBackColor = false;
             // 
@@ -448,10 +451,10 @@
             this.btnD7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnD7.FlatAppearance.BorderSize = 0;
             this.btnD7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnD7.Location = new System.Drawing.Point(148, 174);
-            this.btnD7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnD7.Location = new System.Drawing.Point(111, 141);
+            this.btnD7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnD7.Name = "btnD7";
-            this.btnD7.Size = new System.Drawing.Size(45, 57);
+            this.btnD7.Size = new System.Drawing.Size(34, 46);
             this.btnD7.TabIndex = 94;
             this.btnD7.UseVisualStyleBackColor = false;
             // 
@@ -463,10 +466,10 @@
             this.btnD6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnD6.FlatAppearance.BorderSize = 0;
             this.btnD6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnD6.Location = new System.Drawing.Point(189, 174);
-            this.btnD6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnD6.Location = new System.Drawing.Point(142, 141);
+            this.btnD6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnD6.Name = "btnD6";
-            this.btnD6.Size = new System.Drawing.Size(45, 57);
+            this.btnD6.Size = new System.Drawing.Size(34, 46);
             this.btnD6.TabIndex = 93;
             this.btnD6.UseVisualStyleBackColor = false;
             // 
@@ -478,10 +481,10 @@
             this.btnD5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnD5.FlatAppearance.BorderSize = 0;
             this.btnD5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnD5.Location = new System.Drawing.Point(233, 174);
-            this.btnD5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnD5.Location = new System.Drawing.Point(175, 141);
+            this.btnD5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnD5.Name = "btnD5";
-            this.btnD5.Size = new System.Drawing.Size(45, 57);
+            this.btnD5.Size = new System.Drawing.Size(34, 46);
             this.btnD5.TabIndex = 92;
             this.btnD5.UseVisualStyleBackColor = false;
             // 
@@ -493,10 +496,10 @@
             this.btnD4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnD4.FlatAppearance.BorderSize = 0;
             this.btnD4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnD4.Location = new System.Drawing.Point(277, 174);
-            this.btnD4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnD4.Location = new System.Drawing.Point(208, 141);
+            this.btnD4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnD4.Name = "btnD4";
-            this.btnD4.Size = new System.Drawing.Size(45, 57);
+            this.btnD4.Size = new System.Drawing.Size(34, 46);
             this.btnD4.TabIndex = 91;
             this.btnD4.UseVisualStyleBackColor = false;
             // 
@@ -508,10 +511,10 @@
             this.btnD3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnD3.FlatAppearance.BorderSize = 0;
             this.btnD3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnD3.Location = new System.Drawing.Point(323, 174);
-            this.btnD3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnD3.Location = new System.Drawing.Point(242, 141);
+            this.btnD3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnD3.Name = "btnD3";
-            this.btnD3.Size = new System.Drawing.Size(45, 57);
+            this.btnD3.Size = new System.Drawing.Size(34, 46);
             this.btnD3.TabIndex = 90;
             this.btnD3.UseVisualStyleBackColor = false;
             // 
@@ -523,10 +526,10 @@
             this.btnD2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnD2.FlatAppearance.BorderSize = 0;
             this.btnD2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnD2.Location = new System.Drawing.Point(365, 174);
-            this.btnD2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnD2.Location = new System.Drawing.Point(274, 141);
+            this.btnD2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnD2.Name = "btnD2";
-            this.btnD2.Size = new System.Drawing.Size(45, 57);
+            this.btnD2.Size = new System.Drawing.Size(34, 46);
             this.btnD2.TabIndex = 89;
             this.btnD2.UseVisualStyleBackColor = false;
             // 
@@ -538,10 +541,10 @@
             this.btnD1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnD1.FlatAppearance.BorderSize = 0;
             this.btnD1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnD1.Location = new System.Drawing.Point(411, 174);
-            this.btnD1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnD1.Location = new System.Drawing.Point(308, 141);
+            this.btnD1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnD1.Name = "btnD1";
-            this.btnD1.Size = new System.Drawing.Size(53, 57);
+            this.btnD1.Size = new System.Drawing.Size(40, 46);
             this.btnD1.TabIndex = 88;
             this.btnD1.UseVisualStyleBackColor = false;
             // 
@@ -553,10 +556,10 @@
             this.btnC10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnC10.FlatAppearance.BorderSize = 0;
             this.btnC10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnC10.Location = new System.Drawing.Point(16, 242);
-            this.btnC10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnC10.Location = new System.Drawing.Point(12, 197);
+            this.btnC10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnC10.Name = "btnC10";
-            this.btnC10.Size = new System.Drawing.Size(45, 57);
+            this.btnC10.Size = new System.Drawing.Size(34, 46);
             this.btnC10.TabIndex = 87;
             this.btnC10.UseVisualStyleBackColor = false;
             // 
@@ -568,10 +571,10 @@
             this.btnC9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnC9.FlatAppearance.BorderSize = 0;
             this.btnC9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnC9.Location = new System.Drawing.Point(60, 242);
-            this.btnC9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnC9.Location = new System.Drawing.Point(45, 197);
+            this.btnC9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnC9.Name = "btnC9";
-            this.btnC9.Size = new System.Drawing.Size(45, 57);
+            this.btnC9.Size = new System.Drawing.Size(34, 46);
             this.btnC9.TabIndex = 86;
             this.btnC9.UseVisualStyleBackColor = false;
             // 
@@ -583,10 +586,10 @@
             this.btnC8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnC8.FlatAppearance.BorderSize = 0;
             this.btnC8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnC8.Location = new System.Drawing.Point(104, 242);
-            this.btnC8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnC8.Location = new System.Drawing.Point(78, 197);
+            this.btnC8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnC8.Name = "btnC8";
-            this.btnC8.Size = new System.Drawing.Size(45, 57);
+            this.btnC8.Size = new System.Drawing.Size(34, 46);
             this.btnC8.TabIndex = 85;
             this.btnC8.UseVisualStyleBackColor = false;
             // 
@@ -598,10 +601,10 @@
             this.btnC7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnC7.FlatAppearance.BorderSize = 0;
             this.btnC7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnC7.Location = new System.Drawing.Point(148, 242);
-            this.btnC7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnC7.Location = new System.Drawing.Point(111, 197);
+            this.btnC7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnC7.Name = "btnC7";
-            this.btnC7.Size = new System.Drawing.Size(45, 57);
+            this.btnC7.Size = new System.Drawing.Size(34, 46);
             this.btnC7.TabIndex = 84;
             this.btnC7.UseVisualStyleBackColor = false;
             // 
@@ -613,10 +616,10 @@
             this.btnC6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnC6.FlatAppearance.BorderSize = 0;
             this.btnC6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnC6.Location = new System.Drawing.Point(189, 242);
-            this.btnC6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnC6.Location = new System.Drawing.Point(142, 197);
+            this.btnC6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnC6.Name = "btnC6";
-            this.btnC6.Size = new System.Drawing.Size(45, 57);
+            this.btnC6.Size = new System.Drawing.Size(34, 46);
             this.btnC6.TabIndex = 83;
             this.btnC6.UseVisualStyleBackColor = false;
             // 
@@ -628,10 +631,10 @@
             this.btnC5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnC5.FlatAppearance.BorderSize = 0;
             this.btnC5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnC5.Location = new System.Drawing.Point(233, 242);
-            this.btnC5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnC5.Location = new System.Drawing.Point(175, 197);
+            this.btnC5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnC5.Name = "btnC5";
-            this.btnC5.Size = new System.Drawing.Size(45, 57);
+            this.btnC5.Size = new System.Drawing.Size(34, 46);
             this.btnC5.TabIndex = 82;
             this.btnC5.UseVisualStyleBackColor = false;
             // 
@@ -643,10 +646,10 @@
             this.btnC4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnC4.FlatAppearance.BorderSize = 0;
             this.btnC4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnC4.Location = new System.Drawing.Point(277, 242);
-            this.btnC4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnC4.Location = new System.Drawing.Point(208, 197);
+            this.btnC4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnC4.Name = "btnC4";
-            this.btnC4.Size = new System.Drawing.Size(45, 57);
+            this.btnC4.Size = new System.Drawing.Size(34, 46);
             this.btnC4.TabIndex = 81;
             this.btnC4.UseVisualStyleBackColor = false;
             // 
@@ -658,10 +661,10 @@
             this.btnC3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnC3.FlatAppearance.BorderSize = 0;
             this.btnC3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnC3.Location = new System.Drawing.Point(323, 242);
-            this.btnC3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnC3.Location = new System.Drawing.Point(242, 197);
+            this.btnC3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnC3.Name = "btnC3";
-            this.btnC3.Size = new System.Drawing.Size(45, 57);
+            this.btnC3.Size = new System.Drawing.Size(34, 46);
             this.btnC3.TabIndex = 80;
             this.btnC3.UseVisualStyleBackColor = false;
             // 
@@ -673,10 +676,10 @@
             this.btnC2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnC2.FlatAppearance.BorderSize = 0;
             this.btnC2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnC2.Location = new System.Drawing.Point(365, 242);
-            this.btnC2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnC2.Location = new System.Drawing.Point(274, 197);
+            this.btnC2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnC2.Name = "btnC2";
-            this.btnC2.Size = new System.Drawing.Size(45, 57);
+            this.btnC2.Size = new System.Drawing.Size(34, 46);
             this.btnC2.TabIndex = 79;
             this.btnC2.UseVisualStyleBackColor = false;
             // 
@@ -688,10 +691,10 @@
             this.btnC1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnC1.FlatAppearance.BorderSize = 0;
             this.btnC1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnC1.Location = new System.Drawing.Point(411, 242);
-            this.btnC1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnC1.Location = new System.Drawing.Point(308, 197);
+            this.btnC1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnC1.Name = "btnC1";
-            this.btnC1.Size = new System.Drawing.Size(53, 57);
+            this.btnC1.Size = new System.Drawing.Size(40, 46);
             this.btnC1.TabIndex = 78;
             this.btnC1.UseVisualStyleBackColor = false;
             // 
@@ -703,10 +706,10 @@
             this.btnB10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnB10.FlatAppearance.BorderSize = 0;
             this.btnB10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnB10.Location = new System.Drawing.Point(16, 314);
-            this.btnB10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnB10.Location = new System.Drawing.Point(12, 255);
+            this.btnB10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnB10.Name = "btnB10";
-            this.btnB10.Size = new System.Drawing.Size(45, 57);
+            this.btnB10.Size = new System.Drawing.Size(34, 46);
             this.btnB10.TabIndex = 77;
             this.btnB10.UseVisualStyleBackColor = false;
             // 
@@ -718,10 +721,10 @@
             this.btnB9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnB9.FlatAppearance.BorderSize = 0;
             this.btnB9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnB9.Location = new System.Drawing.Point(60, 314);
-            this.btnB9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnB9.Location = new System.Drawing.Point(45, 255);
+            this.btnB9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnB9.Name = "btnB9";
-            this.btnB9.Size = new System.Drawing.Size(45, 57);
+            this.btnB9.Size = new System.Drawing.Size(34, 46);
             this.btnB9.TabIndex = 76;
             this.btnB9.UseVisualStyleBackColor = false;
             // 
@@ -733,10 +736,10 @@
             this.btnB8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnB8.FlatAppearance.BorderSize = 0;
             this.btnB8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnB8.Location = new System.Drawing.Point(104, 314);
-            this.btnB8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnB8.Location = new System.Drawing.Point(78, 255);
+            this.btnB8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnB8.Name = "btnB8";
-            this.btnB8.Size = new System.Drawing.Size(45, 57);
+            this.btnB8.Size = new System.Drawing.Size(34, 46);
             this.btnB8.TabIndex = 75;
             this.btnB8.UseVisualStyleBackColor = false;
             // 
@@ -748,10 +751,10 @@
             this.btnB7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnB7.FlatAppearance.BorderSize = 0;
             this.btnB7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnB7.Location = new System.Drawing.Point(148, 314);
-            this.btnB7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnB7.Location = new System.Drawing.Point(111, 255);
+            this.btnB7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnB7.Name = "btnB7";
-            this.btnB7.Size = new System.Drawing.Size(45, 57);
+            this.btnB7.Size = new System.Drawing.Size(34, 46);
             this.btnB7.TabIndex = 74;
             this.btnB7.UseVisualStyleBackColor = false;
             // 
@@ -763,10 +766,10 @@
             this.btnB6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnB6.FlatAppearance.BorderSize = 0;
             this.btnB6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnB6.Location = new System.Drawing.Point(189, 314);
-            this.btnB6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnB6.Location = new System.Drawing.Point(142, 255);
+            this.btnB6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnB6.Name = "btnB6";
-            this.btnB6.Size = new System.Drawing.Size(45, 57);
+            this.btnB6.Size = new System.Drawing.Size(34, 46);
             this.btnB6.TabIndex = 73;
             this.btnB6.UseVisualStyleBackColor = false;
             // 
@@ -778,10 +781,10 @@
             this.btnB5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnB5.FlatAppearance.BorderSize = 0;
             this.btnB5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnB5.Location = new System.Drawing.Point(233, 314);
-            this.btnB5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnB5.Location = new System.Drawing.Point(175, 255);
+            this.btnB5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnB5.Name = "btnB5";
-            this.btnB5.Size = new System.Drawing.Size(45, 57);
+            this.btnB5.Size = new System.Drawing.Size(34, 46);
             this.btnB5.TabIndex = 72;
             this.btnB5.UseVisualStyleBackColor = false;
             // 
@@ -793,10 +796,10 @@
             this.btnB4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnB4.FlatAppearance.BorderSize = 0;
             this.btnB4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnB4.Location = new System.Drawing.Point(277, 314);
-            this.btnB4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnB4.Location = new System.Drawing.Point(208, 255);
+            this.btnB4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnB4.Name = "btnB4";
-            this.btnB4.Size = new System.Drawing.Size(45, 57);
+            this.btnB4.Size = new System.Drawing.Size(34, 46);
             this.btnB4.TabIndex = 71;
             this.btnB4.UseVisualStyleBackColor = false;
             // 
@@ -808,10 +811,10 @@
             this.btnB3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnB3.FlatAppearance.BorderSize = 0;
             this.btnB3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnB3.Location = new System.Drawing.Point(323, 314);
-            this.btnB3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnB3.Location = new System.Drawing.Point(242, 255);
+            this.btnB3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnB3.Name = "btnB3";
-            this.btnB3.Size = new System.Drawing.Size(45, 57);
+            this.btnB3.Size = new System.Drawing.Size(34, 46);
             this.btnB3.TabIndex = 70;
             this.btnB3.UseVisualStyleBackColor = false;
             // 
@@ -823,10 +826,10 @@
             this.btnB2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnB2.FlatAppearance.BorderSize = 0;
             this.btnB2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnB2.Location = new System.Drawing.Point(365, 314);
-            this.btnB2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnB2.Location = new System.Drawing.Point(274, 255);
+            this.btnB2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnB2.Name = "btnB2";
-            this.btnB2.Size = new System.Drawing.Size(45, 57);
+            this.btnB2.Size = new System.Drawing.Size(34, 46);
             this.btnB2.TabIndex = 69;
             this.btnB2.UseVisualStyleBackColor = false;
             // 
@@ -838,10 +841,10 @@
             this.btnB1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnB1.FlatAppearance.BorderSize = 0;
             this.btnB1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnB1.Location = new System.Drawing.Point(411, 314);
-            this.btnB1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnB1.Location = new System.Drawing.Point(308, 255);
+            this.btnB1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnB1.Name = "btnB1";
-            this.btnB1.Size = new System.Drawing.Size(53, 57);
+            this.btnB1.Size = new System.Drawing.Size(40, 46);
             this.btnB1.TabIndex = 68;
             this.btnB1.UseVisualStyleBackColor = false;
             // 
@@ -853,10 +856,10 @@
             this.btnA10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnA10.FlatAppearance.BorderSize = 0;
             this.btnA10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnA10.Location = new System.Drawing.Point(16, 382);
-            this.btnA10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnA10.Location = new System.Drawing.Point(12, 310);
+            this.btnA10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnA10.Name = "btnA10";
-            this.btnA10.Size = new System.Drawing.Size(45, 57);
+            this.btnA10.Size = new System.Drawing.Size(34, 46);
             this.btnA10.TabIndex = 67;
             this.btnA10.UseVisualStyleBackColor = false;
             // 
@@ -868,10 +871,10 @@
             this.btnA9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnA9.FlatAppearance.BorderSize = 0;
             this.btnA9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnA9.Location = new System.Drawing.Point(60, 382);
-            this.btnA9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnA9.Location = new System.Drawing.Point(45, 310);
+            this.btnA9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnA9.Name = "btnA9";
-            this.btnA9.Size = new System.Drawing.Size(45, 57);
+            this.btnA9.Size = new System.Drawing.Size(34, 46);
             this.btnA9.TabIndex = 66;
             this.btnA9.UseVisualStyleBackColor = false;
             // 
@@ -883,10 +886,10 @@
             this.btnA8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnA8.FlatAppearance.BorderSize = 0;
             this.btnA8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnA8.Location = new System.Drawing.Point(104, 382);
-            this.btnA8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnA8.Location = new System.Drawing.Point(78, 310);
+            this.btnA8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnA8.Name = "btnA8";
-            this.btnA8.Size = new System.Drawing.Size(45, 57);
+            this.btnA8.Size = new System.Drawing.Size(34, 46);
             this.btnA8.TabIndex = 65;
             this.btnA8.UseVisualStyleBackColor = false;
             // 
@@ -898,10 +901,10 @@
             this.btnA7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnA7.FlatAppearance.BorderSize = 0;
             this.btnA7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnA7.Location = new System.Drawing.Point(148, 382);
-            this.btnA7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnA7.Location = new System.Drawing.Point(111, 310);
+            this.btnA7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnA7.Name = "btnA7";
-            this.btnA7.Size = new System.Drawing.Size(45, 57);
+            this.btnA7.Size = new System.Drawing.Size(34, 46);
             this.btnA7.TabIndex = 64;
             this.btnA7.UseVisualStyleBackColor = false;
             // 
@@ -913,10 +916,10 @@
             this.btnA6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnA6.FlatAppearance.BorderSize = 0;
             this.btnA6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnA6.Location = new System.Drawing.Point(189, 382);
-            this.btnA6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnA6.Location = new System.Drawing.Point(142, 310);
+            this.btnA6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnA6.Name = "btnA6";
-            this.btnA6.Size = new System.Drawing.Size(45, 57);
+            this.btnA6.Size = new System.Drawing.Size(34, 46);
             this.btnA6.TabIndex = 63;
             this.btnA6.UseVisualStyleBackColor = false;
             // 
@@ -928,10 +931,10 @@
             this.btnA5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnA5.FlatAppearance.BorderSize = 0;
             this.btnA5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnA5.Location = new System.Drawing.Point(233, 382);
-            this.btnA5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnA5.Location = new System.Drawing.Point(175, 310);
+            this.btnA5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnA5.Name = "btnA5";
-            this.btnA5.Size = new System.Drawing.Size(45, 57);
+            this.btnA5.Size = new System.Drawing.Size(34, 46);
             this.btnA5.TabIndex = 62;
             this.btnA5.UseVisualStyleBackColor = false;
             // 
@@ -943,10 +946,10 @@
             this.btnA4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnA4.FlatAppearance.BorderSize = 0;
             this.btnA4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnA4.Location = new System.Drawing.Point(277, 382);
-            this.btnA4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnA4.Location = new System.Drawing.Point(208, 310);
+            this.btnA4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnA4.Name = "btnA4";
-            this.btnA4.Size = new System.Drawing.Size(45, 57);
+            this.btnA4.Size = new System.Drawing.Size(34, 46);
             this.btnA4.TabIndex = 61;
             this.btnA4.UseVisualStyleBackColor = false;
             // 
@@ -958,10 +961,10 @@
             this.btnA3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnA3.FlatAppearance.BorderSize = 0;
             this.btnA3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnA3.Location = new System.Drawing.Point(323, 382);
-            this.btnA3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnA3.Location = new System.Drawing.Point(242, 310);
+            this.btnA3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnA3.Name = "btnA3";
-            this.btnA3.Size = new System.Drawing.Size(45, 57);
+            this.btnA3.Size = new System.Drawing.Size(34, 46);
             this.btnA3.TabIndex = 60;
             this.btnA3.UseVisualStyleBackColor = false;
             // 
@@ -973,10 +976,10 @@
             this.btnA2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnA2.FlatAppearance.BorderSize = 0;
             this.btnA2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnA2.Location = new System.Drawing.Point(365, 382);
-            this.btnA2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnA2.Location = new System.Drawing.Point(274, 310);
+            this.btnA2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnA2.Name = "btnA2";
-            this.btnA2.Size = new System.Drawing.Size(45, 57);
+            this.btnA2.Size = new System.Drawing.Size(34, 46);
             this.btnA2.TabIndex = 59;
             this.btnA2.UseVisualStyleBackColor = false;
             // 
@@ -988,10 +991,10 @@
             this.btnA1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnA1.FlatAppearance.BorderSize = 0;
             this.btnA1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnA1.Location = new System.Drawing.Point(411, 382);
-            this.btnA1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnA1.Location = new System.Drawing.Point(308, 310);
+            this.btnA1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnA1.Name = "btnA1";
-            this.btnA1.Size = new System.Drawing.Size(53, 57);
+            this.btnA1.Size = new System.Drawing.Size(40, 46);
             this.btnA1.TabIndex = 58;
             this.btnA1.UseVisualStyleBackColor = false;
             // 
@@ -1000,9 +1003,10 @@
             this.lblE.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblE.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblE.Location = new System.Drawing.Point(469, 103);
+            this.lblE.Location = new System.Drawing.Point(352, 84);
+            this.lblE.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblE.Name = "lblE";
-            this.lblE.Size = new System.Drawing.Size(47, 57);
+            this.lblE.Size = new System.Drawing.Size(36, 47);
             this.lblE.TabIndex = 5;
             this.lblE.Text = "E";
             this.lblE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1012,9 +1016,10 @@
             this.lblD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblD.Location = new System.Drawing.Point(469, 171);
+            this.lblD.Location = new System.Drawing.Point(352, 139);
+            this.lblD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblD.Name = "lblD";
-            this.lblD.Size = new System.Drawing.Size(47, 57);
+            this.lblD.Size = new System.Drawing.Size(36, 47);
             this.lblD.TabIndex = 4;
             this.lblD.Text = "D";
             this.lblD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1024,9 +1029,10 @@
             this.lblC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblC.Location = new System.Drawing.Point(469, 242);
+            this.lblC.Location = new System.Drawing.Point(352, 197);
+            this.lblC.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblC.Name = "lblC";
-            this.lblC.Size = new System.Drawing.Size(47, 57);
+            this.lblC.Size = new System.Drawing.Size(36, 47);
             this.lblC.TabIndex = 3;
             this.lblC.Text = "C";
             this.lblC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1036,9 +1042,10 @@
             this.lblB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblB.Location = new System.Drawing.Point(469, 311);
+            this.lblB.Location = new System.Drawing.Point(352, 253);
+            this.lblB.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblB.Name = "lblB";
-            this.lblB.Size = new System.Drawing.Size(47, 57);
+            this.lblB.Size = new System.Drawing.Size(36, 47);
             this.lblB.TabIndex = 2;
             this.lblB.Text = "B";
             this.lblB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1048,9 +1055,10 @@
             this.lblA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblA.Location = new System.Drawing.Point(469, 382);
+            this.lblA.Location = new System.Drawing.Point(352, 310);
+            this.lblA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblA.Name = "lblA";
-            this.lblA.Size = new System.Drawing.Size(47, 57);
+            this.lblA.Size = new System.Drawing.Size(36, 47);
             this.lblA.TabIndex = 1;
             this.lblA.Text = "A";
             this.lblA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1060,10 +1068,10 @@
             this.pnlScrren.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlScrren.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.pnlScrren.Controls.Add(this.lblScreen);
-            this.pnlScrren.Location = new System.Drawing.Point(16, 16);
-            this.pnlScrren.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlScrren.Location = new System.Drawing.Point(12, 13);
+            this.pnlScrren.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlScrren.Name = "pnlScrren";
-            this.pnlScrren.Size = new System.Drawing.Size(500, 49);
+            this.pnlScrren.Size = new System.Drawing.Size(375, 40);
             this.pnlScrren.TabIndex = 0;
             // 
             // lblScreen
@@ -1072,9 +1080,10 @@
             this.lblScreen.BackColor = System.Drawing.Color.Transparent;
             this.lblScreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.lblScreen.ForeColor = System.Drawing.Color.White;
-            this.lblScreen.Location = new System.Drawing.Point(132, 0);
+            this.lblScreen.Location = new System.Drawing.Point(99, 0);
+            this.lblScreen.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblScreen.Name = "lblScreen";
-            this.lblScreen.Size = new System.Drawing.Size(212, 49);
+            this.lblScreen.Size = new System.Drawing.Size(159, 40);
             this.lblScreen.TabIndex = 41;
             this.lblScreen.Text = "SCREEN";
             this.lblScreen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1083,9 +1092,10 @@
             // 
             this.lblCNum.BackColor = System.Drawing.Color.Transparent;
             this.lblCNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCNum.Location = new System.Drawing.Point(669, 140);
+            this.lblCNum.Location = new System.Drawing.Point(502, 114);
+            this.lblCNum.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCNum.Name = "lblCNum";
-            this.lblCNum.Size = new System.Drawing.Size(100, 23);
+            this.lblCNum.Size = new System.Drawing.Size(75, 19);
             this.lblCNum.TabIndex = 71;
             this.lblCNum.Text = "Nr";
             // 
@@ -1093,9 +1103,10 @@
             // 
             this.lblCinNum.BackColor = System.Drawing.Color.Transparent;
             this.lblCinNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCinNum.Location = new System.Drawing.Point(484, 140);
+            this.lblCinNum.Location = new System.Drawing.Point(363, 114);
+            this.lblCinNum.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCinNum.Name = "lblCinNum";
-            this.lblCinNum.Size = new System.Drawing.Size(188, 37);
+            this.lblCinNum.Size = new System.Drawing.Size(141, 30);
             this.lblCinNum.TabIndex = 70;
             this.lblCinNum.Text = "Cinema Number: ";
             // 
@@ -1103,19 +1114,22 @@
             // 
             this.lblDate.BackColor = System.Drawing.Color.Transparent;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.lblDate.Location = new System.Drawing.Point(37, 135);
+            this.lblDate.Location = new System.Drawing.Point(28, 110);
+            this.lblDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(100, 34);
+            this.lblDate.Size = new System.Drawing.Size(75, 28);
             this.lblDate.TabIndex = 69;
             this.lblDate.Text = "Date:";
             // 
             // rtbDescription
             // 
             this.rtbDescription.BackColor = System.Drawing.Color.LightGray;
-            this.rtbDescription.Location = new System.Drawing.Point(60, 766);
-            this.rtbDescription.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rtbDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbDescription.Location = new System.Drawing.Point(45, 622);
+            this.rtbDescription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rtbDescription.Name = "rtbDescription";
-            this.rtbDescription.Size = new System.Drawing.Size(561, 207);
+            this.rtbDescription.ReadOnly = true;
+            this.rtbDescription.Size = new System.Drawing.Size(742, 153);
             this.rtbDescription.TabIndex = 67;
             this.rtbDescription.Text = "";
             // 
@@ -1123,9 +1137,10 @@
             // 
             this.lblMovie.BackColor = System.Drawing.Color.Transparent;
             this.lblMovie.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.lblMovie.Location = new System.Drawing.Point(54, 207);
+            this.lblMovie.Location = new System.Drawing.Point(40, 168);
+            this.lblMovie.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMovie.Name = "lblMovie";
-            this.lblMovie.Size = new System.Drawing.Size(321, 39);
+            this.lblMovie.Size = new System.Drawing.Size(241, 32);
             this.lblMovie.TabIndex = 65;
             this.lblMovie.Text = "Movie:";
             this.lblMovie.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -1136,9 +1151,10 @@
             this.lblBooking.BackColor = System.Drawing.Color.Transparent;
             this.lblBooking.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBooking.ForeColor = System.Drawing.Color.White;
-            this.lblBooking.Location = new System.Drawing.Point(5, 17);
+            this.lblBooking.Location = new System.Drawing.Point(4, 14);
+            this.lblBooking.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBooking.Name = "lblBooking";
-            this.lblBooking.Size = new System.Drawing.Size(206, 58);
+            this.lblBooking.Size = new System.Drawing.Size(166, 46);
             this.lblBooking.TabIndex = 64;
             this.lblBooking.Text = "Booking";
             // 
@@ -1148,12 +1164,12 @@
             this.dtpDate.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(51)))));
             this.dtpDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDate.Location = new System.Drawing.Point(136, 140);
-            this.dtpDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtpDate.Location = new System.Drawing.Point(102, 114);
+            this.dtpDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpDate.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
             this.dtpDate.MinDate = new System.DateTime(2020, 9, 25, 0, 0, 0, 0);
             this.dtpDate.Name = "dtpDate";
-            this.dtpDate.Size = new System.Drawing.Size(289, 30);
+            this.dtpDate.Size = new System.Drawing.Size(218, 26);
             this.dtpDate.TabIndex = 81;
             this.toolTip1.SetToolTip(this.dtpDate, "Choose the date you would like to watch the movie here");
             this.dtpDate.Value = new System.DateTime(2020, 9, 25, 10, 57, 48, 0);
@@ -1162,9 +1178,10 @@
             // 
             this.lblUnavailable.BackColor = System.Drawing.Color.Transparent;
             this.lblUnavailable.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblUnavailable.Location = new System.Drawing.Point(877, 645);
+            this.lblUnavailable.Location = new System.Drawing.Point(658, 524);
+            this.lblUnavailable.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUnavailable.Name = "lblUnavailable";
-            this.lblUnavailable.Size = new System.Drawing.Size(147, 34);
+            this.lblUnavailable.Size = new System.Drawing.Size(110, 28);
             this.lblUnavailable.TabIndex = 83;
             this.lblUnavailable.Text = "Unavailable";
             // 
@@ -1174,44 +1191,9 @@
             this.panel1.Controls.Add(this.lblBooking);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1575, 94);
+            this.panel1.Size = new System.Drawing.Size(1181, 76);
             this.panel1.TabIndex = 87;
-            // 
-            // btnDeleteBook
-            // 
-            this.btnDeleteBook.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDeleteBook.BackColor = System.Drawing.Color.Transparent;
-            this.btnDeleteBook.BackgroundImage = global::Watchers.Properties.Resources.ButtonLight;
-            this.btnDeleteBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeleteBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.btnDeleteBook.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteBook.Location = new System.Drawing.Point(728, 914);
-            this.btnDeleteBook.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDeleteBook.Name = "btnDeleteBook";
-            this.btnDeleteBook.Size = new System.Drawing.Size(269, 54);
-            this.btnDeleteBook.TabIndex = 86;
-            this.btnDeleteBook.Text = "Delete My Booking";
-            this.toolTip1.SetToolTip(this.btnDeleteBook, "Click here to delete a booking you have already made");
-            this.btnDeleteBook.UseVisualStyleBackColor = false;
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.BackColor = System.Drawing.Color.Transparent;
-            this.btnCancel.BackgroundImage = global::Watchers.Properties.Resources.ButtonDark;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(1280, 914);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(269, 54);
-            this.btnCancel.TabIndex = 85;
-            this.btnCancel.Text = "Back";
-            this.toolTip1.SetToolTip(this.btnCancel, "Click here to return to the previous page");
-            this.btnCancel.UseVisualStyleBackColor = false;
             // 
             // btnBook
             // 
@@ -1221,10 +1203,10 @@
             this.btnBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.btnBook.ForeColor = System.Drawing.Color.White;
-            this.btnBook.Location = new System.Drawing.Point(1003, 914);
-            this.btnBook.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBook.Location = new System.Drawing.Point(940, 738);
+            this.btnBook.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBook.Name = "btnBook";
-            this.btnBook.Size = new System.Drawing.Size(269, 54);
+            this.btnBook.Size = new System.Drawing.Size(202, 44);
             this.btnBook.TabIndex = 84;
             this.btnBook.Text = "Book Now";
             this.toolTip1.SetToolTip(this.btnBook, "Click here to make the booking you have just made");
@@ -1233,20 +1215,20 @@
             // imgUnavail
             // 
             this.imgUnavail.Image = global::Watchers.Properties.Resources.Unavailable;
-            this.imgUnavail.Location = new System.Drawing.Point(827, 639);
-            this.imgUnavail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgUnavail.Location = new System.Drawing.Point(620, 519);
+            this.imgUnavail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.imgUnavail.Name = "imgUnavail";
-            this.imgUnavail.Size = new System.Drawing.Size(45, 46);
+            this.imgUnavail.Size = new System.Drawing.Size(34, 37);
             this.imgUnavail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgUnavail.TabIndex = 82;
             this.imgUnavail.TabStop = false;
             // 
             // imgSelected
             // 
-            this.imgSelected.Location = new System.Drawing.Point(661, 639);
-            this.imgSelected.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgSelected.Location = new System.Drawing.Point(496, 519);
+            this.imgSelected.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.imgSelected.Name = "imgSelected";
-            this.imgSelected.Size = new System.Drawing.Size(45, 46);
+            this.imgSelected.Size = new System.Drawing.Size(34, 37);
             this.imgSelected.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgSelected.TabIndex = 78;
             this.imgSelected.TabStop = false;
@@ -1254,10 +1236,10 @@
             // imgAvail
             // 
             this.imgAvail.Image = global::Watchers.Properties.Resources.Available;
-            this.imgAvail.Location = new System.Drawing.Point(485, 639);
-            this.imgAvail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgAvail.Location = new System.Drawing.Point(364, 519);
+            this.imgAvail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.imgAvail.Name = "imgAvail";
-            this.imgAvail.Size = new System.Drawing.Size(45, 46);
+            this.imgAvail.Size = new System.Drawing.Size(34, 37);
             this.imgAvail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgAvail.TabIndex = 76;
             this.imgAvail.TabStop = false;
@@ -1266,21 +1248,18 @@
             // 
             this.imgMovie.BackgroundImage = global::Watchers.Properties.Resources.Greyhound;
             this.imgMovie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.imgMovie.Location = new System.Drawing.Point(72, 250);
-            this.imgMovie.Margin = new System.Windows.Forms.Padding(4);
+            this.imgMovie.Location = new System.Drawing.Point(54, 203);
             this.imgMovie.Name = "imgMovie";
-            this.imgMovie.Size = new System.Drawing.Size(266, 349);
+            this.imgMovie.Size = new System.Drawing.Size(200, 284);
             this.imgMovie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgMovie.TabIndex = 63;
             this.imgMovie.TabStop = false;
             // 
             // tabBookings
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnDeleteBook);
-            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnBook);
             this.Controls.Add(this.lblUnavailable);
             this.Controls.Add(this.imgUnavail);
@@ -1299,9 +1278,9 @@
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.rtbDescription);
             this.Controls.Add(this.lblMovie);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "tabBookings";
-            this.Size = new System.Drawing.Size(1575, 990);
+            this.Size = new System.Drawing.Size(1181, 804);
             this.pnlCinema.ResumeLayout(false);
             this.pnlScrren.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -1386,16 +1365,14 @@
         private System.Windows.Forms.Label lblCNum;
         private System.Windows.Forms.Label lblCinNum;
         private System.Windows.Forms.Label lblDate;
-        private System.Windows.Forms.RichTextBox rtbDescription;
         private System.Windows.Forms.Label lblMovie;
         private System.Windows.Forms.Label lblBooking;
         private System.Windows.Forms.DateTimePicker dtpDate;
         private System.Windows.Forms.PictureBox imgUnavail;
         private System.Windows.Forms.Label lblUnavailable;
         private System.Windows.Forms.Button btnBook;
-        private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Button btnDeleteBook;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolTip toolTip1;
+        public System.Windows.Forms.RichTextBox rtbDescription;
     }
 }
