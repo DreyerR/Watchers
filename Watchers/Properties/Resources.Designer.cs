@@ -22,7 +22,7 @@ namespace Watchers.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Watchers.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Watchers.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace Watchers.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Astros {
+        public static System.Drawing.Bitmap Astros {
             get {
                 object obj = ResourceManager.GetObject("Astros", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -73,7 +73,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Available {
+        public static System.Drawing.Bitmap Available {
             get {
                 object obj = ResourceManager.GetObject("Available", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -83,7 +83,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ButtonDark {
+        public static System.Drawing.Bitmap ButtonDark {
             get {
                 object obj = ResourceManager.GetObject("ButtonDark", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -93,7 +93,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ButtonGrad {
+        public static System.Drawing.Bitmap ButtonGrad {
             get {
                 object obj = ResourceManager.GetObject("ButtonGrad", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -103,7 +103,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ButtonLight {
+        public static System.Drawing.Bitmap ButtonLight {
             get {
                 object obj = ResourceManager.GetObject("ButtonLight", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -113,7 +113,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ChocolatePNG {
+        public static System.Drawing.Bitmap ChocolatePNG {
             get {
                 object obj = ResourceManager.GetObject("ChocolatePNG", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -123,7 +123,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Coke {
+        public static System.Drawing.Bitmap Coke {
             get {
                 object obj = ResourceManager.GetObject("Coke", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -133,7 +133,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CokeLarge {
+        public static System.Drawing.Bitmap CokeLarge {
             get {
                 object obj = ResourceManager.GetObject("CokeLarge", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -143,7 +143,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CokeMedium {
+        public static System.Drawing.Bitmap CokeMedium {
             get {
                 object obj = ResourceManager.GetObject("CokeMedium", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -153,7 +153,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CokeSmall {
+        public static System.Drawing.Bitmap CokeSmall {
             get {
                 object obj = ResourceManager.GetObject("CokeSmall", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -163,7 +163,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CokeZero {
+        public static System.Drawing.Bitmap CokeZero {
             get {
                 object obj = ResourceManager.GetObject("CokeZero", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -173,7 +173,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CreamSoda {
+        public static System.Drawing.Bitmap CreamSoda {
             get {
                 object obj = ResourceManager.GetObject("CreamSoda", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -183,7 +183,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap fanta_Zero {
+        public static System.Drawing.Bitmap fanta_Zero {
             get {
                 object obj = ResourceManager.GetObject("fanta_Zero", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -193,7 +193,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap fantaOrange {
+        public static System.Drawing.Bitmap fantaOrange {
             get {
                 object obj = ResourceManager.GetObject("fantaOrange", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -203,7 +203,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FreeGuy {
+        public static System.Drawing.Bitmap FreeGuy {
             get {
                 object obj = ResourceManager.GetObject("FreeGuy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -213,7 +213,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GradientNew {
+        public static System.Drawing.Bitmap GradientNew {
             get {
                 object obj = ResourceManager.GetObject("GradientNew", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -223,7 +223,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GradientNew1 {
+        public static System.Drawing.Bitmap GradientNew1 {
             get {
                 object obj = ResourceManager.GetObject("GradientNew1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -233,7 +233,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Greyhound {
+        public static System.Drawing.Bitmap Greyhound {
             get {
                 object obj = ResourceManager.GetObject("Greyhound", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -243,7 +243,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap IceTeacPeach {
+        public static System.Drawing.Bitmap IceTeacPeach {
             get {
                 object obj = ResourceManager.GetObject("IceTeacPeach", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -253,7 +253,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap IceTeaLemon {
+        public static System.Drawing.Bitmap IceTeaLemon {
             get {
                 object obj = ResourceManager.GetObject("IceTeaLemon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -263,7 +263,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap JellyBabies {
+        public static System.Drawing.Bitmap JellyBabies {
             get {
                 object obj = ResourceManager.GetObject("JellyBabies", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -273,7 +273,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap LargePopcorn {
+        public static System.Drawing.Bitmap LargePopcorn {
             get {
                 object obj = ResourceManager.GetObject("LargePopcorn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -283,7 +283,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap LoveSarah {
+        public static System.Drawing.Bitmap LoveSarah {
             get {
                 object obj = ResourceManager.GetObject("LoveSarah", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -293,7 +293,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap m001 {
+        public static System.Drawing.Bitmap m001 {
             get {
                 object obj = ResourceManager.GetObject("m001", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -303,7 +303,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap m002 {
+        public static System.Drawing.Bitmap m002 {
             get {
                 object obj = ResourceManager.GetObject("m002", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -313,7 +313,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap m003 {
+        public static System.Drawing.Bitmap m003 {
             get {
                 object obj = ResourceManager.GetObject("m003", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -323,7 +323,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap m004 {
+        public static System.Drawing.Bitmap m004 {
             get {
                 object obj = ResourceManager.GetObject("m004", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -333,7 +333,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap m005 {
+        public static System.Drawing.Bitmap m005 {
             get {
                 object obj = ResourceManager.GetObject("m005", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -343,7 +343,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap m006 {
+        public static System.Drawing.Bitmap m006 {
             get {
                 object obj = ResourceManager.GetObject("m006", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -353,7 +353,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap m007 {
+        public static System.Drawing.Bitmap m007 {
             get {
                 object obj = ResourceManager.GetObject("m007", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -363,7 +363,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap m008 {
+        public static System.Drawing.Bitmap m008 {
             get {
                 object obj = ResourceManager.GetObject("m008", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -373,7 +373,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MediumPopcorn {
+        public static System.Drawing.Bitmap MediumPopcorn {
             get {
                 object obj = ResourceManager.GetObject("MediumPopcorn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -383,7 +383,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap nuts {
+        public static System.Drawing.Bitmap nuts {
             get {
                 object obj = ResourceManager.GetObject("nuts", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -393,7 +393,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PanelGrad {
+        public static System.Drawing.Bitmap PanelGrad {
             get {
                 object obj = ResourceManager.GetObject("PanelGrad", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -403,7 +403,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PopcornLrg {
+        public static System.Drawing.Bitmap PopcornLrg {
             get {
                 object obj = ResourceManager.GetObject("PopcornLrg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -413,7 +413,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PopcornMed {
+        public static System.Drawing.Bitmap PopcornMed {
             get {
                 object obj = ResourceManager.GetObject("PopcornMed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -423,7 +423,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PopcornSml {
+        public static System.Drawing.Bitmap PopcornSml {
             get {
                 object obj = ResourceManager.GetObject("PopcornSml", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -433,7 +433,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Report {
+        public static System.Drawing.Bitmap Report {
             get {
                 object obj = ResourceManager.GetObject("Report", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -443,7 +443,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Small {
+        public static System.Drawing.Bitmap Small {
             get {
                 object obj = ResourceManager.GetObject("Small", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -453,7 +453,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Sprite {
+        public static System.Drawing.Bitmap Sprite {
             get {
                 object obj = ResourceManager.GetObject("Sprite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -463,7 +463,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap SpriteZero {
+        public static System.Drawing.Bitmap SpriteZero {
             get {
                 object obj = ResourceManager.GetObject("SpriteZero", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -473,7 +473,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Unavailable {
+        public static System.Drawing.Bitmap Unavailable {
             get {
                 object obj = ResourceManager.GetObject("Unavailable", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -483,7 +483,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Watchers2 {
+        public static System.Drawing.Bitmap Watchers2 {
             get {
                 object obj = ResourceManager.GetObject("Watchers2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -493,7 +493,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Water {
+        public static System.Drawing.Bitmap Water {
             get {
                 object obj = ResourceManager.GetObject("Water", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -503,7 +503,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Whispers {
+        public static System.Drawing.Bitmap Whispers {
             get {
                 object obj = ResourceManager.GetObject("Whispers", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -513,7 +513,7 @@ namespace Watchers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Winegums {
+        public static System.Drawing.Bitmap Winegums {
             get {
                 object obj = ResourceManager.GetObject("Winegums", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));

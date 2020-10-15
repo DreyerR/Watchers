@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Watchers.Models;
+using Watchers.Properties;
 
 namespace Watchers
 {
@@ -14,6 +16,7 @@ namespace Watchers
     {
 
         private static tabBookings _instance;
+        public static Movie movie;
 
         public static tabBookings Instance
         {
@@ -27,20 +30,18 @@ namespace Watchers
             }
         }
 
-        //public void SetMyCustomFormat()
-        //{
-        //    dtpDate.Format = DateTimePickerFormat.Custom;
-        //    dtpDate.CustomFormat = "MMMM dd, yyyy";
-        //}
-
         public tabBookings()
         {
             InitializeComponent();
         }
 
-        private void tabBookings_Load(object sender, EventArgs e)
+        public void PopulateForm()
         {
-
+            if (movie != null)
+            {
+                lblMovie.Text = movie.Name;
+                imgMovie.Image = movie.MovieImage;
+            }
         }
     }
 }

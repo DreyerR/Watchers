@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Watchers.Common;
+using Watchers.Models;
 
 namespace Watchers
 {
@@ -20,6 +21,7 @@ namespace Watchers
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
+            btnBookings.Click += (sender1, e1) => BtnBooking_Click(sender1, e1);
             btnMovies_Click(sender, e);
         }
 
@@ -66,8 +68,9 @@ namespace Watchers
                 tabMovies.Instance.BringToFront();
         }
 
-        private void btnBookings_Click(object sender, EventArgs e)
+        public void BtnBooking_Click(object sender, EventArgs e, Movie movie = null)
         {
+            tabBookings.movie = movie;
             if (!pnlBack.Controls.Contains(tabBookings.Instance))
             {
                 pnlBack.Controls.Add(tabBookings.Instance);
@@ -75,7 +78,10 @@ namespace Watchers
                 tabBookings.Instance.BringToFront();
             }
             else
+            {
                 tabBookings.Instance.BringToFront();
+            }
+            tabBookings.Instance.PopulateForm();
         }
 
         private void btnSnacks_Click(object sender, EventArgs e)

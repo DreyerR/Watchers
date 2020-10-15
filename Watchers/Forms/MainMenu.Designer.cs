@@ -126,7 +126,6 @@
             this.btnBookings.Text = "Bookings";
             this.toolTip1.SetToolTip(this.btnBookings, "Click here to go to the Bookings page");
             this.btnBookings.UseVisualStyleBackColor = true;
-            this.btnBookings.Click += new System.EventHandler(this.btnBookings_Click);
             // 
             // btnMovies
             // 

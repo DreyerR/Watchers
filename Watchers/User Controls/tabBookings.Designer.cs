@@ -101,22 +101,22 @@
             this.lblBooking = new System.Windows.Forms.Label();
             this.dtpDate = new System.Windows.Forms.DateTimePicker();
             this.lblUnavailable = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.btnDeleteBook = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnBook = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.imgUnavail = new System.Windows.Forms.PictureBox();
             this.imgSelected = new System.Windows.Forms.PictureBox();
             this.imgAvail = new System.Windows.Forms.PictureBox();
             this.imgMovie = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.pnlCinema.SuspendLayout();
             this.pnlScrren.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgUnavail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSelected)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgAvail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgMovie)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -1123,11 +1123,12 @@
             // 
             this.lblMovie.BackColor = System.Drawing.Color.Transparent;
             this.lblMovie.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.lblMovie.Location = new System.Drawing.Point(64, 206);
+            this.lblMovie.Location = new System.Drawing.Point(54, 207);
             this.lblMovie.Name = "lblMovie";
-            this.lblMovie.Size = new System.Drawing.Size(109, 39);
+            this.lblMovie.Size = new System.Drawing.Size(321, 39);
             this.lblMovie.TabIndex = 65;
             this.lblMovie.Text = "Movie:";
+            this.lblMovie.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblBooking
             // 
@@ -1166,6 +1167,17 @@
             this.lblUnavailable.Size = new System.Drawing.Size(147, 34);
             this.lblUnavailable.TabIndex = 83;
             this.lblUnavailable.Text = "Unavailable";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(135)))), ((int)(((byte)(51)))));
+            this.panel1.Controls.Add(this.lblBooking);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1575, 94);
+            this.panel1.TabIndex = 87;
             // 
             // btnDeleteBook
             // 
@@ -1218,16 +1230,16 @@
             this.toolTip1.SetToolTip(this.btnBook, "Click here to make the booking you have just made");
             this.btnBook.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
+            // imgUnavail
             // 
-            this.pictureBox1.Image = global::Watchers.Properties.Resources.Unavailable;
-            this.pictureBox1.Location = new System.Drawing.Point(827, 639);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(45, 46);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 82;
-            this.pictureBox1.TabStop = false;
+            this.imgUnavail.Image = global::Watchers.Properties.Resources.Unavailable;
+            this.imgUnavail.Location = new System.Drawing.Point(827, 639);
+            this.imgUnavail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgUnavail.Name = "imgUnavail";
+            this.imgUnavail.Size = new System.Drawing.Size(45, 46);
+            this.imgUnavail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgUnavail.TabIndex = 82;
+            this.imgUnavail.TabStop = false;
             // 
             // imgSelected
             // 
@@ -1258,20 +1270,9 @@
             this.imgMovie.Margin = new System.Windows.Forms.Padding(4);
             this.imgMovie.Name = "imgMovie";
             this.imgMovie.Size = new System.Drawing.Size(266, 349);
-            this.imgMovie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.imgMovie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgMovie.TabIndex = 63;
             this.imgMovie.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(135)))), ((int)(((byte)(51)))));
-            this.panel1.Controls.Add(this.lblBooking);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1575, 94);
-            this.panel1.TabIndex = 87;
             // 
             // tabBookings
             // 
@@ -1282,7 +1283,7 @@
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnBook);
             this.Controls.Add(this.lblUnavailable);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.imgUnavail);
             this.Controls.Add(this.dtpDate);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblSelected);
@@ -1301,17 +1302,15 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "tabBookings";
             this.Size = new System.Drawing.Size(1575, 990);
-            this.Load += new System.EventHandler(this.tabBookings_Load);
             this.pnlCinema.ResumeLayout(false);
             this.pnlScrren.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgUnavail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSelected)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgAvail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgMovie)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -1391,7 +1390,7 @@
         private System.Windows.Forms.Label lblMovie;
         private System.Windows.Forms.Label lblBooking;
         private System.Windows.Forms.DateTimePicker dtpDate;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox imgUnavail;
         private System.Windows.Forms.Label lblUnavailable;
         private System.Windows.Forms.Button btnBook;
         private System.Windows.Forms.Button btnCancel;
