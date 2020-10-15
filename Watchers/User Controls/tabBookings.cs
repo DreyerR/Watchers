@@ -33,6 +33,7 @@ namespace Watchers
         public tabBookings()
         {
             InitializeComponent();
+            dtpDate.MinDate = DateTime.Now;
         }
 
         public void PopulateForm()
@@ -43,6 +44,12 @@ namespace Watchers
                 imgMovie.Image = movie.MovieImage;
                 rtbDescription.Text = movie.Description;
             }
+        }
+
+        private void SeatClicked(object sender, EventArgs e)
+        {
+            PictureBox seat = (PictureBox)sender;
+            seat.Image = Resources.Unavailable;
         }
     }
 }

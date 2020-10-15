@@ -36,62 +36,17 @@
             this.lblSeats = new System.Windows.Forms.Label();
             this.lblSeatNum = new System.Windows.Forms.Label();
             this.pnlCinema = new System.Windows.Forms.Panel();
-            this.btnE8 = new System.Windows.Forms.Button();
-            this.btnE10 = new System.Windows.Forms.Button();
-            this.btnE9 = new System.Windows.Forms.Button();
-            this.btnE7 = new System.Windows.Forms.Button();
-            this.btnE6 = new System.Windows.Forms.Button();
-            this.btnE5 = new System.Windows.Forms.Button();
-            this.btnE4 = new System.Windows.Forms.Button();
-            this.btnE3 = new System.Windows.Forms.Button();
-            this.btnE2 = new System.Windows.Forms.Button();
-            this.btnE1 = new System.Windows.Forms.Button();
-            this.btnD10 = new System.Windows.Forms.Button();
-            this.btnD9 = new System.Windows.Forms.Button();
-            this.btnD8 = new System.Windows.Forms.Button();
-            this.btnD7 = new System.Windows.Forms.Button();
-            this.btnD6 = new System.Windows.Forms.Button();
-            this.btnD5 = new System.Windows.Forms.Button();
-            this.btnD4 = new System.Windows.Forms.Button();
-            this.btnD3 = new System.Windows.Forms.Button();
-            this.btnD2 = new System.Windows.Forms.Button();
-            this.btnD1 = new System.Windows.Forms.Button();
-            this.btnC10 = new System.Windows.Forms.Button();
-            this.btnC9 = new System.Windows.Forms.Button();
-            this.btnC8 = new System.Windows.Forms.Button();
-            this.btnC7 = new System.Windows.Forms.Button();
-            this.btnC6 = new System.Windows.Forms.Button();
-            this.btnC5 = new System.Windows.Forms.Button();
-            this.btnC4 = new System.Windows.Forms.Button();
-            this.btnC3 = new System.Windows.Forms.Button();
-            this.btnC2 = new System.Windows.Forms.Button();
-            this.btnC1 = new System.Windows.Forms.Button();
-            this.btnB10 = new System.Windows.Forms.Button();
-            this.btnB9 = new System.Windows.Forms.Button();
-            this.btnB8 = new System.Windows.Forms.Button();
-            this.btnB7 = new System.Windows.Forms.Button();
-            this.btnB6 = new System.Windows.Forms.Button();
-            this.btnB5 = new System.Windows.Forms.Button();
-            this.btnB4 = new System.Windows.Forms.Button();
-            this.btnB3 = new System.Windows.Forms.Button();
-            this.btnB2 = new System.Windows.Forms.Button();
-            this.btnB1 = new System.Windows.Forms.Button();
-            this.btnA10 = new System.Windows.Forms.Button();
-            this.btnA9 = new System.Windows.Forms.Button();
-            this.btnA8 = new System.Windows.Forms.Button();
-            this.btnA7 = new System.Windows.Forms.Button();
-            this.btnA6 = new System.Windows.Forms.Button();
-            this.btnA5 = new System.Windows.Forms.Button();
-            this.btnA4 = new System.Windows.Forms.Button();
-            this.btnA3 = new System.Windows.Forms.Button();
-            this.btnA2 = new System.Windows.Forms.Button();
-            this.btnA1 = new System.Windows.Forms.Button();
+            this.imgE6 = new System.Windows.Forms.PictureBox();
+            this.imgE7 = new System.Windows.Forms.PictureBox();
+            this.imgE8 = new System.Windows.Forms.PictureBox();
+            this.imgE9 = new System.Windows.Forms.PictureBox();
+            this.imgE10 = new System.Windows.Forms.PictureBox();
             this.lblE = new System.Windows.Forms.Label();
             this.lblD = new System.Windows.Forms.Label();
             this.lblC = new System.Windows.Forms.Label();
             this.lblB = new System.Windows.Forms.Label();
             this.lblA = new System.Windows.Forms.Label();
-            this.pnlScrren = new System.Windows.Forms.Panel();
+            this.pnlScreen = new System.Windows.Forms.Panel();
             this.lblScreen = new System.Windows.Forms.Label();
             this.lblCNum = new System.Windows.Forms.Label();
             this.lblCinNum = new System.Windows.Forms.Label();
@@ -108,22 +63,116 @@
             this.imgSelected = new System.Windows.Forms.PictureBox();
             this.imgAvail = new System.Windows.Forms.PictureBox();
             this.imgMovie = new System.Windows.Forms.PictureBox();
+            this.imgE5 = new System.Windows.Forms.PictureBox();
+            this.imgE4 = new System.Windows.Forms.PictureBox();
+            this.imgE3 = new System.Windows.Forms.PictureBox();
+            this.imgE2 = new System.Windows.Forms.PictureBox();
+            this.imgE1 = new System.Windows.Forms.PictureBox();
+            this.imgD1 = new System.Windows.Forms.PictureBox();
+            this.imgD2 = new System.Windows.Forms.PictureBox();
+            this.imgD3 = new System.Windows.Forms.PictureBox();
+            this.imgD4 = new System.Windows.Forms.PictureBox();
+            this.imgD5 = new System.Windows.Forms.PictureBox();
+            this.imgD6 = new System.Windows.Forms.PictureBox();
+            this.imgD7 = new System.Windows.Forms.PictureBox();
+            this.imgD8 = new System.Windows.Forms.PictureBox();
+            this.imgD9 = new System.Windows.Forms.PictureBox();
+            this.imgD10 = new System.Windows.Forms.PictureBox();
+            this.imgC1 = new System.Windows.Forms.PictureBox();
+            this.imgC2 = new System.Windows.Forms.PictureBox();
+            this.imgC3 = new System.Windows.Forms.PictureBox();
+            this.imgC4 = new System.Windows.Forms.PictureBox();
+            this.imgC5 = new System.Windows.Forms.PictureBox();
+            this.imgC6 = new System.Windows.Forms.PictureBox();
+            this.imgC7 = new System.Windows.Forms.PictureBox();
+            this.imgC8 = new System.Windows.Forms.PictureBox();
+            this.imgC9 = new System.Windows.Forms.PictureBox();
+            this.imgC10 = new System.Windows.Forms.PictureBox();
+            this.imgB1 = new System.Windows.Forms.PictureBox();
+            this.imgB2 = new System.Windows.Forms.PictureBox();
+            this.imgB3 = new System.Windows.Forms.PictureBox();
+            this.imgB4 = new System.Windows.Forms.PictureBox();
+            this.imgB5 = new System.Windows.Forms.PictureBox();
+            this.imgB6 = new System.Windows.Forms.PictureBox();
+            this.imgB7 = new System.Windows.Forms.PictureBox();
+            this.imgB8 = new System.Windows.Forms.PictureBox();
+            this.imgB9 = new System.Windows.Forms.PictureBox();
+            this.imgB10 = new System.Windows.Forms.PictureBox();
+            this.imgA1 = new System.Windows.Forms.PictureBox();
+            this.imgA2 = new System.Windows.Forms.PictureBox();
+            this.imgA3 = new System.Windows.Forms.PictureBox();
+            this.imgA4 = new System.Windows.Forms.PictureBox();
+            this.imgA5 = new System.Windows.Forms.PictureBox();
+            this.imgA6 = new System.Windows.Forms.PictureBox();
+            this.imgA7 = new System.Windows.Forms.PictureBox();
+            this.imgA8 = new System.Windows.Forms.PictureBox();
+            this.imgA9 = new System.Windows.Forms.PictureBox();
+            this.imgA10 = new System.Windows.Forms.PictureBox();
             this.pnlCinema.SuspendLayout();
-            this.pnlScrren.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgE6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgE7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgE8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgE9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgE10)).BeginInit();
+            this.pnlScreen.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgUnavail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSelected)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgAvail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgMovie)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgE5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgE4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgE3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgE2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgE1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA10)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.Location = new System.Drawing.Point(47, 590);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(63, 726);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(157, 20);
+            this.label2.Size = new System.Drawing.Size(228, 25);
             this.label2.TabIndex = 80;
             this.label2.Text = "Movie Description:";
             // 
@@ -131,10 +180,9 @@
             // 
             this.lblSelected.BackColor = System.Drawing.Color.Transparent;
             this.lblSelected.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblSelected.Location = new System.Drawing.Point(534, 524);
-            this.lblSelected.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSelected.Location = new System.Drawing.Point(1049, 660);
             this.lblSelected.Name = "lblSelected";
-            this.lblSelected.Size = new System.Drawing.Size(82, 28);
+            this.lblSelected.Size = new System.Drawing.Size(109, 34);
             this.lblSelected.TabIndex = 79;
             this.lblSelected.Text = "Selected";
             // 
@@ -142,10 +190,9 @@
             // 
             this.lblAvail.BackColor = System.Drawing.Color.Transparent;
             this.lblAvail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblAvail.Location = new System.Drawing.Point(402, 524);
-            this.lblAvail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAvail.Location = new System.Drawing.Point(873, 660);
             this.lblAvail.Name = "lblAvail";
-            this.lblAvail.Size = new System.Drawing.Size(90, 28);
+            this.lblAvail.Size = new System.Drawing.Size(120, 34);
             this.lblAvail.TabIndex = 77;
             this.lblAvail.Text = "Available";
             // 
@@ -165,10 +212,9 @@
             // 
             this.lblSeats.BackColor = System.Drawing.Color.Transparent;
             this.lblSeats.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSeats.Location = new System.Drawing.Point(556, 114);
-            this.lblSeats.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSeats.Location = new System.Drawing.Point(741, 140);
             this.lblSeats.Name = "lblSeats";
-            this.lblSeats.Size = new System.Drawing.Size(144, 19);
+            this.lblSeats.Size = new System.Drawing.Size(192, 23);
             this.lblSeats.TabIndex = 74;
             this.lblSeats.Text = "Number of seats:";
             // 
@@ -176,837 +222,150 @@
             // 
             this.lblSeatNum.BackColor = System.Drawing.Color.Transparent;
             this.lblSeatNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSeatNum.Location = new System.Drawing.Point(700, 114);
-            this.lblSeatNum.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSeatNum.Location = new System.Drawing.Point(933, 140);
             this.lblSeatNum.Name = "lblSeatNum";
-            this.lblSeatNum.Size = new System.Drawing.Size(75, 19);
+            this.lblSeatNum.Size = new System.Drawing.Size(100, 23);
             this.lblSeatNum.TabIndex = 75;
             this.lblSeatNum.Text = "Nr";
             // 
             // pnlCinema
             // 
-            this.pnlCinema.Controls.Add(this.btnE8);
-            this.pnlCinema.Controls.Add(this.btnE10);
-            this.pnlCinema.Controls.Add(this.btnE9);
-            this.pnlCinema.Controls.Add(this.btnE7);
-            this.pnlCinema.Controls.Add(this.btnE6);
-            this.pnlCinema.Controls.Add(this.btnE5);
-            this.pnlCinema.Controls.Add(this.btnE4);
-            this.pnlCinema.Controls.Add(this.btnE3);
-            this.pnlCinema.Controls.Add(this.btnE2);
-            this.pnlCinema.Controls.Add(this.btnE1);
-            this.pnlCinema.Controls.Add(this.btnD10);
-            this.pnlCinema.Controls.Add(this.btnD9);
-            this.pnlCinema.Controls.Add(this.btnD8);
-            this.pnlCinema.Controls.Add(this.btnD7);
-            this.pnlCinema.Controls.Add(this.btnD6);
-            this.pnlCinema.Controls.Add(this.btnD5);
-            this.pnlCinema.Controls.Add(this.btnD4);
-            this.pnlCinema.Controls.Add(this.btnD3);
-            this.pnlCinema.Controls.Add(this.btnD2);
-            this.pnlCinema.Controls.Add(this.btnD1);
-            this.pnlCinema.Controls.Add(this.btnC10);
-            this.pnlCinema.Controls.Add(this.btnC9);
-            this.pnlCinema.Controls.Add(this.btnC8);
-            this.pnlCinema.Controls.Add(this.btnC7);
-            this.pnlCinema.Controls.Add(this.btnC6);
-            this.pnlCinema.Controls.Add(this.btnC5);
-            this.pnlCinema.Controls.Add(this.btnC4);
-            this.pnlCinema.Controls.Add(this.btnC3);
-            this.pnlCinema.Controls.Add(this.btnC2);
-            this.pnlCinema.Controls.Add(this.btnC1);
-            this.pnlCinema.Controls.Add(this.btnB10);
-            this.pnlCinema.Controls.Add(this.btnB9);
-            this.pnlCinema.Controls.Add(this.btnB8);
-            this.pnlCinema.Controls.Add(this.btnB7);
-            this.pnlCinema.Controls.Add(this.btnB6);
-            this.pnlCinema.Controls.Add(this.btnB5);
-            this.pnlCinema.Controls.Add(this.btnB4);
-            this.pnlCinema.Controls.Add(this.btnB3);
-            this.pnlCinema.Controls.Add(this.btnB2);
-            this.pnlCinema.Controls.Add(this.btnB1);
-            this.pnlCinema.Controls.Add(this.btnA10);
-            this.pnlCinema.Controls.Add(this.btnA9);
-            this.pnlCinema.Controls.Add(this.btnA8);
-            this.pnlCinema.Controls.Add(this.btnA7);
-            this.pnlCinema.Controls.Add(this.btnA6);
-            this.pnlCinema.Controls.Add(this.btnA5);
-            this.pnlCinema.Controls.Add(this.btnA4);
-            this.pnlCinema.Controls.Add(this.btnA3);
-            this.pnlCinema.Controls.Add(this.btnA2);
-            this.pnlCinema.Controls.Add(this.btnA1);
+            this.pnlCinema.Controls.Add(this.imgA1);
+            this.pnlCinema.Controls.Add(this.imgA2);
+            this.pnlCinema.Controls.Add(this.imgA3);
+            this.pnlCinema.Controls.Add(this.imgA4);
+            this.pnlCinema.Controls.Add(this.imgA5);
+            this.pnlCinema.Controls.Add(this.imgA6);
+            this.pnlCinema.Controls.Add(this.imgA7);
+            this.pnlCinema.Controls.Add(this.imgA8);
+            this.pnlCinema.Controls.Add(this.imgA9);
+            this.pnlCinema.Controls.Add(this.imgA10);
+            this.pnlCinema.Controls.Add(this.imgB1);
+            this.pnlCinema.Controls.Add(this.imgB2);
+            this.pnlCinema.Controls.Add(this.imgB3);
+            this.pnlCinema.Controls.Add(this.imgB4);
+            this.pnlCinema.Controls.Add(this.imgB5);
+            this.pnlCinema.Controls.Add(this.imgB6);
+            this.pnlCinema.Controls.Add(this.imgB7);
+            this.pnlCinema.Controls.Add(this.imgB8);
+            this.pnlCinema.Controls.Add(this.imgB9);
+            this.pnlCinema.Controls.Add(this.imgB10);
+            this.pnlCinema.Controls.Add(this.imgC1);
+            this.pnlCinema.Controls.Add(this.imgC2);
+            this.pnlCinema.Controls.Add(this.imgC3);
+            this.pnlCinema.Controls.Add(this.imgC4);
+            this.pnlCinema.Controls.Add(this.imgC5);
+            this.pnlCinema.Controls.Add(this.imgC6);
+            this.pnlCinema.Controls.Add(this.imgC7);
+            this.pnlCinema.Controls.Add(this.imgC8);
+            this.pnlCinema.Controls.Add(this.imgC9);
+            this.pnlCinema.Controls.Add(this.imgC10);
+            this.pnlCinema.Controls.Add(this.imgD1);
+            this.pnlCinema.Controls.Add(this.imgD2);
+            this.pnlCinema.Controls.Add(this.imgD3);
+            this.pnlCinema.Controls.Add(this.imgD4);
+            this.pnlCinema.Controls.Add(this.imgD5);
+            this.pnlCinema.Controls.Add(this.imgD6);
+            this.pnlCinema.Controls.Add(this.imgD7);
+            this.pnlCinema.Controls.Add(this.imgD8);
+            this.pnlCinema.Controls.Add(this.imgD9);
+            this.pnlCinema.Controls.Add(this.imgD10);
+            this.pnlCinema.Controls.Add(this.imgE1);
+            this.pnlCinema.Controls.Add(this.imgE2);
+            this.pnlCinema.Controls.Add(this.imgE3);
+            this.pnlCinema.Controls.Add(this.imgE4);
+            this.pnlCinema.Controls.Add(this.imgE5);
+            this.pnlCinema.Controls.Add(this.imgE6);
+            this.pnlCinema.Controls.Add(this.imgE7);
+            this.pnlCinema.Controls.Add(this.imgE8);
+            this.pnlCinema.Controls.Add(this.imgE9);
+            this.pnlCinema.Controls.Add(this.imgE10);
             this.pnlCinema.Controls.Add(this.lblE);
             this.pnlCinema.Controls.Add(this.lblD);
             this.pnlCinema.Controls.Add(this.lblC);
             this.pnlCinema.Controls.Add(this.lblB);
             this.pnlCinema.Controls.Add(this.lblA);
-            this.pnlCinema.Controls.Add(this.pnlScrren);
-            this.pnlCinema.Location = new System.Drawing.Point(364, 143);
-            this.pnlCinema.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlCinema.Controls.Add(this.pnlScreen);
+            this.pnlCinema.Location = new System.Drawing.Point(489, 176);
+            this.pnlCinema.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlCinema.Name = "pnlCinema";
-            this.pnlCinema.Size = new System.Drawing.Size(397, 370);
+            this.pnlCinema.Size = new System.Drawing.Size(861, 475);
             this.pnlCinema.TabIndex = 72;
             this.toolTip1.SetToolTip(this.pnlCinema, "Choose the number of seats you would like by clickking on the seat");
             // 
-            // btnE8
-            // 
-            this.btnE8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnE8.BackColor = System.Drawing.Color.Transparent;
-            this.btnE8.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnE8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnE8.FlatAppearance.BorderSize = 0;
-            this.btnE8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnE8.Location = new System.Drawing.Point(78, 86);
-            this.btnE8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnE8.Name = "btnE8";
-            this.btnE8.Size = new System.Drawing.Size(34, 46);
-            this.btnE8.TabIndex = 105;
-            this.btnE8.UseVisualStyleBackColor = false;
-            // 
-            // btnE10
-            // 
-            this.btnE10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnE10.BackColor = System.Drawing.Color.Transparent;
-            this.btnE10.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnE10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnE10.FlatAppearance.BorderSize = 0;
-            this.btnE10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnE10.Location = new System.Drawing.Point(12, 86);
-            this.btnE10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnE10.Name = "btnE10";
-            this.btnE10.Size = new System.Drawing.Size(43, 46);
-            this.btnE10.TabIndex = 107;
-            this.btnE10.UseVisualStyleBackColor = false;
-            // 
-            // btnE9
-            // 
-            this.btnE9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnE9.BackColor = System.Drawing.Color.Transparent;
-            this.btnE9.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnE9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnE9.FlatAppearance.BorderSize = 0;
-            this.btnE9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnE9.Location = new System.Drawing.Point(45, 86);
-            this.btnE9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnE9.Name = "btnE9";
-            this.btnE9.Size = new System.Drawing.Size(45, 46);
-            this.btnE9.TabIndex = 106;
-            this.btnE9.UseVisualStyleBackColor = false;
-            // 
-            // btnE7
-            // 
-            this.btnE7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnE7.BackColor = System.Drawing.Color.Transparent;
-            this.btnE7.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnE7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnE7.FlatAppearance.BorderSize = 0;
-            this.btnE7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnE7.Location = new System.Drawing.Point(111, 86);
-            this.btnE7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnE7.Name = "btnE7";
-            this.btnE7.Size = new System.Drawing.Size(34, 46);
-            this.btnE7.TabIndex = 104;
-            this.btnE7.UseVisualStyleBackColor = false;
-            // 
-            // btnE6
-            // 
-            this.btnE6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnE6.BackColor = System.Drawing.Color.Transparent;
-            this.btnE6.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnE6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnE6.FlatAppearance.BorderSize = 0;
-            this.btnE6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnE6.Location = new System.Drawing.Point(142, 86);
-            this.btnE6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnE6.Name = "btnE6";
-            this.btnE6.Size = new System.Drawing.Size(34, 46);
-            this.btnE6.TabIndex = 103;
-            this.btnE6.UseVisualStyleBackColor = false;
-            // 
-            // btnE5
-            // 
-            this.btnE5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnE5.BackColor = System.Drawing.Color.Transparent;
-            this.btnE5.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnE5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnE5.FlatAppearance.BorderSize = 0;
-            this.btnE5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnE5.Location = new System.Drawing.Point(175, 86);
-            this.btnE5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnE5.Name = "btnE5";
-            this.btnE5.Size = new System.Drawing.Size(34, 46);
-            this.btnE5.TabIndex = 102;
-            this.btnE5.UseVisualStyleBackColor = false;
-            // 
-            // btnE4
-            // 
-            this.btnE4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnE4.BackColor = System.Drawing.Color.Transparent;
-            this.btnE4.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnE4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnE4.FlatAppearance.BorderSize = 0;
-            this.btnE4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnE4.Location = new System.Drawing.Point(208, 86);
-            this.btnE4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnE4.Name = "btnE4";
-            this.btnE4.Size = new System.Drawing.Size(34, 46);
-            this.btnE4.TabIndex = 101;
-            this.btnE4.UseVisualStyleBackColor = false;
-            // 
-            // btnE3
-            // 
-            this.btnE3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnE3.BackColor = System.Drawing.Color.Transparent;
-            this.btnE3.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnE3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnE3.FlatAppearance.BorderSize = 0;
-            this.btnE3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnE3.Location = new System.Drawing.Point(242, 86);
-            this.btnE3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnE3.Name = "btnE3";
-            this.btnE3.Size = new System.Drawing.Size(34, 46);
-            this.btnE3.TabIndex = 100;
-            this.btnE3.UseVisualStyleBackColor = false;
-            // 
-            // btnE2
-            // 
-            this.btnE2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnE2.BackColor = System.Drawing.Color.Transparent;
-            this.btnE2.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnE2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnE2.FlatAppearance.BorderSize = 0;
-            this.btnE2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnE2.Location = new System.Drawing.Point(274, 86);
-            this.btnE2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnE2.Name = "btnE2";
-            this.btnE2.Size = new System.Drawing.Size(34, 46);
-            this.btnE2.TabIndex = 99;
-            this.btnE2.UseVisualStyleBackColor = false;
-            // 
-            // btnE1
-            // 
-            this.btnE1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnE1.BackColor = System.Drawing.Color.Transparent;
-            this.btnE1.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnE1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnE1.FlatAppearance.BorderSize = 0;
-            this.btnE1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnE1.Location = new System.Drawing.Point(308, 86);
-            this.btnE1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnE1.Name = "btnE1";
-            this.btnE1.Size = new System.Drawing.Size(40, 46);
-            this.btnE1.TabIndex = 98;
-            this.btnE1.UseVisualStyleBackColor = false;
-            // 
-            // btnD10
-            // 
-            this.btnD10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnD10.BackColor = System.Drawing.Color.Transparent;
-            this.btnD10.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnD10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnD10.FlatAppearance.BorderSize = 0;
-            this.btnD10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnD10.Location = new System.Drawing.Point(12, 141);
-            this.btnD10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnD10.Name = "btnD10";
-            this.btnD10.Size = new System.Drawing.Size(34, 46);
-            this.btnD10.TabIndex = 97;
-            this.btnD10.UseVisualStyleBackColor = false;
-            // 
-            // btnD9
-            // 
-            this.btnD9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnD9.BackColor = System.Drawing.Color.Transparent;
-            this.btnD9.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnD9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnD9.FlatAppearance.BorderSize = 0;
-            this.btnD9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnD9.Location = new System.Drawing.Point(45, 141);
-            this.btnD9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnD9.Name = "btnD9";
-            this.btnD9.Size = new System.Drawing.Size(34, 46);
-            this.btnD9.TabIndex = 96;
-            this.btnD9.UseVisualStyleBackColor = false;
-            // 
-            // btnD8
-            // 
-            this.btnD8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnD8.BackColor = System.Drawing.Color.Transparent;
-            this.btnD8.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnD8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnD8.FlatAppearance.BorderSize = 0;
-            this.btnD8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnD8.Location = new System.Drawing.Point(78, 141);
-            this.btnD8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnD8.Name = "btnD8";
-            this.btnD8.Size = new System.Drawing.Size(34, 46);
-            this.btnD8.TabIndex = 95;
-            this.btnD8.UseVisualStyleBackColor = false;
-            // 
-            // btnD7
-            // 
-            this.btnD7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnD7.BackColor = System.Drawing.Color.Transparent;
-            this.btnD7.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnD7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnD7.FlatAppearance.BorderSize = 0;
-            this.btnD7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnD7.Location = new System.Drawing.Point(111, 141);
-            this.btnD7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnD7.Name = "btnD7";
-            this.btnD7.Size = new System.Drawing.Size(34, 46);
-            this.btnD7.TabIndex = 94;
-            this.btnD7.UseVisualStyleBackColor = false;
-            // 
-            // btnD6
-            // 
-            this.btnD6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnD6.BackColor = System.Drawing.Color.Transparent;
-            this.btnD6.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnD6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnD6.FlatAppearance.BorderSize = 0;
-            this.btnD6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnD6.Location = new System.Drawing.Point(142, 141);
-            this.btnD6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnD6.Name = "btnD6";
-            this.btnD6.Size = new System.Drawing.Size(34, 46);
-            this.btnD6.TabIndex = 93;
-            this.btnD6.UseVisualStyleBackColor = false;
-            // 
-            // btnD5
-            // 
-            this.btnD5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnD5.BackColor = System.Drawing.Color.Transparent;
-            this.btnD5.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnD5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnD5.FlatAppearance.BorderSize = 0;
-            this.btnD5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnD5.Location = new System.Drawing.Point(175, 141);
-            this.btnD5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnD5.Name = "btnD5";
-            this.btnD5.Size = new System.Drawing.Size(34, 46);
-            this.btnD5.TabIndex = 92;
-            this.btnD5.UseVisualStyleBackColor = false;
-            // 
-            // btnD4
-            // 
-            this.btnD4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnD4.BackColor = System.Drawing.Color.Transparent;
-            this.btnD4.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnD4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnD4.FlatAppearance.BorderSize = 0;
-            this.btnD4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnD4.Location = new System.Drawing.Point(208, 141);
-            this.btnD4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnD4.Name = "btnD4";
-            this.btnD4.Size = new System.Drawing.Size(34, 46);
-            this.btnD4.TabIndex = 91;
-            this.btnD4.UseVisualStyleBackColor = false;
-            // 
-            // btnD3
-            // 
-            this.btnD3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnD3.BackColor = System.Drawing.Color.Transparent;
-            this.btnD3.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnD3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnD3.FlatAppearance.BorderSize = 0;
-            this.btnD3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnD3.Location = new System.Drawing.Point(242, 141);
-            this.btnD3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnD3.Name = "btnD3";
-            this.btnD3.Size = new System.Drawing.Size(34, 46);
-            this.btnD3.TabIndex = 90;
-            this.btnD3.UseVisualStyleBackColor = false;
-            // 
-            // btnD2
-            // 
-            this.btnD2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnD2.BackColor = System.Drawing.Color.Transparent;
-            this.btnD2.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnD2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnD2.FlatAppearance.BorderSize = 0;
-            this.btnD2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnD2.Location = new System.Drawing.Point(274, 141);
-            this.btnD2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnD2.Name = "btnD2";
-            this.btnD2.Size = new System.Drawing.Size(34, 46);
-            this.btnD2.TabIndex = 89;
-            this.btnD2.UseVisualStyleBackColor = false;
-            // 
-            // btnD1
-            // 
-            this.btnD1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnD1.BackColor = System.Drawing.Color.Transparent;
-            this.btnD1.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnD1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnD1.FlatAppearance.BorderSize = 0;
-            this.btnD1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnD1.Location = new System.Drawing.Point(308, 141);
-            this.btnD1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnD1.Name = "btnD1";
-            this.btnD1.Size = new System.Drawing.Size(40, 46);
-            this.btnD1.TabIndex = 88;
-            this.btnD1.UseVisualStyleBackColor = false;
-            // 
-            // btnC10
-            // 
-            this.btnC10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnC10.BackColor = System.Drawing.Color.Transparent;
-            this.btnC10.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnC10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnC10.FlatAppearance.BorderSize = 0;
-            this.btnC10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnC10.Location = new System.Drawing.Point(12, 197);
-            this.btnC10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnC10.Name = "btnC10";
-            this.btnC10.Size = new System.Drawing.Size(34, 46);
-            this.btnC10.TabIndex = 87;
-            this.btnC10.UseVisualStyleBackColor = false;
-            // 
-            // btnC9
-            // 
-            this.btnC9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnC9.BackColor = System.Drawing.Color.Transparent;
-            this.btnC9.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnC9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnC9.FlatAppearance.BorderSize = 0;
-            this.btnC9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnC9.Location = new System.Drawing.Point(45, 197);
-            this.btnC9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnC9.Name = "btnC9";
-            this.btnC9.Size = new System.Drawing.Size(34, 46);
-            this.btnC9.TabIndex = 86;
-            this.btnC9.UseVisualStyleBackColor = false;
-            // 
-            // btnC8
-            // 
-            this.btnC8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnC8.BackColor = System.Drawing.Color.Transparent;
-            this.btnC8.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnC8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnC8.FlatAppearance.BorderSize = 0;
-            this.btnC8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnC8.Location = new System.Drawing.Point(78, 197);
-            this.btnC8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnC8.Name = "btnC8";
-            this.btnC8.Size = new System.Drawing.Size(34, 46);
-            this.btnC8.TabIndex = 85;
-            this.btnC8.UseVisualStyleBackColor = false;
-            // 
-            // btnC7
-            // 
-            this.btnC7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnC7.BackColor = System.Drawing.Color.Transparent;
-            this.btnC7.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnC7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnC7.FlatAppearance.BorderSize = 0;
-            this.btnC7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnC7.Location = new System.Drawing.Point(111, 197);
-            this.btnC7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnC7.Name = "btnC7";
-            this.btnC7.Size = new System.Drawing.Size(34, 46);
-            this.btnC7.TabIndex = 84;
-            this.btnC7.UseVisualStyleBackColor = false;
-            // 
-            // btnC6
-            // 
-            this.btnC6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnC6.BackColor = System.Drawing.Color.Transparent;
-            this.btnC6.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnC6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnC6.FlatAppearance.BorderSize = 0;
-            this.btnC6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnC6.Location = new System.Drawing.Point(142, 197);
-            this.btnC6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnC6.Name = "btnC6";
-            this.btnC6.Size = new System.Drawing.Size(34, 46);
-            this.btnC6.TabIndex = 83;
-            this.btnC6.UseVisualStyleBackColor = false;
-            // 
-            // btnC5
-            // 
-            this.btnC5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnC5.BackColor = System.Drawing.Color.Transparent;
-            this.btnC5.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnC5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnC5.FlatAppearance.BorderSize = 0;
-            this.btnC5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnC5.Location = new System.Drawing.Point(175, 197);
-            this.btnC5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnC5.Name = "btnC5";
-            this.btnC5.Size = new System.Drawing.Size(34, 46);
-            this.btnC5.TabIndex = 82;
-            this.btnC5.UseVisualStyleBackColor = false;
-            // 
-            // btnC4
-            // 
-            this.btnC4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnC4.BackColor = System.Drawing.Color.Transparent;
-            this.btnC4.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnC4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnC4.FlatAppearance.BorderSize = 0;
-            this.btnC4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnC4.Location = new System.Drawing.Point(208, 197);
-            this.btnC4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnC4.Name = "btnC4";
-            this.btnC4.Size = new System.Drawing.Size(34, 46);
-            this.btnC4.TabIndex = 81;
-            this.btnC4.UseVisualStyleBackColor = false;
-            // 
-            // btnC3
-            // 
-            this.btnC3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnC3.BackColor = System.Drawing.Color.Transparent;
-            this.btnC3.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnC3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnC3.FlatAppearance.BorderSize = 0;
-            this.btnC3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnC3.Location = new System.Drawing.Point(242, 197);
-            this.btnC3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnC3.Name = "btnC3";
-            this.btnC3.Size = new System.Drawing.Size(34, 46);
-            this.btnC3.TabIndex = 80;
-            this.btnC3.UseVisualStyleBackColor = false;
-            // 
-            // btnC2
-            // 
-            this.btnC2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnC2.BackColor = System.Drawing.Color.Transparent;
-            this.btnC2.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnC2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnC2.FlatAppearance.BorderSize = 0;
-            this.btnC2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnC2.Location = new System.Drawing.Point(274, 197);
-            this.btnC2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnC2.Name = "btnC2";
-            this.btnC2.Size = new System.Drawing.Size(34, 46);
-            this.btnC2.TabIndex = 79;
-            this.btnC2.UseVisualStyleBackColor = false;
-            // 
-            // btnC1
-            // 
-            this.btnC1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnC1.BackColor = System.Drawing.Color.Transparent;
-            this.btnC1.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnC1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnC1.FlatAppearance.BorderSize = 0;
-            this.btnC1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnC1.Location = new System.Drawing.Point(308, 197);
-            this.btnC1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnC1.Name = "btnC1";
-            this.btnC1.Size = new System.Drawing.Size(40, 46);
-            this.btnC1.TabIndex = 78;
-            this.btnC1.UseVisualStyleBackColor = false;
-            // 
-            // btnB10
-            // 
-            this.btnB10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnB10.BackColor = System.Drawing.Color.Transparent;
-            this.btnB10.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnB10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnB10.FlatAppearance.BorderSize = 0;
-            this.btnB10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnB10.Location = new System.Drawing.Point(12, 255);
-            this.btnB10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnB10.Name = "btnB10";
-            this.btnB10.Size = new System.Drawing.Size(34, 46);
-            this.btnB10.TabIndex = 77;
-            this.btnB10.UseVisualStyleBackColor = false;
-            // 
-            // btnB9
-            // 
-            this.btnB9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnB9.BackColor = System.Drawing.Color.Transparent;
-            this.btnB9.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnB9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnB9.FlatAppearance.BorderSize = 0;
-            this.btnB9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnB9.Location = new System.Drawing.Point(45, 255);
-            this.btnB9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnB9.Name = "btnB9";
-            this.btnB9.Size = new System.Drawing.Size(34, 46);
-            this.btnB9.TabIndex = 76;
-            this.btnB9.UseVisualStyleBackColor = false;
-            // 
-            // btnB8
-            // 
-            this.btnB8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnB8.BackColor = System.Drawing.Color.Transparent;
-            this.btnB8.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnB8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnB8.FlatAppearance.BorderSize = 0;
-            this.btnB8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnB8.Location = new System.Drawing.Point(78, 255);
-            this.btnB8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnB8.Name = "btnB8";
-            this.btnB8.Size = new System.Drawing.Size(34, 46);
-            this.btnB8.TabIndex = 75;
-            this.btnB8.UseVisualStyleBackColor = false;
-            // 
-            // btnB7
-            // 
-            this.btnB7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnB7.BackColor = System.Drawing.Color.Transparent;
-            this.btnB7.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnB7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnB7.FlatAppearance.BorderSize = 0;
-            this.btnB7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnB7.Location = new System.Drawing.Point(111, 255);
-            this.btnB7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnB7.Name = "btnB7";
-            this.btnB7.Size = new System.Drawing.Size(34, 46);
-            this.btnB7.TabIndex = 74;
-            this.btnB7.UseVisualStyleBackColor = false;
-            // 
-            // btnB6
-            // 
-            this.btnB6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnB6.BackColor = System.Drawing.Color.Transparent;
-            this.btnB6.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnB6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnB6.FlatAppearance.BorderSize = 0;
-            this.btnB6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnB6.Location = new System.Drawing.Point(142, 255);
-            this.btnB6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnB6.Name = "btnB6";
-            this.btnB6.Size = new System.Drawing.Size(34, 46);
-            this.btnB6.TabIndex = 73;
-            this.btnB6.UseVisualStyleBackColor = false;
-            // 
-            // btnB5
-            // 
-            this.btnB5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnB5.BackColor = System.Drawing.Color.Transparent;
-            this.btnB5.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnB5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnB5.FlatAppearance.BorderSize = 0;
-            this.btnB5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnB5.Location = new System.Drawing.Point(175, 255);
-            this.btnB5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnB5.Name = "btnB5";
-            this.btnB5.Size = new System.Drawing.Size(34, 46);
-            this.btnB5.TabIndex = 72;
-            this.btnB5.UseVisualStyleBackColor = false;
-            // 
-            // btnB4
-            // 
-            this.btnB4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnB4.BackColor = System.Drawing.Color.Transparent;
-            this.btnB4.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnB4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnB4.FlatAppearance.BorderSize = 0;
-            this.btnB4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnB4.Location = new System.Drawing.Point(208, 255);
-            this.btnB4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnB4.Name = "btnB4";
-            this.btnB4.Size = new System.Drawing.Size(34, 46);
-            this.btnB4.TabIndex = 71;
-            this.btnB4.UseVisualStyleBackColor = false;
-            // 
-            // btnB3
-            // 
-            this.btnB3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnB3.BackColor = System.Drawing.Color.Transparent;
-            this.btnB3.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnB3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnB3.FlatAppearance.BorderSize = 0;
-            this.btnB3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnB3.Location = new System.Drawing.Point(242, 255);
-            this.btnB3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnB3.Name = "btnB3";
-            this.btnB3.Size = new System.Drawing.Size(34, 46);
-            this.btnB3.TabIndex = 70;
-            this.btnB3.UseVisualStyleBackColor = false;
-            // 
-            // btnB2
-            // 
-            this.btnB2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnB2.BackColor = System.Drawing.Color.Transparent;
-            this.btnB2.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnB2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnB2.FlatAppearance.BorderSize = 0;
-            this.btnB2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnB2.Location = new System.Drawing.Point(274, 255);
-            this.btnB2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnB2.Name = "btnB2";
-            this.btnB2.Size = new System.Drawing.Size(34, 46);
-            this.btnB2.TabIndex = 69;
-            this.btnB2.UseVisualStyleBackColor = false;
-            // 
-            // btnB1
-            // 
-            this.btnB1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnB1.BackColor = System.Drawing.Color.Transparent;
-            this.btnB1.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnB1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnB1.FlatAppearance.BorderSize = 0;
-            this.btnB1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnB1.Location = new System.Drawing.Point(308, 255);
-            this.btnB1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnB1.Name = "btnB1";
-            this.btnB1.Size = new System.Drawing.Size(40, 46);
-            this.btnB1.TabIndex = 68;
-            this.btnB1.UseVisualStyleBackColor = false;
-            // 
-            // btnA10
-            // 
-            this.btnA10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnA10.BackColor = System.Drawing.Color.Transparent;
-            this.btnA10.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnA10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnA10.FlatAppearance.BorderSize = 0;
-            this.btnA10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnA10.Location = new System.Drawing.Point(12, 310);
-            this.btnA10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnA10.Name = "btnA10";
-            this.btnA10.Size = new System.Drawing.Size(34, 46);
-            this.btnA10.TabIndex = 67;
-            this.btnA10.UseVisualStyleBackColor = false;
-            // 
-            // btnA9
-            // 
-            this.btnA9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnA9.BackColor = System.Drawing.Color.Transparent;
-            this.btnA9.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnA9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnA9.FlatAppearance.BorderSize = 0;
-            this.btnA9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnA9.Location = new System.Drawing.Point(45, 310);
-            this.btnA9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnA9.Name = "btnA9";
-            this.btnA9.Size = new System.Drawing.Size(34, 46);
-            this.btnA9.TabIndex = 66;
-            this.btnA9.UseVisualStyleBackColor = false;
-            // 
-            // btnA8
-            // 
-            this.btnA8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnA8.BackColor = System.Drawing.Color.Transparent;
-            this.btnA8.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnA8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnA8.FlatAppearance.BorderSize = 0;
-            this.btnA8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnA8.Location = new System.Drawing.Point(78, 310);
-            this.btnA8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnA8.Name = "btnA8";
-            this.btnA8.Size = new System.Drawing.Size(34, 46);
-            this.btnA8.TabIndex = 65;
-            this.btnA8.UseVisualStyleBackColor = false;
-            // 
-            // btnA7
-            // 
-            this.btnA7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnA7.BackColor = System.Drawing.Color.Transparent;
-            this.btnA7.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnA7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnA7.FlatAppearance.BorderSize = 0;
-            this.btnA7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnA7.Location = new System.Drawing.Point(111, 310);
-            this.btnA7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnA7.Name = "btnA7";
-            this.btnA7.Size = new System.Drawing.Size(34, 46);
-            this.btnA7.TabIndex = 64;
-            this.btnA7.UseVisualStyleBackColor = false;
-            // 
-            // btnA6
-            // 
-            this.btnA6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnA6.BackColor = System.Drawing.Color.Transparent;
-            this.btnA6.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnA6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnA6.FlatAppearance.BorderSize = 0;
-            this.btnA6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnA6.Location = new System.Drawing.Point(142, 310);
-            this.btnA6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnA6.Name = "btnA6";
-            this.btnA6.Size = new System.Drawing.Size(34, 46);
-            this.btnA6.TabIndex = 63;
-            this.btnA6.UseVisualStyleBackColor = false;
-            // 
-            // btnA5
-            // 
-            this.btnA5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnA5.BackColor = System.Drawing.Color.Transparent;
-            this.btnA5.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnA5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnA5.FlatAppearance.BorderSize = 0;
-            this.btnA5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnA5.Location = new System.Drawing.Point(175, 310);
-            this.btnA5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnA5.Name = "btnA5";
-            this.btnA5.Size = new System.Drawing.Size(34, 46);
-            this.btnA5.TabIndex = 62;
-            this.btnA5.UseVisualStyleBackColor = false;
-            // 
-            // btnA4
-            // 
-            this.btnA4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnA4.BackColor = System.Drawing.Color.Transparent;
-            this.btnA4.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnA4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnA4.FlatAppearance.BorderSize = 0;
-            this.btnA4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnA4.Location = new System.Drawing.Point(208, 310);
-            this.btnA4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnA4.Name = "btnA4";
-            this.btnA4.Size = new System.Drawing.Size(34, 46);
-            this.btnA4.TabIndex = 61;
-            this.btnA4.UseVisualStyleBackColor = false;
-            // 
-            // btnA3
-            // 
-            this.btnA3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnA3.BackColor = System.Drawing.Color.Transparent;
-            this.btnA3.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnA3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnA3.FlatAppearance.BorderSize = 0;
-            this.btnA3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnA3.Location = new System.Drawing.Point(242, 310);
-            this.btnA3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnA3.Name = "btnA3";
-            this.btnA3.Size = new System.Drawing.Size(34, 46);
-            this.btnA3.TabIndex = 60;
-            this.btnA3.UseVisualStyleBackColor = false;
-            // 
-            // btnA2
-            // 
-            this.btnA2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnA2.BackColor = System.Drawing.Color.Transparent;
-            this.btnA2.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnA2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnA2.FlatAppearance.BorderSize = 0;
-            this.btnA2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnA2.Location = new System.Drawing.Point(274, 310);
-            this.btnA2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnA2.Name = "btnA2";
-            this.btnA2.Size = new System.Drawing.Size(34, 46);
-            this.btnA2.TabIndex = 59;
-            this.btnA2.UseVisualStyleBackColor = false;
-            // 
-            // btnA1
-            // 
-            this.btnA1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnA1.BackColor = System.Drawing.Color.Transparent;
-            this.btnA1.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnA1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnA1.FlatAppearance.BorderSize = 0;
-            this.btnA1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnA1.Location = new System.Drawing.Point(308, 310);
-            this.btnA1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnA1.Name = "btnA1";
-            this.btnA1.Size = new System.Drawing.Size(40, 46);
-            this.btnA1.TabIndex = 58;
-            this.btnA1.UseVisualStyleBackColor = false;
+            // imgE6
+            // 
+            this.imgE6.Image = global::Watchers.Properties.Resources.Available;
+            this.imgE6.Location = new System.Drawing.Point(532, 130);
+            this.imgE6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgE6.Name = "imgE6";
+            this.imgE6.Size = new System.Drawing.Size(40, 40);
+            this.imgE6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgE6.TabIndex = 112;
+            this.imgE6.TabStop = false;
+            this.imgE6.Tag = "E6";
+            this.imgE6.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgE7
+            // 
+            this.imgE7.Image = global::Watchers.Properties.Resources.Available;
+            this.imgE7.Location = new System.Drawing.Point(491, 130);
+            this.imgE7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgE7.Name = "imgE7";
+            this.imgE7.Size = new System.Drawing.Size(40, 40);
+            this.imgE7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgE7.TabIndex = 111;
+            this.imgE7.TabStop = false;
+            this.imgE7.Tag = "E7";
+            this.imgE7.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgE8
+            // 
+            this.imgE8.Image = global::Watchers.Properties.Resources.Available;
+            this.imgE8.Location = new System.Drawing.Point(448, 130);
+            this.imgE8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgE8.Name = "imgE8";
+            this.imgE8.Size = new System.Drawing.Size(40, 40);
+            this.imgE8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgE8.TabIndex = 110;
+            this.imgE8.TabStop = false;
+            this.imgE8.Tag = "E8";
+            this.imgE8.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgE9
+            // 
+            this.imgE9.Image = global::Watchers.Properties.Resources.Available;
+            this.imgE9.Location = new System.Drawing.Point(403, 130);
+            this.imgE9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgE9.Name = "imgE9";
+            this.imgE9.Size = new System.Drawing.Size(40, 40);
+            this.imgE9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgE9.TabIndex = 109;
+            this.imgE9.TabStop = false;
+            this.imgE9.Tag = "E9";
+            this.imgE9.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgE10
+            // 
+            this.imgE10.Image = global::Watchers.Properties.Resources.Available;
+            this.imgE10.Location = new System.Drawing.Point(358, 130);
+            this.imgE10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgE10.Name = "imgE10";
+            this.imgE10.Size = new System.Drawing.Size(40, 40);
+            this.imgE10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgE10.TabIndex = 89;
+            this.imgE10.TabStop = false;
+            this.imgE10.Tag = "E10";
+            this.imgE10.Click += new System.EventHandler(this.SeatClicked);
             // 
             // lblE
             // 
             this.lblE.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblE.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblE.Location = new System.Drawing.Point(352, 84);
-            this.lblE.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblE.Location = new System.Drawing.Point(801, 123);
             this.lblE.Name = "lblE";
-            this.lblE.Size = new System.Drawing.Size(36, 47);
+            this.lblE.Size = new System.Drawing.Size(47, 57);
             this.lblE.TabIndex = 5;
             this.lblE.Text = "E";
             this.lblE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1016,10 +375,9 @@
             this.lblD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblD.Location = new System.Drawing.Point(352, 139);
-            this.lblD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblD.Location = new System.Drawing.Point(801, 191);
             this.lblD.Name = "lblD";
-            this.lblD.Size = new System.Drawing.Size(36, 47);
+            this.lblD.Size = new System.Drawing.Size(47, 57);
             this.lblD.TabIndex = 4;
             this.lblD.Text = "D";
             this.lblD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1029,10 +387,9 @@
             this.lblC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblC.Location = new System.Drawing.Point(352, 197);
-            this.lblC.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblC.Location = new System.Drawing.Point(801, 262);
             this.lblC.Name = "lblC";
-            this.lblC.Size = new System.Drawing.Size(36, 47);
+            this.lblC.Size = new System.Drawing.Size(47, 57);
             this.lblC.TabIndex = 3;
             this.lblC.Text = "C";
             this.lblC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1042,10 +399,9 @@
             this.lblB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblB.Location = new System.Drawing.Point(352, 253);
-            this.lblB.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblB.Location = new System.Drawing.Point(801, 331);
             this.lblB.Name = "lblB";
-            this.lblB.Size = new System.Drawing.Size(36, 47);
+            this.lblB.Size = new System.Drawing.Size(47, 57);
             this.lblB.TabIndex = 2;
             this.lblB.Text = "B";
             this.lblB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1055,24 +411,23 @@
             this.lblA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblA.Location = new System.Drawing.Point(352, 310);
-            this.lblA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblA.Location = new System.Drawing.Point(801, 402);
             this.lblA.Name = "lblA";
-            this.lblA.Size = new System.Drawing.Size(36, 47);
+            this.lblA.Size = new System.Drawing.Size(47, 57);
             this.lblA.TabIndex = 1;
             this.lblA.Text = "A";
             this.lblA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pnlScrren
+            // pnlScreen
             // 
-            this.pnlScrren.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlScrren.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pnlScrren.Controls.Add(this.lblScreen);
-            this.pnlScrren.Location = new System.Drawing.Point(12, 13);
-            this.pnlScrren.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pnlScrren.Name = "pnlScrren";
-            this.pnlScrren.Size = new System.Drawing.Size(375, 40);
-            this.pnlScrren.TabIndex = 0;
+            this.pnlScreen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlScreen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pnlScreen.Controls.Add(this.lblScreen);
+            this.pnlScreen.Location = new System.Drawing.Point(348, 36);
+            this.pnlScreen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlScreen.Name = "pnlScreen";
+            this.pnlScreen.Size = new System.Drawing.Size(500, 49);
+            this.pnlScreen.TabIndex = 0;
             // 
             // lblScreen
             // 
@@ -1080,10 +435,9 @@
             this.lblScreen.BackColor = System.Drawing.Color.Transparent;
             this.lblScreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.lblScreen.ForeColor = System.Drawing.Color.White;
-            this.lblScreen.Location = new System.Drawing.Point(99, 0);
-            this.lblScreen.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblScreen.Location = new System.Drawing.Point(132, 0);
             this.lblScreen.Name = "lblScreen";
-            this.lblScreen.Size = new System.Drawing.Size(159, 40);
+            this.lblScreen.Size = new System.Drawing.Size(212, 49);
             this.lblScreen.TabIndex = 41;
             this.lblScreen.Text = "SCREEN";
             this.lblScreen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1092,10 +446,9 @@
             // 
             this.lblCNum.BackColor = System.Drawing.Color.Transparent;
             this.lblCNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCNum.Location = new System.Drawing.Point(502, 114);
-            this.lblCNum.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCNum.Location = new System.Drawing.Point(669, 140);
             this.lblCNum.Name = "lblCNum";
-            this.lblCNum.Size = new System.Drawing.Size(75, 19);
+            this.lblCNum.Size = new System.Drawing.Size(53, 23);
             this.lblCNum.TabIndex = 71;
             this.lblCNum.Text = "Nr";
             // 
@@ -1103,10 +456,9 @@
             // 
             this.lblCinNum.BackColor = System.Drawing.Color.Transparent;
             this.lblCinNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCinNum.Location = new System.Drawing.Point(363, 114);
-            this.lblCinNum.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCinNum.Location = new System.Drawing.Point(484, 140);
             this.lblCinNum.Name = "lblCinNum";
-            this.lblCinNum.Size = new System.Drawing.Size(141, 30);
+            this.lblCinNum.Size = new System.Drawing.Size(188, 37);
             this.lblCinNum.TabIndex = 70;
             this.lblCinNum.Text = "Cinema Number: ";
             // 
@@ -1114,22 +466,21 @@
             // 
             this.lblDate.BackColor = System.Drawing.Color.Transparent;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.lblDate.Location = new System.Drawing.Point(28, 110);
-            this.lblDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDate.Location = new System.Drawing.Point(37, 135);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(75, 28);
+            this.lblDate.Size = new System.Drawing.Size(100, 34);
             this.lblDate.TabIndex = 69;
             this.lblDate.Text = "Date:";
             // 
             // rtbDescription
             // 
             this.rtbDescription.BackColor = System.Drawing.Color.LightGray;
-            this.rtbDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbDescription.Location = new System.Drawing.Point(45, 622);
-            this.rtbDescription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rtbDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbDescription.Location = new System.Drawing.Point(60, 766);
+            this.rtbDescription.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rtbDescription.Name = "rtbDescription";
             this.rtbDescription.ReadOnly = true;
-            this.rtbDescription.Size = new System.Drawing.Size(742, 153);
+            this.rtbDescription.Size = new System.Drawing.Size(988, 187);
             this.rtbDescription.TabIndex = 67;
             this.rtbDescription.Text = "";
             // 
@@ -1137,10 +488,9 @@
             // 
             this.lblMovie.BackColor = System.Drawing.Color.Transparent;
             this.lblMovie.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.lblMovie.Location = new System.Drawing.Point(40, 168);
-            this.lblMovie.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMovie.Location = new System.Drawing.Point(70, 202);
             this.lblMovie.Name = "lblMovie";
-            this.lblMovie.Size = new System.Drawing.Size(241, 32);
+            this.lblMovie.Size = new System.Drawing.Size(321, 39);
             this.lblMovie.TabIndex = 65;
             this.lblMovie.Text = "Movie:";
             this.lblMovie.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -1151,10 +501,9 @@
             this.lblBooking.BackColor = System.Drawing.Color.Transparent;
             this.lblBooking.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBooking.ForeColor = System.Drawing.Color.White;
-            this.lblBooking.Location = new System.Drawing.Point(4, 14);
-            this.lblBooking.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBooking.Location = new System.Drawing.Point(5, 17);
             this.lblBooking.Name = "lblBooking";
-            this.lblBooking.Size = new System.Drawing.Size(166, 46);
+            this.lblBooking.Size = new System.Drawing.Size(206, 58);
             this.lblBooking.TabIndex = 64;
             this.lblBooking.Text = "Booking";
             // 
@@ -1164,12 +513,12 @@
             this.dtpDate.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(51)))));
             this.dtpDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDate.Location = new System.Drawing.Point(102, 114);
-            this.dtpDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpDate.Location = new System.Drawing.Point(136, 140);
+            this.dtpDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpDate.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
             this.dtpDate.MinDate = new System.DateTime(2020, 9, 25, 0, 0, 0, 0);
             this.dtpDate.Name = "dtpDate";
-            this.dtpDate.Size = new System.Drawing.Size(218, 26);
+            this.dtpDate.Size = new System.Drawing.Size(289, 30);
             this.dtpDate.TabIndex = 81;
             this.toolTip1.SetToolTip(this.dtpDate, "Choose the date you would like to watch the movie here");
             this.dtpDate.Value = new System.DateTime(2020, 9, 25, 10, 57, 48, 0);
@@ -1178,10 +527,9 @@
             // 
             this.lblUnavailable.BackColor = System.Drawing.Color.Transparent;
             this.lblUnavailable.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblUnavailable.Location = new System.Drawing.Point(658, 524);
-            this.lblUnavailable.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUnavailable.Location = new System.Drawing.Point(1214, 660);
             this.lblUnavailable.Name = "lblUnavailable";
-            this.lblUnavailable.Size = new System.Drawing.Size(110, 28);
+            this.lblUnavailable.Size = new System.Drawing.Size(147, 34);
             this.lblUnavailable.TabIndex = 83;
             this.lblUnavailable.Text = "Unavailable";
             // 
@@ -1191,8 +539,9 @@
             this.panel1.Controls.Add(this.lblBooking);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1181, 76);
+            this.panel1.Size = new System.Drawing.Size(1575, 94);
             this.panel1.TabIndex = 87;
             // 
             // btnBook
@@ -1203,10 +552,10 @@
             this.btnBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.btnBook.ForeColor = System.Drawing.Color.White;
-            this.btnBook.Location = new System.Drawing.Point(940, 738);
-            this.btnBook.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBook.Location = new System.Drawing.Point(1253, 908);
+            this.btnBook.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBook.Name = "btnBook";
-            this.btnBook.Size = new System.Drawing.Size(202, 44);
+            this.btnBook.Size = new System.Drawing.Size(269, 54);
             this.btnBook.TabIndex = 84;
             this.btnBook.Text = "Book Now";
             this.toolTip1.SetToolTip(this.btnBook, "Click here to make the booking you have just made");
@@ -1215,20 +564,20 @@
             // imgUnavail
             // 
             this.imgUnavail.Image = global::Watchers.Properties.Resources.Unavailable;
-            this.imgUnavail.Location = new System.Drawing.Point(620, 519);
-            this.imgUnavail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.imgUnavail.Location = new System.Drawing.Point(1164, 654);
+            this.imgUnavail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.imgUnavail.Name = "imgUnavail";
-            this.imgUnavail.Size = new System.Drawing.Size(34, 37);
+            this.imgUnavail.Size = new System.Drawing.Size(45, 46);
             this.imgUnavail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgUnavail.TabIndex = 82;
             this.imgUnavail.TabStop = false;
             // 
             // imgSelected
             // 
-            this.imgSelected.Location = new System.Drawing.Point(496, 519);
-            this.imgSelected.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.imgSelected.Location = new System.Drawing.Point(998, 654);
+            this.imgSelected.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.imgSelected.Name = "imgSelected";
-            this.imgSelected.Size = new System.Drawing.Size(34, 37);
+            this.imgSelected.Size = new System.Drawing.Size(45, 46);
             this.imgSelected.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgSelected.TabIndex = 78;
             this.imgSelected.TabStop = false;
@@ -1236,29 +585,614 @@
             // imgAvail
             // 
             this.imgAvail.Image = global::Watchers.Properties.Resources.Available;
-            this.imgAvail.Location = new System.Drawing.Point(364, 519);
-            this.imgAvail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.imgAvail.Location = new System.Drawing.Point(822, 654);
+            this.imgAvail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.imgAvail.Name = "imgAvail";
-            this.imgAvail.Size = new System.Drawing.Size(34, 37);
+            this.imgAvail.Size = new System.Drawing.Size(45, 46);
             this.imgAvail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgAvail.TabIndex = 76;
             this.imgAvail.TabStop = false;
             // 
             // imgMovie
             // 
-            this.imgMovie.BackgroundImage = global::Watchers.Properties.Resources.Greyhound;
-            this.imgMovie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.imgMovie.Location = new System.Drawing.Point(54, 203);
+            this.imgMovie.Image = global::Watchers.Properties.Resources.m001;
+            this.imgMovie.Location = new System.Drawing.Point(67, 244);
             this.imgMovie.Name = "imgMovie";
-            this.imgMovie.Size = new System.Drawing.Size(200, 284);
+            this.imgMovie.Size = new System.Drawing.Size(337, 450);
             this.imgMovie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgMovie.TabIndex = 63;
+            this.imgMovie.TabIndex = 88;
             this.imgMovie.TabStop = false;
+            // 
+            // imgE5
+            // 
+            this.imgE5.Image = global::Watchers.Properties.Resources.Available;
+            this.imgE5.Location = new System.Drawing.Point(575, 130);
+            this.imgE5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgE5.Name = "imgE5";
+            this.imgE5.Size = new System.Drawing.Size(40, 40);
+            this.imgE5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgE5.TabIndex = 113;
+            this.imgE5.TabStop = false;
+            this.imgE5.Tag = "E5";
+            this.imgE5.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgE4
+            // 
+            this.imgE4.Image = global::Watchers.Properties.Resources.Available;
+            this.imgE4.Location = new System.Drawing.Point(620, 130);
+            this.imgE4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgE4.Name = "imgE4";
+            this.imgE4.Size = new System.Drawing.Size(40, 40);
+            this.imgE4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgE4.TabIndex = 114;
+            this.imgE4.TabStop = false;
+            this.imgE4.Tag = "E4";
+            this.imgE4.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgE3
+            // 
+            this.imgE3.Image = global::Watchers.Properties.Resources.Available;
+            this.imgE3.Location = new System.Drawing.Point(664, 130);
+            this.imgE3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgE3.Name = "imgE3";
+            this.imgE3.Size = new System.Drawing.Size(40, 40);
+            this.imgE3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgE3.TabIndex = 115;
+            this.imgE3.TabStop = false;
+            this.imgE3.Tag = "E3";
+            this.imgE3.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgE2
+            // 
+            this.imgE2.Image = global::Watchers.Properties.Resources.Available;
+            this.imgE2.Location = new System.Drawing.Point(709, 130);
+            this.imgE2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgE2.Name = "imgE2";
+            this.imgE2.Size = new System.Drawing.Size(40, 40);
+            this.imgE2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgE2.TabIndex = 116;
+            this.imgE2.TabStop = false;
+            this.imgE2.Tag = "E2";
+            this.imgE2.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgE1
+            // 
+            this.imgE1.Image = global::Watchers.Properties.Resources.Available;
+            this.imgE1.Location = new System.Drawing.Point(754, 130);
+            this.imgE1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgE1.Name = "imgE1";
+            this.imgE1.Size = new System.Drawing.Size(40, 40);
+            this.imgE1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgE1.TabIndex = 117;
+            this.imgE1.TabStop = false;
+            this.imgE1.Tag = "E1";
+            this.imgE1.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgD1
+            // 
+            this.imgD1.Image = global::Watchers.Properties.Resources.Available;
+            this.imgD1.Location = new System.Drawing.Point(754, 200);
+            this.imgD1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgD1.Name = "imgD1";
+            this.imgD1.Size = new System.Drawing.Size(40, 40);
+            this.imgD1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgD1.TabIndex = 127;
+            this.imgD1.TabStop = false;
+            this.imgD1.Tag = "D1";
+            this.imgD1.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgD2
+            // 
+            this.imgD2.Image = global::Watchers.Properties.Resources.Available;
+            this.imgD2.Location = new System.Drawing.Point(709, 200);
+            this.imgD2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgD2.Name = "imgD2";
+            this.imgD2.Size = new System.Drawing.Size(40, 40);
+            this.imgD2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgD2.TabIndex = 126;
+            this.imgD2.TabStop = false;
+            this.imgD2.Tag = "D2";
+            this.imgD2.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgD3
+            // 
+            this.imgD3.Image = global::Watchers.Properties.Resources.Available;
+            this.imgD3.Location = new System.Drawing.Point(664, 200);
+            this.imgD3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgD3.Name = "imgD3";
+            this.imgD3.Size = new System.Drawing.Size(40, 40);
+            this.imgD3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgD3.TabIndex = 125;
+            this.imgD3.TabStop = false;
+            this.imgD3.Tag = "D3";
+            this.imgD3.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgD4
+            // 
+            this.imgD4.Image = global::Watchers.Properties.Resources.Available;
+            this.imgD4.Location = new System.Drawing.Point(620, 200);
+            this.imgD4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgD4.Name = "imgD4";
+            this.imgD4.Size = new System.Drawing.Size(40, 40);
+            this.imgD4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgD4.TabIndex = 124;
+            this.imgD4.TabStop = false;
+            this.imgD4.Tag = "D4";
+            this.imgD4.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgD5
+            // 
+            this.imgD5.Image = global::Watchers.Properties.Resources.Available;
+            this.imgD5.Location = new System.Drawing.Point(575, 200);
+            this.imgD5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgD5.Name = "imgD5";
+            this.imgD5.Size = new System.Drawing.Size(40, 40);
+            this.imgD5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgD5.TabIndex = 123;
+            this.imgD5.TabStop = false;
+            this.imgD5.Tag = "D5";
+            this.imgD5.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgD6
+            // 
+            this.imgD6.Image = global::Watchers.Properties.Resources.Available;
+            this.imgD6.Location = new System.Drawing.Point(532, 200);
+            this.imgD6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgD6.Name = "imgD6";
+            this.imgD6.Size = new System.Drawing.Size(40, 40);
+            this.imgD6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgD6.TabIndex = 122;
+            this.imgD6.TabStop = false;
+            this.imgD6.Tag = "D6";
+            this.imgD6.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgD7
+            // 
+            this.imgD7.Image = global::Watchers.Properties.Resources.Available;
+            this.imgD7.Location = new System.Drawing.Point(491, 200);
+            this.imgD7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgD7.Name = "imgD7";
+            this.imgD7.Size = new System.Drawing.Size(40, 40);
+            this.imgD7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgD7.TabIndex = 121;
+            this.imgD7.TabStop = false;
+            this.imgD7.Tag = "D7";
+            this.imgD7.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgD8
+            // 
+            this.imgD8.Image = global::Watchers.Properties.Resources.Available;
+            this.imgD8.Location = new System.Drawing.Point(448, 200);
+            this.imgD8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgD8.Name = "imgD8";
+            this.imgD8.Size = new System.Drawing.Size(40, 40);
+            this.imgD8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgD8.TabIndex = 120;
+            this.imgD8.TabStop = false;
+            this.imgD8.Tag = "D8";
+            this.imgD8.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgD9
+            // 
+            this.imgD9.Image = global::Watchers.Properties.Resources.Available;
+            this.imgD9.Location = new System.Drawing.Point(403, 200);
+            this.imgD9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgD9.Name = "imgD9";
+            this.imgD9.Size = new System.Drawing.Size(40, 40);
+            this.imgD9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgD9.TabIndex = 119;
+            this.imgD9.TabStop = false;
+            this.imgD9.Tag = "D9";
+            this.imgD9.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgD10
+            // 
+            this.imgD10.Image = global::Watchers.Properties.Resources.Available;
+            this.imgD10.Location = new System.Drawing.Point(358, 200);
+            this.imgD10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgD10.Name = "imgD10";
+            this.imgD10.Size = new System.Drawing.Size(40, 40);
+            this.imgD10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgD10.TabIndex = 118;
+            this.imgD10.TabStop = false;
+            this.imgD10.Tag = "D10";
+            this.imgD10.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgC1
+            // 
+            this.imgC1.Image = global::Watchers.Properties.Resources.Available;
+            this.imgC1.Location = new System.Drawing.Point(754, 272);
+            this.imgC1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgC1.Name = "imgC1";
+            this.imgC1.Size = new System.Drawing.Size(40, 40);
+            this.imgC1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgC1.TabIndex = 137;
+            this.imgC1.TabStop = false;
+            this.imgC1.Tag = "C1";
+            this.imgC1.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgC2
+            // 
+            this.imgC2.Image = global::Watchers.Properties.Resources.Available;
+            this.imgC2.Location = new System.Drawing.Point(709, 272);
+            this.imgC2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgC2.Name = "imgC2";
+            this.imgC2.Size = new System.Drawing.Size(40, 40);
+            this.imgC2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgC2.TabIndex = 136;
+            this.imgC2.TabStop = false;
+            this.imgC2.Tag = "C2";
+            this.imgC2.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgC3
+            // 
+            this.imgC3.Image = global::Watchers.Properties.Resources.Available;
+            this.imgC3.Location = new System.Drawing.Point(664, 272);
+            this.imgC3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgC3.Name = "imgC3";
+            this.imgC3.Size = new System.Drawing.Size(40, 40);
+            this.imgC3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgC3.TabIndex = 135;
+            this.imgC3.TabStop = false;
+            this.imgC3.Tag = "C3";
+            this.imgC3.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgC4
+            // 
+            this.imgC4.Image = global::Watchers.Properties.Resources.Available;
+            this.imgC4.Location = new System.Drawing.Point(620, 272);
+            this.imgC4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgC4.Name = "imgC4";
+            this.imgC4.Size = new System.Drawing.Size(40, 40);
+            this.imgC4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgC4.TabIndex = 134;
+            this.imgC4.TabStop = false;
+            this.imgC4.Tag = "C4";
+            this.imgC4.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgC5
+            // 
+            this.imgC5.Image = global::Watchers.Properties.Resources.Available;
+            this.imgC5.Location = new System.Drawing.Point(575, 272);
+            this.imgC5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgC5.Name = "imgC5";
+            this.imgC5.Size = new System.Drawing.Size(40, 40);
+            this.imgC5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgC5.TabIndex = 133;
+            this.imgC5.TabStop = false;
+            this.imgC5.Tag = "C5";
+            this.imgC5.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgC6
+            // 
+            this.imgC6.Image = global::Watchers.Properties.Resources.Available;
+            this.imgC6.Location = new System.Drawing.Point(532, 272);
+            this.imgC6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgC6.Name = "imgC6";
+            this.imgC6.Size = new System.Drawing.Size(40, 40);
+            this.imgC6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgC6.TabIndex = 132;
+            this.imgC6.TabStop = false;
+            this.imgC6.Tag = "C6";
+            this.imgC6.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgC7
+            // 
+            this.imgC7.Image = global::Watchers.Properties.Resources.Available;
+            this.imgC7.Location = new System.Drawing.Point(491, 272);
+            this.imgC7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgC7.Name = "imgC7";
+            this.imgC7.Size = new System.Drawing.Size(40, 40);
+            this.imgC7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgC7.TabIndex = 131;
+            this.imgC7.TabStop = false;
+            this.imgC7.Tag = "C7";
+            this.imgC7.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgC8
+            // 
+            this.imgC8.Image = global::Watchers.Properties.Resources.Available;
+            this.imgC8.Location = new System.Drawing.Point(448, 272);
+            this.imgC8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgC8.Name = "imgC8";
+            this.imgC8.Size = new System.Drawing.Size(40, 40);
+            this.imgC8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgC8.TabIndex = 130;
+            this.imgC8.TabStop = false;
+            this.imgC8.Tag = "C8";
+            this.imgC8.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgC9
+            // 
+            this.imgC9.Image = global::Watchers.Properties.Resources.Available;
+            this.imgC9.Location = new System.Drawing.Point(403, 272);
+            this.imgC9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgC9.Name = "imgC9";
+            this.imgC9.Size = new System.Drawing.Size(40, 40);
+            this.imgC9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgC9.TabIndex = 129;
+            this.imgC9.TabStop = false;
+            this.imgC9.Tag = "C9";
+            this.imgC9.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgC10
+            // 
+            this.imgC10.Image = global::Watchers.Properties.Resources.Available;
+            this.imgC10.Location = new System.Drawing.Point(358, 272);
+            this.imgC10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgC10.Name = "imgC10";
+            this.imgC10.Size = new System.Drawing.Size(40, 40);
+            this.imgC10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgC10.TabIndex = 128;
+            this.imgC10.TabStop = false;
+            this.imgC10.Tag = "C10";
+            this.imgC10.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgB1
+            // 
+            this.imgB1.Image = global::Watchers.Properties.Resources.Available;
+            this.imgB1.Location = new System.Drawing.Point(754, 341);
+            this.imgB1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgB1.Name = "imgB1";
+            this.imgB1.Size = new System.Drawing.Size(40, 40);
+            this.imgB1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgB1.TabIndex = 147;
+            this.imgB1.TabStop = false;
+            this.imgB1.Tag = "C1";
+            this.imgB1.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgB2
+            // 
+            this.imgB2.Image = global::Watchers.Properties.Resources.Available;
+            this.imgB2.Location = new System.Drawing.Point(709, 341);
+            this.imgB2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgB2.Name = "imgB2";
+            this.imgB2.Size = new System.Drawing.Size(40, 40);
+            this.imgB2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgB2.TabIndex = 146;
+            this.imgB2.TabStop = false;
+            this.imgB2.Tag = "C2";
+            this.imgB2.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgB3
+            // 
+            this.imgB3.Image = global::Watchers.Properties.Resources.Available;
+            this.imgB3.Location = new System.Drawing.Point(664, 341);
+            this.imgB3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgB3.Name = "imgB3";
+            this.imgB3.Size = new System.Drawing.Size(40, 40);
+            this.imgB3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgB3.TabIndex = 145;
+            this.imgB3.TabStop = false;
+            this.imgB3.Tag = "C3";
+            this.imgB3.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgB4
+            // 
+            this.imgB4.Image = global::Watchers.Properties.Resources.Available;
+            this.imgB4.Location = new System.Drawing.Point(620, 341);
+            this.imgB4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgB4.Name = "imgB4";
+            this.imgB4.Size = new System.Drawing.Size(40, 40);
+            this.imgB4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgB4.TabIndex = 144;
+            this.imgB4.TabStop = false;
+            this.imgB4.Tag = "C4";
+            this.imgB4.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgB5
+            // 
+            this.imgB5.Image = global::Watchers.Properties.Resources.Available;
+            this.imgB5.Location = new System.Drawing.Point(575, 341);
+            this.imgB5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgB5.Name = "imgB5";
+            this.imgB5.Size = new System.Drawing.Size(40, 40);
+            this.imgB5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgB5.TabIndex = 143;
+            this.imgB5.TabStop = false;
+            this.imgB5.Tag = "C5";
+            this.imgB5.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgB6
+            // 
+            this.imgB6.Image = global::Watchers.Properties.Resources.Available;
+            this.imgB6.Location = new System.Drawing.Point(532, 341);
+            this.imgB6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgB6.Name = "imgB6";
+            this.imgB6.Size = new System.Drawing.Size(40, 40);
+            this.imgB6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgB6.TabIndex = 142;
+            this.imgB6.TabStop = false;
+            this.imgB6.Tag = "C6";
+            this.imgB6.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgB7
+            // 
+            this.imgB7.Image = global::Watchers.Properties.Resources.Available;
+            this.imgB7.Location = new System.Drawing.Point(491, 341);
+            this.imgB7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgB7.Name = "imgB7";
+            this.imgB7.Size = new System.Drawing.Size(40, 40);
+            this.imgB7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgB7.TabIndex = 141;
+            this.imgB7.TabStop = false;
+            this.imgB7.Tag = "C7";
+            this.imgB7.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgB8
+            // 
+            this.imgB8.Image = global::Watchers.Properties.Resources.Available;
+            this.imgB8.Location = new System.Drawing.Point(448, 341);
+            this.imgB8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgB8.Name = "imgB8";
+            this.imgB8.Size = new System.Drawing.Size(40, 40);
+            this.imgB8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgB8.TabIndex = 140;
+            this.imgB8.TabStop = false;
+            this.imgB8.Tag = "C8";
+            this.imgB8.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgB9
+            // 
+            this.imgB9.Image = global::Watchers.Properties.Resources.Available;
+            this.imgB9.Location = new System.Drawing.Point(403, 341);
+            this.imgB9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgB9.Name = "imgB9";
+            this.imgB9.Size = new System.Drawing.Size(40, 40);
+            this.imgB9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgB9.TabIndex = 139;
+            this.imgB9.TabStop = false;
+            this.imgB9.Tag = "C9";
+            this.imgB9.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgB10
+            // 
+            this.imgB10.Image = global::Watchers.Properties.Resources.Available;
+            this.imgB10.Location = new System.Drawing.Point(358, 341);
+            this.imgB10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgB10.Name = "imgB10";
+            this.imgB10.Size = new System.Drawing.Size(40, 40);
+            this.imgB10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgB10.TabIndex = 138;
+            this.imgB10.TabStop = false;
+            this.imgB10.Tag = "C10";
+            this.imgB10.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgA1
+            // 
+            this.imgA1.Image = global::Watchers.Properties.Resources.Available;
+            this.imgA1.Location = new System.Drawing.Point(754, 410);
+            this.imgA1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgA1.Name = "imgA1";
+            this.imgA1.Size = new System.Drawing.Size(40, 40);
+            this.imgA1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgA1.TabIndex = 157;
+            this.imgA1.TabStop = false;
+            this.imgA1.Tag = "A1";
+            this.imgA1.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgA2
+            // 
+            this.imgA2.Image = global::Watchers.Properties.Resources.Available;
+            this.imgA2.Location = new System.Drawing.Point(709, 410);
+            this.imgA2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgA2.Name = "imgA2";
+            this.imgA2.Size = new System.Drawing.Size(40, 40);
+            this.imgA2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgA2.TabIndex = 156;
+            this.imgA2.TabStop = false;
+            this.imgA2.Tag = "A2";
+            this.imgA2.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgA3
+            // 
+            this.imgA3.Image = global::Watchers.Properties.Resources.Available;
+            this.imgA3.Location = new System.Drawing.Point(664, 410);
+            this.imgA3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgA3.Name = "imgA3";
+            this.imgA3.Size = new System.Drawing.Size(40, 40);
+            this.imgA3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgA3.TabIndex = 155;
+            this.imgA3.TabStop = false;
+            this.imgA3.Tag = "A3";
+            this.imgA3.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgA4
+            // 
+            this.imgA4.Image = global::Watchers.Properties.Resources.Available;
+            this.imgA4.Location = new System.Drawing.Point(620, 410);
+            this.imgA4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgA4.Name = "imgA4";
+            this.imgA4.Size = new System.Drawing.Size(40, 40);
+            this.imgA4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgA4.TabIndex = 154;
+            this.imgA4.TabStop = false;
+            this.imgA4.Tag = "A4";
+            this.imgA4.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgA5
+            // 
+            this.imgA5.Image = global::Watchers.Properties.Resources.Available;
+            this.imgA5.Location = new System.Drawing.Point(575, 410);
+            this.imgA5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgA5.Name = "imgA5";
+            this.imgA5.Size = new System.Drawing.Size(40, 40);
+            this.imgA5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgA5.TabIndex = 153;
+            this.imgA5.TabStop = false;
+            this.imgA5.Tag = "A5";
+            this.imgA5.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgA6
+            // 
+            this.imgA6.Image = global::Watchers.Properties.Resources.Available;
+            this.imgA6.Location = new System.Drawing.Point(532, 410);
+            this.imgA6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgA6.Name = "imgA6";
+            this.imgA6.Size = new System.Drawing.Size(40, 40);
+            this.imgA6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgA6.TabIndex = 152;
+            this.imgA6.TabStop = false;
+            this.imgA6.Tag = "A6";
+            this.imgA6.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgA7
+            // 
+            this.imgA7.Image = global::Watchers.Properties.Resources.Available;
+            this.imgA7.Location = new System.Drawing.Point(491, 410);
+            this.imgA7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgA7.Name = "imgA7";
+            this.imgA7.Size = new System.Drawing.Size(40, 40);
+            this.imgA7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgA7.TabIndex = 151;
+            this.imgA7.TabStop = false;
+            this.imgA7.Tag = "A7";
+            this.imgA7.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgA8
+            // 
+            this.imgA8.Image = global::Watchers.Properties.Resources.Available;
+            this.imgA8.Location = new System.Drawing.Point(448, 410);
+            this.imgA8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgA8.Name = "imgA8";
+            this.imgA8.Size = new System.Drawing.Size(40, 40);
+            this.imgA8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgA8.TabIndex = 150;
+            this.imgA8.TabStop = false;
+            this.imgA8.Tag = "A8";
+            this.imgA8.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgA9
+            // 
+            this.imgA9.Image = global::Watchers.Properties.Resources.Available;
+            this.imgA9.Location = new System.Drawing.Point(403, 410);
+            this.imgA9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgA9.Name = "imgA9";
+            this.imgA9.Size = new System.Drawing.Size(40, 40);
+            this.imgA9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgA9.TabIndex = 149;
+            this.imgA9.TabStop = false;
+            this.imgA9.Tag = "A9";
+            this.imgA9.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgA10
+            // 
+            this.imgA10.Image = global::Watchers.Properties.Resources.Available;
+            this.imgA10.Location = new System.Drawing.Point(358, 410);
+            this.imgA10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgA10.Name = "imgA10";
+            this.imgA10.Size = new System.Drawing.Size(40, 40);
+            this.imgA10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgA10.TabIndex = 148;
+            this.imgA10.TabStop = false;
+            this.imgA10.Tag = "A10";
+            this.imgA10.Click += new System.EventHandler(this.SeatClicked);
             // 
             // tabBookings
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.imgMovie);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnBook);
             this.Controls.Add(this.lblUnavailable);
@@ -1270,7 +1204,6 @@
             this.Controls.Add(this.lblAvail);
             this.Controls.Add(this.imgAvail);
             this.Controls.Add(this.lblSeats);
-            this.Controls.Add(this.imgMovie);
             this.Controls.Add(this.lblSeatNum);
             this.Controls.Add(this.pnlCinema);
             this.Controls.Add(this.lblCNum);
@@ -1278,17 +1211,67 @@
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.rtbDescription);
             this.Controls.Add(this.lblMovie);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "tabBookings";
-            this.Size = new System.Drawing.Size(1181, 804);
+            this.Size = new System.Drawing.Size(1575, 990);
             this.pnlCinema.ResumeLayout(false);
-            this.pnlScrren.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.imgE6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgE7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgE8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgE9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgE10)).EndInit();
+            this.pnlScreen.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgUnavail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSelected)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgAvail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgMovie)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgE5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgE4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgE3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgE2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgE1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA10)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1302,65 +1285,14 @@
         private System.Windows.Forms.PictureBox imgAvail;
         private System.Windows.Forms.Label lblBookNow;
         private System.Windows.Forms.Label lblSeats;
-        private System.Windows.Forms.PictureBox imgMovie;
         private System.Windows.Forms.Label lblSeatNum;
         private System.Windows.Forms.Panel pnlCinema;
-        private System.Windows.Forms.Button btnE10;
-        private System.Windows.Forms.Button btnE9;
-        private System.Windows.Forms.Button btnE8;
-        private System.Windows.Forms.Button btnE7;
-        private System.Windows.Forms.Button btnE6;
-        private System.Windows.Forms.Button btnE5;
-        private System.Windows.Forms.Button btnE4;
-        private System.Windows.Forms.Button btnE3;
-        private System.Windows.Forms.Button btnE2;
-        private System.Windows.Forms.Button btnE1;
-        private System.Windows.Forms.Button btnD10;
-        private System.Windows.Forms.Button btnD9;
-        private System.Windows.Forms.Button btnD8;
-        private System.Windows.Forms.Button btnD7;
-        private System.Windows.Forms.Button btnD6;
-        private System.Windows.Forms.Button btnD5;
-        private System.Windows.Forms.Button btnD4;
-        private System.Windows.Forms.Button btnD3;
-        private System.Windows.Forms.Button btnD2;
-        private System.Windows.Forms.Button btnD1;
-        private System.Windows.Forms.Button btnC10;
-        private System.Windows.Forms.Button btnC9;
-        private System.Windows.Forms.Button btnC8;
-        private System.Windows.Forms.Button btnC7;
-        private System.Windows.Forms.Button btnC6;
-        private System.Windows.Forms.Button btnC5;
-        private System.Windows.Forms.Button btnC4;
-        private System.Windows.Forms.Button btnC3;
-        private System.Windows.Forms.Button btnC2;
-        private System.Windows.Forms.Button btnC1;
-        private System.Windows.Forms.Button btnB10;
-        private System.Windows.Forms.Button btnB9;
-        private System.Windows.Forms.Button btnB8;
-        private System.Windows.Forms.Button btnB7;
-        private System.Windows.Forms.Button btnB6;
-        private System.Windows.Forms.Button btnB5;
-        private System.Windows.Forms.Button btnB4;
-        private System.Windows.Forms.Button btnB3;
-        private System.Windows.Forms.Button btnB2;
-        private System.Windows.Forms.Button btnB1;
-        private System.Windows.Forms.Button btnA10;
-        private System.Windows.Forms.Button btnA9;
-        private System.Windows.Forms.Button btnA8;
-        private System.Windows.Forms.Button btnA7;
-        private System.Windows.Forms.Button btnA6;
-        private System.Windows.Forms.Button btnA5;
-        private System.Windows.Forms.Button btnA4;
-        private System.Windows.Forms.Button btnA3;
-        private System.Windows.Forms.Button btnA2;
-        private System.Windows.Forms.Button btnA1;
         private System.Windows.Forms.Label lblE;
         private System.Windows.Forms.Label lblD;
         private System.Windows.Forms.Label lblC;
         private System.Windows.Forms.Label lblB;
         private System.Windows.Forms.Label lblA;
-        private System.Windows.Forms.Panel pnlScrren;
+        private System.Windows.Forms.Panel pnlScreen;
         private System.Windows.Forms.Label lblScreen;
         private System.Windows.Forms.Label lblCNum;
         private System.Windows.Forms.Label lblCinNum;
@@ -1374,5 +1306,56 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolTip toolTip1;
         public System.Windows.Forms.RichTextBox rtbDescription;
+        private System.Windows.Forms.PictureBox imgMovie;
+        private System.Windows.Forms.PictureBox imgE6;
+        private System.Windows.Forms.PictureBox imgE7;
+        private System.Windows.Forms.PictureBox imgE8;
+        private System.Windows.Forms.PictureBox imgE9;
+        private System.Windows.Forms.PictureBox imgE10;
+        private System.Windows.Forms.PictureBox imgA1;
+        private System.Windows.Forms.PictureBox imgA2;
+        private System.Windows.Forms.PictureBox imgA3;
+        private System.Windows.Forms.PictureBox imgA4;
+        private System.Windows.Forms.PictureBox imgA5;
+        private System.Windows.Forms.PictureBox imgA6;
+        private System.Windows.Forms.PictureBox imgA7;
+        private System.Windows.Forms.PictureBox imgA8;
+        private System.Windows.Forms.PictureBox imgA9;
+        private System.Windows.Forms.PictureBox imgA10;
+        private System.Windows.Forms.PictureBox imgB1;
+        private System.Windows.Forms.PictureBox imgB2;
+        private System.Windows.Forms.PictureBox imgB3;
+        private System.Windows.Forms.PictureBox imgB4;
+        private System.Windows.Forms.PictureBox imgB5;
+        private System.Windows.Forms.PictureBox imgB6;
+        private System.Windows.Forms.PictureBox imgB7;
+        private System.Windows.Forms.PictureBox imgB8;
+        private System.Windows.Forms.PictureBox imgB9;
+        private System.Windows.Forms.PictureBox imgB10;
+        private System.Windows.Forms.PictureBox imgC1;
+        private System.Windows.Forms.PictureBox imgC2;
+        private System.Windows.Forms.PictureBox imgC3;
+        private System.Windows.Forms.PictureBox imgC4;
+        private System.Windows.Forms.PictureBox imgC5;
+        private System.Windows.Forms.PictureBox imgC6;
+        private System.Windows.Forms.PictureBox imgC7;
+        private System.Windows.Forms.PictureBox imgC8;
+        private System.Windows.Forms.PictureBox imgC9;
+        private System.Windows.Forms.PictureBox imgC10;
+        private System.Windows.Forms.PictureBox imgD1;
+        private System.Windows.Forms.PictureBox imgD2;
+        private System.Windows.Forms.PictureBox imgD3;
+        private System.Windows.Forms.PictureBox imgD4;
+        private System.Windows.Forms.PictureBox imgD5;
+        private System.Windows.Forms.PictureBox imgD6;
+        private System.Windows.Forms.PictureBox imgD7;
+        private System.Windows.Forms.PictureBox imgD8;
+        private System.Windows.Forms.PictureBox imgD9;
+        private System.Windows.Forms.PictureBox imgD10;
+        private System.Windows.Forms.PictureBox imgE1;
+        private System.Windows.Forms.PictureBox imgE2;
+        private System.Windows.Forms.PictureBox imgE3;
+        private System.Windows.Forms.PictureBox imgE4;
+        private System.Windows.Forms.PictureBox imgE5;
     }
 }
