@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tabMovies));
             this.pnlTitle = new System.Windows.Forms.Panel();
             this.lblAccount = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -143,14 +144,15 @@
             // 
             this.btnBookM6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBookM6.BackColor = System.Drawing.Color.Transparent;
-            this.btnBookM6.BackgroundImage = global::Watchers.Properties.Resources.ButtonGrad;
             this.btnBookM6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBookM6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.btnBookM6.ForeColor = System.Drawing.Color.White;
+            this.btnBookM6.Image = ((System.Drawing.Image)(resources.GetObject("btnBookM6.Image")));
             this.btnBookM6.Location = new System.Drawing.Point(300, 746);
             this.btnBookM6.Name = "btnBookM6";
             this.btnBookM6.Size = new System.Drawing.Size(270, 54);
             this.btnBookM6.TabIndex = 100;
+            this.btnBookM6.Tag = "m006";
             this.btnBookM6.Text = "Book Now";
             this.toolTip1.SetToolTip(this.btnBookM6, "Click here to book this movie");
             this.btnBookM6.UseVisualStyleBackColor = false;
@@ -159,14 +161,15 @@
             // 
             this.btnBookM5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBookM5.BackColor = System.Drawing.Color.Transparent;
-            this.btnBookM5.BackgroundImage = global::Watchers.Properties.Resources.ButtonGrad;
             this.btnBookM5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBookM5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.btnBookM5.ForeColor = System.Drawing.Color.White;
+            this.btnBookM5.Image = ((System.Drawing.Image)(resources.GetObject("btnBookM5.Image")));
             this.btnBookM5.Location = new System.Drawing.Point(8, 746);
             this.btnBookM5.Name = "btnBookM5";
             this.btnBookM5.Size = new System.Drawing.Size(270, 54);
             this.btnBookM5.TabIndex = 99;
+            this.btnBookM5.Tag = "m005";
             this.btnBookM5.Text = "Book Now";
             this.toolTip1.SetToolTip(this.btnBookM5, "Click here to book this movie");
             this.btnBookM5.UseVisualStyleBackColor = false;
@@ -175,14 +178,15 @@
             // 
             this.btnBookM8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBookM8.BackColor = System.Drawing.Color.Transparent;
-            this.btnBookM8.BackgroundImage = global::Watchers.Properties.Resources.ButtonGrad;
             this.btnBookM8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBookM8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.btnBookM8.ForeColor = System.Drawing.Color.White;
+            this.btnBookM8.Image = ((System.Drawing.Image)(resources.GetObject("btnBookM8.Image")));
             this.btnBookM8.Location = new System.Drawing.Point(889, 746);
             this.btnBookM8.Name = "btnBookM8";
             this.btnBookM8.Size = new System.Drawing.Size(270, 54);
             this.btnBookM8.TabIndex = 98;
+            this.btnBookM8.Tag = "m008";
             this.btnBookM8.Text = "Book Now";
             this.toolTip1.SetToolTip(this.btnBookM8, "Click here to book this movie");
             this.btnBookM8.UseVisualStyleBackColor = false;
@@ -191,14 +195,15 @@
             // 
             this.btnBookM7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBookM7.BackColor = System.Drawing.Color.Transparent;
-            this.btnBookM7.BackgroundImage = global::Watchers.Properties.Resources.ButtonGrad;
             this.btnBookM7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBookM7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.btnBookM7.ForeColor = System.Drawing.Color.White;
+            this.btnBookM7.Image = ((System.Drawing.Image)(resources.GetObject("btnBookM7.Image")));
             this.btnBookM7.Location = new System.Drawing.Point(595, 746);
             this.btnBookM7.Name = "btnBookM7";
             this.btnBookM7.Size = new System.Drawing.Size(270, 54);
             this.btnBookM7.TabIndex = 97;
+            this.btnBookM7.Tag = "m007";
             this.btnBookM7.Text = "Book Now";
             this.toolTip1.SetToolTip(this.btnBookM7, "Click here to book this movie");
             this.btnBookM7.UseVisualStyleBackColor = false;
@@ -218,7 +223,7 @@
             // imgMovie1
             // 
             this.imgMovie1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.imgMovie1.Image = global::Watchers.Properties.Resources.BadBoys;
+            this.imgMovie1.Image = global::Watchers.Properties.Resources.m001;
             this.imgMovie1.Location = new System.Drawing.Point(33, 36);
             this.imgMovie1.Margin = new System.Windows.Forms.Padding(4);
             this.imgMovie1.Name = "imgMovie1";
@@ -242,7 +247,7 @@
             // imgMovie2
             // 
             this.imgMovie2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.imgMovie2.Image = global::Watchers.Properties.Resources.BlackWidow;
+            this.imgMovie2.Image = global::Watchers.Properties.Resources.m002;
             this.imgMovie2.Location = new System.Drawing.Point(325, 36);
             this.imgMovie2.Margin = new System.Windows.Forms.Padding(4);
             this.imgMovie2.Name = "imgMovie2";
@@ -278,7 +283,7 @@
             // imgMovie4
             // 
             this.imgMovie4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.imgMovie4.Image = global::Watchers.Properties.Resources.FantasyIsland;
+            this.imgMovie4.Image = global::Watchers.Properties.Resources.m004;
             this.imgMovie4.Location = new System.Drawing.Point(914, 36);
             this.imgMovie4.Margin = new System.Windows.Forms.Padding(4);
             this.imgMovie4.Name = "imgMovie4";
@@ -290,7 +295,7 @@
             // imgMovie3
             // 
             this.imgMovie3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.imgMovie3.Image = global::Watchers.Properties.Resources.Dolittle;
+            this.imgMovie3.Image = global::Watchers.Properties.Resources.m003;
             this.imgMovie3.Location = new System.Drawing.Point(620, 36);
             this.imgMovie3.Margin = new System.Windows.Forms.Padding(4);
             this.imgMovie3.Name = "imgMovie3";
@@ -302,7 +307,7 @@
             // imgMovie5
             // 
             this.imgMovie5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.imgMovie5.Image = global::Watchers.Properties.Resources.Mulan;
+            this.imgMovie5.Image = global::Watchers.Properties.Resources.m005;
             this.imgMovie5.Location = new System.Drawing.Point(33, 455);
             this.imgMovie5.Margin = new System.Windows.Forms.Padding(4);
             this.imgMovie5.Name = "imgMovie5";
@@ -314,7 +319,7 @@
             // imgMovie6
             // 
             this.imgMovie6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.imgMovie6.Image = global::Watchers.Properties.Resources.NoTimeToDie;
+            this.imgMovie6.Image = global::Watchers.Properties.Resources.m006;
             this.imgMovie6.Location = new System.Drawing.Point(325, 455);
             this.imgMovie6.Margin = new System.Windows.Forms.Padding(4);
             this.imgMovie6.Name = "imgMovie6";
@@ -326,7 +331,7 @@
             // imgMovie7
             // 
             this.imgMovie7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.imgMovie7.Image = global::Watchers.Properties.Resources.Frozen2;
+            this.imgMovie7.Image = global::Watchers.Properties.Resources.m007;
             this.imgMovie7.Location = new System.Drawing.Point(620, 455);
             this.imgMovie7.Margin = new System.Windows.Forms.Padding(4);
             this.imgMovie7.Name = "imgMovie7";
@@ -338,7 +343,7 @@
             // imgMovie8
             // 
             this.imgMovie8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.imgMovie8.Image = global::Watchers.Properties.Resources.BirdsofPrey;
+            this.imgMovie8.Image = global::Watchers.Properties.Resources.m008;
             this.imgMovie8.Location = new System.Drawing.Point(914, 455);
             this.imgMovie8.Margin = new System.Windows.Forms.Padding(4);
             this.imgMovie8.Name = "imgMovie8";
@@ -399,14 +404,15 @@
             // 
             this.btnBookM1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBookM1.BackColor = System.Drawing.Color.Transparent;
-            this.btnBookM1.BackgroundImage = global::Watchers.Properties.Resources.ButtonGrad;
             this.btnBookM1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBookM1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.btnBookM1.ForeColor = System.Drawing.Color.White;
+            this.btnBookM1.Image = global::Watchers.Properties.Resources.ButtonGrad;
             this.btnBookM1.Location = new System.Drawing.Point(8, 327);
             this.btnBookM1.Name = "btnBookM1";
             this.btnBookM1.Size = new System.Drawing.Size(270, 54);
             this.btnBookM1.TabIndex = 93;
+            this.btnBookM1.Tag = "m001";
             this.btnBookM1.Text = "Book Now";
             this.toolTip1.SetToolTip(this.btnBookM1, "Click here to book this movie");
             this.btnBookM1.UseVisualStyleBackColor = false;
@@ -415,14 +421,15 @@
             // 
             this.btnBookM2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBookM2.BackColor = System.Drawing.Color.Transparent;
-            this.btnBookM2.BackgroundImage = global::Watchers.Properties.Resources.ButtonGrad;
             this.btnBookM2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBookM2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.btnBookM2.ForeColor = System.Drawing.Color.White;
+            this.btnBookM2.Image = ((System.Drawing.Image)(resources.GetObject("btnBookM2.Image")));
             this.btnBookM2.Location = new System.Drawing.Point(300, 327);
             this.btnBookM2.Name = "btnBookM2";
             this.btnBookM2.Size = new System.Drawing.Size(270, 54);
             this.btnBookM2.TabIndex = 94;
+            this.btnBookM2.Tag = "m002";
             this.btnBookM2.Text = "Book Now";
             this.toolTip1.SetToolTip(this.btnBookM2, "Click here to book the above movie");
             this.btnBookM2.UseVisualStyleBackColor = false;
@@ -431,14 +438,15 @@
             // 
             this.btnBookM3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBookM3.BackColor = System.Drawing.Color.Transparent;
-            this.btnBookM3.BackgroundImage = global::Watchers.Properties.Resources.ButtonGrad;
             this.btnBookM3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBookM3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.btnBookM3.ForeColor = System.Drawing.Color.White;
+            this.btnBookM3.Image = ((System.Drawing.Image)(resources.GetObject("btnBookM3.Image")));
             this.btnBookM3.Location = new System.Drawing.Point(595, 327);
             this.btnBookM3.Name = "btnBookM3";
             this.btnBookM3.Size = new System.Drawing.Size(270, 54);
             this.btnBookM3.TabIndex = 95;
+            this.btnBookM3.Tag = "m003";
             this.btnBookM3.Text = "Book Now";
             this.toolTip1.SetToolTip(this.btnBookM3, "Click here to book this movie");
             this.btnBookM3.UseVisualStyleBackColor = false;
@@ -447,14 +455,15 @@
             // 
             this.btnBookM4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBookM4.BackColor = System.Drawing.Color.Transparent;
-            this.btnBookM4.BackgroundImage = global::Watchers.Properties.Resources.ButtonGrad;
             this.btnBookM4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBookM4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.btnBookM4.ForeColor = System.Drawing.Color.White;
+            this.btnBookM4.Image = ((System.Drawing.Image)(resources.GetObject("btnBookM4.Image")));
             this.btnBookM4.Location = new System.Drawing.Point(889, 327);
             this.btnBookM4.Name = "btnBookM4";
             this.btnBookM4.Size = new System.Drawing.Size(270, 54);
             this.btnBookM4.TabIndex = 96;
+            this.btnBookM4.Tag = "m004";
             this.btnBookM4.Text = "Book Now";
             this.toolTip1.SetToolTip(this.btnBookM4, "Click here to book this movie");
             this.btnBookM4.UseVisualStyleBackColor = false;
@@ -468,6 +477,7 @@
             this.Controls.Add(this.pnlTitle);
             this.Name = "tabMovies";
             this.Size = new System.Drawing.Size(1171, 915);
+            this.Load += new System.EventHandler(this.tabMovies_Load);
             this.pnlTitle.ResumeLayout(false);
             this.pnlTitle.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);

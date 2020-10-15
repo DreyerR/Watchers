@@ -36,9 +36,9 @@
             this.lblSeats = new System.Windows.Forms.Label();
             this.lblSeatNum = new System.Windows.Forms.Label();
             this.pnlCinema = new System.Windows.Forms.Panel();
+            this.btnE8 = new System.Windows.Forms.Button();
             this.btnE10 = new System.Windows.Forms.Button();
             this.btnE9 = new System.Windows.Forms.Button();
-            this.btnE8 = new System.Windows.Forms.Button();
             this.btnE7 = new System.Windows.Forms.Button();
             this.btnE6 = new System.Windows.Forms.Button();
             this.btnE5 = new System.Windows.Forms.Button();
@@ -245,6 +245,21 @@
             this.pnlCinema.TabIndex = 72;
             this.toolTip1.SetToolTip(this.pnlCinema, "Choose the number of seats you would like by clickking on the seat");
             // 
+            // btnE8
+            // 
+            this.btnE8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnE8.BackColor = System.Drawing.Color.Transparent;
+            this.btnE8.BackgroundImage = global::Watchers.Properties.Resources.Available;
+            this.btnE8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnE8.FlatAppearance.BorderSize = 0;
+            this.btnE8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnE8.Location = new System.Drawing.Point(104, 106);
+            this.btnE8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnE8.Name = "btnE8";
+            this.btnE8.Size = new System.Drawing.Size(45, 57);
+            this.btnE8.TabIndex = 105;
+            this.btnE8.UseVisualStyleBackColor = false;
+            // 
             // btnE10
             // 
             this.btnE10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -274,21 +289,6 @@
             this.btnE9.Size = new System.Drawing.Size(60, 57);
             this.btnE9.TabIndex = 106;
             this.btnE9.UseVisualStyleBackColor = false;
-            // 
-            // btnE8
-            // 
-            this.btnE8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnE8.BackColor = System.Drawing.Color.Transparent;
-            this.btnE8.BackgroundImage = global::Watchers.Properties.Resources.Available;
-            this.btnE8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnE8.FlatAppearance.BorderSize = 0;
-            this.btnE8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnE8.Location = new System.Drawing.Point(104, 106);
-            this.btnE8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnE8.Name = "btnE8";
-            this.btnE8.Size = new System.Drawing.Size(45, 57);
-            this.btnE8.TabIndex = 105;
-            this.btnE8.UseVisualStyleBackColor = false;
             // 
             // btnE7
             // 
@@ -1231,7 +1231,6 @@
             // 
             // imgSelected
             // 
-            this.imgSelected.Image = global::Watchers.Properties.Resources.Booked;
             this.imgSelected.Location = new System.Drawing.Point(661, 639);
             this.imgSelected.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.imgSelected.Name = "imgSelected";

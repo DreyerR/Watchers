@@ -8,6 +8,7 @@ using iTextSharp.text;
 using System.IO;
 using LiveCharts;
 using Watchers.Forms;
+using System.Resources;
 
 namespace Watchers
 {

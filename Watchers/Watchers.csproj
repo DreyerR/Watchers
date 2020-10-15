@@ -101,7 +101,14 @@
     <Compile Include="Models\GetOrderResponse.cs" />
     <Compile Include="Models\GetUserResponse.cs" />
     <Compile Include="Models\MovieCountResponse.cs" />
+    <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\Post Models\AuthUserPost.cs" />
+    <Compile Include="Models\Post Models\BookingPost.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="User Controls\tabAccount.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -164,14 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="User Controls\tabAccount.resx">
       <DependentUpon>tabAccount.cs</DependentUpon>
     </EmbeddedResource>
@@ -217,34 +219,10 @@
     <None Include="Resources\Greyhound.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\BadBoys.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\BlackWidow.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Dolittle.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\FantasyIsland.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Mulan.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\NoTimeToDie.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\GradientNew.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\UntitledWithout.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Available.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Booked.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Report.png" />
@@ -325,12 +303,6 @@
     <None Include="Resources\CokeSmall.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Frozen2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\BirdsofPrey.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\GradientNew1.png" />
   </ItemGroup>
   <ItemGroup>
@@ -347,6 +319,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ButtonDark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m002.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m003.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m004.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m005.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m006.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m007.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m008.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
