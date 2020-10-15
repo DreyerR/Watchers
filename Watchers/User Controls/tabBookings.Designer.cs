@@ -36,6 +36,51 @@
             this.lblSeats = new System.Windows.Forms.Label();
             this.lblSeatNum = new System.Windows.Forms.Label();
             this.pnlCinema = new System.Windows.Forms.Panel();
+            this.imgA1 = new System.Windows.Forms.PictureBox();
+            this.imgA2 = new System.Windows.Forms.PictureBox();
+            this.imgA3 = new System.Windows.Forms.PictureBox();
+            this.imgA4 = new System.Windows.Forms.PictureBox();
+            this.imgA5 = new System.Windows.Forms.PictureBox();
+            this.imgA6 = new System.Windows.Forms.PictureBox();
+            this.imgA7 = new System.Windows.Forms.PictureBox();
+            this.imgA8 = new System.Windows.Forms.PictureBox();
+            this.imgA9 = new System.Windows.Forms.PictureBox();
+            this.imgA10 = new System.Windows.Forms.PictureBox();
+            this.imgB1 = new System.Windows.Forms.PictureBox();
+            this.imgB2 = new System.Windows.Forms.PictureBox();
+            this.imgB3 = new System.Windows.Forms.PictureBox();
+            this.imgB4 = new System.Windows.Forms.PictureBox();
+            this.imgB5 = new System.Windows.Forms.PictureBox();
+            this.imgB6 = new System.Windows.Forms.PictureBox();
+            this.imgB7 = new System.Windows.Forms.PictureBox();
+            this.imgB8 = new System.Windows.Forms.PictureBox();
+            this.imgB9 = new System.Windows.Forms.PictureBox();
+            this.imgB10 = new System.Windows.Forms.PictureBox();
+            this.imgC1 = new System.Windows.Forms.PictureBox();
+            this.imgC2 = new System.Windows.Forms.PictureBox();
+            this.imgC3 = new System.Windows.Forms.PictureBox();
+            this.imgC4 = new System.Windows.Forms.PictureBox();
+            this.imgC5 = new System.Windows.Forms.PictureBox();
+            this.imgC6 = new System.Windows.Forms.PictureBox();
+            this.imgC7 = new System.Windows.Forms.PictureBox();
+            this.imgC8 = new System.Windows.Forms.PictureBox();
+            this.imgC9 = new System.Windows.Forms.PictureBox();
+            this.imgC10 = new System.Windows.Forms.PictureBox();
+            this.imgD1 = new System.Windows.Forms.PictureBox();
+            this.imgD2 = new System.Windows.Forms.PictureBox();
+            this.imgD3 = new System.Windows.Forms.PictureBox();
+            this.imgD4 = new System.Windows.Forms.PictureBox();
+            this.imgD5 = new System.Windows.Forms.PictureBox();
+            this.imgD6 = new System.Windows.Forms.PictureBox();
+            this.imgD7 = new System.Windows.Forms.PictureBox();
+            this.imgD8 = new System.Windows.Forms.PictureBox();
+            this.imgD9 = new System.Windows.Forms.PictureBox();
+            this.imgD10 = new System.Windows.Forms.PictureBox();
+            this.imgE1 = new System.Windows.Forms.PictureBox();
+            this.imgE2 = new System.Windows.Forms.PictureBox();
+            this.imgE3 = new System.Windows.Forms.PictureBox();
+            this.imgE4 = new System.Windows.Forms.PictureBox();
+            this.imgE5 = new System.Windows.Forms.PictureBox();
             this.imgE6 = new System.Windows.Forms.PictureBox();
             this.imgE7 = new System.Windows.Forms.PictureBox();
             this.imgE8 = new System.Windows.Forms.PictureBox();
@@ -48,7 +93,7 @@
             this.lblA = new System.Windows.Forms.Label();
             this.pnlScreen = new System.Windows.Forms.Panel();
             this.lblScreen = new System.Windows.Forms.Label();
-            this.lblCNum = new System.Windows.Forms.Label();
+            this.lblCinemaNumber = new System.Windows.Forms.Label();
             this.lblCinNum = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
             this.rtbDescription = new System.Windows.Forms.RichTextBox();
@@ -63,52 +108,54 @@
             this.imgSelected = new System.Windows.Forms.PictureBox();
             this.imgAvail = new System.Windows.Forms.PictureBox();
             this.imgMovie = new System.Windows.Forms.PictureBox();
-            this.imgE5 = new System.Windows.Forms.PictureBox();
-            this.imgE4 = new System.Windows.Forms.PictureBox();
-            this.imgE3 = new System.Windows.Forms.PictureBox();
-            this.imgE2 = new System.Windows.Forms.PictureBox();
-            this.imgE1 = new System.Windows.Forms.PictureBox();
-            this.imgD1 = new System.Windows.Forms.PictureBox();
-            this.imgD2 = new System.Windows.Forms.PictureBox();
-            this.imgD3 = new System.Windows.Forms.PictureBox();
-            this.imgD4 = new System.Windows.Forms.PictureBox();
-            this.imgD5 = new System.Windows.Forms.PictureBox();
-            this.imgD6 = new System.Windows.Forms.PictureBox();
-            this.imgD7 = new System.Windows.Forms.PictureBox();
-            this.imgD8 = new System.Windows.Forms.PictureBox();
-            this.imgD9 = new System.Windows.Forms.PictureBox();
-            this.imgD10 = new System.Windows.Forms.PictureBox();
-            this.imgC1 = new System.Windows.Forms.PictureBox();
-            this.imgC2 = new System.Windows.Forms.PictureBox();
-            this.imgC3 = new System.Windows.Forms.PictureBox();
-            this.imgC4 = new System.Windows.Forms.PictureBox();
-            this.imgC5 = new System.Windows.Forms.PictureBox();
-            this.imgC6 = new System.Windows.Forms.PictureBox();
-            this.imgC7 = new System.Windows.Forms.PictureBox();
-            this.imgC8 = new System.Windows.Forms.PictureBox();
-            this.imgC9 = new System.Windows.Forms.PictureBox();
-            this.imgC10 = new System.Windows.Forms.PictureBox();
-            this.imgB1 = new System.Windows.Forms.PictureBox();
-            this.imgB2 = new System.Windows.Forms.PictureBox();
-            this.imgB3 = new System.Windows.Forms.PictureBox();
-            this.imgB4 = new System.Windows.Forms.PictureBox();
-            this.imgB5 = new System.Windows.Forms.PictureBox();
-            this.imgB6 = new System.Windows.Forms.PictureBox();
-            this.imgB7 = new System.Windows.Forms.PictureBox();
-            this.imgB8 = new System.Windows.Forms.PictureBox();
-            this.imgB9 = new System.Windows.Forms.PictureBox();
-            this.imgB10 = new System.Windows.Forms.PictureBox();
-            this.imgA1 = new System.Windows.Forms.PictureBox();
-            this.imgA2 = new System.Windows.Forms.PictureBox();
-            this.imgA3 = new System.Windows.Forms.PictureBox();
-            this.imgA4 = new System.Windows.Forms.PictureBox();
-            this.imgA5 = new System.Windows.Forms.PictureBox();
-            this.imgA6 = new System.Windows.Forms.PictureBox();
-            this.imgA7 = new System.Windows.Forms.PictureBox();
-            this.imgA8 = new System.Windows.Forms.PictureBox();
-            this.imgA9 = new System.Windows.Forms.PictureBox();
-            this.imgA10 = new System.Windows.Forms.PictureBox();
+            this.cbbTime = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.pnlCinema.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgE1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgE2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgE3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgE4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgE5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgE6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgE7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgE8)).BeginInit();
@@ -120,51 +167,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgSelected)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgAvail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgMovie)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgE5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgE4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgE3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgE2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgE1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgD1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgD2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgD3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgD4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgD5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgD6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgD7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgD8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgD9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgD10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgC1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgC2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgC3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgC4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgC5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgC6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgC7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgC8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgC9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgC10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgB1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgB2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgB3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgB4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgB5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgB6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgB7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgB8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgB9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgB10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgA1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgA2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgA3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgA4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgA5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgA6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgA7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgA8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgA9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgA10)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -292,6 +294,591 @@
             this.pnlCinema.Size = new System.Drawing.Size(861, 475);
             this.pnlCinema.TabIndex = 72;
             this.toolTip1.SetToolTip(this.pnlCinema, "Choose the number of seats you would like by clickking on the seat");
+            // 
+            // imgA1
+            // 
+            this.imgA1.Image = global::Watchers.Properties.Resources.Available;
+            this.imgA1.Location = new System.Drawing.Point(754, 410);
+            this.imgA1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgA1.Name = "imgA1";
+            this.imgA1.Size = new System.Drawing.Size(40, 40);
+            this.imgA1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgA1.TabIndex = 157;
+            this.imgA1.TabStop = false;
+            this.imgA1.Tag = "A1";
+            this.imgA1.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgA2
+            // 
+            this.imgA2.Image = global::Watchers.Properties.Resources.Available;
+            this.imgA2.Location = new System.Drawing.Point(709, 410);
+            this.imgA2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgA2.Name = "imgA2";
+            this.imgA2.Size = new System.Drawing.Size(40, 40);
+            this.imgA2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgA2.TabIndex = 156;
+            this.imgA2.TabStop = false;
+            this.imgA2.Tag = "A2";
+            this.imgA2.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgA3
+            // 
+            this.imgA3.Image = global::Watchers.Properties.Resources.Available;
+            this.imgA3.Location = new System.Drawing.Point(664, 410);
+            this.imgA3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgA3.Name = "imgA3";
+            this.imgA3.Size = new System.Drawing.Size(40, 40);
+            this.imgA3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgA3.TabIndex = 155;
+            this.imgA3.TabStop = false;
+            this.imgA3.Tag = "A3";
+            this.imgA3.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgA4
+            // 
+            this.imgA4.Image = global::Watchers.Properties.Resources.Available;
+            this.imgA4.Location = new System.Drawing.Point(620, 410);
+            this.imgA4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgA4.Name = "imgA4";
+            this.imgA4.Size = new System.Drawing.Size(40, 40);
+            this.imgA4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgA4.TabIndex = 154;
+            this.imgA4.TabStop = false;
+            this.imgA4.Tag = "A4";
+            this.imgA4.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgA5
+            // 
+            this.imgA5.Image = global::Watchers.Properties.Resources.Available;
+            this.imgA5.Location = new System.Drawing.Point(575, 410);
+            this.imgA5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgA5.Name = "imgA5";
+            this.imgA5.Size = new System.Drawing.Size(40, 40);
+            this.imgA5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgA5.TabIndex = 153;
+            this.imgA5.TabStop = false;
+            this.imgA5.Tag = "A5";
+            this.imgA5.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgA6
+            // 
+            this.imgA6.Image = global::Watchers.Properties.Resources.Available;
+            this.imgA6.Location = new System.Drawing.Point(532, 410);
+            this.imgA6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgA6.Name = "imgA6";
+            this.imgA6.Size = new System.Drawing.Size(40, 40);
+            this.imgA6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgA6.TabIndex = 152;
+            this.imgA6.TabStop = false;
+            this.imgA6.Tag = "A6";
+            this.imgA6.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgA7
+            // 
+            this.imgA7.Image = global::Watchers.Properties.Resources.Available;
+            this.imgA7.Location = new System.Drawing.Point(491, 410);
+            this.imgA7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgA7.Name = "imgA7";
+            this.imgA7.Size = new System.Drawing.Size(40, 40);
+            this.imgA7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgA7.TabIndex = 151;
+            this.imgA7.TabStop = false;
+            this.imgA7.Tag = "A7";
+            this.imgA7.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgA8
+            // 
+            this.imgA8.Image = global::Watchers.Properties.Resources.Available;
+            this.imgA8.Location = new System.Drawing.Point(448, 410);
+            this.imgA8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgA8.Name = "imgA8";
+            this.imgA8.Size = new System.Drawing.Size(40, 40);
+            this.imgA8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgA8.TabIndex = 150;
+            this.imgA8.TabStop = false;
+            this.imgA8.Tag = "A8";
+            this.imgA8.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgA9
+            // 
+            this.imgA9.Image = global::Watchers.Properties.Resources.Available;
+            this.imgA9.Location = new System.Drawing.Point(403, 410);
+            this.imgA9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgA9.Name = "imgA9";
+            this.imgA9.Size = new System.Drawing.Size(40, 40);
+            this.imgA9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgA9.TabIndex = 149;
+            this.imgA9.TabStop = false;
+            this.imgA9.Tag = "A9";
+            this.imgA9.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgA10
+            // 
+            this.imgA10.Image = global::Watchers.Properties.Resources.Available;
+            this.imgA10.Location = new System.Drawing.Point(358, 410);
+            this.imgA10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgA10.Name = "imgA10";
+            this.imgA10.Size = new System.Drawing.Size(40, 40);
+            this.imgA10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgA10.TabIndex = 148;
+            this.imgA10.TabStop = false;
+            this.imgA10.Tag = "A10";
+            this.imgA10.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgB1
+            // 
+            this.imgB1.Image = global::Watchers.Properties.Resources.Available;
+            this.imgB1.Location = new System.Drawing.Point(754, 341);
+            this.imgB1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgB1.Name = "imgB1";
+            this.imgB1.Size = new System.Drawing.Size(40, 40);
+            this.imgB1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgB1.TabIndex = 147;
+            this.imgB1.TabStop = false;
+            this.imgB1.Tag = "B1";
+            this.imgB1.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgB2
+            // 
+            this.imgB2.Image = global::Watchers.Properties.Resources.Available;
+            this.imgB2.Location = new System.Drawing.Point(709, 341);
+            this.imgB2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgB2.Name = "imgB2";
+            this.imgB2.Size = new System.Drawing.Size(40, 40);
+            this.imgB2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgB2.TabIndex = 146;
+            this.imgB2.TabStop = false;
+            this.imgB2.Tag = "B2";
+            this.imgB2.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgB3
+            // 
+            this.imgB3.Image = global::Watchers.Properties.Resources.Available;
+            this.imgB3.Location = new System.Drawing.Point(664, 341);
+            this.imgB3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgB3.Name = "imgB3";
+            this.imgB3.Size = new System.Drawing.Size(40, 40);
+            this.imgB3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgB3.TabIndex = 145;
+            this.imgB3.TabStop = false;
+            this.imgB3.Tag = "B3";
+            this.imgB3.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgB4
+            // 
+            this.imgB4.Image = global::Watchers.Properties.Resources.Available;
+            this.imgB4.Location = new System.Drawing.Point(620, 341);
+            this.imgB4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgB4.Name = "imgB4";
+            this.imgB4.Size = new System.Drawing.Size(40, 40);
+            this.imgB4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgB4.TabIndex = 144;
+            this.imgB4.TabStop = false;
+            this.imgB4.Tag = "B4";
+            this.imgB4.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgB5
+            // 
+            this.imgB5.Image = global::Watchers.Properties.Resources.Available;
+            this.imgB5.Location = new System.Drawing.Point(575, 341);
+            this.imgB5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgB5.Name = "imgB5";
+            this.imgB5.Size = new System.Drawing.Size(40, 40);
+            this.imgB5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgB5.TabIndex = 143;
+            this.imgB5.TabStop = false;
+            this.imgB5.Tag = "B5";
+            this.imgB5.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgB6
+            // 
+            this.imgB6.Image = global::Watchers.Properties.Resources.Available;
+            this.imgB6.Location = new System.Drawing.Point(532, 341);
+            this.imgB6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgB6.Name = "imgB6";
+            this.imgB6.Size = new System.Drawing.Size(40, 40);
+            this.imgB6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgB6.TabIndex = 142;
+            this.imgB6.TabStop = false;
+            this.imgB6.Tag = "B6";
+            this.imgB6.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgB7
+            // 
+            this.imgB7.Image = global::Watchers.Properties.Resources.Available;
+            this.imgB7.Location = new System.Drawing.Point(491, 341);
+            this.imgB7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgB7.Name = "imgB7";
+            this.imgB7.Size = new System.Drawing.Size(40, 40);
+            this.imgB7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgB7.TabIndex = 141;
+            this.imgB7.TabStop = false;
+            this.imgB7.Tag = "B7";
+            this.imgB7.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgB8
+            // 
+            this.imgB8.Image = global::Watchers.Properties.Resources.Available;
+            this.imgB8.Location = new System.Drawing.Point(448, 341);
+            this.imgB8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgB8.Name = "imgB8";
+            this.imgB8.Size = new System.Drawing.Size(40, 40);
+            this.imgB8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgB8.TabIndex = 140;
+            this.imgB8.TabStop = false;
+            this.imgB8.Tag = "B8";
+            this.imgB8.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgB9
+            // 
+            this.imgB9.Image = global::Watchers.Properties.Resources.Available;
+            this.imgB9.Location = new System.Drawing.Point(403, 341);
+            this.imgB9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgB9.Name = "imgB9";
+            this.imgB9.Size = new System.Drawing.Size(40, 40);
+            this.imgB9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgB9.TabIndex = 139;
+            this.imgB9.TabStop = false;
+            this.imgB9.Tag = "B9";
+            this.imgB9.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgB10
+            // 
+            this.imgB10.Image = global::Watchers.Properties.Resources.Available;
+            this.imgB10.Location = new System.Drawing.Point(358, 341);
+            this.imgB10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgB10.Name = "imgB10";
+            this.imgB10.Size = new System.Drawing.Size(40, 40);
+            this.imgB10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgB10.TabIndex = 138;
+            this.imgB10.TabStop = false;
+            this.imgB10.Tag = "B10";
+            this.imgB10.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgC1
+            // 
+            this.imgC1.Image = global::Watchers.Properties.Resources.Available;
+            this.imgC1.Location = new System.Drawing.Point(754, 272);
+            this.imgC1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgC1.Name = "imgC1";
+            this.imgC1.Size = new System.Drawing.Size(40, 40);
+            this.imgC1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgC1.TabIndex = 137;
+            this.imgC1.TabStop = false;
+            this.imgC1.Tag = "C1";
+            this.imgC1.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgC2
+            // 
+            this.imgC2.Image = global::Watchers.Properties.Resources.Available;
+            this.imgC2.Location = new System.Drawing.Point(709, 272);
+            this.imgC2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgC2.Name = "imgC2";
+            this.imgC2.Size = new System.Drawing.Size(40, 40);
+            this.imgC2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgC2.TabIndex = 136;
+            this.imgC2.TabStop = false;
+            this.imgC2.Tag = "C2";
+            this.imgC2.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgC3
+            // 
+            this.imgC3.Image = global::Watchers.Properties.Resources.Available;
+            this.imgC3.Location = new System.Drawing.Point(664, 272);
+            this.imgC3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgC3.Name = "imgC3";
+            this.imgC3.Size = new System.Drawing.Size(40, 40);
+            this.imgC3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgC3.TabIndex = 135;
+            this.imgC3.TabStop = false;
+            this.imgC3.Tag = "C3";
+            this.imgC3.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgC4
+            // 
+            this.imgC4.Image = global::Watchers.Properties.Resources.Available;
+            this.imgC4.Location = new System.Drawing.Point(620, 272);
+            this.imgC4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgC4.Name = "imgC4";
+            this.imgC4.Size = new System.Drawing.Size(40, 40);
+            this.imgC4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgC4.TabIndex = 134;
+            this.imgC4.TabStop = false;
+            this.imgC4.Tag = "C4";
+            this.imgC4.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgC5
+            // 
+            this.imgC5.Image = global::Watchers.Properties.Resources.Available;
+            this.imgC5.Location = new System.Drawing.Point(575, 272);
+            this.imgC5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgC5.Name = "imgC5";
+            this.imgC5.Size = new System.Drawing.Size(40, 40);
+            this.imgC5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgC5.TabIndex = 133;
+            this.imgC5.TabStop = false;
+            this.imgC5.Tag = "C5";
+            this.imgC5.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgC6
+            // 
+            this.imgC6.Image = global::Watchers.Properties.Resources.Available;
+            this.imgC6.Location = new System.Drawing.Point(532, 272);
+            this.imgC6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgC6.Name = "imgC6";
+            this.imgC6.Size = new System.Drawing.Size(40, 40);
+            this.imgC6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgC6.TabIndex = 132;
+            this.imgC6.TabStop = false;
+            this.imgC6.Tag = "C6";
+            this.imgC6.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgC7
+            // 
+            this.imgC7.Image = global::Watchers.Properties.Resources.Available;
+            this.imgC7.Location = new System.Drawing.Point(491, 272);
+            this.imgC7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgC7.Name = "imgC7";
+            this.imgC7.Size = new System.Drawing.Size(40, 40);
+            this.imgC7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgC7.TabIndex = 131;
+            this.imgC7.TabStop = false;
+            this.imgC7.Tag = "C7";
+            this.imgC7.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgC8
+            // 
+            this.imgC8.Image = global::Watchers.Properties.Resources.Available;
+            this.imgC8.Location = new System.Drawing.Point(448, 272);
+            this.imgC8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgC8.Name = "imgC8";
+            this.imgC8.Size = new System.Drawing.Size(40, 40);
+            this.imgC8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgC8.TabIndex = 130;
+            this.imgC8.TabStop = false;
+            this.imgC8.Tag = "C8";
+            this.imgC8.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgC9
+            // 
+            this.imgC9.Image = global::Watchers.Properties.Resources.Available;
+            this.imgC9.Location = new System.Drawing.Point(403, 272);
+            this.imgC9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgC9.Name = "imgC9";
+            this.imgC9.Size = new System.Drawing.Size(40, 40);
+            this.imgC9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgC9.TabIndex = 129;
+            this.imgC9.TabStop = false;
+            this.imgC9.Tag = "C9";
+            this.imgC9.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgC10
+            // 
+            this.imgC10.Image = global::Watchers.Properties.Resources.Available;
+            this.imgC10.Location = new System.Drawing.Point(358, 272);
+            this.imgC10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgC10.Name = "imgC10";
+            this.imgC10.Size = new System.Drawing.Size(40, 40);
+            this.imgC10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgC10.TabIndex = 128;
+            this.imgC10.TabStop = false;
+            this.imgC10.Tag = "C10";
+            this.imgC10.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgD1
+            // 
+            this.imgD1.Image = global::Watchers.Properties.Resources.Available;
+            this.imgD1.Location = new System.Drawing.Point(754, 200);
+            this.imgD1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgD1.Name = "imgD1";
+            this.imgD1.Size = new System.Drawing.Size(40, 40);
+            this.imgD1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgD1.TabIndex = 127;
+            this.imgD1.TabStop = false;
+            this.imgD1.Tag = "D1";
+            this.imgD1.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgD2
+            // 
+            this.imgD2.Image = global::Watchers.Properties.Resources.Available;
+            this.imgD2.Location = new System.Drawing.Point(709, 200);
+            this.imgD2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgD2.Name = "imgD2";
+            this.imgD2.Size = new System.Drawing.Size(40, 40);
+            this.imgD2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgD2.TabIndex = 126;
+            this.imgD2.TabStop = false;
+            this.imgD2.Tag = "D2";
+            this.imgD2.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgD3
+            // 
+            this.imgD3.Image = global::Watchers.Properties.Resources.Available;
+            this.imgD3.Location = new System.Drawing.Point(664, 200);
+            this.imgD3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgD3.Name = "imgD3";
+            this.imgD3.Size = new System.Drawing.Size(40, 40);
+            this.imgD3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgD3.TabIndex = 125;
+            this.imgD3.TabStop = false;
+            this.imgD3.Tag = "D3";
+            this.imgD3.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgD4
+            // 
+            this.imgD4.Image = global::Watchers.Properties.Resources.Available;
+            this.imgD4.Location = new System.Drawing.Point(620, 200);
+            this.imgD4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgD4.Name = "imgD4";
+            this.imgD4.Size = new System.Drawing.Size(40, 40);
+            this.imgD4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgD4.TabIndex = 124;
+            this.imgD4.TabStop = false;
+            this.imgD4.Tag = "D4";
+            this.imgD4.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgD5
+            // 
+            this.imgD5.Image = global::Watchers.Properties.Resources.Available;
+            this.imgD5.Location = new System.Drawing.Point(575, 200);
+            this.imgD5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgD5.Name = "imgD5";
+            this.imgD5.Size = new System.Drawing.Size(40, 40);
+            this.imgD5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgD5.TabIndex = 123;
+            this.imgD5.TabStop = false;
+            this.imgD5.Tag = "D5";
+            this.imgD5.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgD6
+            // 
+            this.imgD6.Image = global::Watchers.Properties.Resources.Available;
+            this.imgD6.Location = new System.Drawing.Point(532, 200);
+            this.imgD6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgD6.Name = "imgD6";
+            this.imgD6.Size = new System.Drawing.Size(40, 40);
+            this.imgD6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgD6.TabIndex = 122;
+            this.imgD6.TabStop = false;
+            this.imgD6.Tag = "D6";
+            this.imgD6.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgD7
+            // 
+            this.imgD7.Image = global::Watchers.Properties.Resources.Available;
+            this.imgD7.Location = new System.Drawing.Point(491, 200);
+            this.imgD7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgD7.Name = "imgD7";
+            this.imgD7.Size = new System.Drawing.Size(40, 40);
+            this.imgD7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgD7.TabIndex = 121;
+            this.imgD7.TabStop = false;
+            this.imgD7.Tag = "D7";
+            this.imgD7.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgD8
+            // 
+            this.imgD8.Image = global::Watchers.Properties.Resources.Available;
+            this.imgD8.Location = new System.Drawing.Point(448, 200);
+            this.imgD8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgD8.Name = "imgD8";
+            this.imgD8.Size = new System.Drawing.Size(40, 40);
+            this.imgD8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgD8.TabIndex = 120;
+            this.imgD8.TabStop = false;
+            this.imgD8.Tag = "D8";
+            this.imgD8.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgD9
+            // 
+            this.imgD9.Image = global::Watchers.Properties.Resources.Available;
+            this.imgD9.Location = new System.Drawing.Point(403, 200);
+            this.imgD9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgD9.Name = "imgD9";
+            this.imgD9.Size = new System.Drawing.Size(40, 40);
+            this.imgD9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgD9.TabIndex = 119;
+            this.imgD9.TabStop = false;
+            this.imgD9.Tag = "D9";
+            this.imgD9.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgD10
+            // 
+            this.imgD10.Image = global::Watchers.Properties.Resources.Available;
+            this.imgD10.Location = new System.Drawing.Point(358, 200);
+            this.imgD10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgD10.Name = "imgD10";
+            this.imgD10.Size = new System.Drawing.Size(40, 40);
+            this.imgD10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgD10.TabIndex = 118;
+            this.imgD10.TabStop = false;
+            this.imgD10.Tag = "D10";
+            this.imgD10.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgE1
+            // 
+            this.imgE1.Image = global::Watchers.Properties.Resources.Available;
+            this.imgE1.Location = new System.Drawing.Point(754, 130);
+            this.imgE1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgE1.Name = "imgE1";
+            this.imgE1.Size = new System.Drawing.Size(40, 40);
+            this.imgE1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgE1.TabIndex = 117;
+            this.imgE1.TabStop = false;
+            this.imgE1.Tag = "E1";
+            this.imgE1.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgE2
+            // 
+            this.imgE2.Image = global::Watchers.Properties.Resources.Available;
+            this.imgE2.Location = new System.Drawing.Point(709, 130);
+            this.imgE2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgE2.Name = "imgE2";
+            this.imgE2.Size = new System.Drawing.Size(40, 40);
+            this.imgE2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgE2.TabIndex = 116;
+            this.imgE2.TabStop = false;
+            this.imgE2.Tag = "E2";
+            this.imgE2.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgE3
+            // 
+            this.imgE3.Image = global::Watchers.Properties.Resources.Available;
+            this.imgE3.Location = new System.Drawing.Point(664, 130);
+            this.imgE3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgE3.Name = "imgE3";
+            this.imgE3.Size = new System.Drawing.Size(40, 40);
+            this.imgE3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgE3.TabIndex = 115;
+            this.imgE3.TabStop = false;
+            this.imgE3.Tag = "E3";
+            this.imgE3.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgE4
+            // 
+            this.imgE4.Image = global::Watchers.Properties.Resources.Available;
+            this.imgE4.Location = new System.Drawing.Point(620, 130);
+            this.imgE4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgE4.Name = "imgE4";
+            this.imgE4.Size = new System.Drawing.Size(40, 40);
+            this.imgE4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgE4.TabIndex = 114;
+            this.imgE4.TabStop = false;
+            this.imgE4.Tag = "E4";
+            this.imgE4.Click += new System.EventHandler(this.SeatClicked);
+            // 
+            // imgE5
+            // 
+            this.imgE5.Image = global::Watchers.Properties.Resources.Available;
+            this.imgE5.Location = new System.Drawing.Point(575, 130);
+            this.imgE5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imgE5.Name = "imgE5";
+            this.imgE5.Size = new System.Drawing.Size(40, 40);
+            this.imgE5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgE5.TabIndex = 113;
+            this.imgE5.TabStop = false;
+            this.imgE5.Tag = "E5";
+            this.imgE5.Click += new System.EventHandler(this.SeatClicked);
             // 
             // imgE6
             // 
@@ -442,15 +1029,15 @@
             this.lblScreen.Text = "SCREEN";
             this.lblScreen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblCNum
+            // lblCinemaNumber
             // 
-            this.lblCNum.BackColor = System.Drawing.Color.Transparent;
-            this.lblCNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCNum.Location = new System.Drawing.Point(669, 140);
-            this.lblCNum.Name = "lblCNum";
-            this.lblCNum.Size = new System.Drawing.Size(53, 23);
-            this.lblCNum.TabIndex = 71;
-            this.lblCNum.Text = "Nr";
+            this.lblCinemaNumber.BackColor = System.Drawing.Color.Transparent;
+            this.lblCinemaNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCinemaNumber.Location = new System.Drawing.Point(669, 140);
+            this.lblCinemaNumber.Name = "lblCinemaNumber";
+            this.lblCinemaNumber.Size = new System.Drawing.Size(53, 23);
+            this.lblCinemaNumber.TabIndex = 71;
+            this.lblCinemaNumber.Text = "Nr";
             // 
             // lblCinNum
             // 
@@ -466,7 +1053,7 @@
             // 
             this.lblDate.BackColor = System.Drawing.Color.Transparent;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.lblDate.Location = new System.Drawing.Point(37, 135);
+            this.lblDate.Location = new System.Drawing.Point(70, 111);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(100, 34);
             this.lblDate.TabIndex = 69;
@@ -513,12 +1100,12 @@
             this.dtpDate.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(51)))));
             this.dtpDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDate.Location = new System.Drawing.Point(136, 140);
+            this.dtpDate.Location = new System.Drawing.Point(68, 147);
             this.dtpDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpDate.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
             this.dtpDate.MinDate = new System.DateTime(2020, 9, 25, 0, 0, 0, 0);
             this.dtpDate.Name = "dtpDate";
-            this.dtpDate.Size = new System.Drawing.Size(289, 30);
+            this.dtpDate.Size = new System.Drawing.Size(161, 30);
             this.dtpDate.TabIndex = 81;
             this.toolTip1.SetToolTip(this.dtpDate, "Choose the date you would like to watch the movie here");
             this.dtpDate.Value = new System.DateTime(2020, 9, 25, 10, 57, 48, 0);
@@ -560,6 +1147,7 @@
             this.btnBook.Text = "Book Now";
             this.toolTip1.SetToolTip(this.btnBook, "Click here to make the booking you have just made");
             this.btnBook.UseVisualStyleBackColor = false;
+            this.btnBook.Click += new System.EventHandler(this.btnBook_Click);
             // 
             // imgUnavail
             // 
@@ -603,595 +1191,36 @@
             this.imgMovie.TabIndex = 88;
             this.imgMovie.TabStop = false;
             // 
-            // imgE5
-            // 
-            this.imgE5.Image = global::Watchers.Properties.Resources.Available;
-            this.imgE5.Location = new System.Drawing.Point(575, 130);
-            this.imgE5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgE5.Name = "imgE5";
-            this.imgE5.Size = new System.Drawing.Size(40, 40);
-            this.imgE5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgE5.TabIndex = 113;
-            this.imgE5.TabStop = false;
-            this.imgE5.Tag = "E5";
-            this.imgE5.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgE4
-            // 
-            this.imgE4.Image = global::Watchers.Properties.Resources.Available;
-            this.imgE4.Location = new System.Drawing.Point(620, 130);
-            this.imgE4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgE4.Name = "imgE4";
-            this.imgE4.Size = new System.Drawing.Size(40, 40);
-            this.imgE4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgE4.TabIndex = 114;
-            this.imgE4.TabStop = false;
-            this.imgE4.Tag = "E4";
-            this.imgE4.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgE3
-            // 
-            this.imgE3.Image = global::Watchers.Properties.Resources.Available;
-            this.imgE3.Location = new System.Drawing.Point(664, 130);
-            this.imgE3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgE3.Name = "imgE3";
-            this.imgE3.Size = new System.Drawing.Size(40, 40);
-            this.imgE3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgE3.TabIndex = 115;
-            this.imgE3.TabStop = false;
-            this.imgE3.Tag = "E3";
-            this.imgE3.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgE2
-            // 
-            this.imgE2.Image = global::Watchers.Properties.Resources.Available;
-            this.imgE2.Location = new System.Drawing.Point(709, 130);
-            this.imgE2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgE2.Name = "imgE2";
-            this.imgE2.Size = new System.Drawing.Size(40, 40);
-            this.imgE2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgE2.TabIndex = 116;
-            this.imgE2.TabStop = false;
-            this.imgE2.Tag = "E2";
-            this.imgE2.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgE1
-            // 
-            this.imgE1.Image = global::Watchers.Properties.Resources.Available;
-            this.imgE1.Location = new System.Drawing.Point(754, 130);
-            this.imgE1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgE1.Name = "imgE1";
-            this.imgE1.Size = new System.Drawing.Size(40, 40);
-            this.imgE1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgE1.TabIndex = 117;
-            this.imgE1.TabStop = false;
-            this.imgE1.Tag = "E1";
-            this.imgE1.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgD1
-            // 
-            this.imgD1.Image = global::Watchers.Properties.Resources.Available;
-            this.imgD1.Location = new System.Drawing.Point(754, 200);
-            this.imgD1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgD1.Name = "imgD1";
-            this.imgD1.Size = new System.Drawing.Size(40, 40);
-            this.imgD1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgD1.TabIndex = 127;
-            this.imgD1.TabStop = false;
-            this.imgD1.Tag = "D1";
-            this.imgD1.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgD2
-            // 
-            this.imgD2.Image = global::Watchers.Properties.Resources.Available;
-            this.imgD2.Location = new System.Drawing.Point(709, 200);
-            this.imgD2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgD2.Name = "imgD2";
-            this.imgD2.Size = new System.Drawing.Size(40, 40);
-            this.imgD2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgD2.TabIndex = 126;
-            this.imgD2.TabStop = false;
-            this.imgD2.Tag = "D2";
-            this.imgD2.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgD3
-            // 
-            this.imgD3.Image = global::Watchers.Properties.Resources.Available;
-            this.imgD3.Location = new System.Drawing.Point(664, 200);
-            this.imgD3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgD3.Name = "imgD3";
-            this.imgD3.Size = new System.Drawing.Size(40, 40);
-            this.imgD3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgD3.TabIndex = 125;
-            this.imgD3.TabStop = false;
-            this.imgD3.Tag = "D3";
-            this.imgD3.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgD4
-            // 
-            this.imgD4.Image = global::Watchers.Properties.Resources.Available;
-            this.imgD4.Location = new System.Drawing.Point(620, 200);
-            this.imgD4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgD4.Name = "imgD4";
-            this.imgD4.Size = new System.Drawing.Size(40, 40);
-            this.imgD4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgD4.TabIndex = 124;
-            this.imgD4.TabStop = false;
-            this.imgD4.Tag = "D4";
-            this.imgD4.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgD5
-            // 
-            this.imgD5.Image = global::Watchers.Properties.Resources.Available;
-            this.imgD5.Location = new System.Drawing.Point(575, 200);
-            this.imgD5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgD5.Name = "imgD5";
-            this.imgD5.Size = new System.Drawing.Size(40, 40);
-            this.imgD5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgD5.TabIndex = 123;
-            this.imgD5.TabStop = false;
-            this.imgD5.Tag = "D5";
-            this.imgD5.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgD6
-            // 
-            this.imgD6.Image = global::Watchers.Properties.Resources.Available;
-            this.imgD6.Location = new System.Drawing.Point(532, 200);
-            this.imgD6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgD6.Name = "imgD6";
-            this.imgD6.Size = new System.Drawing.Size(40, 40);
-            this.imgD6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgD6.TabIndex = 122;
-            this.imgD6.TabStop = false;
-            this.imgD6.Tag = "D6";
-            this.imgD6.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgD7
-            // 
-            this.imgD7.Image = global::Watchers.Properties.Resources.Available;
-            this.imgD7.Location = new System.Drawing.Point(491, 200);
-            this.imgD7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgD7.Name = "imgD7";
-            this.imgD7.Size = new System.Drawing.Size(40, 40);
-            this.imgD7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgD7.TabIndex = 121;
-            this.imgD7.TabStop = false;
-            this.imgD7.Tag = "D7";
-            this.imgD7.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgD8
-            // 
-            this.imgD8.Image = global::Watchers.Properties.Resources.Available;
-            this.imgD8.Location = new System.Drawing.Point(448, 200);
-            this.imgD8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgD8.Name = "imgD8";
-            this.imgD8.Size = new System.Drawing.Size(40, 40);
-            this.imgD8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgD8.TabIndex = 120;
-            this.imgD8.TabStop = false;
-            this.imgD8.Tag = "D8";
-            this.imgD8.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgD9
-            // 
-            this.imgD9.Image = global::Watchers.Properties.Resources.Available;
-            this.imgD9.Location = new System.Drawing.Point(403, 200);
-            this.imgD9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgD9.Name = "imgD9";
-            this.imgD9.Size = new System.Drawing.Size(40, 40);
-            this.imgD9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgD9.TabIndex = 119;
-            this.imgD9.TabStop = false;
-            this.imgD9.Tag = "D9";
-            this.imgD9.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgD10
-            // 
-            this.imgD10.Image = global::Watchers.Properties.Resources.Available;
-            this.imgD10.Location = new System.Drawing.Point(358, 200);
-            this.imgD10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgD10.Name = "imgD10";
-            this.imgD10.Size = new System.Drawing.Size(40, 40);
-            this.imgD10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgD10.TabIndex = 118;
-            this.imgD10.TabStop = false;
-            this.imgD10.Tag = "D10";
-            this.imgD10.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgC1
-            // 
-            this.imgC1.Image = global::Watchers.Properties.Resources.Available;
-            this.imgC1.Location = new System.Drawing.Point(754, 272);
-            this.imgC1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgC1.Name = "imgC1";
-            this.imgC1.Size = new System.Drawing.Size(40, 40);
-            this.imgC1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgC1.TabIndex = 137;
-            this.imgC1.TabStop = false;
-            this.imgC1.Tag = "C1";
-            this.imgC1.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgC2
-            // 
-            this.imgC2.Image = global::Watchers.Properties.Resources.Available;
-            this.imgC2.Location = new System.Drawing.Point(709, 272);
-            this.imgC2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgC2.Name = "imgC2";
-            this.imgC2.Size = new System.Drawing.Size(40, 40);
-            this.imgC2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgC2.TabIndex = 136;
-            this.imgC2.TabStop = false;
-            this.imgC2.Tag = "C2";
-            this.imgC2.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgC3
-            // 
-            this.imgC3.Image = global::Watchers.Properties.Resources.Available;
-            this.imgC3.Location = new System.Drawing.Point(664, 272);
-            this.imgC3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgC3.Name = "imgC3";
-            this.imgC3.Size = new System.Drawing.Size(40, 40);
-            this.imgC3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgC3.TabIndex = 135;
-            this.imgC3.TabStop = false;
-            this.imgC3.Tag = "C3";
-            this.imgC3.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgC4
-            // 
-            this.imgC4.Image = global::Watchers.Properties.Resources.Available;
-            this.imgC4.Location = new System.Drawing.Point(620, 272);
-            this.imgC4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgC4.Name = "imgC4";
-            this.imgC4.Size = new System.Drawing.Size(40, 40);
-            this.imgC4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgC4.TabIndex = 134;
-            this.imgC4.TabStop = false;
-            this.imgC4.Tag = "C4";
-            this.imgC4.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgC5
-            // 
-            this.imgC5.Image = global::Watchers.Properties.Resources.Available;
-            this.imgC5.Location = new System.Drawing.Point(575, 272);
-            this.imgC5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgC5.Name = "imgC5";
-            this.imgC5.Size = new System.Drawing.Size(40, 40);
-            this.imgC5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgC5.TabIndex = 133;
-            this.imgC5.TabStop = false;
-            this.imgC5.Tag = "C5";
-            this.imgC5.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgC6
-            // 
-            this.imgC6.Image = global::Watchers.Properties.Resources.Available;
-            this.imgC6.Location = new System.Drawing.Point(532, 272);
-            this.imgC6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgC6.Name = "imgC6";
-            this.imgC6.Size = new System.Drawing.Size(40, 40);
-            this.imgC6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgC6.TabIndex = 132;
-            this.imgC6.TabStop = false;
-            this.imgC6.Tag = "C6";
-            this.imgC6.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgC7
-            // 
-            this.imgC7.Image = global::Watchers.Properties.Resources.Available;
-            this.imgC7.Location = new System.Drawing.Point(491, 272);
-            this.imgC7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgC7.Name = "imgC7";
-            this.imgC7.Size = new System.Drawing.Size(40, 40);
-            this.imgC7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgC7.TabIndex = 131;
-            this.imgC7.TabStop = false;
-            this.imgC7.Tag = "C7";
-            this.imgC7.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgC8
-            // 
-            this.imgC8.Image = global::Watchers.Properties.Resources.Available;
-            this.imgC8.Location = new System.Drawing.Point(448, 272);
-            this.imgC8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgC8.Name = "imgC8";
-            this.imgC8.Size = new System.Drawing.Size(40, 40);
-            this.imgC8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgC8.TabIndex = 130;
-            this.imgC8.TabStop = false;
-            this.imgC8.Tag = "C8";
-            this.imgC8.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgC9
-            // 
-            this.imgC9.Image = global::Watchers.Properties.Resources.Available;
-            this.imgC9.Location = new System.Drawing.Point(403, 272);
-            this.imgC9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgC9.Name = "imgC9";
-            this.imgC9.Size = new System.Drawing.Size(40, 40);
-            this.imgC9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgC9.TabIndex = 129;
-            this.imgC9.TabStop = false;
-            this.imgC9.Tag = "C9";
-            this.imgC9.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgC10
-            // 
-            this.imgC10.Image = global::Watchers.Properties.Resources.Available;
-            this.imgC10.Location = new System.Drawing.Point(358, 272);
-            this.imgC10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgC10.Name = "imgC10";
-            this.imgC10.Size = new System.Drawing.Size(40, 40);
-            this.imgC10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgC10.TabIndex = 128;
-            this.imgC10.TabStop = false;
-            this.imgC10.Tag = "C10";
-            this.imgC10.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgB1
-            // 
-            this.imgB1.Image = global::Watchers.Properties.Resources.Available;
-            this.imgB1.Location = new System.Drawing.Point(754, 341);
-            this.imgB1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgB1.Name = "imgB1";
-            this.imgB1.Size = new System.Drawing.Size(40, 40);
-            this.imgB1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgB1.TabIndex = 147;
-            this.imgB1.TabStop = false;
-            this.imgB1.Tag = "C1";
-            this.imgB1.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgB2
-            // 
-            this.imgB2.Image = global::Watchers.Properties.Resources.Available;
-            this.imgB2.Location = new System.Drawing.Point(709, 341);
-            this.imgB2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgB2.Name = "imgB2";
-            this.imgB2.Size = new System.Drawing.Size(40, 40);
-            this.imgB2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgB2.TabIndex = 146;
-            this.imgB2.TabStop = false;
-            this.imgB2.Tag = "C2";
-            this.imgB2.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgB3
-            // 
-            this.imgB3.Image = global::Watchers.Properties.Resources.Available;
-            this.imgB3.Location = new System.Drawing.Point(664, 341);
-            this.imgB3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgB3.Name = "imgB3";
-            this.imgB3.Size = new System.Drawing.Size(40, 40);
-            this.imgB3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgB3.TabIndex = 145;
-            this.imgB3.TabStop = false;
-            this.imgB3.Tag = "C3";
-            this.imgB3.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgB4
-            // 
-            this.imgB4.Image = global::Watchers.Properties.Resources.Available;
-            this.imgB4.Location = new System.Drawing.Point(620, 341);
-            this.imgB4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgB4.Name = "imgB4";
-            this.imgB4.Size = new System.Drawing.Size(40, 40);
-            this.imgB4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgB4.TabIndex = 144;
-            this.imgB4.TabStop = false;
-            this.imgB4.Tag = "C4";
-            this.imgB4.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgB5
-            // 
-            this.imgB5.Image = global::Watchers.Properties.Resources.Available;
-            this.imgB5.Location = new System.Drawing.Point(575, 341);
-            this.imgB5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgB5.Name = "imgB5";
-            this.imgB5.Size = new System.Drawing.Size(40, 40);
-            this.imgB5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgB5.TabIndex = 143;
-            this.imgB5.TabStop = false;
-            this.imgB5.Tag = "C5";
-            this.imgB5.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgB6
-            // 
-            this.imgB6.Image = global::Watchers.Properties.Resources.Available;
-            this.imgB6.Location = new System.Drawing.Point(532, 341);
-            this.imgB6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgB6.Name = "imgB6";
-            this.imgB6.Size = new System.Drawing.Size(40, 40);
-            this.imgB6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgB6.TabIndex = 142;
-            this.imgB6.TabStop = false;
-            this.imgB6.Tag = "C6";
-            this.imgB6.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgB7
-            // 
-            this.imgB7.Image = global::Watchers.Properties.Resources.Available;
-            this.imgB7.Location = new System.Drawing.Point(491, 341);
-            this.imgB7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgB7.Name = "imgB7";
-            this.imgB7.Size = new System.Drawing.Size(40, 40);
-            this.imgB7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgB7.TabIndex = 141;
-            this.imgB7.TabStop = false;
-            this.imgB7.Tag = "C7";
-            this.imgB7.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgB8
-            // 
-            this.imgB8.Image = global::Watchers.Properties.Resources.Available;
-            this.imgB8.Location = new System.Drawing.Point(448, 341);
-            this.imgB8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgB8.Name = "imgB8";
-            this.imgB8.Size = new System.Drawing.Size(40, 40);
-            this.imgB8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgB8.TabIndex = 140;
-            this.imgB8.TabStop = false;
-            this.imgB8.Tag = "C8";
-            this.imgB8.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgB9
-            // 
-            this.imgB9.Image = global::Watchers.Properties.Resources.Available;
-            this.imgB9.Location = new System.Drawing.Point(403, 341);
-            this.imgB9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgB9.Name = "imgB9";
-            this.imgB9.Size = new System.Drawing.Size(40, 40);
-            this.imgB9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgB9.TabIndex = 139;
-            this.imgB9.TabStop = false;
-            this.imgB9.Tag = "C9";
-            this.imgB9.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgB10
-            // 
-            this.imgB10.Image = global::Watchers.Properties.Resources.Available;
-            this.imgB10.Location = new System.Drawing.Point(358, 341);
-            this.imgB10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgB10.Name = "imgB10";
-            this.imgB10.Size = new System.Drawing.Size(40, 40);
-            this.imgB10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgB10.TabIndex = 138;
-            this.imgB10.TabStop = false;
-            this.imgB10.Tag = "C10";
-            this.imgB10.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgA1
-            // 
-            this.imgA1.Image = global::Watchers.Properties.Resources.Available;
-            this.imgA1.Location = new System.Drawing.Point(754, 410);
-            this.imgA1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgA1.Name = "imgA1";
-            this.imgA1.Size = new System.Drawing.Size(40, 40);
-            this.imgA1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgA1.TabIndex = 157;
-            this.imgA1.TabStop = false;
-            this.imgA1.Tag = "A1";
-            this.imgA1.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgA2
-            // 
-            this.imgA2.Image = global::Watchers.Properties.Resources.Available;
-            this.imgA2.Location = new System.Drawing.Point(709, 410);
-            this.imgA2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgA2.Name = "imgA2";
-            this.imgA2.Size = new System.Drawing.Size(40, 40);
-            this.imgA2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgA2.TabIndex = 156;
-            this.imgA2.TabStop = false;
-            this.imgA2.Tag = "A2";
-            this.imgA2.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgA3
-            // 
-            this.imgA3.Image = global::Watchers.Properties.Resources.Available;
-            this.imgA3.Location = new System.Drawing.Point(664, 410);
-            this.imgA3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgA3.Name = "imgA3";
-            this.imgA3.Size = new System.Drawing.Size(40, 40);
-            this.imgA3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgA3.TabIndex = 155;
-            this.imgA3.TabStop = false;
-            this.imgA3.Tag = "A3";
-            this.imgA3.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgA4
-            // 
-            this.imgA4.Image = global::Watchers.Properties.Resources.Available;
-            this.imgA4.Location = new System.Drawing.Point(620, 410);
-            this.imgA4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgA4.Name = "imgA4";
-            this.imgA4.Size = new System.Drawing.Size(40, 40);
-            this.imgA4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgA4.TabIndex = 154;
-            this.imgA4.TabStop = false;
-            this.imgA4.Tag = "A4";
-            this.imgA4.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgA5
-            // 
-            this.imgA5.Image = global::Watchers.Properties.Resources.Available;
-            this.imgA5.Location = new System.Drawing.Point(575, 410);
-            this.imgA5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgA5.Name = "imgA5";
-            this.imgA5.Size = new System.Drawing.Size(40, 40);
-            this.imgA5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgA5.TabIndex = 153;
-            this.imgA5.TabStop = false;
-            this.imgA5.Tag = "A5";
-            this.imgA5.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgA6
-            // 
-            this.imgA6.Image = global::Watchers.Properties.Resources.Available;
-            this.imgA6.Location = new System.Drawing.Point(532, 410);
-            this.imgA6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgA6.Name = "imgA6";
-            this.imgA6.Size = new System.Drawing.Size(40, 40);
-            this.imgA6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgA6.TabIndex = 152;
-            this.imgA6.TabStop = false;
-            this.imgA6.Tag = "A6";
-            this.imgA6.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgA7
-            // 
-            this.imgA7.Image = global::Watchers.Properties.Resources.Available;
-            this.imgA7.Location = new System.Drawing.Point(491, 410);
-            this.imgA7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgA7.Name = "imgA7";
-            this.imgA7.Size = new System.Drawing.Size(40, 40);
-            this.imgA7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgA7.TabIndex = 151;
-            this.imgA7.TabStop = false;
-            this.imgA7.Tag = "A7";
-            this.imgA7.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgA8
-            // 
-            this.imgA8.Image = global::Watchers.Properties.Resources.Available;
-            this.imgA8.Location = new System.Drawing.Point(448, 410);
-            this.imgA8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgA8.Name = "imgA8";
-            this.imgA8.Size = new System.Drawing.Size(40, 40);
-            this.imgA8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgA8.TabIndex = 150;
-            this.imgA8.TabStop = false;
-            this.imgA8.Tag = "A8";
-            this.imgA8.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgA9
-            // 
-            this.imgA9.Image = global::Watchers.Properties.Resources.Available;
-            this.imgA9.Location = new System.Drawing.Point(403, 410);
-            this.imgA9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgA9.Name = "imgA9";
-            this.imgA9.Size = new System.Drawing.Size(40, 40);
-            this.imgA9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgA9.TabIndex = 149;
-            this.imgA9.TabStop = false;
-            this.imgA9.Tag = "A9";
-            this.imgA9.Click += new System.EventHandler(this.SeatClicked);
-            // 
-            // imgA10
-            // 
-            this.imgA10.Image = global::Watchers.Properties.Resources.Available;
-            this.imgA10.Location = new System.Drawing.Point(358, 410);
-            this.imgA10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imgA10.Name = "imgA10";
-            this.imgA10.Size = new System.Drawing.Size(40, 40);
-            this.imgA10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgA10.TabIndex = 148;
-            this.imgA10.TabStop = false;
-            this.imgA10.Tag = "A10";
-            this.imgA10.Click += new System.EventHandler(this.SeatClicked);
+            // cbbTime
+            // 
+            this.cbbTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbTime.FormattingEnabled = true;
+            this.cbbTime.Items.AddRange(new object[] {
+            "10:30",
+            "12:30",
+            "15:00",
+            "19:00"});
+            this.cbbTime.Location = new System.Drawing.Point(247, 147);
+            this.cbbTime.Name = "cbbTime";
+            this.cbbTime.Size = new System.Drawing.Size(121, 30);
+            this.cbbTime.TabIndex = 89;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.label1.Location = new System.Drawing.Point(251, 111);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 34);
+            this.label1.TabIndex = 90;
+            this.label1.Text = "Time:";
             // 
             // tabBookings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cbbTime);
             this.Controls.Add(this.imgMovie);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnBook);
@@ -1206,7 +1235,7 @@
             this.Controls.Add(this.lblSeats);
             this.Controls.Add(this.lblSeatNum);
             this.Controls.Add(this.pnlCinema);
-            this.Controls.Add(this.lblCNum);
+            this.Controls.Add(this.lblCinemaNumber);
             this.Controls.Add(this.lblCinNum);
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.rtbDescription);
@@ -1215,6 +1244,51 @@
             this.Name = "tabBookings";
             this.Size = new System.Drawing.Size(1575, 990);
             this.pnlCinema.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.imgA1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgA10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgB10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgC10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgD10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgE1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgE2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgE3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgE4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgE5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgE6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgE7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgE8)).EndInit();
@@ -1227,51 +1301,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgSelected)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgAvail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgMovie)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgE5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgE4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgE3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgE2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgE1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgD1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgD2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgD3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgD4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgD5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgD6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgD7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgD8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgD9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgD10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgC1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgC2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgC3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgC4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgC5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgC6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgC7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgC8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgC9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgC10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgB1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgB2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgB3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgB4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgB5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgB6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgB7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgB8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgB9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgB10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgA1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgA2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgA3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgA4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgA5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgA6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgA7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgA8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgA9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgA10)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1294,7 +1323,7 @@
         private System.Windows.Forms.Label lblA;
         private System.Windows.Forms.Panel pnlScreen;
         private System.Windows.Forms.Label lblScreen;
-        private System.Windows.Forms.Label lblCNum;
+        private System.Windows.Forms.Label lblCinemaNumber;
         private System.Windows.Forms.Label lblCinNum;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lblMovie;
@@ -1357,5 +1386,7 @@
         private System.Windows.Forms.PictureBox imgE3;
         private System.Windows.Forms.PictureBox imgE4;
         private System.Windows.Forms.PictureBox imgE5;
+        private System.Windows.Forms.ComboBox cbbTime;
+        private System.Windows.Forms.Label label1;
     }
 }

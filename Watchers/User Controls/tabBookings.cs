@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Watchers.Models;
 using Watchers.Properties;
+using Watchers.Models.Post_Models;
 
 namespace Watchers
 {
@@ -17,6 +18,10 @@ namespace Watchers
 
         private static tabBookings _instance;
         public static Movie movie;
+        private BookingPost bookingModel;
+        private List<SeatNumber> seatNumbers;
+        private Image available;
+        private Image unavailable;
 
         public static tabBookings Instance
         {
@@ -34,6 +39,8 @@ namespace Watchers
         {
             InitializeComponent();
             dtpDate.MinDate = DateTime.Now;
+            available = Resources.Available;
+            unavailable = Resources.Unavailable;
         }
 
         public void PopulateForm()
@@ -43,13 +50,54 @@ namespace Watchers
                 lblMovie.Text = movie.Name;
                 imgMovie.Image = movie.MovieImage;
                 rtbDescription.Text = movie.Description;
+                lblCinemaNumber.Text = movie.CinemaNumber.ToString();
+                lblSeatNum.Text = "0";
+
+                bookingModel = new BookingPost();
+                bookingModel.movieID = movie.MovieID;
+                bookingModel.userID = Settings.Default.UserID;
+
+                seatNumbers = new List<SeatNumber>();
             }
         }
 
         private void SeatClicked(object sender, EventArgs e)
         {
             PictureBox seat = (PictureBox)sender;
-            seat.Image = Resources.Unavailable;
+
+            if (seat.Image == unavailable)
+            {
+                seat.Image = available;
+                lblSeatNum.Text = (int.Parse(lblSeatNum.Text) - 1).ToString();
+                
+                for (int i = 0; i < seatNumbers.Count; i++)
+                {
+                    if (seatNumbers[i].seatNumber == seat.Tag.ToString())
+                    {
+                        seatNumbers.RemoveAt(i);
+                    }
+                }
+            }
+            else
+            {
+                seat.Image = unavailable;
+                lblSeatNum.Text = (int.Parse(lblSeatNum.Text) + 1).ToString();
+                seatNumbers.Add(new SeatNumber { seatNumber = seat.Tag.ToString() });
+            } 
+        }
+
+        private void btnBook_Click(object sender, EventArgs e)
+        {
+            int seatQuantity = int.Parse(lblSeatNum.Text);
+            if (seatQuantity > 0)
+            {
+                bookingModel.seatNumbers = seatNumbers;
+                bookingModel.seatQuantity = seatQuantity;
+            }
+            else
+            {
+                Message.ShowMessage("Please choose seats first", Message.MessageType.Warning);
+            }
         }
     }
 }

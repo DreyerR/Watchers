@@ -8,5 +8,6 @@ namespace Watchers.Models
         public string MovieID { get; set; }
         public string Description { get; set; }
         public Image MovieImage { get; set; }
+        public int CinemaNumber { get; set; }
     }
 }
