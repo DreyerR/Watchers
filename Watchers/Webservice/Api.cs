@@ -192,7 +192,7 @@ namespace Watchers.Webservice
 
         public async static Task<DataTable> GetAllBookingsAsync()
         {
-            string url = string.Format(AppConstants.BookingURL, 0);
+            string url = AppConstants.BookingURL + "?mode=0";
 
             client = GetHttpClient();
             HttpResponseMessage response = await client.GetAsync(url);
@@ -347,6 +347,28 @@ namespace Watchers.Webservice
                 dynamic json = JsonConvert.DeserializeObject<dynamic>(content);
 
                 return json["isSuccessful"];
+            }
+            else
+            {
+                throw new Exception("Error: Could not connect to remote server.\nStatus code: " + (int)response.StatusCode);
+            }
+        }
+
+        public static async Task<decimal> InsertBookingAsync(BookingPost booking)
+        {
+            client = GetHttpClient();
+
+            HttpResponseMessage response = await client.PostAsync(AppConstants.BookingURL, ConvertToStringContent(booking));
+
+            if (response.IsSuccessStatusCode)
+            {
+                string content = await response.Content.ReadAsStringAsync();
+                Dictionary<string, dynamic> pairs = JsonConvert.DeserializeObject<Dictionary<string, dynamic>>(content);
+
+                if (pairs["isSuccessful"])
+                    return pairs["totalPrice"];
+                else
+                    return -1;
             }
             else
             {
