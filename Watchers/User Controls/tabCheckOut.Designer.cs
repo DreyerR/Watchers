@@ -42,10 +42,10 @@
             this.lblBookSum = new System.Windows.Forms.Label();
             this.lbBookSum = new System.Windows.Forms.ListBox();
             this.btnPayNow = new System.Windows.Forms.Button();
-            this.btnBack = new System.Windows.Forms.Button();
             this.pnlTitle = new System.Windows.Forms.Panel();
             this.lblAccount = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.btnCancelBooking = new System.Windows.Forms.Button();
             this.gbPayment.SuspendLayout();
             this.pnlTitle.SuspendLayout();
             this.SuspendLayout();
@@ -61,7 +61,6 @@
             this.lblCheckoutBTN.TabIndex = 27;
             this.lblCheckoutBTN.Text = "Pay now";
             this.lblCheckoutBTN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblCheckoutBTN.Click += new System.EventHandler(this.lblCheckoutBTN_Click);
             // 
             // lblTotal
             // 
@@ -206,29 +205,13 @@
             this.btnPayNow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPayNow.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.btnPayNow.ForeColor = System.Drawing.Color.White;
-            this.btnPayNow.Location = new System.Drawing.Point(490, 764);
+            this.btnPayNow.Location = new System.Drawing.Point(779, 708);
             this.btnPayNow.Name = "btnPayNow";
             this.btnPayNow.Size = new System.Drawing.Size(270, 54);
             this.btnPayNow.TabIndex = 61;
             this.btnPayNow.Text = "Check out";
             this.toolTip1.SetToolTip(this.btnPayNow, "Click here to check out");
             this.btnPayNow.UseVisualStyleBackColor = false;
-            // 
-            // btnBack
-            // 
-            this.btnBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBack.BackColor = System.Drawing.Color.Transparent;
-            this.btnBack.BackgroundImage = global::Watchers.Properties.Resources.ButtonDark;
-            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.btnBack.ForeColor = System.Drawing.Color.White;
-            this.btnBack.Location = new System.Drawing.Point(766, 764);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(270, 54);
-            this.btnBack.TabIndex = 62;
-            this.btnBack.Text = "Back";
-            this.toolTip1.SetToolTip(this.btnBack, "Click here to go to previous page");
-            this.btnBack.UseVisualStyleBackColor = false;
             // 
             // pnlTitle
             // 
@@ -253,12 +236,28 @@
             this.lblAccount.TabIndex = 62;
             this.lblAccount.Text = "Account";
             // 
+            // btnCancelBooking
+            // 
+            this.btnCancelBooking.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCancelBooking.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancelBooking.BackgroundImage = global::Watchers.Properties.Resources.ButtonDark;
+            this.btnCancelBooking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelBooking.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.btnCancelBooking.ForeColor = System.Drawing.Color.White;
+            this.btnCancelBooking.Location = new System.Drawing.Point(503, 708);
+            this.btnCancelBooking.Name = "btnCancelBooking";
+            this.btnCancelBooking.Size = new System.Drawing.Size(270, 54);
+            this.btnCancelBooking.TabIndex = 62;
+            this.btnCancelBooking.Text = "Cancel Booking";
+            this.toolTip1.SetToolTip(this.btnCancelBooking, "Click here to go to previous page");
+            this.btnCancelBooking.UseVisualStyleBackColor = false;
+            // 
             // tabCheckOut
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnlTitle);
-            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.btnCancelBooking);
             this.Controls.Add(this.btnPayNow);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.gbPayment);
@@ -291,9 +290,9 @@
         private System.Windows.Forms.Label lblBookSum;
         private System.Windows.Forms.ListBox lbBookSum;
         private System.Windows.Forms.Button btnPayNow;
-        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Panel pnlTitle;
         private System.Windows.Forms.Label lblAccount;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Button btnCancelBooking;
     }
 }

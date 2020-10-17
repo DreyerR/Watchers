@@ -12,6 +12,8 @@ namespace Watchers
 {
     public partial class tabCheckOut : UserControl
     {
+        public static decimal totalPrice
+
         public tabCheckOut()
         {
             InitializeComponent();
@@ -29,11 +31,6 @@ namespace Watchers
                 }
                 return _instance;
             }
-        }
-
-        private void lblCheckoutBTN_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -237,9 +237,9 @@
         private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.Button btnMovies;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnCheckOut;
         private System.Windows.Forms.Button btnBookings;
         private System.Windows.Forms.ToolTip toolTip1;
         public System.Windows.Forms.Button btnSnacks;
+        public System.Windows.Forms.Button btnCheckOut;
     }
 }

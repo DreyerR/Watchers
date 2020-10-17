@@ -320,5 +320,28 @@ namespace Watchers
             snacks.Add(snack29);
             snacks.Add(snack30);
         }
+
+        private void btnPlaceOrder_Click(object sender, EventArgs e)
+        {
+            if (orders.Count == 0)
+            {
+                Message.ShowMessage("No snacks were chosen\nPlease click on 'Skip Order' instead.", Message.MessageType.Warning);
+                return;
+            }
+
+            booking.orders = orders;
+        }
+
+        private void btnClear_Click_1(object sender, EventArgs e)
+        {
+            lvOutput.Items.Clear();
+            orders.Clear();
+        }
+
+        private void btnSkipOrder_Click(object sender, EventArgs e)
+        {
+            orders.Clear();
+            btnPlaceOrder_Click(sender, e);
+        }
     }
 }
