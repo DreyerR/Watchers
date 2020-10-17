@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Watchers.Models.Post_Models
 {
-    class BookingPost
+    public class BookingPost
     {
         public int mode { get; set; }
         public string movieID { get; set; }
@@ -16,12 +16,12 @@ namespace Watchers.Models.Post_Models
         public List<Orders> orders { get; set; }
     }
 
-    class SeatNumber
+    public class SeatNumber
     {
         public string seatNumber { get; set; }
     }
     
-    class Orders
+    public class Orders
     {
         public string snackBarcode { get; set; }
         public int quantity { get; set; }

@@ -109,7 +109,6 @@
             this.btnSnacks.Text = "Snacks";
             this.toolTip1.SetToolTip(this.btnSnacks, "Click here to go to the snacks page");
             this.btnSnacks.UseVisualStyleBackColor = true;
-            this.btnSnacks.Click += new System.EventHandler(this.btnSnacks_Click);
             // 
             // btnBookings
             // 
@@ -239,8 +238,8 @@
         private System.Windows.Forms.Button btnMovies;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnCheckOut;
-        private System.Windows.Forms.Button btnSnacks;
         private System.Windows.Forms.Button btnBookings;
         private System.Windows.Forms.ToolTip toolTip1;
+        public System.Windows.Forms.Button btnSnacks;
     }
 }

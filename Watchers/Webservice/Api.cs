@@ -272,7 +272,7 @@ namespace Watchers.Webservice
             }
         }
 
-        private static DataTable BuildOrdersDataTable(List<Order> orders)
+        private static DataTable BuildOrdersDataTable(List<Models.Order> orders)
         {
             DataTable dt = new DataTable();
             dt.Clear();
@@ -285,7 +285,7 @@ namespace Watchers.Webservice
             dt.Columns.Add("Last name");
             dt.Columns.Add("Email");
 
-            foreach (Order order in orders)
+            foreach (Models.Order order in orders)
             {
                 DataRow dr = dt.NewRow();
                 dr[0] = order.OrderID;

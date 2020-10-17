@@ -21,7 +21,7 @@ namespace Watchers
         private BookingPost bookingModel;
         private List<SeatNumber> seatNumbers;
         private Image available;
-        private Image unavailable;
+        private Image booked;
 
         public static tabBookings Instance
         {
@@ -40,7 +40,8 @@ namespace Watchers
             InitializeComponent();
             dtpDate.MinDate = DateTime.Now;
             available = Resources.Available;
-            unavailable = Resources.Unavailable;
+            booked = Resources.Booked;
+            lblSeatNum.Text = "0";
         }
 
         public void PopulateForm()
@@ -65,7 +66,7 @@ namespace Watchers
         {
             PictureBox seat = (PictureBox)sender;
 
-            if (seat.Image == unavailable)
+            if (seat.Image == booked)
             {
                 seat.Image = available;
                 lblSeatNum.Text = (int.Parse(lblSeatNum.Text) - 1).ToString();
@@ -80,7 +81,7 @@ namespace Watchers
             }
             else
             {
-                seat.Image = unavailable;
+                seat.Image = booked;
                 lblSeatNum.Text = (int.Parse(lblSeatNum.Text) + 1).ToString();
                 seatNumbers.Add(new SeatNumber { seatNumber = seat.Tag.ToString() });
             } 
@@ -93,6 +94,8 @@ namespace Watchers
             {
                 bookingModel.seatNumbers = seatNumbers;
                 bookingModel.seatQuantity = seatQuantity;
+
+                MainMenu main = (MainMenu)this.FindForm();
             }
             else
             {

@@ -104,6 +104,7 @@
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\Post Models\AuthUserPost.cs" />
     <Compile Include="Models\Post Models\BookingPost.cs" />
+    <Compile Include="Models\Snack.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -343,6 +344,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\m008.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Booked.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -125,7 +125,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1214, 94);
+            this.panel1.Size = new System.Drawing.Size(1214, 90);
             this.panel1.TabIndex = 71;
             // 
             // lblAccount
@@ -155,7 +155,7 @@
             this.tableLayoutPanel2.Controls.Add(this.pnlOrder, 1, 3);
             this.tableLayoutPanel2.Controls.Add(this.pnlSweets, 0, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 94);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 90);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 5;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -163,7 +163,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1214, 843);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1214, 847);
             this.tableLayoutPanel2.TabIndex = 72;
             // 
             // pnlDrinks
@@ -326,6 +326,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(48, 50);
             this.button1.TabIndex = 87;
+            this.button1.Tag = "PR6419";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button1.UseVisualStyleBackColor = true;
             // 
@@ -338,6 +339,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(48, 50);
             this.button2.TabIndex = 86;
+            this.button2.Tag = "GH8467";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button2.UseVisualStyleBackColor = true;
             // 
@@ -350,6 +352,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(48, 50);
             this.button3.TabIndex = 85;
+            this.button3.Tag = "HU4565";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button3.UseVisualStyleBackColor = true;
             // 
@@ -362,6 +365,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(48, 50);
             this.button4.TabIndex = 84;
+            this.button4.Tag = "LL6427";
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button4.UseVisualStyleBackColor = true;
             // 
@@ -374,6 +378,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(48, 50);
             this.button5.TabIndex = 83;
+            this.button5.Tag = "KK0716";
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button5.UseVisualStyleBackColor = true;
             // 
@@ -386,6 +391,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(48, 50);
             this.button6.TabIndex = 82;
+            this.button6.Tag = "KU1214";
             this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button6.UseVisualStyleBackColor = true;
             // 
@@ -410,6 +416,7 @@
             this.btnFantaZeroMed.Name = "btnFantaZeroMed";
             this.btnFantaZeroMed.Size = new System.Drawing.Size(48, 50);
             this.btnFantaZeroMed.TabIndex = 78;
+            this.btnFantaZeroMed.Tag = "NN0894";
             this.btnFantaZeroMed.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnFantaZeroMed.UseVisualStyleBackColor = true;
             // 
@@ -422,6 +429,7 @@
             this.btnSpriteZeroMed.Name = "btnSpriteZeroMed";
             this.btnSpriteZeroMed.Size = new System.Drawing.Size(48, 50);
             this.btnSpriteZeroMed.TabIndex = 77;
+            this.btnSpriteZeroMed.Tag = "MM0413";
             this.btnSpriteZeroMed.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnSpriteZeroMed.UseVisualStyleBackColor = true;
             // 
@@ -434,6 +442,7 @@
             this.btnCokeZeroMed.Name = "btnCokeZeroMed";
             this.btnCokeZeroMed.Size = new System.Drawing.Size(48, 50);
             this.btnCokeZeroMed.TabIndex = 76;
+            this.btnCokeZeroMed.Tag = "OP8800";
             this.btnCokeZeroMed.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnCokeZeroMed.UseVisualStyleBackColor = true;
             // 
@@ -446,6 +455,7 @@
             this.btnFantaMed.Name = "btnFantaMed";
             this.btnFantaMed.Size = new System.Drawing.Size(48, 50);
             this.btnFantaMed.TabIndex = 75;
+            this.btnFantaMed.Tag = "LP0018";
             this.btnFantaMed.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnFantaMed.UseVisualStyleBackColor = true;
             // 
@@ -458,6 +468,7 @@
             this.btnSpriteMed.Name = "btnSpriteMed";
             this.btnSpriteMed.Size = new System.Drawing.Size(48, 50);
             this.btnSpriteMed.TabIndex = 74;
+            this.btnSpriteMed.Tag = "JJ4554";
             this.btnSpriteMed.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnSpriteMed.UseVisualStyleBackColor = true;
             // 
@@ -470,6 +481,7 @@
             this.btnCokeMed.Name = "btnCokeMed";
             this.btnCokeMed.Size = new System.Drawing.Size(48, 50);
             this.btnCokeMed.TabIndex = 73;
+            this.btnCokeMed.Tag = "FG6412";
             this.btnCokeMed.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnCokeMed.UseVisualStyleBackColor = true;
             // 
@@ -484,7 +496,6 @@
             this.lblSmall.TabIndex = 72;
             this.lblSmall.Text = "SMALL: R 14.99";
             this.lblSmall.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSmall.Click += new System.EventHandler(this.lblSmall_Click);
             // 
             // btnITLemon
             // 
@@ -495,6 +506,7 @@
             this.btnITLemon.Name = "btnITLemon";
             this.btnITLemon.Size = new System.Drawing.Size(67, 64);
             this.btnITLemon.TabIndex = 71;
+            this.btnITLemon.Tag = "HJ8467";
             this.btnITLemon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnITLemon.UseVisualStyleBackColor = true;
             // 
@@ -507,6 +519,7 @@
             this.btnWater.Name = "btnWater";
             this.btnWater.Size = new System.Drawing.Size(68, 64);
             this.btnWater.TabIndex = 69;
+            this.btnWater.Tag = "ED4561";
             this.btnWater.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnWater.UseVisualStyleBackColor = true;
             // 
@@ -519,6 +532,7 @@
             this.btnFantaZeroSml.Name = "btnFantaZeroSml";
             this.btnFantaZeroSml.Size = new System.Drawing.Size(48, 50);
             this.btnFantaZeroSml.TabIndex = 70;
+            this.btnFantaZeroSml.Tag = "JD5511";
             this.btnFantaZeroSml.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnFantaZeroSml.UseVisualStyleBackColor = true;
             // 
@@ -531,6 +545,7 @@
             this.btnSpriteZeroSml.Name = "btnSpriteZeroSml";
             this.btnSpriteZeroSml.Size = new System.Drawing.Size(48, 50);
             this.btnSpriteZeroSml.TabIndex = 68;
+            this.btnSpriteZeroSml.Tag = "HI8246";
             this.btnSpriteZeroSml.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnSpriteZeroSml.UseVisualStyleBackColor = true;
             // 
@@ -543,6 +558,7 @@
             this.btnITPeach.Name = "btnITPeach";
             this.btnITPeach.Size = new System.Drawing.Size(67, 64);
             this.btnITPeach.TabIndex = 66;
+            this.btnITPeach.Tag = "KK8888";
             this.btnITPeach.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnITPeach.UseVisualStyleBackColor = true;
             // 
@@ -555,6 +571,7 @@
             this.btnCokeZeroSml.Name = "btnCokeZeroSml";
             this.btnCokeZeroSml.Size = new System.Drawing.Size(48, 50);
             this.btnCokeZeroSml.TabIndex = 67;
+            this.btnCokeZeroSml.Tag = "KL6574";
             this.btnCokeZeroSml.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnCokeZeroSml.UseVisualStyleBackColor = true;
             // 
@@ -567,6 +584,7 @@
             this.btnFantaSml.Name = "btnFantaSml";
             this.btnFantaSml.Size = new System.Drawing.Size(48, 50);
             this.btnFantaSml.TabIndex = 65;
+            this.btnFantaSml.Tag = "BC8547";
             this.btnFantaSml.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnFantaSml.UseVisualStyleBackColor = true;
             // 
@@ -579,6 +597,7 @@
             this.btnSpriteSml.Name = "btnSpriteSml";
             this.btnSpriteSml.Size = new System.Drawing.Size(48, 50);
             this.btnSpriteSml.TabIndex = 63;
+            this.btnSpriteSml.Tag = "HQ8319";
             this.btnSpriteSml.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnSpriteSml.UseVisualStyleBackColor = true;
             // 
@@ -591,6 +610,7 @@
             this.btnCokeSml.Name = "btnCokeSml";
             this.btnCokeSml.Size = new System.Drawing.Size(48, 50);
             this.btnCokeSml.TabIndex = 62;
+            this.btnCokeSml.Tag = "LL4513";
             this.btnCokeSml.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnCokeSml.UseVisualStyleBackColor = true;
             // 
@@ -706,6 +726,7 @@
             this.btnLrgPopcorn.Name = "btnLrgPopcorn";
             this.btnLrgPopcorn.Size = new System.Drawing.Size(128, 129);
             this.btnLrgPopcorn.TabIndex = 5;
+            this.btnLrgPopcorn.Tag = "LH4413";
             this.btnLrgPopcorn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnLrgPopcorn.UseVisualStyleBackColor = true;
             // 
@@ -718,6 +739,7 @@
             this.btnSmlPopcorn.Name = "btnSmlPopcorn";
             this.btnSmlPopcorn.Size = new System.Drawing.Size(128, 129);
             this.btnSmlPopcorn.TabIndex = 4;
+            this.btnSmlPopcorn.Tag = "GH7712";
             this.btnSmlPopcorn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnSmlPopcorn.UseVisualStyleBackColor = true;
             // 
@@ -730,6 +752,7 @@
             this.btnMedPopcorn.Name = "btnMedPopcorn";
             this.btnMedPopcorn.Size = new System.Drawing.Size(128, 129);
             this.btnMedPopcorn.TabIndex = 3;
+            this.btnMedPopcorn.Tag = "DB5516";
             this.btnMedPopcorn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnMedPopcorn.UseVisualStyleBackColor = true;
             // 
@@ -967,6 +990,7 @@
             this.btnWineGums.Name = "btnWineGums";
             this.btnWineGums.Size = new System.Drawing.Size(128, 129);
             this.btnWineGums.TabIndex = 11;
+            this.btnWineGums.Tag = "FE5578";
             this.btnWineGums.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnWineGums.UseVisualStyleBackColor = true;
             // 
@@ -979,6 +1003,7 @@
             this.btnJellyBabies.Name = "btnJellyBabies";
             this.btnJellyBabies.Size = new System.Drawing.Size(128, 129);
             this.btnJellyBabies.TabIndex = 10;
+            this.btnJellyBabies.Tag = "KE9913";
             this.btnJellyBabies.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnJellyBabies.UseVisualStyleBackColor = true;
             // 
@@ -991,6 +1016,7 @@
             this.btnNuts.Name = "btnNuts";
             this.btnNuts.Size = new System.Drawing.Size(128, 129);
             this.btnNuts.TabIndex = 9;
+            this.btnNuts.Tag = "AA2137";
             this.btnNuts.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnNuts.UseVisualStyleBackColor = true;
             // 
@@ -1003,6 +1029,7 @@
             this.btnChocolate.Name = "btnChocolate";
             this.btnChocolate.Size = new System.Drawing.Size(128, 129);
             this.btnChocolate.TabIndex = 8;
+            this.btnChocolate.Tag = "AE6612";
             this.btnChocolate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnChocolate.UseVisualStyleBackColor = true;
             // 
@@ -1015,6 +1042,7 @@
             this.btnWhispers.Name = "btnWhispers";
             this.btnWhispers.Size = new System.Drawing.Size(128, 129);
             this.btnWhispers.TabIndex = 7;
+            this.btnWhispers.Tag = "FC4551";
             this.btnWhispers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnWhispers.UseVisualStyleBackColor = true;
             // 
@@ -1027,6 +1055,7 @@
             this.btnAstro.Name = "btnAstro";
             this.btnAstro.Size = new System.Drawing.Size(128, 129);
             this.btnAstro.TabIndex = 6;
+            this.btnAstro.Tag = "OP9874";
             this.btnAstro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnAstro.UseVisualStyleBackColor = true;
             // 
@@ -1038,6 +1067,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "tabSnacks";
             this.Size = new System.Drawing.Size(1214, 937);
+            this.Load += new System.EventHandler(this.tabSnacks_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);

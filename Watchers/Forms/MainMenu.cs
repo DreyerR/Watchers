@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Watchers.Common;
 using Watchers.Models;
+using Watchers.Models.Post_Models;
 
 namespace Watchers
 {
@@ -22,6 +23,7 @@ namespace Watchers
         private void MainMenu_Load(object sender, EventArgs e)
         {
             btnBookings.Click += (sender1, e1) => BtnBooking_Click(sender1, e1);
+            btnSnacks.Click += (sender1, e1) => BtnSnack_Click(sender1, e1);
             btnMovies_Click(sender, e);
         }
 
@@ -84,8 +86,9 @@ namespace Watchers
             tabBookings.Instance.PopulateForm();
         }
 
-        private void btnSnacks_Click(object sender, EventArgs e)
+        public void BtnSnack_Click(object sender, EventArgs e, BookingPost booking = null)
         {
+            tabSnacks.booking = booking;
             if (!pnlBack.Controls.Contains(tabSnacks.Instance))
             {
                 pnlBack.Controls.Add(tabSnacks.Instance);
