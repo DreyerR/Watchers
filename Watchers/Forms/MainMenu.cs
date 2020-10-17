@@ -97,6 +97,7 @@ namespace Watchers
             }
             else
                 tabSnacks.Instance.BringToFront();
+            tabSnacks.booking = booking;
         }
 
         private void btnCheckOut_Click(object sender, EventArgs e)

@@ -96,6 +96,7 @@ namespace Watchers
                 bookingModel.seatQuantity = seatQuantity;
 
                 MainMenu main = (MainMenu)this.FindForm();
+                main.BtnSnack_Click(sender, e, bookingModel);
             }
             else
             {

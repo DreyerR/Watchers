@@ -12,7 +12,7 @@ namespace Watchers
 {
     public partial class tabCheckOut : UserControl
     {
-        public static decimal totalPrice
+        public static decimal totalPrice;
 
         public tabCheckOut()
         {

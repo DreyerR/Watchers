@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Watchers.Models.Post_Models;
 using Watchers.Models;
+using Watchers.Webservice;
 
 namespace Watchers
 {
@@ -321,7 +322,7 @@ namespace Watchers
             snacks.Add(snack30);
         }
 
-        private void btnPlaceOrder_Click(object sender, EventArgs e)
+        private async void btnPlaceOrder_Click(object sender, EventArgs e)
         {
             if (orders.Count == 0)
             {
@@ -330,6 +331,7 @@ namespace Watchers
             }
 
             booking.orders = orders;
+            decimal value = await Api.InsertBookingAsync(booking);
         }
 
         private void btnClear_Click_1(object sender, EventArgs e)
@@ -341,7 +343,7 @@ namespace Watchers
         private void btnSkipOrder_Click(object sender, EventArgs e)
         {
             orders.Clear();
-            btnPlaceOrder_Click(sender, e);
+            booking.orders = orders;
         }
     }
 }

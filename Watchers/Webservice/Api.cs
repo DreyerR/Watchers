@@ -358,23 +358,26 @@ namespace Watchers.Webservice
         {
             client = GetHttpClient();
             booking.mode = 0;
+            string json =  JsonConvert.SerializeObject(booking);
+            Message.ShowMessage(json, Message.MessageType.Information);
+            return -1;
 
-            HttpResponseMessage response = await client.PostAsync(AppConstants.BookingURL, ConvertToStringContent(booking));
+            //HttpResponseMessage response = await client.PostAsync(AppConstants.BookingURL, ConvertToStringContent(booking));
 
-            if (response.IsSuccessStatusCode)
-            {
-                string content = await response.Content.ReadAsStringAsync();
-                Dictionary<string, dynamic> pairs = JsonConvert.DeserializeObject<Dictionary<string, dynamic>>(content);
+            //if (response.IsSuccessStatusCode)
+            //{
+            //    string content = await response.Content.ReadAsStringAsync();
+            //    Dictionary<string, dynamic> pairs = JsonConvert.DeserializeObject<Dictionary<string, dynamic>>(content);
 
-                if (pairs["isSuccessful"])
-                    return pairs["totalPrice"];
-                else
-                    return -1;
-            }
-            else
-            {
-                throw new Exception("Error: Could not connect to remote server.\nStatus code: " + (int)response.StatusCode);
-            }
+            //    if (pairs["isSuccessful"])
+            //        return pairs["totalPrice"];
+            //    else
+            //        return -1;
+            //}
+            //else
+            //{
+            //    throw new Exception("Error: Could not connect to remote server.\nStatus code: " + (int)response.StatusCode);
+            //}
         }
 
         public static async Task<bool> DeleteBookingAsync(string ticketID)
