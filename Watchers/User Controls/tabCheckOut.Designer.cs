@@ -69,7 +69,7 @@
             this.lblTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(51)))));
             this.lblTotal.Location = new System.Drawing.Point(36, 476);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(223, 63);
+            this.lblTotal.Size = new System.Drawing.Size(445, 63);
             this.lblTotal.TabIndex = 60;
             this.lblTotal.Text = "Total: R";
             // 
@@ -140,6 +140,7 @@
             // 
             this.rbCard.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rbCard.AutoSize = true;
+            this.rbCard.Checked = true;
             this.rbCard.Location = new System.Drawing.Point(43, 38);
             this.rbCard.Margin = new System.Windows.Forms.Padding(4);
             this.rbCard.Name = "rbCard";
@@ -212,6 +213,7 @@
             this.btnPayNow.Text = "Check out";
             this.toolTip1.SetToolTip(this.btnPayNow, "Click here to check out");
             this.btnPayNow.UseVisualStyleBackColor = false;
+            this.btnPayNow.Click += new System.EventHandler(this.btnPayNow_Click);
             // 
             // pnlTitle
             // 
@@ -251,6 +253,7 @@
             this.btnCancelBooking.Text = "Cancel Booking";
             this.toolTip1.SetToolTip(this.btnCancelBooking, "Click here to go to previous page");
             this.btnCancelBooking.UseVisualStyleBackColor = false;
+            this.btnCancelBooking.Click += new System.EventHandler(this.btnCancelBooking_Click);
             // 
             // tabCheckOut
             // 

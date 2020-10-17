@@ -16,7 +16,7 @@ namespace Watchers
     public partial class tabBookings : UserControl
     {
 
-        private static tabBookings _instance;
+        public static tabBookings _instance;
         public static Movie movie;
         private BookingPost bookingModel;
         private List<SeatNumber> seatNumbers;
@@ -96,6 +96,7 @@ namespace Watchers
                 bookingModel.seatQuantity = seatQuantity;
 
                 MainMenu main = (MainMenu)this.FindForm();
+                main.btnSnacks.Visible = true;
                 main.BtnSnack_Click(sender, e, bookingModel);
             }
             else

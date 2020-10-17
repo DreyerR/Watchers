@@ -122,7 +122,7 @@
             this.panel1.Controls.Add(this.lblAccount);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1213, 90);
             this.panel1.TabIndex = 71;
@@ -906,7 +906,7 @@
             // 
             this.lvOutput.HideSelection = false;
             this.lvOutput.Location = new System.Drawing.Point(0, 1);
-            this.lvOutput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lvOutput.Margin = new System.Windows.Forms.Padding(4);
             this.lvOutput.Name = "lvOutput";
             this.lvOutput.Size = new System.Drawing.Size(596, 196);
             this.lvOutput.TabIndex = 99;
@@ -926,7 +926,7 @@
             this.btnClear.TabIndex = 98;
             this.btnClear.Text = "Clear Order";
             this.btnClear.UseVisualStyleBackColor = false;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click_1);
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // pnlSweets
             // 

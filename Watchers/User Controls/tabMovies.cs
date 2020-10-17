@@ -46,6 +46,7 @@ namespace Watchers
                 {
                     movie.MovieID = movieID;
                     MainMenu main = (MainMenu)this.FindForm();
+                    main.btnBookings.Visible = true;
                     main.BtnBooking_Click(sender, e, movie);
                     break;
                 }

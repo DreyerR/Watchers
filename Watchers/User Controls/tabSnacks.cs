@@ -38,11 +38,6 @@ namespace Watchers
             InitializeComponent();
         }
 
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-            lvOutput.Items.Clear();
-        }
-
         private void AddItem(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
@@ -72,6 +67,7 @@ namespace Watchers
                         }
                     }
                     lvOutput.Items.Add(String.Format(outputFormat, snack.Name, snack.Price.ToString("c"),  snack.Quantity.ToString(),  (snack.Price * snack.Quantity).ToString("c")));
+                    break;
                 }
             }
         }
@@ -330,20 +326,35 @@ namespace Watchers
                 return;
             }
 
+            btnPlaceOrder.Enabled = false;
+            btnPlaceOrder.Text = "Please wait...";
+
             booking.orders = orders;
-            decimal value = await Api.InsertBookingAsync(booking);
+            dynamic data = await Api.InsertBookingAsync(booking);
+
+            btnPlaceOrder.Text = "Place Order";
+
+            MainMenu menu = (MainMenu)this.FindForm();
+            menu.BtnCheckOut_Click(sender, e, data, booking);
+            menu.btnCheckOut.Visible = true;
         }
 
-        private void btnClear_Click_1(object sender, EventArgs e)
+        private async void btnSkipOrder_Click(object sender, EventArgs e)
+        {
+            orders.Clear();
+            booking.orders = orders;
+
+            dynamic data = await Api.InsertBookingAsync(booking);
+
+            MainMenu menu = (MainMenu)this.FindForm();
+            menu.BtnCheckOut_Click(sender, e, data, booking);
+            menu.btnCheckOut.Visible = true;
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
         {
             lvOutput.Items.Clear();
             orders.Clear();
-        }
-
-        private void btnSkipOrder_Click(object sender, EventArgs e)
-        {
-            orders.Clear();
-            booking.orders = orders;
         }
     }
 }

@@ -24,7 +24,24 @@ namespace Watchers
         {
             btnBookings.Click += (sender1, e1) => BtnBooking_Click(sender1, e1);
             btnSnacks.Click += (sender1, e1) => BtnSnack_Click(sender1, e1);
+            btnCheckOut.Click += (sender1, e1) => BtnCheckOut_Click(sender1, e1);
             btnMovies_Click(sender, e);
+        }
+
+        public void BtnCheckOut_Click(object sender1, EventArgs e1, dynamic bookingResponse = null, BookingPost booking = null)
+        {
+            if (!pnlBack.Controls.Contains(tabCheckOut.Instance))
+            {
+                pnlBack.Controls.Add(tabCheckOut.Instance);
+                tabCheckOut.Instance.Dock = DockStyle.Fill;
+                tabCheckOut.Instance.BringToFront();
+            }
+            else
+                tabCheckOut.Instance.BringToFront();
+
+            tabCheckOut.bookingResponse = bookingResponse;
+            tabCheckOut.booking = booking;
+            tabCheckOut.Instance.PopulateForm();
         }
 
         private void btnAdmin_Click(object sender, EventArgs e)
@@ -98,18 +115,6 @@ namespace Watchers
             else
                 tabSnacks.Instance.BringToFront();
             tabSnacks.booking = booking;
-        }
-
-        private void btnCheckOut_Click(object sender, EventArgs e)
-        {
-            if (!pnlBack.Controls.Contains(tabCheckOut.Instance))
-            {
-                pnlBack.Controls.Add(tabCheckOut.Instance);
-                tabCheckOut.Instance.Dock = DockStyle.Fill;
-                tabCheckOut.Instance.BringToFront();
-            }
-            else
-                tabCheckOut.Instance.BringToFront();
         }
     }
 }
