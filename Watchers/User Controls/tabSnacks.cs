@@ -31,6 +31,10 @@ namespace Watchers
                 }
                 return _instance;
             }
+            set
+            {
+                _instance = null;
+            }
         }
 
         public tabSnacks()
@@ -316,6 +320,8 @@ namespace Watchers
             snacks.Add(snack28);
             snacks.Add(snack29);
             snacks.Add(snack30);
+
+            tabCheckOut.snacks = snacks;
         }
 
         private async void btnPlaceOrder_Click(object sender, EventArgs e)

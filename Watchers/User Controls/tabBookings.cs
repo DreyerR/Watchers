@@ -16,12 +16,13 @@ namespace Watchers
     public partial class tabBookings : UserControl
     {
 
-        public static tabBookings _instance;
+        private static tabBookings _instance;
         public static Movie movie;
         private BookingPost bookingModel;
         private List<SeatNumber> seatNumbers;
         private Image available;
         private Image booked;
+        private Image unavailable;
 
         public static tabBookings Instance
         {
@@ -33,6 +34,10 @@ namespace Watchers
                 }
                 return _instance;
             }
+            set
+            {
+                _instance = null;
+            }
         }
 
         public tabBookings()
@@ -41,6 +46,7 @@ namespace Watchers
             dtpDate.MinDate = DateTime.Now;
             available = Resources.Available;
             booked = Resources.Booked;
+            unavailable = Resources.Unavailable;
             lblSeatNum.Text = "0";
         }
 
@@ -70,7 +76,7 @@ namespace Watchers
             {
                 seat.Image = available;
                 lblSeatNum.Text = (int.Parse(lblSeatNum.Text) - 1).ToString();
-                
+
                 for (int i = 0; i < seatNumbers.Count; i++)
                 {
                     if (seatNumbers[i].seatNumber == seat.Tag.ToString())
@@ -84,7 +90,7 @@ namespace Watchers
                 seat.Image = booked;
                 lblSeatNum.Text = (int.Parse(lblSeatNum.Text) + 1).ToString();
                 seatNumbers.Add(new SeatNumber { seatNumber = seat.Tag.ToString() });
-            } 
+            }
         }
 
         private void btnBook_Click(object sender, EventArgs e)

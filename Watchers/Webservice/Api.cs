@@ -51,6 +51,7 @@ namespace Watchers.Webservice
                     Properties.Settings.Default.Name = responseModel.Name;
                     Properties.Settings.Default.Surname = responseModel.Surname;
                     Properties.Settings.Default.Email = responseModel.Email;
+                    Properties.Settings.Default.IsAdmin = responseModel.IsAdmin;
                     Properties.Settings.Default.Save();
 
                     return true;

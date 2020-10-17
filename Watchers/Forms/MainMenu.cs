@@ -22,6 +22,12 @@ namespace Watchers
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
+            bool admin = Properties.Settings.Default.IsAdmin;
+            if (admin)
+                btnAdmin.Visible = true;
+            else
+                btnAdmin.Visible = false;
+
             btnBookings.Click += (sender1, e1) => BtnBooking_Click(sender1, e1);
             btnSnacks.Click += (sender1, e1) => BtnSnack_Click(sender1, e1);
             btnCheckOut.Click += (sender1, e1) => BtnCheckOut_Click(sender1, e1);
@@ -75,7 +81,7 @@ namespace Watchers
             //login.ShowDialog();
         }
 
-        private void btnMovies_Click(object sender, EventArgs e)
+        public void btnMovies_Click(object sender, EventArgs e)
         {
             if (!pnlBack.Controls.Contains(tabMovies.Instance))
             {
@@ -115,6 +121,11 @@ namespace Watchers
             else
                 tabSnacks.Instance.BringToFront();
             tabSnacks.booking = booking;
+        }
+
+        private void btnCheckOut_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

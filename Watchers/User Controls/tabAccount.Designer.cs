@@ -33,7 +33,6 @@
             this.lblName = new System.Windows.Forms.Label();
             this.lblAccount = new System.Windows.Forms.Label();
             this.tblLayoutAccount = new System.Windows.Forms.TableLayoutPanel();
-            this.btnDeleteBook = new System.Windows.Forms.Button();
             this.btnPersonalInfo = new System.Windows.Forms.Button();
             this.btnDeleteAcc = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -50,7 +49,7 @@
             this.lblManageAccount.Location = new System.Drawing.Point(2, 0);
             this.lblManageAccount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblManageAccount.Name = "lblManageAccount";
-            this.lblManageAccount.Size = new System.Drawing.Size(307, 51);
+            this.lblManageAccount.Size = new System.Drawing.Size(307, 75);
             this.lblManageAccount.TabIndex = 65;
             this.lblManageAccount.Text = "Manage Account";
             this.lblManageAccount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -60,7 +59,7 @@
             this.lblName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(51)))));
-            this.lblName.Location = new System.Drawing.Point(2, 52);
+            this.lblName.Location = new System.Drawing.Point(2, 88);
             this.lblName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(307, 50);
@@ -88,7 +87,6 @@
             this.tblLayoutAccount.ColumnCount = 1;
             this.tblLayoutAccount.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tblLayoutAccount.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tblLayoutAccount.Controls.Add(this.btnDeleteBook, 0, 4);
             this.tblLayoutAccount.Controls.Add(this.lblManageAccount, 0, 0);
             this.tblLayoutAccount.Controls.Add(this.lblName, 0, 1);
             this.tblLayoutAccount.Controls.Add(this.btnPersonalInfo, 0, 2);
@@ -96,33 +94,15 @@
             this.tblLayoutAccount.Location = new System.Drawing.Point(381, 169);
             this.tblLayoutAccount.Margin = new System.Windows.Forms.Padding(2);
             this.tblLayoutAccount.Name = "tblLayoutAccount";
-            this.tblLayoutAccount.RowCount = 5;
+            this.tblLayoutAccount.RowCount = 4;
             this.tblLayoutAccount.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.35065F));
             this.tblLayoutAccount.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.64935F));
             this.tblLayoutAccount.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 52F));
             this.tblLayoutAccount.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 51F));
-            this.tblLayoutAccount.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 47F));
             this.tblLayoutAccount.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tblLayoutAccount.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41F));
             this.tblLayoutAccount.Size = new System.Drawing.Size(311, 255);
             this.tblLayoutAccount.TabIndex = 69;
-            // 
-            // btnDeleteBook
-            // 
-            this.btnDeleteBook.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnDeleteBook.BackColor = System.Drawing.Color.Transparent;
-            this.btnDeleteBook.BackgroundImage = global::Watchers.Properties.Resources.ButtonLight;
-            this.btnDeleteBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeleteBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.btnDeleteBook.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteBook.Location = new System.Drawing.Point(42, 209);
-            this.btnDeleteBook.Margin = new System.Windows.Forms.Padding(2);
-            this.btnDeleteBook.Name = "btnDeleteBook";
-            this.btnDeleteBook.Size = new System.Drawing.Size(226, 39);
-            this.btnDeleteBook.TabIndex = 87;
-            this.btnDeleteBook.Text = "Delete My Booking";
-            this.toolTip1.SetToolTip(this.btnDeleteBook, "Click here to delete a booking you have already made");
-            this.btnDeleteBook.UseVisualStyleBackColor = false;
             // 
             // btnPersonalInfo
             // 
@@ -132,7 +112,7 @@
             this.btnPersonalInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPersonalInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.btnPersonalInfo.ForeColor = System.Drawing.Color.White;
-            this.btnPersonalInfo.Location = new System.Drawing.Point(39, 106);
+            this.btnPersonalInfo.Location = new System.Drawing.Point(39, 153);
             this.btnPersonalInfo.Margin = new System.Windows.Forms.Padding(2);
             this.btnPersonalInfo.Name = "btnPersonalInfo";
             this.btnPersonalInfo.Size = new System.Drawing.Size(232, 42);
@@ -150,7 +130,7 @@
             this.btnDeleteAcc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeleteAcc.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.btnDeleteAcc.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteAcc.Location = new System.Drawing.Point(40, 158);
+            this.btnDeleteAcc.Location = new System.Drawing.Point(40, 205);
             this.btnDeleteAcc.Margin = new System.Windows.Forms.Padding(2);
             this.btnDeleteAcc.Name = "btnDeleteAcc";
             this.btnDeleteAcc.Size = new System.Drawing.Size(230, 44);
@@ -197,6 +177,5 @@
         private System.Windows.Forms.Button btnDeleteAcc;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.Button btnDeleteBook;
     }
 }

@@ -28,6 +28,10 @@ namespace Watchers
                 }
                 return _instance;
             }
+            set
+            {
+                _instance = null;
+            }
         }
 
         public tabMovies()

@@ -53,9 +53,9 @@
             this.pnlBack.Controls.Add(this.pnlMenuBar);
             this.pnlBack.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlBack.Location = new System.Drawing.Point(0, 0);
-            this.pnlBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlBack.Name = "pnlBack";
-            this.pnlBack.Size = new System.Drawing.Size(1924, 846);
+            this.pnlBack.Size = new System.Drawing.Size(1443, 687);
             this.pnlBack.TabIndex = 35;
             // 
             // pnlMenuBar
@@ -72,9 +72,9 @@
             this.pnlMenuBar.Controls.Add(this.btnAdmin);
             this.pnlMenuBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenuBar.Location = new System.Drawing.Point(0, 0);
-            this.pnlMenuBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlMenuBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlMenuBar.Name = "pnlMenuBar";
-            this.pnlMenuBar.Size = new System.Drawing.Size(253, 846);
+            this.pnlMenuBar.Size = new System.Drawing.Size(190, 687);
             this.pnlMenuBar.TabIndex = 0;
             // 
             // btnCheckOut
@@ -83,16 +83,17 @@
             this.btnCheckOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCheckOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnCheckOut.ForeColor = System.Drawing.Color.White;
-            this.btnCheckOut.Location = new System.Drawing.Point(1, 295);
-            this.btnCheckOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCheckOut.Location = new System.Drawing.Point(1, 240);
+            this.btnCheckOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCheckOut.Name = "btnCheckOut";
-            this.btnCheckOut.Size = new System.Drawing.Size(251, 42);
+            this.btnCheckOut.Size = new System.Drawing.Size(188, 34);
             this.btnCheckOut.TabIndex = 6;
             this.btnCheckOut.Tag = "3";
             this.btnCheckOut.Text = "Check Out";
             this.toolTip1.SetToolTip(this.btnCheckOut, "Click here to checkout and pay");
             this.btnCheckOut.UseVisualStyleBackColor = true;
             this.btnCheckOut.Visible = false;
+            this.btnCheckOut.Click += new System.EventHandler(this.btnCheckOut_Click);
             // 
             // btnSnacks
             // 
@@ -100,10 +101,10 @@
             this.btnSnacks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSnacks.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnSnacks.ForeColor = System.Drawing.Color.White;
-            this.btnSnacks.Location = new System.Drawing.Point(1, 249);
-            this.btnSnacks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSnacks.Location = new System.Drawing.Point(1, 202);
+            this.btnSnacks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSnacks.Name = "btnSnacks";
-            this.btnSnacks.Size = new System.Drawing.Size(251, 42);
+            this.btnSnacks.Size = new System.Drawing.Size(188, 34);
             this.btnSnacks.TabIndex = 5;
             this.btnSnacks.Tag = "2";
             this.btnSnacks.Text = "Snacks";
@@ -117,10 +118,10 @@
             this.btnBookings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBookings.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnBookings.ForeColor = System.Drawing.Color.White;
-            this.btnBookings.Location = new System.Drawing.Point(1, 201);
-            this.btnBookings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBookings.Location = new System.Drawing.Point(1, 163);
+            this.btnBookings.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBookings.Name = "btnBookings";
-            this.btnBookings.Size = new System.Drawing.Size(251, 42);
+            this.btnBookings.Size = new System.Drawing.Size(188, 34);
             this.btnBookings.TabIndex = 4;
             this.btnBookings.Tag = "1";
             this.btnBookings.Text = "Bookings";
@@ -134,10 +135,10 @@
             this.btnMovies.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMovies.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnMovies.ForeColor = System.Drawing.Color.White;
-            this.btnMovies.Location = new System.Drawing.Point(3, 153);
-            this.btnMovies.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMovies.Location = new System.Drawing.Point(2, 124);
+            this.btnMovies.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMovies.Name = "btnMovies";
-            this.btnMovies.Size = new System.Drawing.Size(251, 42);
+            this.btnMovies.Size = new System.Drawing.Size(188, 34);
             this.btnMovies.TabIndex = 3;
             this.btnMovies.Tag = "0";
             this.btnMovies.Text = "Movies";
@@ -148,10 +149,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Watchers.Properties.Resources.Watchers2;
-            this.pictureBox1.Location = new System.Drawing.Point(19, 14);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(14, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(209, 97);
+            this.pictureBox1.Size = new System.Drawing.Size(157, 79);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -163,10 +164,10 @@
             this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnLogOut.ForeColor = System.Drawing.Color.White;
-            this.btnLogOut.Location = new System.Drawing.Point(0, 790);
-            this.btnLogOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLogOut.Location = new System.Drawing.Point(0, 642);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(251, 42);
+            this.btnLogOut.Size = new System.Drawing.Size(188, 34);
             this.btnLogOut.TabIndex = 2;
             this.btnLogOut.Text = "Log Out";
             this.toolTip1.SetToolTip(this.btnLogOut, "Click here to logout of the watchers system");
@@ -180,10 +181,10 @@
             this.btnAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnAccount.ForeColor = System.Drawing.Color.White;
-            this.btnAccount.Location = new System.Drawing.Point(3, 743);
-            this.btnAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAccount.Location = new System.Drawing.Point(2, 604);
+            this.btnAccount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAccount.Name = "btnAccount";
-            this.btnAccount.Size = new System.Drawing.Size(251, 42);
+            this.btnAccount.Size = new System.Drawing.Size(188, 34);
             this.btnAccount.TabIndex = 1;
             this.btnAccount.Tag = "4";
             this.btnAccount.Text = "Account";
@@ -198,10 +199,10 @@
             this.btnAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnAdmin.ForeColor = System.Drawing.Color.White;
-            this.btnAdmin.Location = new System.Drawing.Point(1, 698);
-            this.btnAdmin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAdmin.Location = new System.Drawing.Point(1, 567);
+            this.btnAdmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Size = new System.Drawing.Size(251, 42);
+            this.btnAdmin.Size = new System.Drawing.Size(188, 34);
             this.btnAdmin.TabIndex = 0;
             this.btnAdmin.Tag = "5";
             this.btnAdmin.Text = "Admin";
@@ -211,14 +212,14 @@
             // 
             // MainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(1924, 846);
+            this.ClientSize = new System.Drawing.Size(1443, 687);
             this.Controls.Add(this.pnlBack);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Watchers";
