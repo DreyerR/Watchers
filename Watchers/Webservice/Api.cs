@@ -281,7 +281,7 @@ namespace Watchers.Webservice
             dt.Columns.Add("Ticket ID");
             dt.Columns.Add("Snack name");
             dt.Columns.Add("Snack quantity");
-            dt.Columns.Add("Snack price");
+            //dt.Columns.Add("Snack price");
             dt.Columns.Add("First name");
             dt.Columns.Add("Last name");
             dt.Columns.Add("Email");
@@ -293,10 +293,10 @@ namespace Watchers.Webservice
                 dr[1] = order.TicketID;
                 dr[2] = order.ProductName;
                 dr[3] = order.SnackQuantity;
-                dr[4] = order.ProductPrice.ToString("C");
-                dr[5] = order.FirstName;
-                dr[6] = order.LastName;
-                dr[7] = order.Email;
+                //dr[4] = order.ProductPrice.ToString("C");
+                dr[4] = order.FirstName;
+                dr[5] = order.LastName;
+                dr[6] = order.Email;
                 dt.Rows.Add(dr);
             }
 

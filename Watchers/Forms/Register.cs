@@ -90,10 +90,12 @@ namespace Watchers
             if(mode == Mode.Register)
             {
                 RegisterMethod();
+                btnRegister.Enabled = false;
             }
             else
             {
                 UpdateMethod();
+                btnRegister.Enabled = false;
                 Properties.Settings.Default.Surname = txtSurname.Text;
                 Properties.Settings.Default.Name = txtName.Text;
                 Properties.Settings.Default.Email = txtEmail.Text;

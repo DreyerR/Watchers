@@ -27,6 +27,10 @@ namespace Watchers
                 }
                 return _instance;
             }
+            set
+            {
+                _instance = null;
+            }
         }
 
         public tabAdmin()
@@ -149,10 +153,10 @@ namespace Watchers
                     dgvReport.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
                     dgvReport.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
                     dgvReport.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+                    //dgvReport.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
                     dgvReport.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
                     dgvReport.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
                     dgvReport.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-                    dgvReport.Columns[7].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
                     lblCategory.Text = "Choose a report:";
                     cbbCategory.Enabled = true;

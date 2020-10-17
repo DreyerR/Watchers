@@ -47,8 +47,10 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.btnCancelBooking = new System.Windows.Forms.Button();
             this.lblOrderTotal = new System.Windows.Forms.Label();
+            this.checkOut_error = new System.Windows.Forms.ErrorProvider(this.components);
             this.gbPayment.SuspendLayout();
             this.pnlTitle.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkOut_error)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCheckoutBTN
@@ -165,7 +167,7 @@
             this.lbOrderSummary.FormattingEnabled = true;
             this.lbOrderSummary.ItemHeight = 20;
             this.lbOrderSummary.Location = new System.Drawing.Point(428, 134);
-            this.lbOrderSummary.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lbOrderSummary.Margin = new System.Windows.Forms.Padding(2);
             this.lbOrderSummary.Name = "lbOrderSummary";
             this.lbOrderSummary.Size = new System.Drawing.Size(335, 204);
             this.lbOrderSummary.TabIndex = 57;
@@ -191,7 +193,7 @@
             this.lbBookSum.FormattingEnabled = true;
             this.lbBookSum.ItemHeight = 20;
             this.lbBookSum.Location = new System.Drawing.Point(27, 134);
-            this.lbBookSum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lbBookSum.Margin = new System.Windows.Forms.Padding(2);
             this.lbBookSum.Name = "lbBookSum";
             this.lbBookSum.Size = new System.Drawing.Size(335, 204);
             this.lbBookSum.TabIndex = 55;
@@ -206,7 +208,7 @@
             this.btnPayNow.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.btnPayNow.ForeColor = System.Drawing.Color.White;
             this.btnPayNow.Location = new System.Drawing.Point(584, 575);
-            this.btnPayNow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPayNow.Margin = new System.Windows.Forms.Padding(2);
             this.btnPayNow.Name = "btnPayNow";
             this.btnPayNow.Size = new System.Drawing.Size(202, 44);
             this.btnPayNow.TabIndex = 61;
@@ -227,16 +229,17 @@
             // 
             // lblAccount
             // 
-            this.lblAccount.AutoSize = true;
             this.lblAccount.BackColor = System.Drawing.Color.Transparent;
+            this.lblAccount.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAccount.ForeColor = System.Drawing.Color.White;
-            this.lblAccount.Location = new System.Drawing.Point(4, 14);
+            this.lblAccount.Location = new System.Drawing.Point(0, 0);
             this.lblAccount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAccount.Name = "lblAccount";
-            this.lblAccount.Size = new System.Drawing.Size(167, 46);
+            this.lblAccount.Size = new System.Drawing.Size(800, 76);
             this.lblAccount.TabIndex = 62;
-            this.lblAccount.Text = "Account";
+            this.lblAccount.Text = "SEE BOOKING DETAILS BELOW...";
+            this.lblAccount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnCancelBooking
             // 
@@ -247,7 +250,7 @@
             this.btnCancelBooking.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.btnCancelBooking.ForeColor = System.Drawing.Color.White;
             this.btnCancelBooking.Location = new System.Drawing.Point(377, 575);
-            this.btnCancelBooking.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancelBooking.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelBooking.Name = "btnCancelBooking";
             this.btnCancelBooking.Size = new System.Drawing.Size(202, 44);
             this.btnCancelBooking.TabIndex = 62;
@@ -269,6 +272,11 @@
             this.lblOrderTotal.Text = "Total: R";
             this.lblOrderTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // checkOut_error
+            // 
+            this.checkOut_error.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.AlwaysBlink;
+            this.checkOut_error.ContainerControl = this;
+            // 
             // tabCheckOut
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -283,13 +291,13 @@
             this.Controls.Add(this.lbOrderSummary);
             this.Controls.Add(this.lblBookSum);
             this.Controls.Add(this.lbBookSum);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "tabCheckOut";
             this.Size = new System.Drawing.Size(800, 678);
             this.gbPayment.ResumeLayout(false);
             this.gbPayment.PerformLayout();
             this.pnlTitle.ResumeLayout(false);
-            this.pnlTitle.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkOut_error)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -314,5 +322,6 @@
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Button btnCancelBooking;
         private System.Windows.Forms.Label lblOrderTotal;
+        private System.Windows.Forms.ErrorProvider checkOut_error;
     }
 }

@@ -25,5 +25,6 @@ namespace Watchers.Models.Post_Models
     {
         public string snackBarcode { get; set; }
         public int quantity { get; set; }
+        public string name { get; set; }
     }
 }

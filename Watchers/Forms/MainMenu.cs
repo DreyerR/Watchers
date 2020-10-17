@@ -76,9 +76,15 @@ namespace Watchers
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            //frmLogin login = new frmLogin();
+            tabMovies.Instance = null;
+            tabBookings.Instance = null;
+            tabSnacks.Instance = null;
+            tabCheckOut.Instance = null;
+            if(btnAdmin.Visible)
+            {
+                tabAdmin.Instance = null;
+            }
             this.Close();
-            //login.ShowDialog();
         }
 
         public void btnMovies_Click(object sender, EventArgs e)
@@ -121,11 +127,6 @@ namespace Watchers
             else
                 tabSnacks.Instance.BringToFront();
             tabSnacks.booking = booking;
-        }
-
-        private void btnCheckOut_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

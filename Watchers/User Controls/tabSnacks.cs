@@ -19,7 +19,6 @@ namespace Watchers
         public static BookingPost booking;
         private List<Snack> snacks = new List<Snack>();
         private List<Orders> orders = new List<Orders>();
-        string outputFormat = "{0, -30}{1, -40}{2, -45}{3, -50}";
 
         public static tabSnacks Instance
         {
@@ -70,7 +69,11 @@ namespace Watchers
                             }
                         }
                     }
-                    lvOutput.Items.Add(String.Format(outputFormat, snack.Name, snack.Price.ToString("c"),  snack.Quantity.ToString(),  (snack.Price * snack.Quantity).ToString("c")));
+                    ListViewItem item = new ListViewItem(snack.Name);
+                    item.SubItems.Add(snack.Price.ToString("c"));
+                    item.SubItems.Add(snack.Quantity.ToString());
+                    item.SubItems.Add((snack.Price * snack.Quantity).ToString("c"));
+                    lbOutput.Items.Add(item);
                     break;
                 }
             }
@@ -78,8 +81,7 @@ namespace Watchers
 
         private void tabSnacks_Load(object sender, EventArgs e)
         {
-            lvOutput.Items.Clear();
-            lvOutput.Items.Add(String.Format(outputFormat, "Product Name", "Product Price(R)", "Quantity", "Total(R)"));
+            lbOutput.Items.Clear();
             Snack snack1 = new Snack
             {
                 Barcode = "OP9874",
@@ -326,41 +328,71 @@ namespace Watchers
 
         private async void btnPlaceOrder_Click(object sender, EventArgs e)
         {
-            if (orders.Count == 0)
+            try
             {
-                Message.ShowMessage("No snacks were chosen\nPlease click on 'Skip Order' instead.", Message.MessageType.Warning);
-                return;
+                if (orders.Count == 0)
+                {
+                    Message.ShowMessage("No snacks were chosen\nPlease click on 'Skip Order' instead.", Message.MessageType.Warning);
+                    return;
+                }
+
+                btnPlaceOrder.Enabled = false;
+                btnPlaceOrder.Text = "Please wait...";
+                btnPlaceOrder.Enabled = true;
+
+                booking.orders = orders;
+                dynamic data = await Api.InsertBookingAsync(booking);
+
+                btnPlaceOrder.Text = "Place Order";
+
+                MainMenu menu = (MainMenu)this.FindForm();
+                menu.BtnCheckOut_Click(sender, e, data, booking);
+                menu.btnCheckOut.Visible = true;
             }
-
-            btnPlaceOrder.Enabled = false;
-            btnPlaceOrder.Text = "Please wait...";
-
-            booking.orders = orders;
-            dynamic data = await Api.InsertBookingAsync(booking);
-
-            btnPlaceOrder.Text = "Place Order";
-
-            MainMenu menu = (MainMenu)this.FindForm();
-            menu.BtnCheckOut_Click(sender, e, data, booking);
-            menu.btnCheckOut.Visible = true;
+            catch(Exception error)
+            {
+                Message.ShowMessage(error.Message, Message.MessageType.Error);
+            }
         }
 
         private async void btnSkipOrder_Click(object sender, EventArgs e)
         {
-            orders.Clear();
-            booking.orders = orders;
+            try
+            {
+                orders.Clear();
+                booking.orders = orders;
 
-            dynamic data = await Api.InsertBookingAsync(booking);
+                dynamic data = await Api.InsertBookingAsync(booking);
 
-            MainMenu menu = (MainMenu)this.FindForm();
-            menu.BtnCheckOut_Click(sender, e, data, booking);
-            menu.btnCheckOut.Visible = true;
+                MainMenu menu = (MainMenu)this.FindForm();
+                menu.BtnCheckOut_Click(sender, e, data, booking);
+                menu.btnCheckOut.Visible = true;
+            }
+            catch(Exception error)
+            {
+                Message.ShowMessage(error.Message, Message.MessageType.Error);
+            }
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            lvOutput.Items.Clear();
+            lbOutput.Items.Clear();
             orders.Clear();
+        }
+
+        private void lbOutput_DoubleClick(object sender, EventArgs e)
+        {
+            foreach(ListViewItem item in lbOutput.SelectedItems)
+            {
+                lbOutput.Items.Remove(item);
+                for (int i = 0; i < snacks.Count; i++)
+                {
+                    if (snacks[i].Name == lbOutput.SelectedIndices.ToString())
+                    {
+                        snacks.RemoveAt(i);
+                    }
+                }
+            }
         }
     }
 }

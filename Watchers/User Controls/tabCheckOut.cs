@@ -35,6 +35,10 @@ namespace Watchers
                 }
                 return _instance;
             }
+            set
+            {
+                _instance = null;
+            }
         }
 
         public void PopulateForm()
@@ -99,8 +103,28 @@ namespace Watchers
 
         private void btnPayNow_Click(object sender, EventArgs e)
         {
-            Message.ShowMessage("Your payment was successful", Message.MessageType.Information);
-            ResetApplication(sender, e);
+            try
+            {
+                if(txtCardNum.Text.Length != 16)
+                {
+                    checkOut_error.SetError(txtCardNum, "Enter valid card number");
+                    if(txtCVV.Text.Length != 3)
+                    {
+                        checkOut_error.SetError(txtCardNum, "Enter valid CVV number");
+                        if(!txtExpDate.Text.Contains("/"))
+                        {
+                            checkOut_error.SetError(txtCardNum, "Enter valid expiration date (MM/YY)");
+                        }
+                    }
+                }else
+                {
+                    Message.ShowMessage("Your payment was successful", Message.MessageType.Information);
+                    ResetApplication(sender, e);
+                }
+            }catch(Exception error)
+            {
+                Message.ShowMessage(error.Message, Message.MessageType.Error);
+            }
         }
     }
 }
