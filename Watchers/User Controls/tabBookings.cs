@@ -22,7 +22,6 @@ namespace Watchers
         private List<SeatNumber> seatNumbers;
         private Image available;
         private Image booked;
-        private Image unavailable;
 
         public static tabBookings Instance
         {
@@ -46,8 +45,8 @@ namespace Watchers
             dtpDate.MinDate = DateTime.Now;
             available = Resources.Available;
             booked = Resources.Booked;
-            unavailable = Resources.Unavailable;
             lblSeatNum.Text = "0";
+            cbbTime.SelectedIndex = 0;
         }
 
         public void PopulateForm()
@@ -95,6 +94,7 @@ namespace Watchers
 
         private void btnBook_Click(object sender, EventArgs e)
         {
+            bookingModel.time = dtpDate.Value.ToString("yyyy-MM-dd") + " " + cbbTime.SelectedItem.ToString();
             int seatQuantity = int.Parse(lblSeatNum.Text);
             if (seatQuantity > 0)
             {

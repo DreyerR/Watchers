@@ -91,7 +91,7 @@
             this.lblAccount.Name = "lblAccount";
             this.lblAccount.Size = new System.Drawing.Size(878, 76);
             this.lblAccount.TabIndex = 62;
-            this.lblAccount.Text = "MOVIES NOW SHOWING...";
+            this.lblAccount.Text = "Now Showing";
             this.lblAccount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel1
@@ -128,7 +128,7 @@
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(51)))));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 76);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 7;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -151,7 +151,7 @@
             this.btnBookM6.ForeColor = System.Drawing.Color.White;
             this.btnBookM6.Image = ((System.Drawing.Image)(resources.GetObject("btnBookM6.Image")));
             this.btnBookM6.Location = new System.Drawing.Point(224, 604);
-            this.btnBookM6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBookM6.Margin = new System.Windows.Forms.Padding(2);
             this.btnBookM6.Name = "btnBookM6";
             this.btnBookM6.Size = new System.Drawing.Size(202, 44);
             this.btnBookM6.TabIndex = 100;
@@ -170,7 +170,7 @@
             this.btnBookM5.ForeColor = System.Drawing.Color.White;
             this.btnBookM5.Image = ((System.Drawing.Image)(resources.GetObject("btnBookM5.Image")));
             this.btnBookM5.Location = new System.Drawing.Point(6, 604);
-            this.btnBookM5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBookM5.Margin = new System.Windows.Forms.Padding(2);
             this.btnBookM5.Name = "btnBookM5";
             this.btnBookM5.Size = new System.Drawing.Size(202, 44);
             this.btnBookM5.TabIndex = 99;
@@ -189,7 +189,7 @@
             this.btnBookM8.ForeColor = System.Drawing.Color.White;
             this.btnBookM8.Image = ((System.Drawing.Image)(resources.GetObject("btnBookM8.Image")));
             this.btnBookM8.Location = new System.Drawing.Point(666, 604);
-            this.btnBookM8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBookM8.Margin = new System.Windows.Forms.Padding(2);
             this.btnBookM8.Name = "btnBookM8";
             this.btnBookM8.Size = new System.Drawing.Size(202, 44);
             this.btnBookM8.TabIndex = 98;
@@ -208,7 +208,7 @@
             this.btnBookM7.ForeColor = System.Drawing.Color.White;
             this.btnBookM7.Image = ((System.Drawing.Image)(resources.GetObject("btnBookM7.Image")));
             this.btnBookM7.Location = new System.Drawing.Point(445, 604);
-            this.btnBookM7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBookM7.Margin = new System.Windows.Forms.Padding(2);
             this.btnBookM7.Name = "btnBookM7";
             this.btnBookM7.Size = new System.Drawing.Size(202, 44);
             this.btnBookM7.TabIndex = 97;
@@ -419,7 +419,7 @@
             this.btnBookM1.ForeColor = System.Drawing.Color.White;
             this.btnBookM1.Image = global::Watchers.Properties.Resources.ButtonGrad;
             this.btnBookM1.Location = new System.Drawing.Point(6, 265);
-            this.btnBookM1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBookM1.Margin = new System.Windows.Forms.Padding(2);
             this.btnBookM1.Name = "btnBookM1";
             this.btnBookM1.Size = new System.Drawing.Size(202, 44);
             this.btnBookM1.TabIndex = 93;
@@ -438,7 +438,7 @@
             this.btnBookM2.ForeColor = System.Drawing.Color.White;
             this.btnBookM2.Image = ((System.Drawing.Image)(resources.GetObject("btnBookM2.Image")));
             this.btnBookM2.Location = new System.Drawing.Point(224, 265);
-            this.btnBookM2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBookM2.Margin = new System.Windows.Forms.Padding(2);
             this.btnBookM2.Name = "btnBookM2";
             this.btnBookM2.Size = new System.Drawing.Size(202, 44);
             this.btnBookM2.TabIndex = 94;
@@ -457,7 +457,7 @@
             this.btnBookM3.ForeColor = System.Drawing.Color.White;
             this.btnBookM3.Image = ((System.Drawing.Image)(resources.GetObject("btnBookM3.Image")));
             this.btnBookM3.Location = new System.Drawing.Point(445, 265);
-            this.btnBookM3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBookM3.Margin = new System.Windows.Forms.Padding(2);
             this.btnBookM3.Name = "btnBookM3";
             this.btnBookM3.Size = new System.Drawing.Size(202, 44);
             this.btnBookM3.TabIndex = 95;
@@ -476,7 +476,7 @@
             this.btnBookM4.ForeColor = System.Drawing.Color.White;
             this.btnBookM4.Image = ((System.Drawing.Image)(resources.GetObject("btnBookM4.Image")));
             this.btnBookM4.Location = new System.Drawing.Point(666, 265);
-            this.btnBookM4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBookM4.Margin = new System.Windows.Forms.Padding(2);
             this.btnBookM4.Name = "btnBookM4";
             this.btnBookM4.Size = new System.Drawing.Size(202, 44);
             this.btnBookM4.TabIndex = 96;
@@ -493,7 +493,7 @@
             this.AutoScroll = true;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.pnlTitle);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "tabMovies";
             this.Size = new System.Drawing.Size(878, 743);
             this.pnlTitle.ResumeLayout(false);

@@ -73,7 +73,8 @@ namespace Watchers
                     item.SubItems.Add(snack.Price.ToString("c"));
                     item.SubItems.Add(snack.Quantity.ToString());
                     item.SubItems.Add((snack.Price * snack.Quantity).ToString("c"));
-                    lbOutput.Items.Add(item);
+                    lvOutput.Items.Add(item);
+                    tabCheckOut.Instance.AddOrderItem(snack);
                     break;
                 }
             }
@@ -81,7 +82,7 @@ namespace Watchers
 
         private void tabSnacks_Load(object sender, EventArgs e)
         {
-            lbOutput.Items.Clear();
+            lvOutput.Items.Clear();
             Snack snack1 = new Snack
             {
                 Barcode = "OP9874",
@@ -361,6 +362,7 @@ namespace Watchers
             {
                 orders.Clear();
                 booking.orders = orders;
+                tabCheckOut.Instance.ClearOrders();
 
                 dynamic data = await Api.InsertBookingAsync(booking);
 
@@ -376,18 +378,18 @@ namespace Watchers
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            lbOutput.Items.Clear();
+            lvOutput.Items.Clear();
             orders.Clear();
         }
 
         private void lbOutput_DoubleClick(object sender, EventArgs e)
         {
-            foreach(ListViewItem item in lbOutput.SelectedItems)
+            foreach(ListViewItem item in lvOutput.SelectedItems)
             {
-                lbOutput.Items.Remove(item);
+                lvOutput.Items.Remove(item);
                 for (int i = 0; i < snacks.Count; i++)
                 {
-                    if (snacks[i].Name == lbOutput.SelectedIndices.ToString())
+                    if (snacks[i].Name == lvOutput.SelectedIndices.ToString())
                     {
                         snacks.RemoveAt(i);
                     }

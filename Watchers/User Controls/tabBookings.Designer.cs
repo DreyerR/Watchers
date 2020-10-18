@@ -1305,7 +1305,7 @@
             this.lblBooking.Name = "lblBooking";
             this.lblBooking.Size = new System.Drawing.Size(1181, 76);
             this.lblBooking.TabIndex = 64;
-            this.lblBooking.Text = "BOOKING DETAILS BELOW...";
+            this.lblBooking.Text = "Booking Details";
             this.lblBooking.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dtpDate

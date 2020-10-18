@@ -12,6 +12,7 @@ namespace Watchers.Models.Post_Models
         public string movieID { get; set; }
         public int userID { get; set; }
         public int seatQuantity { get; set; }
+        public string time { get; set; }
         public List<SeatNumber> seatNumbers { get; set; }
         public List<Orders> orders { get; set; }
     }

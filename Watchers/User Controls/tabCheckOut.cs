@@ -17,7 +17,8 @@ namespace Watchers
     {
         private static tabCheckOut _instance;
         public static List<Snack> snacks = new List<Snack>();
-        public static dynamic bookingResponse;
+        public static string movieName; // Used for booking summary
+        public static dynamic bookingResponse; // Contains the ticketID and total price of the booking (received from server).
         public static BookingPost booking;
 
         public tabCheckOut()
@@ -41,25 +42,58 @@ namespace Watchers
             }
         }
 
+        public void AddOrderItem(Snack snack)
+        {
+            ListViewItem item = new ListViewItem(snack.Name);
+            item.SubItems.Add(snack.Price.ToString("c"));
+            item.SubItems.Add(snack.Quantity.ToString());
+            item.SubItems.Add((snack.Price * snack.Quantity).ToString("c"));
+            lvOrderSummary.Items.Add(item);
+        }
+
+        public void ClearOrders()
+        {
+            lvOrderSummary.Items.Clear();
+            lvOrderSummary.Items.Add("No snacks in cart");
+        }
+
         public void PopulateForm()
         {
-            decimal total_price = 0.0m;
             if (bookingResponse != null)
             {
+                lbBookSum.Items.Add("Movie name: " + movieName);
+                lbBookSum.Items.Add("Seat quantity: " + booking.seatQuantity.ToString());
+                lbBookSum.Items.Add("Seat number(s): " + SeatNumToString());
+                lbBookSum.Items.Add("Booking time: " + booking.time);
+
+                decimal total_price = 0.0m;
                 lblTotal.Text = "Total " + bookingResponse["totalPrice"].ToString("C");
-                foreach(Orders order in booking.orders)
+                foreach (Orders order in booking.orders)
                 {
-                    foreach(Snack snack in snacks)
+                    foreach (Snack snack in snacks)
                     {
-                        if(snack.Barcode == order.snackBarcode)
+                        if (snack.Barcode == order.snackBarcode)
                         {
-                            lbOrderSummary.Items.Add(snack.Name + "\t x " + snack.Quantity + "\t" + snack.Price.ToString("c"));
-                            total_price += snack.Price * snack.Quantity;
+                            total_price += snack.Price * order.quantity;
                         }
                     }
                 }
                 lblOrderTotal.Text = "Orders Total: " + total_price.ToString("c");
             }
+        }
+
+        private string SeatNumToString()
+        {
+            string seatNumbers = "";
+            int length = booking.seatNumbers.Count;
+            for (int i = 0; i < length; i++)
+            {
+                seatNumbers += booking.seatNumbers[i].seatNumber;
+                if (i < length - 1)
+                    seatNumbers += ", ";
+            }
+
+            return seatNumbers;
         }
 
         private async void btnCancelBooking_Click(object sender, EventArgs e)
@@ -73,7 +107,7 @@ namespace Watchers
                     if (isSuccessful)
                     {
                         Message.ShowMessage("Your booking was successfully canceled", Message.MessageType.Information);
-                        ResetApplication(sender, e);
+                        Reset(sender, e);
                     }
                 }
             }
@@ -83,22 +117,11 @@ namespace Watchers
             }
         }
 
-        private void ResetApplication(object sender, EventArgs e)
+        public void Reset(object sender, EventArgs e)
         {
             MainMenu menu = (MainMenu)this.FindForm();
-            tabMovies.Instance = null;
-            tabBookings.Instance = null;
-            tabSnacks.Instance = null;
-
-            menu.btnBookings.Visible = false;
-            menu.btnSnacks.Visible = false;
-            menu.btnCheckOut.Visible = false;
-
-            lblOrderTotal.Text = "";
-            lblTotal.Text = "";
-
             menu.btnMovies_Click(sender, e);
-            _instance = null;
+            tabMovies.Instance.ResetApplication();
         }
 
         private void btnPayNow_Click(object sender, EventArgs e)
@@ -119,7 +142,7 @@ namespace Watchers
                 }else
                 {
                     Message.ShowMessage("Your payment was successful", Message.MessageType.Information);
-                    ResetApplication(sender, e);
+                    Reset(sender, e);
                 }
             }catch(Exception error)
             {

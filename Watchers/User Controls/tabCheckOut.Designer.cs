@@ -38,7 +38,6 @@
             this.rbCash = new System.Windows.Forms.RadioButton();
             this.rbCard = new System.Windows.Forms.RadioButton();
             this.lblOrderSummary = new System.Windows.Forms.Label();
-            this.lbOrderSummary = new System.Windows.Forms.ListBox();
             this.lblBookSum = new System.Windows.Forms.Label();
             this.lbBookSum = new System.Windows.Forms.ListBox();
             this.btnPayNow = new System.Windows.Forms.Button();
@@ -46,6 +45,10 @@
             this.lblAccount = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.btnCancelBooking = new System.Windows.Forms.Button();
+            this.lvOrderSummary = new System.Windows.Forms.ListView();
+            this.Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Price = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Quantity = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lblOrderTotal = new System.Windows.Forms.Label();
             this.checkOut_error = new System.Windows.Forms.ErrorProvider(this.components);
             this.gbPayment.SuspendLayout();
@@ -159,20 +162,6 @@
             this.lblOrderSummary.TabIndex = 58;
             this.lblOrderSummary.Text = "Order Summary";
             // 
-            // lbOrderSummary
-            // 
-            this.lbOrderSummary.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lbOrderSummary.BackColor = System.Drawing.Color.LightGray;
-            this.lbOrderSummary.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbOrderSummary.FormattingEnabled = true;
-            this.lbOrderSummary.ItemHeight = 20;
-            this.lbOrderSummary.Location = new System.Drawing.Point(428, 134);
-            this.lbOrderSummary.Margin = new System.Windows.Forms.Padding(2);
-            this.lbOrderSummary.Name = "lbOrderSummary";
-            this.lbOrderSummary.Size = new System.Drawing.Size(335, 204);
-            this.lbOrderSummary.TabIndex = 57;
-            this.toolTip1.SetToolTip(this.lbOrderSummary, "Summary of snacks ordered");
-            // 
             // lblBookSum
             // 
             this.lblBookSum.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -188,7 +177,7 @@
             // lbBookSum
             // 
             this.lbBookSum.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lbBookSum.BackColor = System.Drawing.Color.LightGray;
+            this.lbBookSum.BackColor = System.Drawing.SystemColors.Window;
             this.lbBookSum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbBookSum.FormattingEnabled = true;
             this.lbBookSum.ItemHeight = 20;
@@ -207,7 +196,7 @@
             this.btnPayNow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPayNow.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.btnPayNow.ForeColor = System.Drawing.Color.White;
-            this.btnPayNow.Location = new System.Drawing.Point(584, 575);
+            this.btnPayNow.Location = new System.Drawing.Point(802, 575);
             this.btnPayNow.Margin = new System.Windows.Forms.Padding(2);
             this.btnPayNow.Name = "btnPayNow";
             this.btnPayNow.Size = new System.Drawing.Size(202, 44);
@@ -224,7 +213,7 @@
             this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTitle.Location = new System.Drawing.Point(0, 0);
             this.pnlTitle.Name = "pnlTitle";
-            this.pnlTitle.Size = new System.Drawing.Size(800, 76);
+            this.pnlTitle.Size = new System.Drawing.Size(1018, 76);
             this.pnlTitle.TabIndex = 71;
             // 
             // lblAccount
@@ -236,9 +225,9 @@
             this.lblAccount.Location = new System.Drawing.Point(0, 0);
             this.lblAccount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAccount.Name = "lblAccount";
-            this.lblAccount.Size = new System.Drawing.Size(800, 76);
+            this.lblAccount.Size = new System.Drawing.Size(1018, 76);
             this.lblAccount.TabIndex = 62;
-            this.lblAccount.Text = "SEE BOOKING DETAILS BELOW...";
+            this.lblAccount.Text = "Booking Summary";
             this.lblAccount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnCancelBooking
@@ -249,7 +238,7 @@
             this.btnCancelBooking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelBooking.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.btnCancelBooking.ForeColor = System.Drawing.Color.White;
-            this.btnCancelBooking.Location = new System.Drawing.Point(377, 575);
+            this.btnCancelBooking.Location = new System.Drawing.Point(595, 575);
             this.btnCancelBooking.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelBooking.Name = "btnCancelBooking";
             this.btnCancelBooking.Size = new System.Drawing.Size(202, 44);
@@ -259,15 +248,52 @@
             this.btnCancelBooking.UseVisualStyleBackColor = false;
             this.btnCancelBooking.Click += new System.EventHandler(this.btnCancelBooking_Click);
             // 
+            // lvOrderSummary
+            // 
+            this.lvOrderSummary.Activation = System.Windows.Forms.ItemActivation.OneClick;
+            this.lvOrderSummary.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lvOrderSummary.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Name,
+            this.Price,
+            this.Quantity});
+            this.lvOrderSummary.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvOrderSummary.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.lvOrderSummary.HideSelection = false;
+            this.lvOrderSummary.HoverSelection = true;
+            this.lvOrderSummary.Location = new System.Drawing.Point(426, 134);
+            this.lvOrderSummary.Name = "lvOrderSummary";
+            this.lvOrderSummary.Size = new System.Drawing.Size(573, 204);
+            this.lvOrderSummary.TabIndex = 100;
+            this.toolTip1.SetToolTip(this.lvOrderSummary, "Double click on an item to remove it");
+            this.lvOrderSummary.UseCompatibleStateImageBehavior = false;
+            this.lvOrderSummary.View = System.Windows.Forms.View.Details;
+            // 
+            // Name
+            // 
+            this.Name.Name = "tabCheckOut";
+            this.Name.Text = "Name";
+            this.Name.Width = 300;
+            // 
+            // Price
+            // 
+            this.Price.Text = "Price";
+            this.Price.Width = 120;
+            // 
+            // Quantity
+            // 
+            this.Quantity.Text = "Quantity";
+            this.Quantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Quantity.Width = 120;
+            // 
             // lblOrderTotal
             // 
             this.lblOrderTotal.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblOrderTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOrderTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(51)))));
-            this.lblOrderTotal.Location = new System.Drawing.Point(455, 354);
+            this.lblOrderTotal.Location = new System.Drawing.Point(522, 350);
             this.lblOrderTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblOrderTotal.Name = "lblOrderTotal";
-            this.lblOrderTotal.Size = new System.Drawing.Size(276, 39);
+            this.lblOrderTotal.Size = new System.Drawing.Size(369, 39);
             this.lblOrderTotal.TabIndex = 72;
             this.lblOrderTotal.Text = "Total: R";
             this.lblOrderTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -281,6 +307,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lvOrderSummary);
             this.Controls.Add(this.lblOrderTotal);
             this.Controls.Add(this.pnlTitle);
             this.Controls.Add(this.btnCancelBooking);
@@ -288,12 +315,11 @@
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.gbPayment);
             this.Controls.Add(this.lblOrderSummary);
-            this.Controls.Add(this.lbOrderSummary);
             this.Controls.Add(this.lblBookSum);
             this.Controls.Add(this.lbBookSum);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "tabCheckOut";
-            this.Size = new System.Drawing.Size(800, 678);
+            this.Name.Name = "tabCheckOut";
+            this.Size = new System.Drawing.Size(1018, 678);
             this.gbPayment.ResumeLayout(false);
             this.gbPayment.PerformLayout();
             this.pnlTitle.ResumeLayout(false);
@@ -313,7 +339,6 @@
         private System.Windows.Forms.RadioButton rbCash;
         private System.Windows.Forms.RadioButton rbCard;
         private System.Windows.Forms.Label lblOrderSummary;
-        private System.Windows.Forms.ListBox lbOrderSummary;
         private System.Windows.Forms.Label lblBookSum;
         private System.Windows.Forms.ListBox lbBookSum;
         private System.Windows.Forms.Button btnPayNow;
@@ -323,5 +348,9 @@
         private System.Windows.Forms.Button btnCancelBooking;
         private System.Windows.Forms.Label lblOrderTotal;
         private System.Windows.Forms.ErrorProvider checkOut_error;
+        private System.Windows.Forms.ListView lvOrderSummary;
+        private System.Windows.Forms.ColumnHeader Name;
+        private System.Windows.Forms.ColumnHeader Price;
+        private System.Windows.Forms.ColumnHeader Quantity;
     }
 }

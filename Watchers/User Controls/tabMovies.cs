@@ -49,6 +49,7 @@ namespace Watchers
                 if (movie.MovieID == movieID)
                 {
                     movie.MovieID = movieID;
+                    tabCheckOut.movieName = movie.Name;
                     MainMenu main = (MainMenu)this.FindForm();
                     main.btnBookings.Visible = true;
                     main.BtnBooking_Click(sender, e, movie);
@@ -57,8 +58,21 @@ namespace Watchers
             }
         }
 
+        public void ResetApplication()
+        {
+            MainMenu menu = (MainMenu)this.FindForm();
+            tabBookings.Instance = null;
+            tabSnacks.Instance = null;
+            tabCheckOut.Instance = null;
+
+            menu.btnBookings.Visible = false;
+            menu.btnSnacks.Visible = false;
+            menu.btnCheckOut.Visible = false;
+        }
+
         private static void ConstructMovies()
         {
+            tabCheckOut.Instance = null;
             Movie movie1 = new Movie
             {
                 Name = "Bad Boys For Life",

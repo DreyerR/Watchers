@@ -84,7 +84,7 @@
             this.btnSkipOrder = new System.Windows.Forms.Button();
             this.btnPlaceOrder = new System.Windows.Forms.Button();
             this.pnlOrder = new System.Windows.Forms.Panel();
-            this.lbOutput = new System.Windows.Forms.ListView();
+            this.lvOutput = new System.Windows.Forms.ListView();
             this.Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Price = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Quantity = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -126,7 +126,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(910, 73);
+            this.panel1.Size = new System.Drawing.Size(1088, 73);
             this.panel1.TabIndex = 71;
             // 
             // lblAccount
@@ -138,7 +138,7 @@
             this.lblAccount.Location = new System.Drawing.Point(0, 0);
             this.lblAccount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAccount.Name = "lblAccount";
-            this.lblAccount.Size = new System.Drawing.Size(910, 73);
+            this.lblAccount.Size = new System.Drawing.Size(1088, 73);
             this.lblAccount.TabIndex = 62;
             this.lblAccount.Text = "POPULAR SNACKS";
             this.lblAccount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -167,7 +167,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(910, 688);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1088, 688);
             this.tableLayoutPanel2.TabIndex = 72;
             // 
             // pnlDrinks
@@ -206,7 +206,7 @@
             this.pnlDrinks.Controls.Add(this.btnFantaSml);
             this.pnlDrinks.Controls.Add(this.btnSpriteSml);
             this.pnlDrinks.Controls.Add(this.btnCokeSml);
-            this.pnlDrinks.Location = new System.Drawing.Point(489, 43);
+            this.pnlDrinks.Location = new System.Drawing.Point(623, 43);
             this.pnlDrinks.Margin = new System.Windows.Forms.Padding(2);
             this.pnlDrinks.Name = "pnlDrinks";
             this.pnlDrinks.Size = new System.Drawing.Size(386, 310);
@@ -680,7 +680,7 @@
             this.lblPopcorn.Location = new System.Drawing.Point(2, 355);
             this.lblPopcorn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPopcorn.Name = "lblPopcorn";
-            this.lblPopcorn.Size = new System.Drawing.Size(451, 41);
+            this.lblPopcorn.Size = new System.Drawing.Size(540, 41);
             this.lblPopcorn.TabIndex = 56;
             this.lblPopcorn.Text = "POPCORN";
             this.lblPopcorn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -698,7 +698,7 @@
             this.pnlPopcorn.Controls.Add(this.btnLrgPopcorn);
             this.pnlPopcorn.Controls.Add(this.btnSmlPopcorn);
             this.pnlPopcorn.Controls.Add(this.btnMedPopcorn);
-            this.pnlPopcorn.Location = new System.Drawing.Point(66, 398);
+            this.pnlPopcorn.Location = new System.Drawing.Point(111, 398);
             this.pnlPopcorn.Margin = new System.Windows.Forms.Padding(2);
             this.pnlPopcorn.Name = "pnlPopcorn";
             this.pnlPopcorn.Size = new System.Drawing.Size(322, 208);
@@ -836,7 +836,7 @@
             this.lblSweet.Location = new System.Drawing.Point(2, 0);
             this.lblSweet.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSweet.Name = "lblSweet";
-            this.lblSweet.Size = new System.Drawing.Size(451, 41);
+            this.lblSweet.Size = new System.Drawing.Size(540, 41);
             this.lblSweet.TabIndex = 58;
             this.lblSweet.Text = "SWEETS";
             this.lblSweet.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -846,10 +846,10 @@
             this.lblDrink.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblDrink.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.lblDrink.ForeColor = System.Drawing.Color.Black;
-            this.lblDrink.Location = new System.Drawing.Point(457, 0);
+            this.lblDrink.Location = new System.Drawing.Point(546, 0);
             this.lblDrink.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDrink.Name = "lblDrink";
-            this.lblDrink.Size = new System.Drawing.Size(451, 41);
+            this.lblDrink.Size = new System.Drawing.Size(540, 41);
             this.lblDrink.TabIndex = 59;
             this.lblDrink.Text = "DRINKS";
             this.lblDrink.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -859,10 +859,10 @@
             this.lblOrder.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.lblOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
-            this.lblOrder.Location = new System.Drawing.Point(457, 355);
+            this.lblOrder.Location = new System.Drawing.Point(546, 355);
             this.lblOrder.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblOrder.Name = "lblOrder";
-            this.lblOrder.Size = new System.Drawing.Size(451, 41);
+            this.lblOrder.Size = new System.Drawing.Size(540, 41);
             this.lblOrder.TabIndex = 61;
             this.lblOrder.Text = "ORDER";
             this.lblOrder.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -877,7 +877,7 @@
             this.pnlButtons.Location = new System.Drawing.Point(2, 610);
             this.pnlButtons.Margin = new System.Windows.Forms.Padding(2);
             this.pnlButtons.Name = "pnlButtons";
-            this.pnlButtons.Size = new System.Drawing.Size(906, 79);
+            this.pnlButtons.Size = new System.Drawing.Size(1084, 79);
             this.pnlButtons.TabIndex = 62;
             // 
             // btnSkipOrder
@@ -888,7 +888,7 @@
             this.btnSkipOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSkipOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.btnSkipOrder.ForeColor = System.Drawing.Color.White;
-            this.btnSkipOrder.Location = new System.Drawing.Point(207, 20);
+            this.btnSkipOrder.Location = new System.Drawing.Point(296, 20);
             this.btnSkipOrder.Margin = new System.Windows.Forms.Padding(2);
             this.btnSkipOrder.Name = "btnSkipOrder";
             this.btnSkipOrder.Size = new System.Drawing.Size(202, 44);
@@ -906,7 +906,7 @@
             this.btnPlaceOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlaceOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.btnPlaceOrder.ForeColor = System.Drawing.Color.White;
-            this.btnPlaceOrder.Location = new System.Drawing.Point(444, 20);
+            this.btnPlaceOrder.Location = new System.Drawing.Point(533, 20);
             this.btnPlaceOrder.Margin = new System.Windows.Forms.Padding(2);
             this.btnPlaceOrder.Name = "btnPlaceOrder";
             this.btnPlaceOrder.Size = new System.Drawing.Size(202, 44);
@@ -918,35 +918,35 @@
             // 
             // pnlOrder
             // 
-            this.pnlOrder.Controls.Add(this.lbOutput);
+            this.pnlOrder.Controls.Add(this.lvOutput);
             this.pnlOrder.Controls.Add(this.btnClear);
             this.pnlOrder.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlOrder.Location = new System.Drawing.Point(457, 398);
+            this.pnlOrder.Location = new System.Drawing.Point(546, 398);
             this.pnlOrder.Margin = new System.Windows.Forms.Padding(2);
             this.pnlOrder.Name = "pnlOrder";
-            this.pnlOrder.Size = new System.Drawing.Size(451, 208);
+            this.pnlOrder.Size = new System.Drawing.Size(540, 208);
             this.pnlOrder.TabIndex = 63;
             // 
-            // lbOutput
+            // lvOutput
             // 
-            this.lbOutput.Activation = System.Windows.Forms.ItemActivation.OneClick;
-            this.lbOutput.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lvOutput.Activation = System.Windows.Forms.ItemActivation.OneClick;
+            this.lvOutput.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Name,
             this.Price,
             this.Quantity});
-            this.lbOutput.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbOutput.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.lbOutput.HideSelection = false;
-            this.lbOutput.HoverSelection = true;
-            this.lbOutput.Location = new System.Drawing.Point(0, 0);
-            this.lbOutput.Name = "lbOutput";
-            this.lbOutput.Size = new System.Drawing.Size(451, 164);
-            this.lbOutput.TabIndex = 99;
-            this.toolTip1.SetToolTip(this.lbOutput, "Double click on an item to remove it");
-            this.lbOutput.UseCompatibleStateImageBehavior = false;
-            this.lbOutput.View = System.Windows.Forms.View.Details;
-            this.lbOutput.DoubleClick += new System.EventHandler(this.lbOutput_DoubleClick);
+            this.lvOutput.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lvOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvOutput.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.lvOutput.HideSelection = false;
+            this.lvOutput.HoverSelection = true;
+            this.lvOutput.Location = new System.Drawing.Point(0, 0);
+            this.lvOutput.Name = "lvOutput";
+            this.lvOutput.Size = new System.Drawing.Size(540, 164);
+            this.lvOutput.TabIndex = 99;
+            this.toolTip1.SetToolTip(this.lvOutput, "Double click on an item to remove it");
+            this.lvOutput.UseCompatibleStateImageBehavior = false;
+            this.lvOutput.View = System.Windows.Forms.View.Details;
+            this.lvOutput.DoubleClick += new System.EventHandler(this.lbOutput_DoubleClick);
             // 
             // Name
             // 
@@ -975,7 +975,7 @@
             this.btnClear.Location = new System.Drawing.Point(0, 164);
             this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(451, 44);
+            this.btnClear.Size = new System.Drawing.Size(540, 44);
             this.btnClear.TabIndex = 98;
             this.btnClear.Text = "Clear Order";
             this.btnClear.UseVisualStyleBackColor = false;
@@ -997,7 +997,7 @@
             this.pnlSweets.Controls.Add(this.btnChocolate);
             this.pnlSweets.Controls.Add(this.btnWhispers);
             this.pnlSweets.Controls.Add(this.btnAstro);
-            this.pnlSweets.Location = new System.Drawing.Point(66, 43);
+            this.pnlSweets.Location = new System.Drawing.Point(111, 43);
             this.pnlSweets.Margin = new System.Windows.Forms.Padding(2);
             this.pnlSweets.Name = "pnlSweets";
             this.pnlSweets.Size = new System.Drawing.Size(322, 310);
@@ -1179,7 +1179,7 @@
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Size = new System.Drawing.Size(910, 761);
+            this.Size = new System.Drawing.Size(1088, 761);
             this.Load += new System.EventHandler(this.tabSnacks_Load);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -1263,7 +1263,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ListView lbOutput;
+        private System.Windows.Forms.ListView lvOutput;
         private System.Windows.Forms.ColumnHeader Name;
         private System.Windows.Forms.ColumnHeader Price;
         private System.Windows.Forms.ColumnHeader Quantity;
