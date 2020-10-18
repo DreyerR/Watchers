@@ -36,40 +36,51 @@
             // 
             // pieChartMovies
             // 
-            this.pieChartMovies.Location = new System.Drawing.Point(41, 53);
+            this.pieChartMovies.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pieChartMovies.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pieChartMovies.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pieChartMovies.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pieChartMovies.Location = new System.Drawing.Point(0, 64);
             this.pieChartMovies.Margin = new System.Windows.Forms.Padding(2);
             this.pieChartMovies.Name = "pieChartMovies";
-            this.pieChartMovies.Size = new System.Drawing.Size(788, 488);
+            this.pieChartMovies.Size = new System.Drawing.Size(862, 488);
             this.pieChartMovies.TabIndex = 0;
             this.pieChartMovies.Text = "Booking chart";
             // 
             // lblTitle
             // 
-            this.lblTitle.AutoSize = true;
+            this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(3, 9);
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(0, 0);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(361, 36);
+            this.lblTitle.Size = new System.Drawing.Size(862, 62);
             this.lblTitle.TabIndex = 1;
             this.lblTitle.Text = "Number of movies booked";
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblList
             // 
+            this.lblList.BackColor = System.Drawing.SystemColors.ControlLight;
             this.lblList.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblList.Location = new System.Drawing.Point(37, 199);
+            this.lblList.ForeColor = System.Drawing.Color.Black;
+            this.lblList.Location = new System.Drawing.Point(643, 143);
             this.lblList.Name = "lblList";
-            this.lblList.Size = new System.Drawing.Size(144, 33);
+            this.lblList.Size = new System.Drawing.Size(219, 34);
             this.lblList.TabIndex = 2;
             this.lblList.Text = "List of Movies:";
             this.lblList.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblChartDate
             // 
+            this.lblChartDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.lblChartDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblChartDate.Location = new System.Drawing.Point(582, 18);
+            this.lblChartDate.ForeColor = System.Drawing.Color.White;
+            this.lblChartDate.Location = new System.Drawing.Point(541, 0);
             this.lblChartDate.Name = "lblChartDate";
-            this.lblChartDate.Size = new System.Drawing.Size(247, 33);
+            this.lblChartDate.Size = new System.Drawing.Size(321, 62);
             this.lblChartDate.TabIndex = 3;
             this.lblChartDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -91,7 +102,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chart";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

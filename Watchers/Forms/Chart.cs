@@ -17,7 +17,7 @@ namespace Watchers.Forms
         public frmChart(SeriesCollection series)
         {
             InitializeComponent();
-            pieChartMovies.LegendLocation = LegendLocation.Left;
+            pieChartMovies.LegendLocation = LegendLocation.Right;
             pieChartMovies.Series = series;
             string chartDate = DateTime.Now.ToString("dddd, dd MMMM yyyy");
             lblChartDate.Text = "Date: " + chartDate;
