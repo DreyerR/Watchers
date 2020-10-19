@@ -64,7 +64,9 @@ namespace Watchers
                     bookingModel = new BookingPost();
                     bookingModel.movieID = movie.MovieID;
                     bookingModel.userID = Settings.Default.UserID;
-
+                }
+                if(seatNumbers == null)
+                {
                     seatNumbers = new List<SeatNumber>();
                 }
                 CheckBooked();

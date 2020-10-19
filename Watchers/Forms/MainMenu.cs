@@ -80,10 +80,7 @@ namespace Watchers
             tabBookings.Instance = null;
             tabSnacks.Instance = null;
             tabCheckOut.Instance = null;
-            if(btnAdmin.Visible)
-            {
-                tabAdmin.Instance = null;
-            }
+            tabAdmin.Instance = null;
             this.Close();
         }
 

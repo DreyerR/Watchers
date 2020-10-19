@@ -134,22 +134,36 @@ namespace Watchers
         {
             try
             {
-                if(txtCardNum.Text.Length != 16)
+                if(rbCard.Checked)
                 {
-                    checkOut_error.SetError(txtCardNum, "Enter valid card number");
-                    if(txtCVV.Text.Length != 3)
+                    if (txtCardNum.Text.Length != 16)
                     {
-                        checkOut_error.SetError(txtCardNum, "Enter valid CVV number");
-                        if(!txtExpDate.Text.Contains("/"))
+                        checkOut_error.SetError(txtCardNum, "Enter valid card number");
+                        if (txtCVV.Text.Length != 3)
                         {
-                            checkOut_error.SetError(txtCardNum, "Enter valid expiration date (MM/YY)");
+                            checkOut_error.SetError(txtCardNum, "Enter valid CVV number");
+                            if (!txtExpDate.Text.Contains("/"))
+                            {
+                                checkOut_error.SetError(txtCardNum, "Enter valid expiration date (MM/YY)");
+                            }
                         }
                     }
-                }else
+                    else
+                    {
+                        Message.ShowMessage("Your payment was successful", Message.MessageType.Information);
+                        tabMovies.booking = booking;
+                        Reset(sender, e);
+                    }
+                }
+                else if(rbCash.Checked)
                 {
-                    Message.ShowMessage("Your payment was successful", Message.MessageType.Information);
+                    Message.ShowMessage("Pay for your booking at the cash till", Message.MessageType.Information);
                     tabMovies.booking = booking;
                     Reset(sender, e);
+                }else
+                {
+                    Message.ShowMessage("Select a payment option", Message.MessageType.Error);
+                    checkOut_error.SetError(rbCard, "Select a payment option");
                 }
             }catch(Exception error)
             {
