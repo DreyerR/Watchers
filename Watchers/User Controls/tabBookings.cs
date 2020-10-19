@@ -18,7 +18,7 @@ namespace Watchers
 
         private static tabBookings _instance;
         public static Movie movie;
-        private BookingPost bookingModel;
+        public BookingPost bookingModel;
         private List<SeatNumber> seatNumbers;
         private Image available;
         private Image booked;
@@ -59,11 +59,15 @@ namespace Watchers
                 lblCinemaNumber.Text = movie.CinemaNumber.ToString();
                 lblSeatNum.Text = "0";
 
-                bookingModel = new BookingPost();
-                bookingModel.movieID = movie.MovieID;
-                bookingModel.userID = Settings.Default.UserID;
+                if (bookingModel == null)
+                {
+                    bookingModel = new BookingPost();
+                    bookingModel.movieID = movie.MovieID;
+                    bookingModel.userID = Settings.Default.UserID;
 
-                seatNumbers = new List<SeatNumber>();
+                    seatNumbers = new List<SeatNumber>();
+                }
+                CheckBooked();
             }
         }
 
@@ -74,7 +78,8 @@ namespace Watchers
             if (seat.Image == booked)
             {
                 seat.Image = available;
-                lblSeatNum.Text = (int.Parse(lblSeatNum.Text) - 1).ToString();
+                if (int.TryParse(lblSeatNum.Text, out int numSeats) && numSeats > 0)
+                    lblSeatNum.Text = (int.Parse(lblSeatNum.Text) - 1).ToString();
 
                 for (int i = 0; i < seatNumbers.Count; i++)
                 {
@@ -88,7 +93,51 @@ namespace Watchers
             {
                 seat.Image = booked;
                 lblSeatNum.Text = (int.Parse(lblSeatNum.Text) + 1).ToString();
+                string moviePrice = (movie.MoviePrice * int.Parse(lblSeatNum.Text)).ToString("C");
+                lblMoviePrice.Text = moviePrice;
+                tabCheckOut.Instance.lblMovieTotal.Text = "Booking Total: " + moviePrice;
                 seatNumbers.Add(new SeatNumber { seatNumber = seat.Tag.ToString() });
+            }
+        }
+
+        private void CheckBooked()
+        {
+            try
+            {
+                if (bookingModel != null && bookingModel.seatNumbers != null)
+                {
+                    if (bookingModel.seatNumbers.Count > 0)
+                    {
+                        List<string> seats = new List<string>();
+                        foreach (SeatNumber seat in bookingModel.seatNumbers)
+                        {
+                            seats.Add(seat.seatNumber);
+                        }
+
+                        for (int i = 0; i < pnlCinema.Controls.Count; i++)
+                        {
+                            Control ctrl = pnlCinema.Controls[i];
+                            if (ctrl is PictureBox)
+                            {
+                                PictureBox image = (PictureBox)ctrl;
+                                if (image.Tag != null)
+                                {
+                                    string tag = image.Tag.ToString();
+                                    if (seats.Contains(image.Tag.ToString())) {
+                                        image.Image = Resources.Unavailable;
+                                        image.Enabled = false;
+                                    }
+                                }
+                            }
+                        }
+                        seatNumbers = new List<SeatNumber>();
+                        bookingModel.seatNumbers.Clear();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Message.ShowMessage(ex.Message, Message.MessageType.Error);
             }
         }
 

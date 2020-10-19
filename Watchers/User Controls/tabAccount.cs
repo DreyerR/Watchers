@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Watchers.Webservice;
+using Watchers.Forms;
 
 namespace Watchers
 {
@@ -68,6 +69,20 @@ namespace Watchers
             {
                 Message.ShowMessage(ex.Message, Message.MessageType.Error);
             }
+        }
+
+        private async void btnDeleteBooking_Click(object sender, EventArgs e)
+        {
+            string val = string.Empty;
+            if (InputBox.ShowInputBox("Delete Booking", "Enter your ticket ID to delete:", ref val) == DialogResult.OK)
+            {
+                bool isDeleted = await Api.DeleteBookingAsync(val);
+
+                if (isDeleted)
+                    Message.ShowMessage("Your booking was deleted successfully", Message.MessageType.Information);
+                else
+                    Message.ShowMessage("Your ticket ID could not be found", Message.MessageType.Error);
+            }           
         }
     }
 }

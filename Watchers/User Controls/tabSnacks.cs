@@ -72,7 +72,6 @@ namespace Watchers
                     ListViewItem item = new ListViewItem(snack.Name);
                     item.SubItems.Add(snack.Price.ToString("c"));
                     item.SubItems.Add(snack.Quantity.ToString());
-                    item.SubItems.Add((snack.Price * snack.Quantity).ToString("c"));
                     lvOutput.Items.Add(item);
                     tabCheckOut.Instance.AddOrderItem(snack);
                     break;
@@ -337,18 +336,25 @@ namespace Watchers
                     return;
                 }
 
-                btnPlaceOrder.Enabled = false;
-                btnPlaceOrder.Text = "Please wait...";
-                btnPlaceOrder.Enabled = true;
+                string message = "Are you sure you want to continue? You won't be able to update your snack preference or movie.\nIf you continue, you can redo your booking by clicking on 'Cancel Booking' on the next page";
+                if (MessageBox.Show(message, "Are you happy with your booking?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    btnPlaceOrder.Enabled = false;
+                    btnPlaceOrder.Text = "Please wait...";
+                    btnPlaceOrder.Enabled = true;
 
-                booking.orders = orders;
-                dynamic data = await Api.InsertBookingAsync(booking);
+                    booking.orders = orders;
+                    dynamic data = await Api.InsertBookingAsync(booking);
 
-                btnPlaceOrder.Text = "Place Order";
+                    btnPlaceOrder.Text = "Place Order";
 
-                MainMenu menu = (MainMenu)this.FindForm();
-                menu.BtnCheckOut_Click(sender, e, data, booking);
-                menu.btnCheckOut.Visible = true;
+                    MainMenu menu = (MainMenu)this.FindForm();
+                    menu.BtnCheckOut_Click(sender, e, data, booking);
+                    menu.btnCheckOut.Visible = true;
+                    menu.btnMovies.Enabled = false;
+                    menu.btnBookings.Enabled = false;
+                    menu.btnSnacks.Enabled = false;
+                }
             }
             catch(Exception error)
             {
@@ -384,17 +390,10 @@ namespace Watchers
 
         private void lbOutput_DoubleClick(object sender, EventArgs e)
         {
-            foreach(ListViewItem item in lvOutput.SelectedItems)
-            {
-                lvOutput.Items.Remove(item);
-                for (int i = 0; i < snacks.Count; i++)
-                {
-                    if (snacks[i].Name == lvOutput.SelectedIndices.ToString())
-                    {
-                        snacks.RemoveAt(i);
-                    }
-                }
-            }
+            int index = lvOutput.FocusedItem.Index;
+            orders.RemoveAt(index);
+            lvOutput.Items.RemoveAt(index);
+            tabCheckOut.Instance.RemoveOrderItemAt(index);
         }
     }
 }

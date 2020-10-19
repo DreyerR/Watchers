@@ -51,6 +51,11 @@ namespace Watchers
             lvOrderSummary.Items.Add(item);
         }
 
+        public void RemoveOrderItemAt(int index)
+        {
+            lvOrderSummary.Items.RemoveAt(index);
+        }
+
         public void ClearOrders()
         {
             lvOrderSummary.Items.Clear();
@@ -65,6 +70,7 @@ namespace Watchers
                 lbBookSum.Items.Add("Seat quantity: " + booking.seatQuantity.ToString());
                 lbBookSum.Items.Add("Seat number(s): " + SeatNumToString());
                 lbBookSum.Items.Add("Booking time: " + booking.time);
+                lbBookSum.Items.Add("Ticket ID: " + bookingResponse["ticketID"]);
 
                 decimal total_price = 0.0m;
                 lblTotal.Text = "Total " + bookingResponse["totalPrice"].ToString("C");
@@ -142,6 +148,7 @@ namespace Watchers
                 }else
                 {
                     Message.ShowMessage("Your payment was successful", Message.MessageType.Information);
+                    tabMovies.booking = booking;
                     Reset(sender, e);
                 }
             }catch(Exception error)

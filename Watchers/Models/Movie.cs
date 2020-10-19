@@ -9,5 +9,6 @@ namespace Watchers.Models
         public string Description { get; set; }
         public Image MovieImage { get; set; }
         public int CinemaNumber { get; set; }
+        public decimal MoviePrice { get; set; }
     }
 }

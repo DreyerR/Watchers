@@ -99,9 +99,10 @@ namespace Watchers
                 tabMovies.Instance.BringToFront();
         }
 
-        public void BtnBooking_Click(object sender, EventArgs e, Movie movie = null)
+        public void BtnBooking_Click(object sender, EventArgs e, Movie movie = null, BookingPost booking = null)
         {
             tabBookings.movie = movie;
+            tabBookings.Instance.bookingModel = booking;
             if (!pnlBack.Controls.Contains(tabBookings.Instance))
             {
                 pnlBack.Controls.Add(tabBookings.Instance);
