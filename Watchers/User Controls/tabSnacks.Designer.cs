@@ -140,7 +140,7 @@
             this.lblAccount.Name = "lblAccount";
             this.lblAccount.Size = new System.Drawing.Size(1088, 73);
             this.lblAccount.TabIndex = 62;
-            this.lblAccount.Text = "POPULAR SNACKS";
+            this.lblAccount.Text = "Popular Snacks";
             this.lblAccount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel2
@@ -234,7 +234,7 @@
             this.label12.Location = new System.Drawing.Point(307, 281);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(52, 21);
+            this.label12.Size = new System.Drawing.Size(62, 21);
             this.label12.TabIndex = 95;
             this.label12.Text = "R 17.99";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -247,7 +247,7 @@
             this.label13.Location = new System.Drawing.Point(307, 246);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(52, 21);
+            this.label13.Size = new System.Drawing.Size(62, 21);
             this.label13.TabIndex = 94;
             this.label13.Text = "LEMON";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -273,7 +273,7 @@
             this.label9.Location = new System.Drawing.Point(183, 282);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(52, 21);
+            this.label9.Size = new System.Drawing.Size(62, 21);
             this.label9.TabIndex = 92;
             this.label9.Text = "R 17.99";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -286,7 +286,7 @@
             this.lblPeach.Location = new System.Drawing.Point(183, 247);
             this.lblPeach.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPeach.Name = "lblPeach";
-            this.lblPeach.Size = new System.Drawing.Size(52, 21);
+            this.lblPeach.Size = new System.Drawing.Size(56, 21);
             this.lblPeach.TabIndex = 91;
             this.lblPeach.Text = "PEACH";
             this.lblPeach.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -299,7 +299,7 @@
             this.lblWaterPrice.Location = new System.Drawing.Point(65, 281);
             this.lblWaterPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblWaterPrice.Name = "lblWaterPrice";
-            this.lblWaterPrice.Size = new System.Drawing.Size(46, 21);
+            this.lblWaterPrice.Size = new System.Drawing.Size(59, 21);
             this.lblWaterPrice.TabIndex = 90;
             this.lblWaterPrice.Text = "R 9.99";
             this.lblWaterPrice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -313,7 +313,7 @@
             this.lblWater.Location = new System.Drawing.Point(65, 249);
             this.lblWater.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblWater.Name = "lblWater";
-            this.lblWater.Size = new System.Drawing.Size(53, 21);
+            this.lblWater.Size = new System.Drawing.Size(59, 21);
             this.lblWater.TabIndex = 89;
             this.lblWater.Text = "WATER";
             this.lblWater.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -323,10 +323,10 @@
             this.lblLarge.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblLarge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLarge.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(51)))));
-            this.lblLarge.Location = new System.Drawing.Point(140, 141);
+            this.lblLarge.Location = new System.Drawing.Point(130, 140);
             this.lblLarge.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLarge.Name = "lblLarge";
-            this.lblLarge.Size = new System.Drawing.Size(121, 36);
+            this.lblLarge.Size = new System.Drawing.Size(162, 36);
             this.lblLarge.TabIndex = 88;
             this.lblLarge.Text = "LARGE: R 24.99";
             this.lblLarge.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1179,6 +1179,7 @@
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name.Name = "tabSnacks";
             this.Size = new System.Drawing.Size(1088, 761);
             this.Load += new System.EventHandler(this.tabSnacks_Load);
             this.panel1.ResumeLayout(false);
