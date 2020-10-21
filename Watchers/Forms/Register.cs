@@ -86,79 +86,101 @@ namespace Watchers
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            if(mode == Mode.Register)
+            try
             {
-                RegisterMethod();
-                btnRegister.Enabled = true;
+                if (mode == Mode.Register)
+                {
+                    RegisterMethod();
+                    btnRegister.Enabled = true;
+                }
+                else
+                {
+                    UpdateMethod();
+                    btnRegister.Enabled = false;
+                    Properties.Settings.Default.Surname = txtSurname.Text;
+                    Properties.Settings.Default.Name = txtName.Text;
+                    Properties.Settings.Default.Email = txtEmail.Text;
+                }
             }
-            else
+            catch(Exception error)
             {
-                UpdateMethod();
-                btnRegister.Enabled = false;
-                Properties.Settings.Default.Surname = txtSurname.Text;
-                Properties.Settings.Default.Name = txtName.Text;
-                Properties.Settings.Default.Email = txtEmail.Text;
+                Message.ShowMessage(error.Message, Message.MessageType.Error);
             }
         }
 
         private bool IsValid()
         {
-            bool valid = true;
+            try
+            {
+                bool valid = true;
 
-            if (txtName.Text == "")
-            {
-                errorProvider.SetError(txtName, "Name cannot be empty");
-                valid = false;
-            }
-            else if (txtSurname.Text == "")
-            {
-                errorProvider.SetError(txtSurname, "Surname cannot be empty");
-                valid = false;
-            }
-            else if (txtEmail.Text == "")
-            {
-                errorProvider.SetError(txtEmail, "Email cannot be empty");
-                valid = false;
-            }
-            else if (!(txtEmail.Text.Contains("@")))
-            {
-                errorProvider.SetError(txtEmail, "Invalid email address");
-                valid = false;
-            }
-            else if (txtPassword.Text == "" && mode == Mode.Register)
-            {
-                errorProvider.SetError(txtPassword, "Password cannot be empty");
-                valid = false;
-            }
-            else if ((txtConfirmPassword.Text == "" || txtConfirmPassword.Text != txtPassword.Text) && mode == Mode.Register)
-            {
-                errorProvider.Clear();
-                errorProvider.SetError(txtConfirmPassword, "Passwords do not match");
-                valid = false;
-            }
+                if (txtName.Text == "")
+                {
+                    errorProvider.SetError(txtName, "Name cannot be empty");
+                    valid = false;
+                }
+                else if (txtSurname.Text == "")
+                {
+                    errorProvider.SetError(txtSurname, "Surname cannot be empty");
+                    valid = false;
+                }
+                else if (txtEmail.Text == "")
+                {
+                    errorProvider.SetError(txtEmail, "Email cannot be empty");
+                    valid = false;
+                }
+                else if (!(txtEmail.Text.Contains("@")))
+                {
+                    errorProvider.SetError(txtEmail, "Invalid email address");
+                    valid = false;
+                }
+                else if (txtPassword.Text == "" && mode == Mode.Register)
+                {
+                    errorProvider.SetError(txtPassword, "Password cannot be empty");
+                    valid = false;
+                }
+                else if ((txtConfirmPassword.Text == "" || txtConfirmPassword.Text != txtPassword.Text) && mode == Mode.Register)
+                {
+                    errorProvider.Clear();
+                    errorProvider.SetError(txtConfirmPassword, "Passwords do not match");
+                    valid = false;
+                }
 
-            return valid;
+                return valid;
+            }
+            catch(Exception error)
+            {
+                Message.ShowMessage(error.Message, Message.MessageType.Error);
+                return false;
+            }
         }
 
         private void Register_Load(object sender, EventArgs e)
         {
-            if (mode == Mode.Register)
+            try
             {
-                this.Text = "Register";
-                btnRegister.Text = "Register";
-                lblNewUser.Text = "New user";
+                if (mode == Mode.Register)
+                {
+                    this.Text = "Register";
+                    btnRegister.Text = "Register";
+                    lblNewUser.Text = "New user";
+                }
+                else
+                {
+                    this.Text = "Update Account";
+                    lblNewUser.Text = "Update your account";
+                    btnRegister.Text = "Update Account";
+                    txtPassword.Enabled = false;
+                    txtConfirmPassword.Enabled = false;
+                    txtName.Text = Properties.Settings.Default.Name;
+                    txtSurname.Text = Properties.Settings.Default.Surname;
+                    txtEmail.Text = Properties.Settings.Default.Email;
+                    txtName.Text = Properties.Settings.Default.Name;
+                }
             }
-            else
+            catch(Exception error)
             {
-                this.Text = "Update Account";
-                lblNewUser.Text = "Update your account";
-                btnRegister.Text = "Update Account";
-                txtPassword.Enabled = false;
-                txtConfirmPassword.Enabled = false;
-                txtName.Text = Properties.Settings.Default.Name;
-                txtSurname.Text = Properties.Settings.Default.Surname;
-                txtEmail.Text = Properties.Settings.Default.Email;
-                txtName.Text = Properties.Settings.Default.Name;
+                Message.ShowMessage(error.Message, Message.MessageType.Error);
             }
         }
     }

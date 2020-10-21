@@ -43,130 +43,151 @@ namespace Watchers
 
         private void BtnMovie_Click(object sender, EventArgs e)
         {
-            Button btn = (Button)sender;
-            string movieID = btn.Tag.ToString();
-
-            foreach (Movie movie in movies)
+            try
             {
-                if (movie.MovieID == movieID)
+                Button btn = (Button)sender;
+                string movieID = btn.Tag.ToString();
+
+                foreach (Movie movie in movies)
                 {
-                    movie.MovieID = movieID;
-                    tabCheckOut.movieName = movie.Name;
-                    MainMenu main = (MainMenu)this.FindForm();
-                    main.btnBookings.Visible = true;
-                    main.BtnBooking_Click(sender, e, movie, booking);
-                    break;
+                    if (movie.MovieID == movieID)
+                    {
+                        movie.MovieID = movieID;
+                        tabCheckOut.movieName = movie.Name;
+                        MainMenu main = (MainMenu)this.FindForm();
+                        main.btnBookings.Visible = true;
+                        main.BtnBooking_Click(sender, e, movie, booking);
+                        break;
+                    }
                 }
+            }
+            catch(Exception error)
+            {
+                Message.ShowMessage(error.Message, Message.MessageType.Error);
             }
         }
 
         public void ResetApplication()
         {
-            MainMenu menu = (MainMenu)this.FindForm();
-            tabBookings.Instance = null;
-            tabSnacks.Instance = null;
-            tabCheckOut.Instance = null;
+            try
+            {
+                MainMenu menu = (MainMenu)this.FindForm();
+                tabBookings.Instance = null;
+                tabSnacks.Instance = null;
+                tabCheckOut.Instance = null;
 
-            menu.btnMovies.Enabled = true;
-            menu.btnBookings.Enabled = true;
-            menu.btnSnacks.Enabled = true;
-            menu.btnCheckOut.Enabled = true;
-            menu.btnBookings.Visible = false;
-            menu.btnSnacks.Visible = false;
-            menu.btnCheckOut.Visible = false;
+                menu.btnMovies.Enabled = true;
+                menu.btnBookings.Enabled = true;
+                menu.btnSnacks.Enabled = true;
+                menu.btnCheckOut.Enabled = true;
+                menu.btnBookings.Visible = false;
+                menu.btnSnacks.Visible = false;
+                menu.btnCheckOut.Visible = false;
+            }
+            catch(Exception error)
+            {
+                Message.ShowMessage(error.Message, Message.MessageType.Error);
+            }
         }
 
         private static void ConstructMovies()
         {
-            tabCheckOut.Instance = null;
-            Movie movie1 = new Movie
+            try
             {
-                Name = "Bad Boys For Life",
-                MovieID = "m001",
-                MoviePrice = 98M,
-                MovieImage = Resources.m001,
-                CinemaNumber = 2,
-                Description = "Bad Boys for Life is a 2020 American action comedy film that is the sequel to Bad Boys II (2003) and the third installment in the Bad Boys trilogy. The film is directed by Adil & Bilall and written by Chris Bremner, Peter Craig and Joe Carnahan. It stars returning actors Will Smith and Martin Lawrence. The film's cast also includes Paola Núñez, Vanessa Hudgens, Alexander Ludwig, Charles Melton, Kate del Castillo, Nicky Jam, and Joe Pantoliano, who appear in supporting roles. It was produced by Smith, Jerry Bruckheimer, and Doug Belgrad. In Bad Boys for Life, Miami detectives Mike Lowrey (Smith) and Marcus Burnett (Lawrence) investigate a string of murders tied to Lowrey's troubled past."
-            };
+                tabCheckOut.Instance = null;
+                Movie movie1 = new Movie
+                {
+                    Name = "Bad Boys For Life",
+                    MovieID = "m001",
+                    MoviePrice = 98M,
+                    MovieImage = Resources.m001,
+                    CinemaNumber = 2,
+                    Description = "Bad Boys for Life is a 2020 American action comedy film that is the sequel to Bad Boys II (2003) and the third installment in the Bad Boys trilogy. The film is directed by Adil & Bilall and written by Chris Bremner, Peter Craig and Joe Carnahan. It stars returning actors Will Smith and Martin Lawrence. The film's cast also includes Paola Núñez, Vanessa Hudgens, Alexander Ludwig, Charles Melton, Kate del Castillo, Nicky Jam, and Joe Pantoliano, who appear in supporting roles. It was produced by Smith, Jerry Bruckheimer, and Doug Belgrad. In Bad Boys for Life, Miami detectives Mike Lowrey (Smith) and Marcus Burnett (Lawrence) investigate a string of murders tied to Lowrey's troubled past."
+                };
 
-            Movie movie2 = new Movie
+                Movie movie2 = new Movie
+                {
+                    Name = "Black Widow",
+                    MovieID = "m002",
+                    MoviePrice = 90M,
+                    MovieImage = Resources.m002,
+                    CinemaNumber = 5,
+                    Description = "At birth the Black Widow (aka Natasha Romanova) is given to the KGB, which grooms her to become its ultimate operative. When the U.S.S.R. breaks up, the government tries to kill her as the action moves to present-day New York, where she is a freelance operative."
+                };
+
+                Movie movie3 = new Movie
+                {
+                    Name = "Do Little",
+                    MovieID = "m003",
+                    MoviePrice = 105.50M,
+                    MovieImage = Resources.m003,
+                    CinemaNumber = 4,
+                    Description = "Dr. John Dolittle lives in solitude behind the high walls of his lush manor in 19th-century England. His only companionship comes from an array of exotic animals that he speaks to on a daily basis. But when young Queen Victoria becomes gravely ill, the eccentric doctor and his furry friends embark on an epic adventure to a mythical island to find the cure."
+                };
+
+                Movie movie4 = new Movie
+                {
+                    Name = "Fantasy Island",
+                    MovieID = "m004",
+                    MoviePrice = 105.50M,
+                    MovieImage = Resources.m004,
+                    CinemaNumber = 1,
+                    Description = "A mysterious man invites a group of lucky guests to his secretive resort to fulfil their darkest fantasies. However, when people start arriving, things take an unexpected turn."
+                };
+
+                Movie movie5 = new Movie
+                {
+                    Name = "Mulan",
+                    MovieID = "m005",
+                    MoviePrice = 110M,
+                    MovieImage = Resources.m005,
+                    CinemaNumber = 2,
+                    Description = "To save her ailing father from serving in the Imperial Army, a fearless young woman disguises herself as a man to battle northern invaders in China."
+                };
+
+                Movie movie6 = new Movie
+                {
+                    Name = "No Time To Die",
+                    MovieID = "m006",
+                    MoviePrice = 102.75M,
+                    MovieImage = Resources.m006,
+                    CinemaNumber = 3,
+                    Description = "Recruited to rescue a kidnapped scientist, globe-trotting spy James Bond finds himself hot on the trail of a mysterious villain, who's armed with a dangerous new technology."
+                };
+
+                Movie movie7 = new Movie
+                {
+                    Name = "Frozen 2",
+                    MovieID = "m007",
+                    MoviePrice = 110M,
+                    MovieImage = Resources.m007,
+                    CinemaNumber = 4,
+                    Description = "Elsa the Snow Queen has an extraordinary gift -- the power to create ice and snow. But no matter how happy she is to be surrounded by the people of Arendelle, Elsa finds herself strangely unsettled. After hearing a mysterious voice call out to her, Elsa travels to the enchanted forests and dark seas beyond her kingdom -- an adventure that soon turns into a journey of self-discovery."
+                };
+
+                Movie movie8 = new Movie
+                {
+                    Name = "Birds Of Prey",
+                    MovieID = "m008",
+                    MoviePrice = 105.50M,
+                    MovieImage = Resources.m008,
+                    CinemaNumber = 5,
+                    Description = "It's open season on Harley Quinn when her explosive breakup with the Joker puts a big fat target on her back. Unprotected and on the run, Quinn faces the wrath of narcissistic crime boss Black Mask, his right-hand man, Victor Zsasz, and every other thug in the city. But things soon even out for Harley when she becomes unexpected allies with three deadly women."
+                };
+
+                movies.Add(movie1);
+                movies.Add(movie2);
+                movies.Add(movie3);
+                movies.Add(movie4);
+                movies.Add(movie5);
+                movies.Add(movie6);
+                movies.Add(movie7);
+                movies.Add(movie8);
+            }
+            catch(Exception error)
             {
-                Name = "Black Widow",
-                MovieID = "m002",
-                MoviePrice = 90M,
-                MovieImage = Resources.m002,
-                CinemaNumber = 5,
-                Description = "At birth the Black Widow (aka Natasha Romanova) is given to the KGB, which grooms her to become its ultimate operative. When the U.S.S.R. breaks up, the government tries to kill her as the action moves to present-day New York, where she is a freelance operative."
-            };
-
-            Movie movie3 = new Movie
-            {
-                Name = "Do Little",
-                MovieID = "m003",
-                MoviePrice = 105.50M,
-                MovieImage = Resources.m003,
-                CinemaNumber = 4,
-                Description = "Dr. John Dolittle lives in solitude behind the high walls of his lush manor in 19th-century England. His only companionship comes from an array of exotic animals that he speaks to on a daily basis. But when young Queen Victoria becomes gravely ill, the eccentric doctor and his furry friends embark on an epic adventure to a mythical island to find the cure."
-            };
-
-            Movie movie4 = new Movie
-            {
-                Name = "Fantasy Island",
-                MovieID = "m004",
-                MoviePrice = 105.50M,
-                MovieImage = Resources.m004,
-                CinemaNumber = 1,
-                Description = "A mysterious man invites a group of lucky guests to his secretive resort to fulfil their darkest fantasies. However, when people start arriving, things take an unexpected turn."
-            };
-
-            Movie movie5 = new Movie
-            {
-                Name = "Mulan",
-                MovieID = "m005",
-                MoviePrice = 110M,
-                MovieImage = Resources.m005,
-                CinemaNumber = 2,
-                Description = "To save her ailing father from serving in the Imperial Army, a fearless young woman disguises herself as a man to battle northern invaders in China."
-            };
-
-            Movie movie6 = new Movie
-            {
-                Name = "No Time To Die",
-                MovieID = "m006",
-                MoviePrice = 102.75M,
-                MovieImage = Resources.m006,
-                CinemaNumber = 3,
-                Description = "Recruited to rescue a kidnapped scientist, globe-trotting spy James Bond finds himself hot on the trail of a mysterious villain, who's armed with a dangerous new technology."
-            };
-
-            Movie movie7 = new Movie
-            {
-                Name = "Frozen 2",
-                MovieID = "m007",
-                MoviePrice = 110M,
-                MovieImage = Resources.m007,
-                CinemaNumber = 4,
-                Description = "Elsa the Snow Queen has an extraordinary gift -- the power to create ice and snow. But no matter how happy she is to be surrounded by the people of Arendelle, Elsa finds herself strangely unsettled. After hearing a mysterious voice call out to her, Elsa travels to the enchanted forests and dark seas beyond her kingdom -- an adventure that soon turns into a journey of self-discovery."
-            };
-
-            Movie movie8 = new Movie
-            {
-                Name = "Birds Of Prey",
-                MovieID = "m008",
-                MoviePrice = 105.50M,
-                MovieImage = Resources.m008,
-                CinemaNumber = 5,
-                Description = "It's open season on Harley Quinn when her explosive breakup with the Joker puts a big fat target on her back. Unprotected and on the run, Quinn faces the wrath of narcissistic crime boss Black Mask, his right-hand man, Victor Zsasz, and every other thug in the city. But things soon even out for Harley when she becomes unexpected allies with three deadly women."
-            };
-
-            movies.Add(movie1);
-            movies.Add(movie2);
-            movies.Add(movie3);
-            movies.Add(movie4);
-            movies.Add(movie5);
-            movies.Add(movie6);
-            movies.Add(movie7);
-            movies.Add(movie8);
+                Message.ShowMessage(error.Message, Message.MessageType.Error);
+            }
         }
     }
 }

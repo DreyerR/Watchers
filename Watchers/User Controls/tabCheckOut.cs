@@ -50,11 +50,18 @@ namespace Watchers
 
         public void AddOrderItem(Snack snack)
         {
-            ListViewItem item = new ListViewItem(snack.Name);
-            item.SubItems.Add(snack.Price.ToString("c"));
-            item.SubItems.Add(snack.Quantity.ToString());
-            item.SubItems.Add((snack.Price * snack.Quantity).ToString("c"));
-            lvOrderSummary.Items.Add(item);
+            try
+            {
+                ListViewItem item = new ListViewItem(snack.Name);
+                item.SubItems.Add(snack.Price.ToString("c"));
+                item.SubItems.Add(snack.Quantity.ToString());
+                item.SubItems.Add((snack.Price * snack.Quantity).ToString("c"));
+                lvOrderSummary.Items.Add(item);
+            }
+            catch(Exception error)
+            {
+                Message.ShowMessage(error.Message, Message.MessageType.Error);
+            }
         }
 
         public void RemoveOrderItemAt(int index)
@@ -70,27 +77,34 @@ namespace Watchers
 
         public void PopulateForm()
         {
-            if (bookingResponse != null)
+            try
             {
-                lbBookSum.Items.Add("Movie name: " + movieName);
-                lbBookSum.Items.Add("Seat quantity: " + booking.seatQuantity.ToString());
-                lbBookSum.Items.Add("Seat number(s): " + SeatNumToString());
-                lbBookSum.Items.Add("Booking time: " + booking.time);
-                lbBookSum.Items.Add("Ticket ID: " + bookingResponse["ticketID"]);
-
-                decimal total_price = 0.0m;
-                lblTotal.Text = "Total " + bookingResponse["totalPrice"].ToString("C");
-                foreach (Orders order in booking.orders)
+                if (bookingResponse != null)
                 {
-                    foreach (Snack snack in snacks)
+                    lbBookSum.Items.Add("Movie name: " + movieName);
+                    lbBookSum.Items.Add("Seat quantity: " + booking.seatQuantity.ToString());
+                    lbBookSum.Items.Add("Seat number(s): " + SeatNumToString());
+                    lbBookSum.Items.Add("Booking time: " + booking.time);
+                    lbBookSum.Items.Add("Ticket ID: " + bookingResponse["ticketID"]);
+
+                    decimal total_price = 0.0m;
+                    lblTotal.Text = "Total " + bookingResponse["totalPrice"].ToString("C");
+                    foreach (Orders order in booking.orders)
                     {
-                        if (snack.Barcode == order.snackBarcode)
+                        foreach (Snack snack in snacks)
                         {
-                            total_price += snack.Price * order.quantity;
+                            if (snack.Barcode == order.snackBarcode)
+                            {
+                                total_price += snack.Price * order.quantity;
+                            }
                         }
                     }
+                    lblOrderTotal.Text = "Orders Total: " + total_price.ToString("c");
                 }
-                lblOrderTotal.Text = "Orders Total: " + total_price.ToString("c");
+            }
+            catch(Exception error)
+            {
+                Message.ShowMessage(error.Message, Message.MessageType.Error);
             }
         }
 
@@ -131,9 +145,16 @@ namespace Watchers
 
         public void Reset(object sender, EventArgs e)
         {
-            MainMenu menu = (MainMenu)this.FindForm();
-            menu.btnMovies_Click(sender, e);
-            tabMovies.Instance.ResetApplication();
+            try
+            {
+                MainMenu menu = (MainMenu)this.FindForm();
+                menu.btnMovies_Click(sender, e);
+                tabMovies.Instance.ResetApplication();
+            }
+            catch(Exception error)
+            {
+                Message.ShowMessage(error.Message, Message.MessageType.Error);
+            }
         }
 
         private void btnPayNow_Click(object sender, EventArgs e)

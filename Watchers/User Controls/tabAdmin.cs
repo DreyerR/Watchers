@@ -40,19 +40,26 @@ namespace Watchers
 
         private void cbbDataType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            switch (cbbCategory.SelectedIndex)
+            try
             {
-                case 0:
-                    PopulateBookings();
-                    break;
-                case 1:
-                    PopulateOrders();
-                    break;
-                case 2:
-                    PopulateUsers();
-                    break;
+                switch (cbbCategory.SelectedIndex)
+                {
+                    case 0:
+                        PopulateBookings();
+                        break;
+                    case 1:
+                        PopulateOrders();
+                        break;
+                    case 2:
+                        PopulateUsers();
+                        break;
+                }
+                btnPDF.Enabled = true;
             }
-            btnPDF.Enabled = true;
+            catch(Exception error)
+            {
+                Message.ShowMessage(error.Message, Message.MessageType.Error);
+            }
         }
 
         private async void PopulateUsers()

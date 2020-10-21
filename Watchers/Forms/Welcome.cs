@@ -20,7 +20,6 @@ namespace Watchers
         private void btnLogin_Click(object sender, EventArgs e)
         {
             frmLogin login = new frmLogin();
-            //this.Close();
             login.ShowDialog();
         }
 

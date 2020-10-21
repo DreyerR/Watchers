@@ -42,9 +42,16 @@ namespace Watchers
 
         private void btnPersonalInfo_Click(object sender, EventArgs e)
         {
-            Register updateUser = new Register(Register.Mode.Update);
-            updateUser.ShowDialog();
-            tabAccount_Load(sender, e); //refresh the information of the user
+            try
+            {
+                Register updateUser = new Register(Register.Mode.Update);
+                updateUser.ShowDialog();
+                tabAccount_Load(sender, e); //refresh the information of the user
+            }
+            catch(Exception error)
+            {
+                Message.ShowMessage(error.Message, Message.MessageType.Error);
+            }
         }
 
         private async void btnDeleteAcc_Click(object sender, EventArgs e)
@@ -73,16 +80,23 @@ namespace Watchers
 
         private async void btnDeleteBooking_Click(object sender, EventArgs e)
         {
-            string val = string.Empty;
-            if (InputBox.ShowInputBox("Delete Booking", "Enter your ticket ID to delete:", ref val) == DialogResult.OK)
+            try
             {
-                bool isDeleted = await Api.DeleteBookingAsync(val);
+                string val = string.Empty;
+                if (InputBox.ShowInputBox("Delete Booking", "Enter your ticket ID to delete:", ref val) == DialogResult.OK)
+                {
+                    bool isDeleted = await Api.DeleteBookingAsync(val);
 
-                if (isDeleted)
-                    Message.ShowMessage("Your booking was deleted successfully", Message.MessageType.Information);
-                else
-                    Message.ShowMessage("Your ticket ID could not be found", Message.MessageType.Error);
-            }           
+                    if (isDeleted)
+                        Message.ShowMessage("Your booking was deleted successfully", Message.MessageType.Information);
+                    else
+                        Message.ShowMessage("Your ticket ID could not be found", Message.MessageType.Error);
+                }
+            }
+            catch(Exception error)
+            {
+                Message.ShowMessage(error.Message, Message.MessageType.Error);
+            }         
         }
     }
 }

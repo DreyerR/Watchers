@@ -51,56 +51,70 @@ namespace Watchers
 
         public void PopulateForm()
         {
-            if (movie != null)
+            try
             {
-                lblMovie.Text = movie.Name;
-                imgMovie.Image = movie.MovieImage;
-                rtbDescription.Text = movie.Description;
-                lblCinemaNumber.Text = movie.CinemaNumber.ToString();
-                lblSeatNum.Text = "0";
-
-                if (bookingModel == null)
+                if (movie != null)
                 {
-                    bookingModel = new BookingPost();
-                }
+                    lblMovie.Text = movie.Name;
+                    imgMovie.Image = movie.MovieImage;
+                    rtbDescription.Text = movie.Description;
+                    lblCinemaNumber.Text = movie.CinemaNumber.ToString();
+                    lblSeatNum.Text = "0";
 
-                bookingModel.movieID = movie.MovieID;
-                bookingModel.userID = Settings.Default.UserID;
+                    if (bookingModel == null)
+                    {
+                        bookingModel = new BookingPost();
+                    }
 
-                if (seatNumbers == null)
-                {
-                    seatNumbers = new List<SeatNumber>();
+                    bookingModel.movieID = movie.MovieID;
+                    bookingModel.userID = Settings.Default.UserID;
+
+                    if (seatNumbers == null)
+                    {
+                        seatNumbers = new List<SeatNumber>();
+                    }
+                    CheckBooked();
                 }
-                CheckBooked();
+            }
+            catch(Exception error)
+            {
+                Message.ShowMessage(error.Message, Message.MessageType.Error);
             }
         }
 
         private void SeatClicked(object sender, EventArgs e)
         {
-            PictureBox seat = (PictureBox)sender;
-
-            if (seat.Image == booked)
+            try
             {
-                seat.Image = available;
-                if (int.TryParse(lblSeatNum.Text, out int numSeats) && numSeats > 0)
-                    lblSeatNum.Text = (int.Parse(lblSeatNum.Text) - 1).ToString();
+                PictureBox seat = (PictureBox)sender;
 
-                for (int i = 0; i < seatNumbers.Count; i++)
+                if (seat.Image == booked)
                 {
-                    if (seatNumbers[i].seatNumber == seat.Tag.ToString())
+                    seat.Image = available;
+                    if (int.TryParse(lblSeatNum.Text, out int numSeats) && numSeats > 0)
+                        lblSeatNum.Text = (int.Parse(lblSeatNum.Text) - 1).ToString();
+
+                    for (int i = 0; i < seatNumbers.Count; i++)
                     {
-                        seatNumbers.RemoveAt(i);
+                        if (seatNumbers[i].seatNumber == seat.Tag.ToString())
+                        {
+                            seatNumbers.RemoveAt(i);
+                        }
                     }
                 }
+                else
+                {
+                    seat.Image = booked;
+                    lblSeatNum.Text = (int.Parse(lblSeatNum.Text) + 1).ToString();
+                    string moviePrice = (movie.MoviePrice * int.Parse(lblSeatNum.Text)).ToString("C");
+                    lblMoviePrice.Text = moviePrice;
+                    tabCheckOut.Instance.lblMovieTotal.Text = "Booking Total: " + moviePrice;
+                    seatNumbers.Add(new SeatNumber { seatNumber = seat.Tag.ToString() });
+                }
             }
-            else
+            catch(Exception error)
             {
-                seat.Image = booked;
-                lblSeatNum.Text = (int.Parse(lblSeatNum.Text) + 1).ToString();
-                string moviePrice = (movie.MoviePrice * int.Parse(lblSeatNum.Text)).ToString("C");
-                lblMoviePrice.Text = moviePrice;
-                tabCheckOut.Instance.lblMovieTotal.Text = "Booking Total: " + moviePrice;
-                seatNumbers.Add(new SeatNumber { seatNumber = seat.Tag.ToString() });
+                Message.ShowMessage(error.Message, Message.MessageType.Error);
             }
         }
 
@@ -147,20 +161,27 @@ namespace Watchers
 
         private void btnBook_Click(object sender, EventArgs e)
         {
-            bookingModel.time = dtpDate.Value.ToString("yyyy-MM-dd") + " " + cbbTime.SelectedItem.ToString();
-            int seatQuantity = int.Parse(lblSeatNum.Text);
-            if (seatQuantity > 0)
+            try
             {
-                bookingModel.seatNumbers = seatNumbers;
-                bookingModel.seatQuantity = seatQuantity;
+                bookingModel.time = dtpDate.Value.ToString("yyyy-MM-dd") + " " + cbbTime.SelectedItem.ToString();
+                int seatQuantity = int.Parse(lblSeatNum.Text);
+                if (seatQuantity > 0)
+                {
+                    bookingModel.seatNumbers = seatNumbers;
+                    bookingModel.seatQuantity = seatQuantity;
 
-                MainMenu main = (MainMenu)this.FindForm();
-                main.btnSnacks.Visible = true;
-                main.BtnSnack_Click(sender, e, bookingModel);
+                    MainMenu main = (MainMenu)this.FindForm();
+                    main.btnSnacks.Visible = true;
+                    main.BtnSnack_Click(sender, e, bookingModel);
+                }
+                else
+                {
+                    Message.ShowMessage("Please choose seats first", Message.MessageType.Warning);
+                }
             }
-            else
+            catch(Exception error)
             {
-                Message.ShowMessage("Please choose seats first", Message.MessageType.Warning);
+                Message.ShowMessage(error.Message, Message.MessageType.Error);
             }
         }
     }
