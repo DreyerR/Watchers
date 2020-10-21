@@ -42,6 +42,12 @@ namespace Watchers
             }
         }
 
+        private void TextFieldClick(object sender, EventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            txt.Text = "";
+        }
+
         public void AddOrderItem(Snack snack)
         {
             ListViewItem item = new ListViewItem(snack.Name);

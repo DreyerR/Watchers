@@ -68,10 +68,9 @@ namespace Watchers
                     bool isSuccessful = await Api.RegisterUserAsync(name, surname, email, password);
                     if (isSuccessful)
                     {
-                        MessageBox.Show("Registration Successful", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Registration successful", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         MainMenu main = new MainMenu();
                         this.Close();
-                        main.ShowDialog();
                     }
                     else
                     {
@@ -90,7 +89,7 @@ namespace Watchers
             if(mode == Mode.Register)
             {
                 RegisterMethod();
-                btnRegister.Enabled = false;
+                btnRegister.Enabled = true;
             }
             else
             {

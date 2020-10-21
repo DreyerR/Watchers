@@ -366,15 +366,22 @@ namespace Watchers
         {
             try
             {
-                orders.Clear();
-                booking.orders = orders;
-                tabCheckOut.Instance.ClearOrders();
+                string message = "Are you sure you want to continue? You won't be able to update your snack preference or movie.\nIf you continue, you can redo your booking by clicking on 'Cancel Booking' on the next page";
+                if (MessageBox.Show(message, "Are you happy with your booking?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    orders.Clear();
+                    booking.orders = orders;
+                    tabCheckOut.Instance.ClearOrders();
 
-                dynamic data = await Api.InsertBookingAsync(booking);
+                    dynamic data = await Api.InsertBookingAsync(booking);
 
-                MainMenu menu = (MainMenu)this.FindForm();
-                menu.BtnCheckOut_Click(sender, e, data, booking);
-                menu.btnCheckOut.Visible = true;
+                    MainMenu menu = (MainMenu)this.FindForm();
+                    menu.BtnCheckOut_Click(sender, e, data, booking);
+                    menu.btnCheckOut.Visible = true;
+                    menu.btnMovies.Enabled = false;
+                    menu.btnBookings.Enabled = false;
+                    menu.btnSnacks.Enabled = false;
+                }
             }
             catch(Exception error)
             {

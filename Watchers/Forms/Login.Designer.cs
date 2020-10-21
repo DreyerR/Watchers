@@ -65,10 +65,10 @@
             // 
             this.txtUsername.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.txtUsername.Location = new System.Drawing.Point(242, 294);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUsername.Location = new System.Drawing.Point(323, 362);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(318, 32);
+            this.txtUsername.Size = new System.Drawing.Size(423, 38);
             this.txtUsername.TabIndex = 27;
             this.toolTip1.SetToolTip(this.txtUsername, "Enter your email here to log in");
             // 
@@ -76,10 +76,11 @@
             // 
             this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.txtPassword.Location = new System.Drawing.Point(242, 381);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPassword.Location = new System.Drawing.Point(323, 469);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(318, 32);
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(423, 38);
             this.txtPassword.TabIndex = 28;
             this.toolTip1.SetToolTip(this.txtPassword, "Enter your password here to log in");
             // 
@@ -91,10 +92,10 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(298, 496);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLogin.Location = new System.Drawing.Point(397, 610);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(202, 44);
+            this.btnLogin.Size = new System.Drawing.Size(269, 54);
             this.btnLogin.TabIndex = 29;
             this.btnLogin.Text = "Login";
             this.toolTip1.SetToolTip(this.btnLogin, "Click to log into Watchers System");
@@ -106,10 +107,10 @@
             this.imgLogoLog.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.imgLogoLog.BackColor = System.Drawing.Color.White;
             this.imgLogoLog.Image = global::Watchers.Properties.Resources.Watchers2;
-            this.imgLogoLog.Location = new System.Drawing.Point(242, 74);
-            this.imgLogoLog.Margin = new System.Windows.Forms.Padding(2);
+            this.imgLogoLog.Location = new System.Drawing.Point(323, 91);
+            this.imgLogoLog.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.imgLogoLog.Name = "imgLogoLog";
-            this.imgLogoLog.Size = new System.Drawing.Size(316, 138);
+            this.imgLogoLog.Size = new System.Drawing.Size(421, 170);
             this.imgLogoLog.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgLogoLog.TabIndex = 21;
             this.imgLogoLog.TabStop = false;
@@ -119,9 +120,9 @@
             this.imgGradientLog.Dock = System.Windows.Forms.DockStyle.Top;
             this.imgGradientLog.Image = global::Watchers.Properties.Resources.GradientNew;
             this.imgGradientLog.Location = new System.Drawing.Point(0, 0);
-            this.imgGradientLog.Margin = new System.Windows.Forms.Padding(2);
+            this.imgGradientLog.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.imgGradientLog.Name = "imgGradientLog";
-            this.imgGradientLog.Size = new System.Drawing.Size(759, 137);
+            this.imgGradientLog.Size = new System.Drawing.Size(1012, 169);
             this.imgGradientLog.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgGradientLog.TabIndex = 20;
             this.imgGradientLog.TabStop = false;
@@ -130,10 +131,9 @@
             // 
             this.lblPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.lblPassword.Location = new System.Drawing.Point(238, 348);
-            this.lblPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPassword.Location = new System.Drawing.Point(317, 428);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(124, 31);
+            this.lblPassword.Size = new System.Drawing.Size(165, 38);
             this.lblPassword.TabIndex = 30;
             this.lblPassword.Text = "Password:";
             // 
@@ -141,19 +141,19 @@
             // 
             this.lblEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.lblEmail.Location = new System.Drawing.Point(238, 263);
-            this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmail.Location = new System.Drawing.Point(317, 324);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(124, 28);
+            this.lblEmail.Size = new System.Drawing.Size(165, 34);
             this.lblEmail.TabIndex = 31;
             this.lblEmail.Text = "Email:";
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AcceptButton = this.btnLogin;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(759, 568);
+            this.ClientSize = new System.Drawing.Size(1012, 699);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.btnLogin);
@@ -162,7 +162,7 @@
             this.Controls.Add(this.imgLogoLog);
             this.Controls.Add(this.imgGradientLog);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
