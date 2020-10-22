@@ -25,6 +25,8 @@ namespace Watchers
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
+            string workingDirectory = Environment.CurrentDirectory + @"\Resources\Watchers2.png";
+            Message.ShowMessage(workingDirectory, Message.MessageType.Information);
             Register register = new Register(Register.Mode.Register);
             register.ShowDialog();
         }

@@ -263,12 +263,12 @@ namespace Watchers
                         heading.SpacingBefore = 10f;
                         heading.SpacingAfter = 1f;
 
-                        PdfWriter.GetInstance(pdfdoc, stream);  
+                        PdfWriter.GetInstance(pdfdoc, stream);
 
-                        string workingDirectory = Environment.CurrentDirectory; //getting the path for the pdf
-                        string projectDirectory = Directory.GetParent(workingDirectory).Parent.Parent.FullName + "\\Watchers\\Resources\\Watchers2.png";
+                        string workingDirectory = Environment.CurrentDirectory + @"\Resources\Watchers2.png"; //getting the path for the pdf
+                        //string projectDirectory = Directory.GetParent(workingDirectory).Parent.Parent.FullName + "\\Watchers\\Resources\\Watchers2.png";
 
-                        iTextSharp.text.Image jpg = iTextSharp.text.Image.GetInstance(projectDirectory); //creating a image object for the image
+                        iTextSharp.text.Image jpg = iTextSharp.text.Image.GetInstance(workingDirectory); //creating a image object for the image
 
                         jpg.ScaleToFit(140f, 120f);
                         jpg.SpacingBefore = 10f;
