@@ -17,6 +17,7 @@ namespace Watchers
     {
         private static tabCheckOut _instance;
         public static List<Snack> snacks = new List<Snack>();
+        public static decimal orderTotal;
         public static string movieName; // Used for booking summary
         public static dynamic bookingResponse; // Contains the ticketID and total price of the booking (received from server).
         public static BookingPost booking;
@@ -87,19 +88,10 @@ namespace Watchers
                     lbBookSum.Items.Add("Booking time: " + booking.time);
                     lbBookSum.Items.Add("Ticket ID: " + bookingResponse["ticketID"]);
 
-                    decimal total_price = 0.0m;
-                    lblTotal.Text = "Total " + bookingResponse["totalPrice"].ToString("C");
-                    foreach (Orders order in booking.orders)
-                    {
-                        foreach (Snack snack in snacks)
-                        {
-                            if (snack.Barcode == order.snackBarcode)
-                            {
-                                total_price += snack.Price * order.quantity;
-                            }
-                        }
-                    }
-                    lblOrderTotal.Text = "Orders Total: " + total_price.ToString("c");
+                    decimal total = (decimal)bookingResponse["totalPrice"] + orderTotal;
+                    lblTotal.Text = "Total " + total.ToString("C");
+
+                    lblOrderTotal.Text = "Total: " + orderTotal.ToString("C");
                 }
             }
             catch(Exception error)

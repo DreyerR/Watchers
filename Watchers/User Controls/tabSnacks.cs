@@ -17,6 +17,7 @@ namespace Watchers
     {
         private static tabSnacks _instance;
         public static BookingPost booking;
+        private decimal ordersPrice = 0M;
         private List<Snack> snacks = new List<Snack>();
         private List<Orders> orders = new List<Orders>();
 
@@ -51,26 +52,27 @@ namespace Watchers
                 {
                     if (snack.Barcode == tag)
                     {
-                        if (snack.Quantity == 0)
-                        {
-                            snack.Quantity++;
+                        //if (snack.Quantity == 0)
+                        //{
+                        //    snack.Quantity++;
 
-                            orders.Add(new Orders
-                            {
-                                snackBarcode = tag,
-                                quantity = snack.Quantity
-                            });
-                        }
-                        else //already exists
+                        orders.Add(new Orders
                         {
-                            foreach (Orders order in orders)
-                            {
-                                if (order.snackBarcode == snack.Barcode)
-                                {
-                                    order.quantity++;
-                                }
-                            }
-                        }
+                            snackBarcode = tag,
+                            quantity = snack.Quantity
+                        });
+                        ordersPrice += snack.Price;
+                        //}
+                        //else //already exists
+                        //{
+                        //    foreach (Orders order in orders)
+                        //    {
+                        //        if (order.snackBarcode == snack.Barcode)
+                        //        {
+                        //            order.quantity++;
+                        //        }
+                        //    }
+                        //}
                         ListViewItem item = new ListViewItem(snack.Name);
                         item.SubItems.Add(snack.Price.ToString("c"));
                         item.SubItems.Add(snack.Quantity.ToString());
@@ -363,6 +365,7 @@ namespace Watchers
 
                     btnPlaceOrder.Text = "Place Order";
 
+                    tabCheckOut.orderTotal = ordersPrice;
                     MainMenu menu = (MainMenu)this.FindForm();
                     menu.BtnCheckOut_Click(sender, e, data, booking);
                     menu.btnCheckOut.Visible = true;
@@ -387,9 +390,10 @@ namespace Watchers
                     orders.Clear();
                     booking.orders = orders;
                     tabCheckOut.Instance.ClearOrders();
-
+                    ordersPrice = 0M;
                     dynamic data = await Api.InsertBookingAsync(booking);
 
+                    tabCheckOut.orderTotal = ordersPrice;
                     MainMenu menu = (MainMenu)this.FindForm();
                     menu.BtnCheckOut_Click(sender, e, data, booking);
                     menu.btnCheckOut.Visible = true;
@@ -415,7 +419,15 @@ namespace Watchers
             try
             {
                 int index = lvOutput.FocusedItem.Index;
-                orders.RemoveAt(index);
+                foreach (Snack snack in snacks)
+                {
+                    if (snack.Barcode == orders[index].snackBarcode)
+                    {
+                        orders.RemoveAt(index);
+                        ordersPrice -= snack.Price;
+                        break;
+                    }
+                }
                 lvOutput.Items.RemoveAt(index);
                 tabCheckOut.Instance.RemoveOrderItemAt(index);
             }
