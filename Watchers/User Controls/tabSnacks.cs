@@ -344,13 +344,14 @@ namespace Watchers
         {
             try
             {
-                if (orders.Count == 0)
+                if (orders.Count == 0) // if no snacks were selected
                 {
                     Message.ShowMessage("No snacks were chosen\nPlease click on 'Skip Order' instead.", Message.MessageType.Warning);
                     return;
                 }
 
-                string message = "Are you sure you want to continue? You won't be able to update your snack preference or movie.\nIf you continue, you can redo your booking by clicking on 'Cancel Booking' on the next page";
+                string message = "Are you sure you want to continue? You won't be able to update your snack preference or movie.\nIf you continue, you can redo your booking " +
+                    "by clicking on 'Cancel Booking' on the next page";
                 if (MessageBox.Show(message, "Are you happy with your booking?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     btnPlaceOrder.Enabled = false;
@@ -358,7 +359,7 @@ namespace Watchers
                     btnPlaceOrder.Enabled = true;
 
                     booking.orders = orders;
-                    dynamic data = await Api.InsertBookingAsync(booking);
+                    dynamic data = await Api.InsertBookingAsync(booking); // send the booking object to the server and insert into database
 
                     btnPlaceOrder.Text = "Place Order";
 

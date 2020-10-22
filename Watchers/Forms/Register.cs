@@ -114,7 +114,7 @@ namespace Watchers
             {
                 bool valid = true;
 
-                if (txtName.Text == "")
+                if (txtName.Text == "") // if textbox is empty, show an error
                 {
                     errorProvider.SetError(txtName, "Name cannot be empty");
                     valid = false;
@@ -129,7 +129,7 @@ namespace Watchers
                     errorProvider.SetError(txtEmail, "Email cannot be empty");
                     valid = false;
                 }
-                else if (!(txtEmail.Text.Contains("@")))
+                else if (!(txtEmail.Text.Contains("@"))) // validate email by checking if it contains a @ character
                 {
                     errorProvider.SetError(txtEmail, "Invalid email address");
                     valid = false;
@@ -139,7 +139,7 @@ namespace Watchers
                     errorProvider.SetError(txtPassword, "Password cannot be empty");
                     valid = false;
                 }
-                else if ((txtConfirmPassword.Text == "" || txtConfirmPassword.Text != txtPassword.Text) && mode == Mode.Register)
+                else if ((txtConfirmPassword.Text == "" || txtConfirmPassword.Text != txtPassword.Text) && mode == Mode.Register) // checks if passwords match
                 {
                     errorProvider.Clear();
                     errorProvider.SetError(txtConfirmPassword, "Passwords do not match");

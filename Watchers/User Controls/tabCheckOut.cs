@@ -128,12 +128,12 @@ namespace Watchers
             {
                 if (MessageBox.Show("Are you sure you want to cancel?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
                 {
-                    bool isSuccessful = await Api.DeleteBookingAsync(bookingResponse["ticketID"]);
+                    bool isSuccessful = await Api.DeleteBookingAsync(bookingResponse["ticketID"]); // delete the booking from the serever
 
                     if (isSuccessful)
                     {
                         Message.ShowMessage("Your booking was successfully canceled", Message.MessageType.Information);
-                        Reset(sender, e);
+                        Reset(sender, e); // reset the application (all the tabs instances is set to null and navigate to the movie tab)
                     }
                 }
             }

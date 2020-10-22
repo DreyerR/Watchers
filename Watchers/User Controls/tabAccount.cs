@@ -83,9 +83,9 @@ namespace Watchers
             try
             {
                 string val = string.Empty;
-                if (InputBox.ShowInputBox("Delete Booking", "Enter your ticket ID to delete:", ref val) == DialogResult.OK)
+                if (InputBox.ShowInputBox("Delete Booking", "Enter your ticket ID to delete:", ref val) == DialogResult.OK) // get the ticket ID from the user
                 {
-                    bool isDeleted = await Api.DeleteBookingAsync(val);
+                    bool isDeleted = await Api.DeleteBookingAsync(val); // delete the booking on the server
 
                     if (isDeleted)
                         Message.ShowMessage("Your booking was deleted successfully", Message.MessageType.Information);

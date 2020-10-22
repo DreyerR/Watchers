@@ -45,9 +45,6 @@ namespace Watchers
 
         private async void btnLogin_Click(object sender, EventArgs e)
         {
-            //MainMenu main = new MainMenu();
-            //this.Hide();
-            //main.ShowDialog();
             if (IsValid())
             {
                 try
@@ -57,9 +54,9 @@ namespace Watchers
                     string username = txtUsername.Text;
                     string password = txtPassword.Text;
 
-                    bool success = await Api.AuthUserAsync(username, password);
+                    bool success = await Api.AuthUserAsync(username, password); // calling the method in the Api class to authenticate the user
 
-                    if (success)
+                    if (success) // if the user's credentials is successful
                     {
                         Cursor = Cursors.Default;
 
@@ -67,7 +64,7 @@ namespace Watchers
                         this.Close();
                         main.ShowDialog();
                     }
-                    else
+                    else // if the user's credentials is incorrect
                     {
                         Cursor = Cursors.Default;
                         Message.ShowMessage("Email or password is incorrect", Message.MessageType.Warning);

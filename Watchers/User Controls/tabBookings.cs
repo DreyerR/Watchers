@@ -86,30 +86,30 @@ namespace Watchers
         {
             try
             {
-                PictureBox seat = (PictureBox)sender;
+                PictureBox seat = (PictureBox)sender; // receives the seat whichever seat was clicked
 
-                if (seat.Image == booked)
+                if (seat.Image == booked) // if seat was already booked, make the seat available
                 {
                     seat.Image = available;
                     if (int.TryParse(lblSeatNum.Text, out int numSeats) && numSeats > 0)
-                        lblSeatNum.Text = (int.Parse(lblSeatNum.Text) - 1).ToString();
+                        lblSeatNum.Text = (int.Parse(lblSeatNum.Text) - 1).ToString(); // decrement the number of seats
 
                     for (int i = 0; i < seatNumbers.Count; i++)
                     {
                         if (seatNumbers[i].seatNumber == seat.Tag.ToString())
                         {
-                            seatNumbers.RemoveAt(i);
+                            seatNumbers.RemoveAt(i); // remove that seat's object from the list
                         }
                     }
                 }
-                else
+                else // if seat is available, change it to booked
                 {
                     seat.Image = booked;
-                    lblSeatNum.Text = (int.Parse(lblSeatNum.Text) + 1).ToString();
-                    string moviePrice = (movie.MoviePrice * int.Parse(lblSeatNum.Text)).ToString("C");
+                    lblSeatNum.Text = (int.Parse(lblSeatNum.Text) + 1).ToString(); // increment the number of seats
+                    string moviePrice = (movie.MoviePrice * int.Parse(lblSeatNum.Text)).ToString("C"); // update the movie price
                     lblMoviePrice.Text = moviePrice;
                     tabCheckOut.Instance.lblMovieTotal.Text = "Booking Total: " + moviePrice;
-                    seatNumbers.Add(new SeatNumber { seatNumber = seat.Tag.ToString() });
+                    seatNumbers.Add(new SeatNumber { seatNumber = seat.Tag.ToString() }); // create a new object for the selected seat
                 }
             }
             catch(Exception error)

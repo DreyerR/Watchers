@@ -23,15 +23,15 @@ namespace Watchers
         private void MainMenu_Load(object sender, EventArgs e)
         {
             bool admin = Properties.Settings.Default.IsAdmin;
-            if (admin)
-                btnAdmin.Visible = true;
+            if (admin) // tests wheter the logged in user is admin or not
+                btnAdmin.Visible = true; // if user is admin, show the admin button
             else
                 btnAdmin.Visible = false;
 
-            btnBookings.Click += (sender1, e1) => BtnBooking_Click(sender1, e1);
+            btnBookings.Click += (sender1, e1) => BtnBooking_Click(sender1, e1); // create a customer event handler for btnBooking
             btnSnacks.Click += (sender1, e1) => BtnSnack_Click(sender1, e1);
             btnCheckOut.Click += (sender1, e1) => BtnCheckOut_Click(sender1, e1);
-            btnMovies_Click(sender, e);
+            btnMovies_Click(sender, e); // open the movie tab
         }
 
         public void BtnCheckOut_Click(object sender1, EventArgs e1, dynamic bookingResponse = null, BookingPost booking = null)
