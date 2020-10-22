@@ -101,14 +101,15 @@ namespace Watchers
             try
             {
                 cbbCategory.Enabled = false;
-                lblCategory.Text = "Please wait...";
+                lblCategory.Text = "Please wait..."; //giving effects to the cursor
 
-                DataTable bookings = await Api.GetAllBookingsAsync();
+                DataTable bookings = await Api.GetAllBookingsAsync();  //using the api method to populate the datagridview
 
                 if (bookings != null)
                 {
-                    dgvReport.DataSource = bookings;
+                    dgvReport.DataSource = bookings; //setting the dataset of the datagridview to the booking object
 
+                    //setting the values for all the columns of the datagridview
                     dgvReport.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
                     dgvReport.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
                     dgvReport.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
@@ -119,15 +120,14 @@ namespace Watchers
                     dgvReport.Columns[7].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
                     dgvReport.Columns[8].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
-                    lblCategory.Text = "Choose a report:";
-                    cbbCategory.Enabled = true;
+                    lblCategory.Text = "Choose a report:";  //giving effects to the cursor
+                    cbbCategory.Enabled = true;  
                 }
                 else
                 {
                     Message.ShowMessage("Error on server side\nBookings: null", Message.MessageType.Error);
-                    lblCategory.Text = "Choose a report:";
+                    lblCategory.Text = "Choose a report:";  //giving effects to the cursor
                     cbbCategory.Enabled = true; 
-                    //cbbCategory.SelectedIndex = -1;
                     cbbCategory.Focus();
                 }
 
@@ -194,7 +194,7 @@ namespace Watchers
             {
                 if (dgvReport.Rows.Count > 0)
                 {
-                    CreatePDF(dgvReport, cbbCategory.SelectedItem.ToString());
+                    CreatePDF(dgvReport, cbbCategory.SelectedItem.ToString()); //calling the pdf method
                 }
                 else
                 {
@@ -221,17 +221,17 @@ namespace Watchers
         {
             try
             {
-
+                //create a font object used in the pdf
                 BaseFont baseF = BaseFont.CreateFont(BaseFont.TIMES_ROMAN, BaseFont.CP1250, BaseFont.EMBEDDED);
-                PdfPTable pdfTable = new PdfPTable(dgv.Columns.Count);
+                PdfPTable pdfTable = new PdfPTable(dgv.Columns.Count); //create a new pdf table with the column count the same as that of the datagridview
                 pdfTable.DefaultCell.Padding = 5;
                 pdfTable.WidthPercentage = 100;
-                pdfTable.HorizontalAlignment = Element.ALIGN_LEFT;
+                pdfTable.HorizontalAlignment = Element.ALIGN_LEFT; //text in pdf table is left aligned
                 pdfTable.DefaultCell.BorderWidth = 1;
 
-                iTextSharp.text.Font txt = new iTextSharp.text.Font(baseF, 6, iTextSharp.text.Font.NORMAL);
+                iTextSharp.text.Font txt = new iTextSharp.text.Font(baseF, 6, iTextSharp.text.Font.NORMAL); //add the font object to the pdf 
 
-                foreach (DataGridViewColumn col in dgv.Columns)
+                foreach (DataGridViewColumn col in dgv.Columns) //creating the columns in the pdf table
                 {
                     PdfPCell cell = new PdfPCell(new Phrase(col.HeaderText, txt));
                     cell.BackgroundColor = new BaseColor(Color.White);
@@ -240,35 +240,35 @@ namespace Watchers
                     pdfTable.DefaultCell.Border = iTextSharp.text.Rectangle.BOTTOM_BORDER;
                 }
 
-                foreach (DataGridViewRow row in dgv.Rows)
+                foreach (DataGridViewRow row in dgv.Rows) //transverse the rows in the datagridview to be the same as that of pdf table
                 {
-                    foreach (DataGridViewCell cell in row.Cells)
+                    foreach (DataGridViewCell cell in row.Cells)//populate the rows of the pdf table
                     {
                         pdfTable.AddCell(new Phrase(cell.Value.ToString(), txt));
                     }
                 }
 
-                SaveFileDialog dialog = new SaveFileDialog();
+                SaveFileDialog dialog = new SaveFileDialog(); //object for save file dialog 
                 dialog.Title = "Save PDF report as";
                 dialog.Filter = "PDF File | *.pdf";
 
-                if (dialog.ShowDialog() == DialogResult.OK)
+                if (dialog.ShowDialog() == DialogResult.OK) //if the dialog result is OK
                 {
-                    FileStream stream = new FileStream(dialog.FileName, FileMode.Create);
+                    FileStream stream = new FileStream(dialog.FileName, FileMode.Create); //creating an object for filestream of the pdf
                     {
-                        Document pdfdoc = new Document(PageSize.A4, 40f, 40f, 40f, 0f);
+                        Document pdfdoc = new Document(PageSize.A4, 40f, 40f, 40f, 0f);//creating a object for the document component of the pdf
 
-                        Paragraph heading = new Paragraph(title + " Report", FontFactory.GetFont("Courier", 25, 1, new BaseColor(255, 140, 51)));
-                        heading.Alignment = Element.ALIGN_CENTER;
+                        Paragraph heading = new Paragraph(title + " Report", FontFactory.GetFont("Courier", 25, 1, new BaseColor(255, 140, 51))); //creating a paragraph object
+                        heading.Alignment = Element.ALIGN_CENTER; //heading is center aligned
                         heading.SpacingBefore = 10f;
                         heading.SpacingAfter = 1f;
 
-                        PdfWriter.GetInstance(pdfdoc, stream);
+                        PdfWriter.GetInstance(pdfdoc, stream);  
 
-                        string workingDirectory = Environment.CurrentDirectory;
+                        string workingDirectory = Environment.CurrentDirectory; //getting the path for the pdf
                         string projectDirectory = Directory.GetParent(workingDirectory).Parent.Parent.FullName + "\\Watchers\\Resources\\Watchers2.png";
 
-                        iTextSharp.text.Image jpg = iTextSharp.text.Image.GetInstance(projectDirectory);
+                        iTextSharp.text.Image jpg = iTextSharp.text.Image.GetInstance(projectDirectory); //creating a image object for the image
 
                         jpg.ScaleToFit(140f, 120f);
                         jpg.SpacingBefore = 10f;
@@ -308,15 +308,15 @@ namespace Watchers
             {
                 btnChart.Enabled = false;
                 btnChart.Text = "Please wait...";
-                Cursor = Cursors.WaitCursor;
+                Cursor = Cursors.WaitCursor;  //giving effects to the cursor
 
-                SeriesCollection series = await Api.GetMovieCount();
+                SeriesCollection series = await Api.GetMovieCount(); //api method to get number of movies
 
                 btnChart.Enabled = true;
                 btnChart.Text = "Show Movie Statistics";
-                Cursor = Cursors.Default;
+                Cursor = Cursors.Default; //giving effects to the cursor
 
-                frmChart form = new frmChart(series);
+                frmChart form = new frmChart(series); //the series is sent to the chart form
                 form.ShowDialog();
             }
             catch (Exception ex)
